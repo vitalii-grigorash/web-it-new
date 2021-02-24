@@ -1,6 +1,6 @@
 import React from 'react'
-import InstagramIcon from '../../images/svg/inst-icon.svg'
-import VkIcon from '../../images/svg/vk-icon.svg'
+import instagramIcon from '../../images/svg/inst-icon.svg'
+import vkIcon from '../../images/svg/vk-icon.svg'
 
 function Header(props) {
 
@@ -27,11 +27,11 @@ function Header(props) {
         </button>
 
         <a href="https://www.instagram.com/" target="_blank" rel="nofollow noreferrer" className="header__icon-container">
-          <img src={InstagramIcon} alt="Иконка инстаграмма" className="header__icon"/>
+          <img src={instagramIcon} alt="Иконка инстаграмма" className="header__icon"/>
         </a>
 
         <a href="https://vk.com/" target="_blank" rel="nofollow noreferrer" className="header__icon-container">
-          <img src={VkIcon} alt="Иконка Вконтакте" className="header__icon"/>
+          <img src={vkIcon} alt="Иконка Вконтакте" className="header__icon"/>
         </a>
 
       </div>

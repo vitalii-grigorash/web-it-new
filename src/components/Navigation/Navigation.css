@@ -1,5 +1,36 @@
 .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 80px;
     background: #000000;
+}
+.navigation__container {
+    display: flex;
+    width: 1535px;
+    align-items: center;
+}
+.navigation__logo {
+    width: 50px;
+    height: 46px;
+    margin: 0 32px 0 0;
+}
+.navigation__main-links-container {
+    margin-right: auto;
+}
+.navigation__links-container {
+}
+.navigation__links {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 30px;
+}
+.navigation__links:last-of-type {
+    margin-right: 0;
 }
