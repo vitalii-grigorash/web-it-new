@@ -22,6 +22,16 @@
   text-decoration: none;
   margin: 0 auto 0 0;
 }
+.header__location:hover {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(76.57deg, #FF3541 0.81%, #FF6D2F 99.3%);
+}
+.header__location:active {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(85.68deg, #FF0F00 15.58%, #FF9533 53.24%, #FF0000 104.41%);
+}
 .header__phone-number {
   font-family: 'Verdana';
   font-style: normal;
@@ -30,6 +40,16 @@
   line-height: 22px;
   color: #FFFFFF;
   text-decoration: none;
+}
+.header__phone-number:hover {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(76.57deg, #FF3541 0.81%, #FF6D2F 99.3%);
+}
+.header__phone-number:active {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(85.68deg, #FF0F00 15.58%, #FF9533 53.24%, #FF0000 104.41%);
 }
 .header__button {
   width: 241px;
@@ -42,12 +62,13 @@
 }
 .header__button:hover {
   cursor: pointer;
+  background: linear-gradient(85.68deg, #FF0F00 15.58%, #FF9533 53.24%, #FF0000 104.41%);
 }
 .header__button:focus {
   outline: none;
 }
 .header__button:active {
-  background: linear-gradient(85.68deg, #FF0F00 15.58%, #FF9533 53.24%, #FF0000 104.41%);
+  box-shadow: inset 6px 7px 6px rgba(0, 0, 0, 0.4);
 }
 .header__button-text {
   font-family: 'Verdana';
@@ -66,9 +87,25 @@
 .header__icon-container:last-of-type {
   margin-right: 0;
 }
-.header__icon {
-  width: 30px;
-  height: 30px;
+.header__icon-container_vk {
+  background-image: url('../../images/svg/vk-icon.svg');
+  background-repeat: no-repeat;
+}
+.header__icon-container_vk:hover {
+  background-image: url('../../images/svg/vk-icon-hover.svg');
+}
+.header__icon-container_vk:active {
+  background-image: url('../../images/svg/vk-icon-active.svg');
+}
+.header__icon-container_inst {
+  background-image: url('../../images/svg/inst-icon.svg');
+  background-repeat: no-repeat;
+}
+.header__icon-container_inst:hover {
+  background-image: url('../../images/svg/inst-icon-hover.svg');
+}
+.header__icon-container_inst:active {
+  background-image: url('../../images/svg/inst-icon-active.svg');
 }
 @media screen and (max-width: 1750px) {
   .header__container {

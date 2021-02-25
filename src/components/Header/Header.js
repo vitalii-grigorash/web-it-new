@@ -1,6 +1,4 @@
 import React from 'react'
-import instagramIcon from '../../images/svg/inst-icon.svg'
-import vkIcon from '../../images/svg/vk-icon.svg'
 
 function Header(props) {
 
@@ -26,13 +24,9 @@ function Header(props) {
           <p className="header__button-text">Заказать сайт</p>
         </button>
 
-        <a href="https://www.instagram.com/" target="_blank" rel="nofollow noreferrer" className="header__icon-container">
-          <img src={instagramIcon} alt="Иконка инстаграмма" className="header__icon"/>
-        </a>
+        <a href="https://www.instagram.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="header__icon-container header__icon-container_inst"></a>
 
-        <a href="https://vk.com/" target="_blank" rel="nofollow noreferrer" className="header__icon-container">
-          <img src={vkIcon} alt="Иконка Вконтакте" className="header__icon"/>
-        </a>
+        <a href="https://vk.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="header__icon-container header__icon-container_vk"></a>
 
       </div>
 
