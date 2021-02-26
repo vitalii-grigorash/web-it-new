@@ -1,4 +1,5 @@
 import React from 'react'
+import dropDownMenuCloseButtonIcon from '../../images/svg/drop-down-menu-close-button.svg'
 
 function DropDownMenu (props) {
 
@@ -11,6 +12,8 @@ function DropDownMenu (props) {
         <div className={`drop-down-menu ${isOpen && 'drop-down-menu_opened'}`}>
 
             <div className="drop-down-menu__background">
+
+                <img src={dropDownMenuCloseButtonIcon} alt="Иконка закрытия" className="drop-down-menu__close-button"/>
 
                 <div className="drop-down-menu__container">
                     <h3 className="drop-down-menu__heading drop-down-menu__heading_web">WEB Студия</h3>

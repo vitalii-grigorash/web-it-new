@@ -107,13 +107,16 @@
 .header__icon-container_inst:active {
   background-image: url('../../images/svg/inst-icon-active.svg');
 }
-@media screen and (max-width: 1750px) {
+@media screen and (max-width: 1610px) {
   .header__container {
-    margin: 0 70px;
+    margin: 0 80px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1345px) {
   .header__container {
     margin: 0 30px;
   }
+}
+@media screen and (max-width: 1245px) {
+    
 }

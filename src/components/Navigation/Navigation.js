@@ -20,22 +20,14 @@ function Navigation(props) {
     }
 
     return (
-
         <div className="navigation">
-
             <div className="navigation__container">
-
                 <img src={logo} alt="Лого" className="navigation__logo" />
-
                 <div className="navigation__main-links-container">
-
                     <a href="#" className="navigation__links navigation__links_it">IT Сервис</a>
                     <a href="#" className="navigation__links navigation__links_web">WEB Студия</a>
-
                 </div>
-
                 <div className="navigation__links-container">
-
                     <a href="#" className="navigation__links">О Компании</a>
                     <a href="#" className="navigation__links navigation__links_services" onClick={handleDropDownMunu}>
                         Услуги
@@ -43,17 +35,12 @@ function Navigation(props) {
                     </a>
                     <a href="#" className="navigation__links">Портфолио</a>
                     <a href="#" className="navigation__links">Контакты</a>
-
                     <DropDownMenu
                         isOpen={isOpen}
                     />
-
                 </div>
-
             </div>
-
         </div>
-
     );
 }
 

@@ -1,59 +1,146 @@
-import React from 'react';
-import phoneIcon from '../../images/svg/phone-icon.svg';
-import emailIcon from '../../images/svg/email-icon.svg';
-import mapIcon from '../../images/svg/map-icon.svg';
+import React, { useState } from 'react';
+import check from '../../images/svg/check.svg';
+import { Validation } from '../../utils/Validation';
 
-function Footer() {
+function Footer(props) {
+
+  const { 
+    onSendForm,
+  } = props;
+
+  const name = Validation();
+  const number = Validation();
+  const [method, setMethod] = useState('Телефон');
+
+  function onRadioСhange (evt) {
+    setMethod(evt.target.value);
+  };
+
+  function submitForm(evt) {
+    evt.preventDefault();
+    onSendForm(name.value, number.value, method);
+    name.setValue('');
+    number.setValue('');
+  }
+
   return (
-
     <div className="footer">
 
       <div className="footer__contacts-container">
+        
+        <div className="footer__links-container">
 
-        <div className="footer__phone-container">
-          <img src={phoneIcon} alt="Иконка телефона" className="footer__phone-icon" />
           <a href="tel:+78123728561" className="footer__phone-link">
+            <p className="footer__phone-icon"></p>
             +7 (812)-372-85-61
           </a>
-          <a href="https://www.instagram.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="footer__icon footer__icon_inst"></a>
-          <a href="https://vk.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="footer__icon footer__icon_vk"></a>
-        </div>
-
-        <div className="footer__email-container">
-          <img src={emailIcon} alt="Иконка почты" className="footer__email-icon" />
+        
           <a href="mailto:3728561@178Sspb.com" className="footer__email-link">
+            <p className="footer__email-icon"></p>
             3728561@178Sspb.com
           </a>
-        </div>
-
-        <div className="footer__map-container">
-          <img src={mapIcon} alt="Иконка карты" className="footer__map-icon" />
+        
+        
           <a href="https://yandex.ru/maps/2/saint-petersburg/house/prospekt_obukhovskoy_oborony_199/Z0kYcgFhS0IPQFtjfXR3dnVqZA" target="_blank" rel="nofollow noreferrer" className="footer__map-link">
+            <p className="footer__map-icon"></p>
             г. Санкт-Петербург, пр. Обуховской Обороны, д.199
           </a>
+
         </div>
 
+        <div className="footer__icons-container">
+
+          <a href="https://www.instagram.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="footer__icon footer__icon_inst"></a>
+          <a href="https://vk.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="footer__icon footer__icon_vk"></a>
+
+        </div>
+        
       </div>
 
       <div className="footer__form-container">
-
-        <form className="footer__form">
-
+        <form 
+          className="footer__form"
+          onSubmit={submitForm}  
+        >
           <p className="footer__form-heading">Оставьте заявку и получите консультацию специалиста</p>
-
           <div className="footer__inputs-container">
-            <input type="text" placeholder="Имя" className="footer__input"/>
-            <input type="text" placeholder="Телефон" className="footer__input"/>
+            <div className="footer__input-container">
+              <input 
+                type="text" 
+                className="footer__input"
+                id="name-input"
+                name="name"
+                value={name.value}
+                onChange={name.onChange}
+                minLength="2"
+                maxLength="50"
+                placeholder="Имя" 
+                pattern="[A-Za-zа-яёА-ЯЁ -]{1,}"
+                required
+              />
+              <span id="name-input" className="footer-form__input_error">{name.errorMessage}</span>
+            </div>
+            <div className="footer__input-container">
+              <input 
+                type="text" 
+                className="footer__input"
+                id="number-input"
+                name="number"
+                value={number.value}
+                onChange={number.onChange}
+                minLength="3"
+                maxLength="20"
+                placeholder="Телефон" 
+                pattern='^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$'
+                required
+              />
+              <span id="number-input" className="footer-form__input_error">{number.errorMessage}</span>
+            </div>
           </div>
-
           <p className="footer__question">Как удобнее связаться с Вами?</p>
-
+          <div className="footer__radio-container">
+            <div className="footer__radio">
+              <input 
+                id="phoneInput" 
+                type="radio" 
+                name="variant" 
+                value="Телефон" 
+                onChange={onRadioСhange}
+                defaultChecked
+              />
+              <label htmlFor="phoneInput">Телефон</label>
+            </div>
+            <div className="footer__radio">
+              <input 
+                id="telegramInput" 
+                type="radio" 
+                name="variant" 
+                value="Telegram"
+                onChange={onRadioСhange}
+              />
+              <label htmlFor="telegramInput">Telegram</label>
+            </div>
+            <div className="footer__radio">
+              <input 
+                id="whatsAppInput" 
+                type="radio" 
+                name="variant" 
+                value="WhatsApp"
+                onChange={onRadioСhange}
+              />
+              <label htmlFor="whatsAppInput">WhatsApp</label>
+            </div>
+          </div>
+          <div className="footer__submit-container">
+            <button type="submit" className="footer__submit-button">Получить консультацию</button>
+            <div className="footer__under-submit-button-container">
+              <img src={check} alt="Иконка галочки" className="footer__under-submit-button-check"/>
+              <p className="footer__under-submit-button-text">Принимаю пользовательское соглашение</p>
+            </div>
+          </div>
         </form>
-
       </div>
-
     </div>
-
   );
 }
 

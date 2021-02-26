@@ -35,6 +35,10 @@ function App() {
     document.removeEventListener('click', memoizedOnClick);
   }
 
+  function feedbackFormSend (name, number, method) {
+    console.log(name, number, method);
+  }
+
   return (
     <div className="app">
 
@@ -44,7 +48,9 @@ function App() {
         isOpen={isDropDownMenuOpen}
       />
 
-      <Footer />
+      <Footer
+        onSendForm={feedbackFormSend}
+      />
       
     </div>
   );
