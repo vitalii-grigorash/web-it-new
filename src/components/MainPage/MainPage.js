@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 import Header from '../Header/Header';
 import Navigation from '../Navigation/Navigation';
-import mouse from '../../images/svg/mouse.svg'
+import mouse from '../../images/svg/mouse.svg';
+import MobileHeader from '../MobileHeader/MobileHeader';
 
 function MainPage(props) {
 
@@ -10,11 +11,21 @@ function MainPage(props) {
         onCloseDropDownMenu,
         isOpen,
         onOpenPopup,
+        isMobileNavigationOpen,
+        onOpenMobileNavigation,
+        onCloseMobileNavigation,
     } = props;
 
     return (
 
         <div className="main-page">
+
+            <MobileHeader 
+                isMobileNavigationOpen={isMobileNavigationOpen}
+                onOpenMobileNavigation={onOpenMobileNavigation}
+                onCloseMobileNavigation={onCloseMobileNavigation}
+                onOpenPopup={onOpenPopup}
+            />
 
             <Header
                 onOpenPopup={onOpenPopup}

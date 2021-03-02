@@ -66,3 +66,41 @@
   max-width: 123px;
   margin: auto auto 40px 25px;
 }
+@media screen and (max-width: 568px) {
+  .main-page__images-container {
+    min-height: 260px;
+  }
+  .main-page__container-overlay {
+    background-color: transparent;
+  }
+  .main-page__mouse-icon {
+    display: none;
+  }
+  .main-page__down-text {
+    display: none;
+  }
+  .main-page__heading {
+    font-size: 40px;
+  }
+  .main-page__heading_it {
+    margin: 36px 20px auto auto;
+  }
+  .main-page__heading_web {
+    margin: 36px auto auto 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main-page__images-container {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .main-page__container {
+    min-height: 278px;
+  }
+  .main-page__heading_it {
+    margin: 32px auto auto 15px;
+  }
+  .main-page__heading_web {
+    margin: 32px auto auto 15px;
+  }
+}

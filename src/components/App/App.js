@@ -7,6 +7,7 @@ function App() {
 
   const [isDropDownMenuOpen, setDropDownMenuOpen] = useState(false);
   const [isPopupOpen, setPopupOpen] = useState(false);
+  const [isMobileNavigationOpen, setMobileNavigationOpen] = useState(false);
 
   const handleCloseDropDownMenu = (evt) => {
     if (
@@ -26,6 +27,14 @@ function App() {
         dropDownMenuClose();
       }
     }
+  }
+
+  function handleMobileNavigationOpen () {
+    setMobileNavigationOpen(true);
+  }
+
+  function handleMobileNavigationClose () {
+    setMobileNavigationOpen(false);
   }
 
   function handlePopupOpen () {
@@ -60,6 +69,9 @@ function App() {
         onCloseDropDownMenu={dropDownMenuClose}
         isOpen={isDropDownMenuOpen}
         onOpenPopup={handlePopupOpen}
+        isMobileNavigationOpen={isMobileNavigationOpen}
+        onOpenMobileNavigation={handleMobileNavigationOpen}
+        onCloseMobileNavigation={handleMobileNavigationClose}
       />
 
       <Footer
