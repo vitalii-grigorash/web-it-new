@@ -89,13 +89,21 @@
     margin: 36px auto auto 20px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 548px) {
+  .main-page__heading {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 470px) {
   .main-page__images-container {
     flex-direction: column;
     min-height: auto;
   }
   .main-page__container {
     min-height: 278px;
+  }
+  .main-page__heading {
+    font-size: 40px;
   }
   .main-page__heading_it {
     margin: 32px auto auto 15px;
