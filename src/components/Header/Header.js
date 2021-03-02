@@ -16,7 +16,7 @@ function Header(props) {
           +7-987-432-30-36
         </a>
         <button className="header__button" type="button" onClick={onOpenPopup}>
-          <p className="header__button-text">Заказать сайт</p>
+          Получить консультацию
         </button>
         <a href="https://www.instagram.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="header__icon-container header__icon-container_inst"></a>
         <a href="https://vk.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="header__icon-container header__icon-container_vk"></a>

@@ -1,13 +1,18 @@
 import React, {useState, useCallback} from 'react';
 import MainPage from '../MainPage/MainPage';
 import Footer from '../Footer/Footer';
+import Popup from '../Popup/Popup';
 
 function App() {
 
   const [isDropDownMenuOpen, setDropDownMenuOpen] = useState(false);
+  const [isPopupOpen, setPopupOpen] = useState(false);
 
   const handleCloseDropDownMenu = (evt) => {
-    if ((evt.target).classList.contains("navigation__links_services") || (evt.target).classList.contains("navigation__arrow")) {
+    if (
+      (evt.target).classList.contains("navigation__links_services") || 
+      (evt.target).classList.contains("navigation__arrow")) 
+      {
       dropDownMenuOpen();
     } else {
       if (!
@@ -21,6 +26,14 @@ function App() {
         dropDownMenuClose();
       }
     }
+  }
+
+  function handlePopupOpen () {
+    setPopupOpen(true);
+  }
+
+  function handlePopupClose () {
+    setPopupOpen(false);
   }
 
   const memoizedOnClick = useCallback(handleCloseDropDownMenu, []);
@@ -46,9 +59,16 @@ function App() {
         onOpenDropDownMenu={dropDownMenuOpen}
         onCloseDropDownMenu={dropDownMenuClose}
         isOpen={isDropDownMenuOpen}
+        onOpenPopup={handlePopupOpen}
       />
 
       <Footer
+        onSendForm={feedbackFormSend}
+      />
+
+      <Popup
+        isOpen={isPopupOpen}
+        onClosePopup={handlePopupClose}
         onSendForm={feedbackFormSend}
       />
       

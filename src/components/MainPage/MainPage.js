@@ -9,13 +9,16 @@ function MainPage(props) {
         onOpenDropDownMenu,
         onCloseDropDownMenu,
         isOpen,
+        onOpenPopup,
     } = props;
 
     return (
 
         <div className="main-page">
 
-            <Header />
+            <Header
+                onOpenPopup={onOpenPopup}
+            />
 
             <Navigation
                 onOpenDropDownMenu={onOpenDropDownMenu}

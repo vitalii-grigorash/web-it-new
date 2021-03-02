@@ -1,0 +1,183 @@
+.popup {
+    display: flex;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s, opacity .3s linear;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, .1);
+}
+.popup_opened {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.popup__form-background {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: #D2D2D2;
+    border-radius: 20px;
+}
+.popup__close-button {
+    width: 22px;
+    height: 22px;
+    margin: 25px 25px auto auto;
+}
+.popup__close-button:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+.popup__heading {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    color: #121212;
+    margin: 48px 61px 0;
+}
+.popup__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popup__inputs-container {
+    display: flex;
+    flex-direction: column;
+    margin: 64px auto 0;
+}
+.popup__input-container {
+    display: flex;
+    flex-direction: column;
+    width: 367px; 
+}
+.popup__input {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #121212;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #D2D2D2;
+}
+.popup__input:focus {
+    outline: none;
+}
+.popup__input::placeholder {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #838383;
+}
+.popup-form__input_error {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: red;
+    padding-left: 10px;
+    height: 30px;
+}
+.popup__question {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #121212;
+    margin: 18px 0 0;
+}
+.popup__radio-container {
+    display: flex;
+    margin-top: 24px;
+}
+.popup__radio {
+    margin-right: 15px;
+}
+.popup__radio:last-of-type {
+    margin-right: 0;
+}
+.popup__radio input[type=radio] {
+	display: none;
+}
+.popup__radio input[type=radio]:checked + label:before {
+	background-image: url('../../images/svg/radio-button-active.svg');
+    background-repeat: no-repeat;
+}
+.popup__radio label:before {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+    background-image: url('../../images/svg/radio-button-notactive.svg');
+    background-repeat: no-repeat;
+}
+.popup__radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 20px;
+	user-select: none;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #373737;
+}
+.popup__submit-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    align-items: center;
+}
+.popup__submit-button {
+    width: 300px;
+    height: 54px;
+    background: linear-gradient(79.69deg, #FF3232 6.7%, #FF612F 97.83%);
+    box-shadow: -2px 18px 30px -12px rgba(64, 0, 0, 0.7);
+    border-radius: 30px;
+    border: none;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.popup__submit-button:hover {
+    background: linear-gradient(85.68deg, #FF0F00 15.58%, #FF9533 53.24%, #FF0000 104.41%);
+    cursor: pointer;
+}
+.popup__submit-button:active {
+    box-shadow: inset 6px 7px 6px rgba(0, 0, 0, 0.4);
+}
+.popup__submit-button:focus {
+    outline: none;
+}
+.popup__under-submit-button-container {
+    display: flex;
+    margin: 10px auto 120px;
+}
+.popup__under-submit-button-check {
+    margin-right: 3px;
+    margin-bottom: -1px;
+}
+.popup__under-submit-button-text {
+    font-family:'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 133.53%;
+    color: #373737;
+    margin: 0;
+}

@@ -52,32 +52,29 @@
   background-image: linear-gradient(85.68deg, #FF0F00 15.58%, #FF9533 53.24%, #FF0000 104.41%);
 }
 .header__button {
-  width: 241px;
-  height: 54px;
-  background: linear-gradient(80.3deg, #FF006B -19.48%, #FF6838 85.55%, #FF6838 85.55%);
+  width: 300px;
+  height: 60px;
+  background: linear-gradient(79.69deg, #FF3232 6.7%, #FF612F 97.83%);
   box-shadow: -2px 18px 30px -12px rgba(64, 0, 0, 0.7);
   border-radius: 30px;
   border: none;
-  margin: 0 40px;
-}
-.header__button:hover {
-  cursor: pointer;
-  background: linear-gradient(85.68deg, #FF0F00 15.58%, #FF9533 53.24%, #FF0000 104.41%);
-}
-.header__button:focus {
-  outline: none;
-}
-.header__button:active {
-  box-shadow: inset 6px 7px 6px rgba(0, 0, 0, 0.4);
-}
-.header__button-text {
   font-family: 'Verdana';
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 150%;
   color: #FFFFFF;
-  margin: 0 auto;
+  margin: 0 40px;
+}
+.header__button:hover {
+  background: linear-gradient(85.68deg, #FF0F00 15.58%, #FF9533 53.24%, #FF0000 104.41%);
+  cursor: pointer;
+}
+.header__button:focus {
+  outline: none;
+}
+.header__button:active {
+  box-shadow: inset 6px 7px 6px rgba(0, 0, 0, 0.4);
 }
 .header__icon-container {
   margin-right: 16px;
