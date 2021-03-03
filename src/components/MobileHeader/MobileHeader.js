@@ -16,19 +16,19 @@ function MobileHeader (props) {
   return (
     <div className="mobile-header">
 
-        <img src={logo} alt="Лого" className="mobile-header__logo" />
+      <img src={logo} alt="Лого" className="mobile-header__logo" />
 
-        <img 
-            src={isMobileNavigationOpen ? MobileNavigationCloseButton : burgerMenuButton}
-            alt="Лого" 
-            className="mobile-header__menu-button" 
-            onClick={isMobileNavigationOpen ? onCloseMobileNavigation : onOpenMobileNavigation}
-        />
+      <img 
+        src={isMobileNavigationOpen ? MobileNavigationCloseButton : burgerMenuButton}
+        alt="Лого" 
+        className={`mobile-header__menu-button ${isMobileNavigationOpen && 'mobile-header__menu-button_close'}`}
+        onClick={isMobileNavigationOpen ? onCloseMobileNavigation : onOpenMobileNavigation}
+      />
 
-        <MobileNavigation
-            isMobileNavigationOpen={isMobileNavigationOpen}
-            onOpenPopup={onOpenPopup}
-        />
+      <MobileNavigation
+        isMobileNavigationOpen={isMobileNavigationOpen}
+        onOpenPopup={onOpenPopup}
+      />
 
     </div>
   );
