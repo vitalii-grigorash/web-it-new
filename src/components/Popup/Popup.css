@@ -181,3 +181,70 @@
     color: #373737;
     margin: 0;
 }
+@media screen and (max-width: 930px) {
+    .popup__heading {
+        font-size: 18px;
+        line-height: 23px;
+        margin: 15px 30px 0;
+    }
+    .popup__close-button {
+        width: 15px;
+        height: 15px;
+        margin: 15px 15px auto auto;
+    }
+    .popup__inputs-container {
+        margin: 30px auto 0;
+    }
+    .popup__input {
+        height: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .popup__input::placeholder {
+        font-size: 14px;
+    }
+    .popup-form__input_error {
+        font-size: 10px;
+        line-height: 13px;
+        padding-left: 5px;
+        height: 25px;
+    }
+    .popup__question {
+        font-size: 14px;
+        line-height: 120%;
+        margin: 14px 0 0;
+    }
+    .popup__radio-container {
+        margin-top: 14px;
+    }
+    .popup__radio {
+        margin-right: 10px;
+    }
+    .popup__submit-container {
+        margin-top: 14px;
+    }
+    .popup__submit-button {
+        width: 250px;
+        height: 44px;
+        font-size: 14px;
+        line-height: 120%;
+    }
+    .popup__under-submit-button-container {
+        margin: 10px auto 30px;
+    }
+    .popup__under-submit-button-text {
+        font-size: 12px;
+        line-height: 110%;
+    }
+    .popup__radio label:before {
+        width: 10px;
+        height: 10px;
+        bottom: 2px;
+        background-size: contain;
+    }
+    .popup__radio label {
+        padding-left: 15px;
+        font-size: 14px;
+        line-height: 120%;
+    }
+}
