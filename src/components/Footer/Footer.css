@@ -186,7 +186,6 @@
 }
 .footer__input {
     border: none;
-    border-bottom: 1px solid #000000;
 }
 .footer__input:focus {
     outline: none;
@@ -207,6 +206,7 @@
     line-height: 15px;
     color: red;
     max-width: 190px;
+    border-top: 1px solid #000000;
 }
 .footer__question {
     font-family: 'Verdana';
@@ -307,16 +307,18 @@
     color: #373737;
     margin: 0;
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 1245px) {
     .footer {
-        flex-direction: column;
-        height: auto;
+        height: 550px;
     }
     .footer__form-container {
-        padding: 48px 29px 64px;
-        margin: 73px auto 0;
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 1180px) {
+    .footer__form-container {
+        padding: 28px 29px 44px;
         max-width: 448px;
-        order: 1;
     }
     .footer__form-heading {
         font-size: 18px;
@@ -358,6 +360,17 @@
     .footer__under-submit-button-check {
         margin-right: 5px;
     }
+}
+@media screen and (max-width: 930px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+    .footer__form-container {
+        padding: 48px 29px 64px;
+        margin: 73px auto 0;
+        order: 1;
+    }
     .footer__contacts-container {
         margin: 48px auto 94px; 
         width: 448px;
@@ -374,6 +387,18 @@
         font-size: 20px;
         line-height: 26px;
     }
+    .footer__phone-link:hover {
+        color: #FFFFFF;
+    }
+    .footer__phone-link:hover .footer__phone-icon {
+        background-image: url('../../images/svg/phone-icon.svg');
+    }
+    .footer__phone-link:active .footer__phone-icon {
+        background-image: url('../../images/svg/phone-icon-active.svg');
+    }
+    .footer__phone-link:active {
+        color: #ff592f;
+    }
     .footer__email-icon {
         min-width: 55px;
         min-height: 40px;
@@ -384,6 +409,18 @@
         line-height: 140%;
         margin-top: 10px;
     }
+    .footer__email-link:hover {
+        color: #FFFFFF;
+    }
+    .footer__email-link:hover .footer__email-icon {
+        background-image: url('../../images/svg/email-icon.svg');
+    }
+    .footer__email-link:active .footer__email-icon {
+        background-image: url('../../images/svg/email-icon-active.svg');
+    }
+    .footer__email-link:active {
+        color: #ff592f;
+    }
     .footer__map-icon {
         min-width: 58px;
         min-height: 53px;
@@ -393,6 +430,18 @@
         font-size: 16px;
         line-height: 140%;
         margin-top: 10px;
+    }
+    .footer__map-link:hover {
+        color: #FFFFFF;
+    }
+    .footer__map-link:hover .footer__map-icon {
+        background-image: url('../../images/svg/map-icon.svg');
+    }
+    .footer__map-link:active .footer__map-icon {
+        background-image: url('../../images/svg/map-icon-active.svg');
+    }
+    .footer__map-link:active {
+        color: #ff592f;
     }
 }
 @media screen and (max-width: 470px) {

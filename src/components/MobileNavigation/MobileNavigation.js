@@ -32,10 +32,10 @@ function MobileNavigation (props) {
     <div className={`mobile-navigation ${isMobileNavigationOpen && 'mobile-navigation_opened'}`}>
 
         <div className="mobile-navigation__nav-container">
-            <a href="#" className="mobile-navigation__links mobile-navigation__links_menu" onClick={handleItDropDownMunu}>
+            <p className="mobile-navigation__links mobile-navigation__links_menu" onClick={handleItDropDownMunu}>
                 IT сервис
                 <img src={isItOpen ? arrowClose : arrowOpen} alt="Стрелка" className="mobile-navigation__arrow"/>
-            </a>
+            </p>
             {isItOpen && 
                 ( 
                     <>
@@ -44,10 +44,10 @@ function MobileNavigation (props) {
                     </>
                 )
             }
-            <a href="#" className="mobile-navigation__links mobile-navigation__links_menu" onClick={handleWebDropDownMunu}>
+            <p className="mobile-navigation__links mobile-navigation__links_menu" onClick={handleWebDropDownMunu}>
                 Web студия
                 <img src={isWebOpen ? arrowClose : arrowOpen} alt="Стрелка" className="mobile-navigation__arrow"/>
-            </a>
+            </p>
             {isWebOpen && 
                 ( 
                     <>

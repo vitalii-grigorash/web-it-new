@@ -114,10 +114,46 @@
     margin: 0 30px;
   }
 }
-@media screen and (max-width: 1245px) {
-    
+@media screen and (max-width: 1244px) {
+  .header__container {
+    margin: 0 15px;
+  }
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 1215px) {
+  .header__location {
+    max-width: 300px;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .header__location {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .header__phone-number {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 1012px) {
+  .header__location {
+    max-width: 250px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .header__phone-number {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .header__button {
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 930px) {
     .header {
       display: none;
     }
