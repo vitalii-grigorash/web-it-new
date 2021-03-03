@@ -185,7 +185,9 @@
     .popup__heading {
         font-size: 18px;
         line-height: 23px;
-        margin: 15px 30px 0;
+        margin: 10px 15px 0;
+        max-width: 350px;
+        text-align: center;
     }
     .popup__close-button {
         width: 15px;
@@ -193,7 +195,7 @@
         margin: 15px 15px auto auto;
     }
     .popup__inputs-container {
-        margin: 30px auto 0;
+        margin: 15px auto 0;
     }
     .popup__input {
         height: 20px;
@@ -202,6 +204,9 @@
     }
     .popup__input::placeholder {
         font-size: 14px;
+    }
+    .popup__input-container {
+        width: 280px; 
     }
     .popup-form__input_error {
         font-size: 10px;
@@ -212,7 +217,7 @@
     .popup__question {
         font-size: 14px;
         line-height: 120%;
-        margin: 14px 0 0;
+        margin: 0;
     }
     .popup__radio-container {
         margin-top: 14px;
@@ -246,5 +251,28 @@
         padding-left: 15px;
         font-size: 14px;
         line-height: 120%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .popup__heading {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 10px 5px 0;
+    }
+    .popup__radio label {
+        font-size: 12px;
+        line-height: 100%;
+    }
+}
+@media screen and (max-width: 380px) {
+    .popup__heading {
+        max-width: 280px;
+    }
+    .popup__input-container {
+        width: 220px; 
+    }
+    .popup__under-submit-button-text {
+        font-size: 10px;
+        line-height: 100%;
     }
 }
