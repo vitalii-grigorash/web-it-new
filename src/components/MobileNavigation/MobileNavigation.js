@@ -5,28 +5,13 @@ import arrowClose from '../../images/svg/arrow-close.svg'
 function MobileNavigation (props) {
 
   const { 
-    isMobileNavigationOpen,
-    onOpenPopup,
+        isMobileNavigationOpen,
+        onOpenPopup,
+        handleItDropDownMunu,
+        handleWebDropDownMunu,
+        isItOpen,
+        isWebOpen,
     } = props;
-
-    const [isItOpen, setItOpen] = useState(false);
-    const [isWebOpen, setWebOpen] = useState(false);
-
-    function handleItDropDownMunu() {
-        if (!isItOpen) {
-            setItOpen(true);
-        } else {
-            setItOpen(false);
-        }
-    }
-
-    function handleWebDropDownMunu() {
-        if (!isWebOpen) {
-            setWebOpen(true);
-        } else {
-            setWebOpen(false);
-        }
-    }
 
   return (
     <div className={`mobile-navigation ${isMobileNavigationOpen && 'mobile-navigation_opened'}`}>

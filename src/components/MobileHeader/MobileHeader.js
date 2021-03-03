@@ -11,6 +11,10 @@ function MobileHeader (props) {
     onOpenMobileNavigation,
     onCloseMobileNavigation,
     onOpenPopup,
+    handleItDropDownMunu,
+    handleWebDropDownMunu,
+    isItOpen,
+    isWebOpen,
 } = props;
 
   return (
@@ -28,6 +32,10 @@ function MobileHeader (props) {
       <MobileNavigation
         isMobileNavigationOpen={isMobileNavigationOpen}
         onOpenPopup={onOpenPopup}
+        handleItDropDownMunu={handleItDropDownMunu}
+        handleWebDropDownMunu={handleWebDropDownMunu}
+        isItOpen={isItOpen}
+        isWebOpen={isWebOpen}
       />
 
     </div>

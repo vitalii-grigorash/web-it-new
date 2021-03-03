@@ -8,6 +8,24 @@ function App() {
   const [isDropDownMenuOpen, setDropDownMenuOpen] = useState(false);
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [isMobileNavigationOpen, setMobileNavigationOpen] = useState(false);
+  const [isItOpen, setItOpen] = useState(false);
+  const [isWebOpen, setWebOpen] = useState(false);
+
+  function handleItDropDownMunu() {
+    if (!isItOpen) {
+        setItOpen(true);
+    } else {
+        setItOpen(false);
+    }
+  }
+
+  function handleWebDropDownMunu() {
+    if (!isWebOpen) {
+        setWebOpen(true);
+    } else {
+        setWebOpen(false);
+    }
+  }
 
   const handleCloseDropDownMenu = (evt) => {
     if (
@@ -30,6 +48,8 @@ function App() {
   }
 
   function handleMobileNavigationOpen () {
+    setItOpen(false);
+    setWebOpen(false);
     setMobileNavigationOpen(true);
   }
 
@@ -72,6 +92,11 @@ function App() {
         isMobileNavigationOpen={isMobileNavigationOpen}
         onOpenMobileNavigation={handleMobileNavigationOpen}
         onCloseMobileNavigation={handleMobileNavigationClose}
+        handleItDropDownMunu={handleItDropDownMunu}
+        handleWebDropDownMunu={handleWebDropDownMunu}
+        isItOpen={isItOpen}
+        isWebOpen={isWebOpen}
+
       />
 
       <Footer

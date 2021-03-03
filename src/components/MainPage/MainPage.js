@@ -14,6 +14,10 @@ function MainPage(props) {
         isMobileNavigationOpen,
         onOpenMobileNavigation,
         onCloseMobileNavigation,
+        handleItDropDownMunu,
+        handleWebDropDownMunu,
+        isItOpen,
+        isWebOpen,
     } = props;
 
     return (
@@ -25,6 +29,10 @@ function MainPage(props) {
                 onOpenMobileNavigation={onOpenMobileNavigation}
                 onCloseMobileNavigation={onCloseMobileNavigation}
                 onOpenPopup={onOpenPopup}
+                handleItDropDownMunu={handleItDropDownMunu}
+                handleWebDropDownMunu={handleWebDropDownMunu}
+                isItOpen={isItOpen}
+                isWebOpen={isWebOpen}
             />
 
             <Header
