@@ -183,8 +183,8 @@
 }
 @media screen and (max-width: 930px) {
     .popup__heading {
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 16px;
+        line-height: 20px;
         margin: 5px 15px 0;
         max-width: 418px;
         text-align: center;
@@ -229,16 +229,16 @@
         margin-top: 10px;
     }
     .popup__submit-button {
-        width: 250px;
-        height: 44px;
-        font-size: 14px;
+        width: 230px;
+        height: 34px;
+        font-size: 12px;
         line-height: 120%;
     }
     .popup__under-submit-button-container {
-        margin: 10px auto 20px;
+        margin: 10px auto 15px;
     }
     .popup__under-submit-button-text {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 110%;
     }
     .popup__radio label:before {
@@ -253,20 +253,21 @@
         line-height: 120%;
     }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 470px) {
     .popup__heading {
         font-size: 16px;
         line-height: 20px;
         margin: 10px 5px 0;
+        max-width: 390px;
     }
     .popup__radio label {
         font-size: 12px;
         line-height: 100%;
     }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 430px) {
     .popup__heading {
-        max-width: 290px;
+        max-width: 350px;
     }
     .popup__input-container {
         width: 220px; 
@@ -274,5 +275,15 @@
     .popup__under-submit-button-text {
         font-size: 10px;
         line-height: 100%;
+    }
+}
+@media screen and (max-width: 390px) {
+    .popup__heading {
+        max-width: 290px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .popup__heading {
+        max-width: 248px;
     }
 }
