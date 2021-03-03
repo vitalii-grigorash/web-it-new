@@ -58,6 +58,7 @@ function App() {
   }
 
   function handlePopupOpen () {
+    setMobileNavigationOpen(false);
     setPopupOpen(true);
   }
 
