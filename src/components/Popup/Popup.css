@@ -276,6 +276,10 @@
         font-size: 10px;
         line-height: 100%;
     }
+    .popup__submit-button {
+        height: 44px;
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 390px) {
     .popup__heading {
