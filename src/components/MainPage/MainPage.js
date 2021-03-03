@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import Navigation from '../Navigation/Navigation';
 import mouse from '../../images/svg/mouse.svg';
 import MobileHeader from '../MobileHeader/MobileHeader';
+import PageForm from '../PageForm/PageForm';
 
 function MainPage(props) {
 
@@ -18,6 +19,7 @@ function MainPage(props) {
         handleWebDropDownMunu,
         isItOpen,
         isWebOpen,
+        onSendForm,
     } = props;
 
     return (
@@ -66,6 +68,10 @@ function MainPage(props) {
                 </div>
 
             </div>
+
+            <PageForm
+                onSendForm={onSendForm}
+            />
 
         </div>
 

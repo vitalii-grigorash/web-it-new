@@ -97,7 +97,7 @@ function App() {
         handleWebDropDownMunu={handleWebDropDownMunu}
         isItOpen={isItOpen}
         isWebOpen={isWebOpen}
-
+        onSendForm={feedbackFormSend}
       />
 
       <Footer
