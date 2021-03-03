@@ -19,24 +19,30 @@ function Popup(props) {
         setMethod(evt.target.value);
     };
 
-    function submitForm(evt) {
-        evt.preventDefault();
-        onSendForm(name.value, number.value, method);
+    function clearAllAndClose() {
         onClosePopup();
         name.setValue('');
         number.setValue('');
+        name.setErrorMessage('');
+        number.setErrorMessage('');
+    }
+
+    function submitForm(evt) {
+        evt.preventDefault();
+        onSendForm(name.value, number.value, method);
+        clearAllAndClose();
     }
 
     const handleOverlayClose = (evt) => {
         if (evt.target.classList.contains('popup_opened')) {
-            onClosePopup();
+            clearAllAndClose();
         }
     }
 
     return (
         <div className={`popup ${isOpen && 'popup_opened'}`} onMouseDown={handleOverlayClose}>
             <div className="popup__form-background">
-                <img src={popupCloseButton} alt="Кнопка закрытия попапа" className="popup__close-button" onClick={onClosePopup}/>
+                <img src={popupCloseButton} alt="Кнопка закрытия попапа" className="popup__close-button" onClick={clearAllAndClose}/>
                 <h3 className="popup__heading">Получите бесплатную консультацию от наших специалистов</h3>
 
                 <form className="popup__form" onSubmit={submitForm} >
