@@ -1,8 +1,12 @@
 import React, {useState, useCallback} from 'react';
+import { Route, Switch } from 'react-router-dom';
 import MainPage from '../MainPage/MainPage';
+import It from '../It/It';
 import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
+
+import Header from '../Header/Header';
 
 function App() {
 
@@ -96,7 +100,8 @@ function App() {
   return (
     <div className="app">
 
-      <MainPage 
+      <Header
+        onOpenPopup={handlePopupOpen}
         onOpenDropDownMenu={dropDownMenuOpen}
         onCloseDropDownMenu={dropDownMenuClose}
         isOpen={isDropDownMenuOpen}
@@ -108,8 +113,25 @@ function App() {
         handleWebDropDownMunu={handleWebDropDownMunu}
         isItOpen={isItOpen}
         isWebOpen={isWebOpen}
-        onSendForm={feedbackFormSend}
       />
+
+      <Switch>
+
+        <Route path='/it'>
+
+          <It />
+
+        </Route>
+
+        <Route path='/'>
+
+          <MainPage 
+            onSendForm={feedbackFormSend}
+          />
+
+        </Route>
+
+      </Switch>
 
       <Footer
         onSendForm={feedbackFormSend}

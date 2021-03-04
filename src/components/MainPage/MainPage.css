@@ -1,5 +1,5 @@
 .main-page {
-
+  padding-top: 179px;
 }
 .main-page__images-container {
   min-height: 791px;
@@ -93,6 +93,9 @@
   }
 }
 @media screen and (max-width: 930px) {
+  .main-page {
+    padding-top: 80px;
+  }
   .main-page__images-container {
     min-height: 260px;
   }

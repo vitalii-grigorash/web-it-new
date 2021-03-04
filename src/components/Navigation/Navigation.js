@@ -1,7 +1,8 @@
-import React from 'react'
-import logo from '../../images/svg/logo.svg'
-import arrow from '../../images/svg/arrow.svg'
-import DropDownMenu from '../DropDownMenu/DropDownMenu'
+import React from 'react';
+import logo from '../../images/svg/logo.svg';
+import arrow from '../../images/svg/arrow.svg';
+import DropDownMenu from '../DropDownMenu/DropDownMenu';
+import { Link } from 'react-router-dom';
 
 function Navigation(props) {
 
@@ -24,7 +25,7 @@ function Navigation(props) {
             <div className="navigation__container">
                 <img src={logo} alt="Лого" className="navigation__logo" />
                 <div className="navigation__main-links-container">
-                    <a href="#" className="navigation__links navigation__links_it">IT Сервис</a>
+                    <Link to={'/it'} className="navigation__links navigation__links_it">IT Сервис</Link>
                     <a href="#" className="navigation__links navigation__links_web">WEB Студия</a>
                 </div>
                 <div className="navigation__links-container">

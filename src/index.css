@@ -2,6 +2,7 @@
 @import url(./fonts/fonts.css);
 @import url(./components/App/App.css);
 @import url(./components/Header/Header.css);
+@import url(./components/HeaderInfo/HeaderInfo.css);
 @import url(./components/MobileHeader/MobileHeader.css);
 @import url(./components/Navigation/Navigation.css);
 @import url(./components/MobileNavigation/MobileNavigation.css);
@@ -11,3 +12,4 @@
 @import url(./components/Popup/Popup.css);
 @import url(./components/PageForm/PageForm.css);
 @import url(./components/SuccessPopup/SuccessPopup.css);
+@import url(./components/It/It.css);

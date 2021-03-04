@@ -1,26 +1,47 @@
-import React from 'react'
+import React from 'react';
+import HeaderInfo from '../HeaderInfo/HeaderInfo';
+import Navigation from '../Navigation/Navigation';
+import MobileHeader from '../MobileHeader/MobileHeader';
 
 function Header(props) {
 
-  const { 
+  const {
+    onOpenDropDownMenu,
+    onCloseDropDownMenu,
+    isOpen,
+    isMobileNavigationOpen,
+    onOpenMobileNavigation,
+    onCloseMobileNavigation,
+    handleItDropDownMunu,
+    handleWebDropDownMunu,
+    isItOpen,
+    isWebOpen,
     onOpenPopup,
-} = props;
+  } = props;
 
   return (
     <div className="header">
-      <div className="header__container">
-        <a href="https://yandex.ru/maps/2/saint-petersburg/house/prospekt_obukhovskoy_oborony_199/Z0kYcgFhS0IPQFtjfXR3dnVqZA" target="_blank" rel="nofollow noreferrer" className="header__location">
-          г. Санкт-Петербург, пр. Обуховской Обороны, д.199
-        </a>
-        <a href="tel:+79874323036" className="header__phone-number">
-          +7-987-432-30-36
-        </a>
-        <button className="header__button" type="button" onClick={onOpenPopup}>
-          Получить консультацию
-        </button>
-        <a href="https://www.instagram.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="header__icon-container header__icon-container_inst"></a>
-        <a href="https://vk.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="header__icon-container header__icon-container_vk"></a>
-      </div>
+      
+      <HeaderInfo
+        onOpenPopup={onOpenPopup}
+      />
+
+      <Navigation
+        onOpenDropDownMenu={onOpenDropDownMenu}
+        onCloseDropDownMenu={onCloseDropDownMenu}
+        isOpen={isOpen}
+      />
+
+      <MobileHeader
+        isMobileNavigationOpen={isMobileNavigationOpen}
+        onOpenMobileNavigation={onOpenMobileNavigation}
+        onCloseMobileNavigation={onCloseMobileNavigation}
+        onOpenPopup={onOpenPopup}
+        handleItDropDownMunu={handleItDropDownMunu}
+        handleWebDropDownMunu={handleWebDropDownMunu}
+        isItOpen={isItOpen}
+        isWebOpen={isWebOpen}
+      />
     </div>
   );
 }

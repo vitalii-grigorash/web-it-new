@@ -1,0 +1,98 @@
+.it {
+    
+}
+.it__image-container {
+    background-image: url('../../images/It-page-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.it__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 125%;
+    color: #FFFFFF;
+    margin: 440px auto auto 330px;
+}
+.it__bottom-container {
+    display: flex;
+    margin: auto auto 32px;
+}
+.it__mouse-icon {
+    max-height: 53px;
+    max-width: 47px;
+}
+.it__text {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: auto 0 auto 19px;
+    max-width: 120px;
+}
+@media screen and (max-width: 1440px) {
+    .it__heading {
+        margin: 440px auto auto 200px;
+    }
+}
+@media screen and (max-width: 1245px) {
+    .it__image-container {
+        min-height: 800px;
+    }
+    .it__heading {
+        margin: 340px auto auto 100px;
+    }
+}
+@media screen and (max-width: 1095px) {
+    .it__image-container {
+        min-height: 700px;
+    }
+    .it__heading {
+        margin: 280px auto auto 100px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .it__image-container {
+        min-height: 600px;
+    }
+    .it__heading {
+        margin: 250px auto auto 80px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .it__image-container {
+        min-height: 500px;
+    }
+    .it__heading {
+        margin: 150px auto auto 60px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .it__image-container {
+        min-height: 340px;
+    }
+    .it__heading {
+        margin: 116px auto auto 15px;
+        font-size: 36px;
+        line-height: 140%;
+    }
+    .it__bottom-container {
+        display: none;
+    }
+}
+@media screen and (max-width: 470px) {
+    .it__image-container {
+        min-height: 484px;
+    }
+    .it__heading {
+        margin: 116px auto auto 19px;
+    }
+}
