@@ -23,14 +23,9 @@
     border-radius: 20px;
 }
 .success-popup__close-button {
-    background-image: url('../../images/svg/popup-close-button.svg');
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-size: cover;
-    border: none;
     width: 22px;
     height: 22px;
-    margin: 20px 20px auto auto;
+    margin: 25px 25px auto auto;
 }
 .success-popup__close-button:hover {
     cursor: pointer;
@@ -82,7 +77,7 @@
     .success-popup__title {
         font-size: 20px;
         line-height: 25px;
-        margin: 15px 72px 0;
+        margin: 20px 72px 0;
     }
     .success-popup__ok-button {
         margin: 15px auto 30px;
@@ -117,10 +112,6 @@
     }
 }
 @media screen and (max-width: 350px) {
-    .success-popup__close-button {
-        width: 15px;
-        height: 15px;
-    }
     .success-popup__title {
         font-size: 14px;
         margin: 15px 23px 0;
