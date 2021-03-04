@@ -2,11 +2,13 @@ import React, {useState, useCallback} from 'react';
 import MainPage from '../MainPage/MainPage';
 import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
+import SuccessPopup from '../SuccessPopup/SuccessPopup';
 
 function App() {
 
   const [isDropDownMenuOpen, setDropDownMenuOpen] = useState(false);
   const [isPopupOpen, setPopupOpen] = useState(false);
+  const [isSuccessPopupOpen, setSuccessPopupOpen] = useState(false);
   const [isMobileNavigationOpen, setMobileNavigationOpen] = useState(false);
   const [isItOpen, setItOpen] = useState(false);
   const [isWebOpen, setWebOpen] = useState(false);
@@ -66,6 +68,14 @@ function App() {
     setPopupOpen(false);
   }
 
+  function handleSuccessPopupOpen () {
+    setSuccessPopupOpen(true);
+  }
+
+  function handleSuccessPopupClose () {
+    setSuccessPopupOpen(false);
+  }
+
   const memoizedOnClick = useCallback(handleCloseDropDownMenu, []);
 
   function dropDownMenuOpen () {
@@ -80,6 +90,7 @@ function App() {
 
   function feedbackFormSend (name, number, method) {
     console.log(name, number, method);
+    handleSuccessPopupOpen();
   }
 
   return (
@@ -108,6 +119,11 @@ function App() {
         isOpen={isPopupOpen}
         onClosePopup={handlePopupClose}
         onSendForm={feedbackFormSend}
+      />
+
+      <SuccessPopup
+        isOpen={isSuccessPopupOpen}
+        onClose={handleSuccessPopupClose}
       />
       
     </div>

@@ -24,17 +24,13 @@ function PageForm(props) {
     }
 
     return (
-
         <div className="page-form">
-
             <form
                 className="page-form__form"
                 onSubmit={submitForm}
             >
                 <p className="page-form__form-heading">Получите бесплатную консультацию от наших специалистов</p>
-
                 <div className="page-form__form-container">
-
                     <div className="page-form__inputs-container">
                         <div className="page-form__input-container">
                             <input
@@ -69,13 +65,9 @@ function PageForm(props) {
                             <span id="number-input" className="page-form-form__input_error">{number.errorMessage}</span>
                         </div>
                     </div>
-
                     <div className="page-form__radio-container">
-
                         <p className="page-form__question">Как удобнее связаться с Вами?</p>
-
                         <div className="page-form__radio-buttons-container">
-
                             <div className="page-form__radio">
                                 <input
                                     id="phoneInputPageForm"
@@ -107,11 +99,8 @@ function PageForm(props) {
                                 />
                                 <label htmlFor="telegramInputPageForm">Telegram</label>
                             </div>
-
                         </div>
-
                     </div>
-
                     <div className="page-form__submit-container">
                         <button type="submit" className="page-form__submit-button">Получить консультацию</button>
                         <div className="page-form__under-submit-button-container">
@@ -119,12 +108,9 @@ function PageForm(props) {
                             <p className="page-form__under-submit-button-text">Принимаю пользовательское соглашение</p>
                         </div>
                     </div>
-
                 </div>
-
             </form>
         </div>
-
     );
 }
 
