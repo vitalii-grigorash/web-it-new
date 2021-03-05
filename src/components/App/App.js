@@ -2,10 +2,12 @@ import React, {useState, useCallback} from 'react';
 import { Route, Switch } from 'react-router-dom';
 import MainPage from '../MainPage/MainPage';
 import It from '../It/It';
+import Web from '../Web/Web';
+import Shop from '../Shop/Shop';
+import Multipage from '../Multipage/Multipage';
 import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
-
 import Header from '../Header/Header';
 
 function App() {
@@ -19,17 +21,17 @@ function App() {
 
   function handleItDropDownMunu() {
     if (!isItOpen) {
-        setItOpen(true);
+      setItOpen(true);
     } else {
-        setItOpen(false);
+      setItOpen(false);
     }
   }
 
   function handleWebDropDownMunu() {
     if (!isWebOpen) {
-        setWebOpen(true);
+      setWebOpen(true);
     } else {
-        setWebOpen(false);
+      setWebOpen(false);
     }
   }
 
@@ -117,18 +119,30 @@ function App() {
 
       <Switch>
 
+        <Route path='/multipage'>
+          <Multipage
+            onSendForm={feedbackFormSend}
+          />
+        </Route>
+
+        <Route path='/shop'>
+          <Shop />
+        </Route>
+
+        <Route path='/web'>
+          <Web 
+            onSendForm={feedbackFormSend}
+          />
+        </Route>
+
         <Route path='/it'>
-
           <It />
-
         </Route>
 
         <Route path='/'>
-
           <MainPage 
             onSendForm={feedbackFormSend}
           />
-
         </Route>
 
       </Switch>

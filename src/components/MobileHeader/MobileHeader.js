@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../../images/svg/logo.svg';
 import burgerMenuButton from '../../images/svg/burger-menu-button.svg';
 import MobileNavigationCloseButton from '../../images/svg/mobile-navigation-close-button.svg';
 import MobileNavigation from '../MobileNavigation/MobileNavigation';
+import { Link } from 'react-router-dom';
 
 function MobileHeader (props) {
 
@@ -20,7 +20,7 @@ function MobileHeader (props) {
   return (
     <div className="mobile-header">
 
-      <img src={logo} alt="Лого" className="mobile-header__logo" />
+      <Link to={'/'} className="mobile-header__logo"></Link>
 
       <img 
         src={isMobileNavigationOpen ? MobileNavigationCloseButton : burgerMenuButton}
@@ -36,6 +36,7 @@ function MobileHeader (props) {
         handleWebDropDownMunu={handleWebDropDownMunu}
         isItOpen={isItOpen}
         isWebOpen={isWebOpen}
+        onCloseMobileNavigation={onCloseMobileNavigation}
       />
 
     </div>

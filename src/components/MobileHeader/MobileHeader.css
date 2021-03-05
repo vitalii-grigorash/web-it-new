@@ -8,6 +8,9 @@
     justify-content: space-between;
 }
 .mobile-header__logo {
+    background-image: url('../../images/svg/logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 50px;
     height: 46px;
     margin-left: 15px;

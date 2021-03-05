@@ -1,7 +1,7 @@
 import React from 'react';
 import mouse from '../../images/svg/mouse.svg';
 
-function It() {
+function It () {
 
     return (
         <div className="it">

@@ -1,8 +1,9 @@
 import React from 'react';
 import mouse from '../../images/svg/mouse.svg';
 import PageForm from '../PageForm/PageForm';
+import { Link } from 'react-router-dom';
 
-function MainPage(props) {
+function MainPage (props) {
 
     const {
         onSendForm,
@@ -10,35 +11,32 @@ function MainPage(props) {
 
     return (
 
-        <div className="main-page">
+        <section className="main-page">
 
-            <div className="main-page__images-container">
-
-                <div className="main-page__container main-page__container_it">
+            <nav className="main-page__images-container">
+                <Link to={'/it'} className="main-page__container main-page__container_it">
 
                     <div className="main-page__container-overlay">
-                        <h1 className="main-page__heading main-page__heading_it">IT СЕРВИС</h1>
+                        <h2 className="main-page__heading main-page__heading_it">IT СЕРВИС</h2>
                         <img src={mouse} alt="Иконка мышки" className="main-page__mouse-icon" />
                     </div>
 
-                </div>
-
-                <div className="main-page__container main-page__container_web">
+                </Link>
+                <Link to={'/web'} className="main-page__container main-page__container_web">
 
                     <div className="main-page__container-overlay">
-                        <h1 className="main-page__heading main-page__heading_web">WEB СТУДИЯ</h1>
+                        <h2 className="main-page__heading main-page__heading_web">WEB СТУДИЯ</h2>
                         <p className="main-page__down-text">Прокрутите вниз</p>
                     </div>
 
-                </div>
-
-            </div>
+                </Link>
+            </nav>
 
             <PageForm
                 onSendForm={onSendForm}
             />
 
-        </div>
+        </section>
 
     );
 }

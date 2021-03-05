@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import arrowOpen from '../../images/svg/arrow.svg'
-import arrowClose from '../../images/svg/arrow-close.svg'
+import React from 'react';
+import arrowOpen from '../../images/svg/arrow.svg';
+import arrowClose from '../../images/svg/arrow-close.svg';
+import { Link } from 'react-router-dom';
 
 function MobileNavigation (props) {
 
   const { 
         isMobileNavigationOpen,
+        onCloseMobileNavigation,
         onOpenPopup,
         handleItDropDownMunu,
         handleWebDropDownMunu,
@@ -24,8 +26,8 @@ function MobileNavigation (props) {
             {isItOpen && 
                 ( 
                     <>
-                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down">Абонентское обслуживание</a>
-                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down">Разовые услуги IT</a>
+                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Абонентское обслуживание</a>
+                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Разовые услуги IT</a>
                     </>
                 )
             }
@@ -36,11 +38,12 @@ function MobileNavigation (props) {
             {isWebOpen && 
                 ( 
                     <>
-                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down">Интернет-магазин</a>
-                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down">Landing page</a>
-                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down">Сайт-визитка</a>
-                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down">Корпоративный сайт</a>
-                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down">Сайт-каталог</a>
+                        <Link to={'/shop'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Интернет-магазин</Link>
+                        <Link to={'/multipage'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Многостраничный сайт</Link>
+                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Landing page</a>
+                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Сайт-визитка</a>
+                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Корпоративный сайт</a>
+                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Сайт-каталог</a>
                     </>
                 )
             }

@@ -3,7 +3,7 @@ import HeaderInfo from '../HeaderInfo/HeaderInfo';
 import Navigation from '../Navigation/Navigation';
 import MobileHeader from '../MobileHeader/MobileHeader';
 
-function Header(props) {
+function Header (props) {
 
   const {
     onOpenDropDownMenu,

@@ -1,8 +1,8 @@
-.it {
+.web {
     
 }
-.it__image-container {
-    background-image: url('../../images/it-page-img.jpg');
+.web__image-container {
+    background-image: url('../../images/web-page-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
 }
-.it__heading {
+.web__heading {
     font-family: 'IBM Plex Mono';
     font-style: normal;
     font-weight: bold;
@@ -20,15 +20,15 @@
     color: #FFFFFF;
     margin: 440px auto auto 330px;
 }
-.it__bottom-container {
+.web__bottom-container {
     display: flex;
     margin: auto auto 32px;
 }
-.it__mouse-icon {
+.web__mouse-icon {
     max-height: 53px;
     max-width: 47px;
 }
-.it__text {
+.web__text {
     font-family: 'Verdana';
     font-style: normal;
     font-weight: normal;
@@ -39,60 +39,60 @@
     max-width: 120px;
 }
 @media screen and (max-width: 1440px) {
-    .it__heading {
+    .web__heading {
         margin: 440px auto auto 200px;
     }
 }
 @media screen and (max-width: 1245px) {
-    .it__image-container {
+    .web__image-container {
         min-height: 829px;
     }
-    .it__heading {
+    .web__heading {
         margin: 340px auto auto 100px;
     }
 }
 @media screen and (max-width: 1095px) {
-    .it__image-container {
+    .web__image-container {
         min-height: 729px;
     }
-    .it__heading {
+    .web__heading {
         margin: 280px auto auto 100px;
     }
 }
 @media screen and (max-width: 950px) {
-    .it__image-container {
+    .web__image-container {
         min-height: 629px;
     }
-    .it__heading {
+    .web__heading {
         margin: 250px auto auto 80px;
     }
 }
 @media screen and (max-width: 930px) {
-    .it__image-container {
+    .web__image-container {
         min-height: 340px;
     }
-    .it__heading {
+    .web__heading {
         margin: 130px auto auto 50px;
     }
-    .it__bottom-container {
+    .web__bottom-container {
         margin: auto auto 15px;
     }
 }
 @media screen and (max-width: 568px) {
-    .it__heading {
+    .web__heading {
         margin: 116px auto auto 15px;
         font-size: 36px;
         line-height: 140%;
     }
-    .it__bottom-container {
+    .web__bottom-container {
         display: none;
     }
 }
 @media screen and (max-width: 470px) {
-    .it__image-container {
+    .web__image-container {
         min-height: 636px;
     }
-    .it__heading {
+    .web__heading {
         margin: 116px auto auto 19px;
     }
 }
