@@ -177,7 +177,6 @@
 }
 @media screen and (max-width: 470px) {
     .multipage__image-container {
-        background-image: url('../../images/multipage-page-img-mobile.jpg');
         min-height: 636px;
     }
     .multipage__heading {

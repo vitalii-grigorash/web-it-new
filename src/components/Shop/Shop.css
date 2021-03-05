@@ -177,7 +177,6 @@
 }
 @media screen and (max-width: 470px) {
     .shop__image-container {
-        background-image: url('../../images/shop-page-img-mobile.jpg');
         min-height: 636px;
     }
     .shop__heading {
