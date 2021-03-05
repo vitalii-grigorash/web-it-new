@@ -91,6 +91,7 @@
 @media screen and (max-width: 470px) {
     .web__image-container {
         min-height: 636px;
+        background-position-x: -740px;
     }
     .web__heading {
         margin: 116px auto auto 19px;

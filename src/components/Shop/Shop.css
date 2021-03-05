@@ -178,6 +178,7 @@
 @media screen and (max-width: 470px) {
     .shop__image-container {
         min-height: 636px;
+        background-position-x: -550px;
     }
     .shop__heading {
         margin: 120px auto auto 21px;

@@ -178,6 +178,7 @@
 @media screen and (max-width: 470px) {
     .multipage__image-container {
         min-height: 636px;
+        background-position-x: -700px;
     }
     .multipage__heading {
         margin: 120px auto auto 21px;
