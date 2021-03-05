@@ -20,18 +20,15 @@ function Header (props) {
   } = props;
 
   return (
-    <div className="header">
-      
+    <section className="header">
       <HeaderInfo
         onOpenPopup={onOpenPopup}
       />
-
       <Navigation
         onOpenDropDownMenu={onOpenDropDownMenu}
         onCloseDropDownMenu={onCloseDropDownMenu}
         isOpen={isOpen}
       />
-
       <MobileHeader
         isMobileNavigationOpen={isMobileNavigationOpen}
         onOpenMobileNavigation={onOpenMobileNavigation}
@@ -42,7 +39,7 @@ function Header (props) {
         isItOpen={isItOpen}
         isWebOpen={isWebOpen}
       />
-    </div>
+    </section>
   );
 }
 

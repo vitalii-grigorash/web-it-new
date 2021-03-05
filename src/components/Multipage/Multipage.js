@@ -9,7 +9,7 @@ function Multipage (props) {
     } = props;
 
     return (
-        <div className="multipage">
+        <section className="multipage">
             <div className="multipage__image-container">
                 <h2 className="multipage__heading">СОЗДАНИЕ МНОГОСТРАНИЧНОГО САЙТА ПОД КЛЮЧ</h2>
                 <p className="multipage__subheading">Проектирование и разработка многостраничного сайта в Санкт-Петербурге</p>
@@ -19,12 +19,10 @@ function Multipage (props) {
                     <p className="multipage__text">Прокрутите вниз</p>
                 </div>
             </div>
-
             <PageForm
                 onSendForm={onSendForm}
             />
-
-        </div>
+        </section>
     );
 }
 

@@ -24,7 +24,7 @@ function PageForm(props) {
     }
 
     return (
-        <div className="page-form">
+        <section className="page-form">
             <form
                 className="page-form__form"
                 onSubmit={submitForm}
@@ -110,7 +110,7 @@ function PageForm(props) {
                     </div>
                 </div>
             </form>
-        </div>
+        </section>
     );
 }
 

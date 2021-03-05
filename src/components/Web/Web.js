@@ -9,20 +9,18 @@ function Web (props) {
     } = props;
 
     return (
-        <div className="web">
+        <section className="web">
             <div className="web__image-container">
-                <h1 className="web__heading">WEB СТУДИЯ</h1>
+                <h2 className="web__heading">WEB СТУДИЯ</h2>
                 <div className="web__bottom-container">
                     <img src={mouse} alt="Иконка мышки" className="web__mouse-icon" />
                     <p className="web__text">Прокрутите вниз</p>
                 </div>
             </div>
-
             <PageForm
                 onSendForm={onSendForm}
             />
-
-        </div>
+        </section>
     );
 }
 

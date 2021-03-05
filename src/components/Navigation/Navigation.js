@@ -23,16 +23,16 @@ function Navigation(props) {
         <section className="navigation">
             <nav className="navigation__container">
                 <Link to={'/'} className="navigation__logo"></Link>
-                <div className="navigation__main-links-container">
+                <nav className="navigation__main-links-container">
                     <Link to={'/it'} className="navigation__links navigation__links_it">IT Сервис</Link>
                     <Link to={'/web'} className="navigation__links navigation__links_web">WEB Студия</Link>
-                </div>
+                </nav>
                 <nav className="navigation__links-container">
                     <a href="#" className="navigation__links">О Компании</a>
-                    <a href="#" className="navigation__links navigation__links_services" onClick={handleDropDownMunu}>
+                    <p className="navigation__links navigation__links_services" onClick={handleDropDownMunu}>
                         Услуги
                         <img src={arrow} alt="Стрелка" className="navigation__arrow"/>
-                    </a>
+                    </p>
                     <a href="#" className="navigation__links">Портфолио</a>
                     <a href="#" className="navigation__links">Контакты</a>
                     <DropDownMenu

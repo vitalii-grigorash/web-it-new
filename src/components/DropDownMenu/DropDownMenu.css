@@ -5,7 +5,7 @@
     opacity: 0;
     transition: visibility .3s, opacity .3s linear;
     left: 20px;
-    top: 40px;
+    top: 60px;
     max-width: 413px;
 }
 .drop-down-menu_opened {

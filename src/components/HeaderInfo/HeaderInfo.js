@@ -8,12 +8,11 @@ function HeaderInfo(props) {
     } = props;
 
     const { pathname } = useLocation();
-
     const header = `${pathname === '/' ? `header-info header-info_background` : `header-info`}`;
 
     return (
-        <div className={header}>
-            <div className="header-info__container">
+        <section className={header}>
+            <nav className="header-info__container">
                 <a href="https://yandex.ru/maps/2/saint-petersburg/house/prospekt_obukhovskoy_oborony_199/Z0kYcgFhS0IPQFtjfXR3dnVqZA" target="_blank" rel="nofollow noreferrer" className="header-info__location">
                     г. Санкт-Петербург, пр. Обуховской Обороны, д.199
                 </a>
@@ -25,8 +24,8 @@ function HeaderInfo(props) {
                 </button>
                 <a href="https://www.instagram.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="header-info__icon-container header-info__icon-container_inst"></a>
                 <a href="https://vk.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="header-info__icon-container header-info__icon-container_vk"></a>
-            </div>
-        </div>
+            </nav>
+        </section>
     );
 }
 

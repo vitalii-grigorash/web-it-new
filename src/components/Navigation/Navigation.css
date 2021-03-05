@@ -12,6 +12,9 @@
     margin: 0 524px 0 192px;
     align-items: center;
 }
+.navigation__links_services:hover {
+    cursor: pointer;
+}
 .navigation__logo {
     background-image: url('../../images/svg/logo.svg');
     background-repeat: no-repeat;
@@ -24,6 +27,8 @@
     margin-right: 0 auto 0 0;
 }
 .navigation__links-container {
+    display: flex;
+    align-items: center;
     position: relative;
     margin: 0 auto;
 }

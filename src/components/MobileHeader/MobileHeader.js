@@ -18,17 +18,14 @@ function MobileHeader (props) {
 } = props;
 
   return (
-    <div className="mobile-header">
-
+    <section className="mobile-header">
       <Link to={'/'} className="mobile-header__logo"></Link>
-
       <img 
         src={isMobileNavigationOpen ? MobileNavigationCloseButton : burgerMenuButton}
         alt="Лого" 
         className={`mobile-header__menu-button ${isMobileNavigationOpen && 'mobile-header__menu-button_close'}`}
         onClick={isMobileNavigationOpen ? onCloseMobileNavigation : onOpenMobileNavigation}
       />
-
       <MobileNavigation
         isMobileNavigationOpen={isMobileNavigationOpen}
         onOpenPopup={onOpenPopup}
@@ -38,8 +35,7 @@ function MobileHeader (props) {
         isWebOpen={isWebOpen}
         onCloseMobileNavigation={onCloseMobileNavigation}
       />
-
-    </div>
+    </section>
   );
 }
 

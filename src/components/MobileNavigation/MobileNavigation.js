@@ -16,9 +16,8 @@ function MobileNavigation (props) {
     } = props;
 
   return (
-    <div className={`mobile-navigation ${isMobileNavigationOpen && 'mobile-navigation_opened'}`}>
-
-        <div className="mobile-navigation__nav-container">
+    <section className={`mobile-navigation ${isMobileNavigationOpen && 'mobile-navigation_opened'}`}>
+        <nav className="mobile-navigation__nav-container">
             <p className="mobile-navigation__links mobile-navigation__links_menu" onClick={handleItDropDownMunu}>
                 IT сервис
                 <img src={isItOpen ? arrowClose : arrowOpen} alt="Стрелка" className="mobile-navigation__arrow"/>
@@ -50,9 +49,8 @@ function MobileNavigation (props) {
             <a href="#" className="mobile-navigation__links">О Компании</a>
             <a href="#" className="mobile-navigation__links">Портфолио</a>
             <a href="#" className="mobile-navigation__links">Контакты</a>
-        </div>
-
-        <div className="mobile-navigation__info-container">
+        </nav>
+        <nav className="mobile-navigation__info-container">
             <p className="mobile-navigation__info-heading">Позвоните нам</p>
             <a href="tel:+78123728561" className="mobile-navigation__phone-number">
                 +7 (812)-372-85-61
@@ -67,9 +65,8 @@ function MobileNavigation (props) {
             <button className="mobile-navigation__button" type="button" onClick={onOpenPopup}>
                 Получить консультацию
             </button>
-        </div>
-        
-    </div>
+        </nav>
+    </section>
   );
 }
 

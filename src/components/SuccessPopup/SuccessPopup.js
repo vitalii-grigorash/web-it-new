@@ -15,7 +15,7 @@ function SuccessPopup(props) {
     }
 
     return (
-        <div className={`success-popup ${isOpen && 'success-popup_opened'}`} onMouseDown={handleOverlayClose}>
+        <section className={`success-popup ${isOpen && 'success-popup_opened'}`} onMouseDown={handleOverlayClose}>
             <div className="success-popup__background">
                 <img src={closeButton} alt="Иконка закрытия" className='success-popup__close-button' onClick={onClose}/>
                 <p className="success-popup__title">Заявка успешно отправлена!</p>
@@ -27,7 +27,7 @@ function SuccessPopup(props) {
                     Закрыть
                 </button>
             </div>
-        </div>
+        </section>
     );
 }
 

@@ -40,11 +40,10 @@ function Popup(props) {
     }
 
     return (
-        <div className={`popup ${isOpen && 'popup_opened'}`} onMouseDown={handleOverlayClose}>
+        <section className={`popup ${isOpen && 'popup_opened'}`} onMouseDown={handleOverlayClose}>
             <div className="popup__form-background">
                 <img src={popupCloseButton} alt="Кнопка закрытия попапа" className="popup__close-button" onClick={clearAllAndClose}/>
                 <h3 className="popup__heading">Получите бесплатную консультацию от наших специалистов</h3>
-
                 <form className="popup__form" onSubmit={submitForm} >
                     <div className="popup__inputs-container">
                         <div className="popup__input-container">
@@ -122,9 +121,8 @@ function Popup(props) {
                         </div>
                     </div>
                 </form>
-
             </div>
-        </div>
+        </section>
     );
 }
 

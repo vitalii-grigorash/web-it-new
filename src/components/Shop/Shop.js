@@ -2,9 +2,8 @@ import React from 'react';
 import mouse from '../../images/svg/mouse.svg';
 
 function Shop () {
-
     return (
-        <div className="shop">
+        <section className="shop">
             <div className="shop__image-container">
                 <h2 className="shop__heading">СОЗДАНИЕ ИНТЕРНЕТ-МАГАЗИНА ПОД КЛЮЧ</h2>
                 <p className="shop__subheading">Проектирование и разработка интернет-магазина в Санкт-Петербурге</p>
@@ -14,7 +13,7 @@ function Shop () {
                     <p className="shop__text">Прокрутите вниз</p>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
