@@ -19,7 +19,7 @@ function MobileHeader (props) {
 
   return (
     <section className="mobile-header">
-      <Link to={'/'} className="mobile-header__logo"></Link>
+      <Link to={'/'} className="mobile-header__logo" onClick={onCloseMobileNavigation}></Link>
       <img 
         src={isMobileNavigationOpen ? MobileNavigationCloseButton : burgerMenuButton}
         alt="Лого" 
