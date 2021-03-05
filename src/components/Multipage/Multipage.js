@@ -11,7 +11,7 @@ function Multipage (props) {
     return (
         <section className="multipage">
             <div className="multipage__image-container">
-                <h2 className="multipage__heading">СОЗДАНИЕ МНОГОСТРАНИЧНОГО САЙТА ПОД КЛЮЧ</h2>
+                <h2 className="multipage__heading">СОЗДАНИЕ МНОГОСТРАНИЧНОГО САЙТА&nbsp;ПОД&nbsp;КЛЮЧ</h2>
                 <p className="multipage__subheading">Проектирование и разработка многостраничного сайта в Санкт-Петербурге</p>
                 <button className="multipage__button" type="button">Заказать сайт</button>
                 <div className="multipage__bottom-container">

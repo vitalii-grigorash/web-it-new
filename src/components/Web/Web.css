@@ -95,5 +95,6 @@
     }
     .web__heading {
         margin: 116px auto auto 19px;
+        min-width: 250px;
     }
 }
