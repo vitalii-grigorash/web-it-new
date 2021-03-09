@@ -42,7 +42,7 @@ function MobileNavigation (props) {
                         <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Landing page</a>
                         <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Сайт-визитка</a>
                         <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Корпоративный сайт</a>
-                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Сайт-каталог</a>
+                        <Link to={'/catalog'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Сайт-каталог</Link>
                     </>
                 )
             }

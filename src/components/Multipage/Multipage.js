@@ -6,14 +6,15 @@ function Multipage (props) {
 
     const {
         onSendForm,
+        onOpenPopup,
     } = props;
 
     return (
         <section className="multipage">
             <div className="multipage__image-container">
-                <h2 className="multipage__heading">СОЗДАНИЕ МНОГОСТРАНИЧНОГО САЙТА&nbsp;ПОД&nbsp;КЛЮЧ</h2>
+                <h2 className="multipage__heading">СОЗДАНИЕ МНОГОСТРАНИЧНОГО (КОРПОРАТИВНОГО) САЙТА ПОД КЛЮЧ</h2>
                 <p className="multipage__subheading">Проектирование и разработка многостраничного сайта в Санкт-Петербурге</p>
-                <button className="multipage__button" type="button">Заказать сайт</button>
+                <button className="multipage__button" type="button" onClick={onOpenPopup}>Заказать сайт</button>
                 <div className="multipage__bottom-container">
                     <img src={mouse} alt="Иконка мышки" className="multipage__mouse-icon" />
                     <p className="multipage__text">Прокрутите вниз</p>

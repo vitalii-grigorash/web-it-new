@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import check from '../../images/svg/check.svg';
 import { Validation } from '../../utils/Validation';
 
-function Footer(props) {
+function Footer (props) {
 
   const { 
     onSendForm,

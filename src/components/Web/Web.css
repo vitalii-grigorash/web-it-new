@@ -20,6 +20,32 @@
     color: #FFFFFF;
     margin: 440px auto auto 330px;
 }
+.web__button {
+    visibility: hidden;
+    width: 300px;
+    height: 60px;
+    background: linear-gradient(79.69deg, #FF3232 6.7%, #FF612F 97.83%);
+    box-shadow: -2px 18px 30px -12px rgba(64, 0, 0, 0.7);
+    border-radius: 30px;
+    border: none;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 16px auto auto 50px;
+}
+.web__button:hover {
+    background: linear-gradient(85.68deg, #FF0F00 15.58%, #FF9533 53.24%, #FF0000 104.41%);
+    cursor: pointer;
+}
+.web__button:focus {
+    outline: none;
+}
+.web__button:active {
+    box-shadow: inset 6px 7px 6px rgba(0, 0, 0, 0.4);
+}
 .web__bottom-container {
     display: flex;
     margin: auto auto 32px;
@@ -74,27 +100,38 @@
     .web__heading {
         margin: 130px auto auto 50px;
     }
-    .web__bottom-container {
-        margin: auto auto 15px;
-    }
-}
-@media screen and (max-width: 568px) {
-    .web__heading {
-        margin: 116px auto auto 15px;
-        font-size: 36px;
-        line-height: 140%;
+    .web__button {
+        visibility: visible;
     }
     .web__bottom-container {
         display: none;
     }
 }
+@media screen and (max-width: 568px) {
+    .web__heading {
+        margin: 128px auto 0;
+        font-size: 36px;
+        line-height: 140%;
+    }
+    .web__button {
+        width: 256px;
+        height: 47px;
+        font-size: 16px;
+        line-height: 140%;
+        margin: 16px auto 0;
+    }
+}
 @media screen and (max-width: 470px) {
     .web__image-container {
         min-height: 636px;
-        background-position-x: -740px;
+        background-position-x: -400px;
     }
     .web__heading {
-        margin: 116px auto auto 19px;
+        margin: 200px auto 0;
         min-width: 250px;
+        text-align: center;
+    }
+    .web__button {
+        margin: 56px auto 0;
     }
 }

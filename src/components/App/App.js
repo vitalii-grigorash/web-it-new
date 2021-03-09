@@ -5,12 +5,13 @@ import It from '../It/It';
 import Web from '../Web/Web';
 import Shop from '../Shop/Shop';
 import Multipage from '../Multipage/Multipage';
+import Catalog from '../Catalog/Catalog';
 import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
 import Header from '../Header/Header';
 
-function App() {
+function App () {
 
   const [isDropDownMenuOpen, setDropDownMenuOpen] = useState(false);
   const [isPopupOpen, setPopupOpen] = useState(false);
@@ -19,7 +20,7 @@ function App() {
   const [isItOpen, setItOpen] = useState(false);
   const [isWebOpen, setWebOpen] = useState(false);
 
-  function handleItDropDownMunu() {
+  function handleItDropDownMunu () {
     if (!isItOpen) {
       setItOpen(true);
     } else {
@@ -27,7 +28,7 @@ function App() {
     }
   }
 
-  function handleWebDropDownMunu() {
+  function handleWebDropDownMunu () {
     if (!isWebOpen) {
       setWebOpen(true);
     } else {
@@ -107,7 +108,6 @@ function App() {
         onOpenDropDownMenu={dropDownMenuOpen}
         onCloseDropDownMenu={dropDownMenuClose}
         isOpen={isDropDownMenuOpen}
-        onOpenPopup={handlePopupOpen}
         isMobileNavigationOpen={isMobileNavigationOpen}
         onOpenMobileNavigation={handleMobileNavigationOpen}
         onCloseMobileNavigation={handleMobileNavigationClose}
@@ -119,24 +119,37 @@ function App() {
 
       <Switch>
 
+        <Route path='/catalog'>
+          <Catalog
+            onSendForm={feedbackFormSend}
+            onOpenPopup={handlePopupOpen}
+          />
+        </Route>
+
         <Route path='/multipage'>
           <Multipage
             onSendForm={feedbackFormSend}
+            onOpenPopup={handlePopupOpen}
           />
         </Route>
 
         <Route path='/shop'>
-          <Shop />
+          <Shop
+            onOpenPopup={handlePopupOpen}
+          />
         </Route>
 
         <Route path='/web'>
           <Web 
             onSendForm={feedbackFormSend}
+            onOpenPopup={handlePopupOpen}
           />
         </Route>
 
         <Route path='/it'>
-          <It />
+          <It
+            onOpenPopup={handlePopupOpen}
+          />
         </Route>
 
         <Route path='/'>
@@ -164,7 +177,6 @@ function App() {
       
     </div>
   );
-
 }
 
 export default App;

@@ -162,17 +162,17 @@
 @media screen and (max-width: 690px) {
     .shop__heading {
         max-width: 450px;
+        font-size: 28px;
+        line-height: 36px;
+        max-width: 450px;
     }
 }
 @media screen and (max-width: 568px) {
     .shop__heading {
-        margin: 116px auto auto 15px;
-        font-size: 28px;
-        line-height: 37px;
-        max-width: 350px;
+        margin: 128px auto 0 15px;
     }
     .shop__button {
-        margin: 20px auto auto 15px;
+        margin: 24px auto auto 15px;
     }
 }
 @media screen and (max-width: 470px) {
@@ -181,12 +181,14 @@
         background-position-x: -550px;
     }
     .shop__heading {
-        margin: 120px auto auto 21px;
-        font-size: 42px;
-        line-height: 46px;
-        max-width: 220px;
+        margin: 144px auto 0 15px;
+        font-size: 28px;
+        line-height: 36px;
+        max-width: 290px;
     }
     .shop__button {
-        display: none;
+        width: 211px;
+        height: 44px;
+        margin: 24px auto auto 15px;
     }
 }

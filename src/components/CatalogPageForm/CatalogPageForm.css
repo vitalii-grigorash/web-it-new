@@ -1,0 +1,392 @@
+.catalog-page-form {
+    display: flex;
+    width: 100%;
+    background-color: #D2D2D2;
+}
+.catalog-page-form__price {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 96px 112px 137px;
+    margin: 32px 0 49px auto;
+}
+.catalog-page-form__price-heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 35px;
+    color: #373737;
+    max-width: 303px;
+    margin: 0 auto 0 0;
+}
+.catalog-page-form__price-list-container {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #373737;
+    padding: 0;
+    margin: 32px auto 0 20px;
+}
+.catalog-page-form__price-list {
+    margin-left: 0; 
+}
+.catalog-page-form__price-cost {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 32px auto 0 0;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(89.41deg, #FF3528 -21.06%, #FF4E32 64.35%);
+}
+.catalog-page-form__form {
+    display: flex;
+    flex-direction: column;
+    margin: 96px auto auto 68px;
+}
+.catalog-page-form__form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.catalog-page-form__radio-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.catalog-page-form__question {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    color: #373737;
+    margin: 0 auto 0 0;
+}
+.catalog-page-form__radio-buttons-container {
+    display: flex;
+    margin: 32px auto 0 0;
+}
+.catalog-page-form__radio {
+    margin-right: 27px; 
+    max-width: 220px;
+}
+.catalog-page-form__radio:last-of-type {
+    margin-right: 0; 
+}
+.catalog-page-form__radio input[type=radio] {
+	display: none;
+}
+.catalog-page-form__radio input[type=radio]:checked + label:before {
+	background-image: url('../../images/svg/radio-button-active.svg');
+    background-repeat: no-repeat;
+}
+.catalog-page-form__radio label:before {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+    top: 7px;
+    background-image: url('../../images/svg/radio-button-notactive.svg');
+    background-repeat: no-repeat;
+}
+.catalog-page-form__radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 20px;
+	user-select: none;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #373737;
+}
+.catalog-page-form__inputs-container {
+    display: flex;
+    flex-direction: column;
+    margin: 64px 0 0 0;
+}
+.catalog-page-form__inputs-heading {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    color: #373737;
+    margin: 0;
+}
+.catalog-page-form__inputs-main-container {
+    display: flex;
+    margin: 32px auto 0 0;
+}
+.catalog-page-form__input-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 27px;
+}
+.catalog-page-form__input-container:last-of-type {
+    margin-right: 0;
+}
+.catalog-page-form__input {
+    padding-left: 10px;
+    border: none;
+    background-color: #D2D2D2;
+}
+.catalog-page-form__input::placeholder {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #838383;
+}
+.catalog-page-form__input:focus {
+    outline: none;
+}
+.catalog-page-form-form__input_error {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: red;
+    height: 44px;
+    border-top: 1px solid #000000;
+    padding-left: 10px;
+}
+.catalog-page-form__submit-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0 0;
+    width: 327px;
+    align-items: center;
+}
+.catalog-page-form__submit-button {
+    width: 300px;
+    height: 60px;
+    background: linear-gradient(79.69deg, #FF3232 6.7%, #FF612F 97.83%);
+    box-shadow: -2px 18px 30px -12px rgba(64, 0, 0, 0.7);
+    border-radius: 30px;
+    border: none;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.catalog-page-form__submit-button:hover {
+    background: linear-gradient(85.68deg, #FF0F00 15.58%, #FF9533 53.24%, #FF0000 104.41%);
+    cursor: pointer;
+}
+.catalog-page-form__submit-button:active {
+    box-shadow: inset 6px 7px 6px rgba(0, 0, 0, 0.4);
+}
+.catalog-page-form__submit-button:focus {
+    outline: none;
+}
+.catalog-page-form__under-submit-button-container {
+    display: flex;
+    margin-top: 10px;
+}
+.catalog-page-form__under-submit-button-check {
+    margin: 0 5px 0 0;
+}
+.catalog-page-form__under-submit-button-text {
+    font-family:'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #373737;
+    margin: 0;
+}
+@media screen and (max-width: 1300px) {
+    .catalog-page-form__form {
+        margin: auto auto auto 68px;
+    }
+    .catalog-page-form__radio-buttons-container {
+        flex-direction: column;
+        margin: 22px auto 0 0;
+    }
+    .catalog-page-form__radio {
+        margin: 0 auto 10px 0;
+        max-width: auto;
+    }
+    .catalog-page-form__radio:last-of-type {
+        margin-bottom: 0;
+    }
+    .catalog-page-form__inputs-container {
+        margin: 24px 0 0 0;
+        max-width: 400px;
+    }
+    .catalog-page-form__inputs-main-container {
+        flex-direction: column;
+    }
+    .catalog-page-form__input-container {
+        width: 300px;
+        margin: 0;
+    }
+    .catalog-page-form__input-container:last-of-type {
+        margin: 0;
+    }
+    .catalog-page-form-form__input_error {
+        height: 34px;
+    }
+    .catalog-page-form__submit-container {
+        margin: 10px auto 0 0;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .catalog-page-form__form {
+        margin: auto auto auto 38px;
+    }
+    .catalog-page-form__price {
+        margin: 40px 0 40px auto;
+        padding: 66px 82px 137px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .catalog-page-form {
+        flex-direction: column;
+    }
+    .catalog-page-form__price {
+        margin: 64px auto 0;
+        padding: 66px 102px 137px;
+    }
+    .catalog-page-form__form {
+        margin: 64px auto 96px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .catalog-page-form__price {
+        padding: 32px 0 64px 40px;
+        min-width: 448px;
+    }
+    .catalog-page-form__price-heading {
+        font-size: 20px;
+        line-height: 26px;
+        max-width: 282px;
+    }
+    .catalog-page-form__price-list-container {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 24px auto 0 20px;
+    }
+    .catalog-page-form__price-cost {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .catalog-page-form__question {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .catalog-page-form__radio-buttons-container {
+        margin: 24px auto 0 0;
+    }
+    .catalog-page-form__radio {
+        margin: 0 auto 16px 0;
+    }
+    .catalog-page-form__radio label {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .catalog-page-form__radio label:before {
+        top: 5px;
+    }
+    .catalog-page-form__inputs-container {
+        margin: 64px auto 0 0;
+        max-width: 453px;
+    }
+    .catalog-page-form__inputs-heading {
+        font-size: 18px;
+        line-height: 140%;
+    }
+    .catalog-page-form__inputs-main-container {
+        margin: 24px auto 0 0;
+    }
+    .catalog-page-form__input-container {
+        width: 283px;
+    }
+    .catalog-page-form__input {
+        padding-left: 5px;
+    }
+    .catalog-page-form__input::placeholder {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .catalog-page-form-form__input_error {
+        height: 32px;
+        padding-left: 5px;
+    }
+    .catalog-page-form__submit-container {
+        margin: 16px auto 0 0;
+        max-width: 256px;
+    }
+    .catalog-page-form__submit-button {
+        width: 256px;
+        height: 47px;
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .catalog-page-form__under-submit-button-text {
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 190px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 515px) {
+    .catalog-page-form__price {
+        min-width: 350px;
+    }
+    .catalog-page-form__inputs-heading {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .catalog-page-form__price {
+        min-width: 290px;
+        padding: 32px 0 64px;
+    }
+    .catalog-page-form__price-heading {
+        max-width: 242px;
+        margin: 0 auto 0 24px;
+    }
+    .catalog-page-form__price-list-container {
+        margin: 24px auto 0 40px;
+    }
+    .catalog-page-form__price-cost {
+        margin: 32px auto 0 20px;
+    }
+    .catalog-page-form__form {
+        max-width: 256px;
+    }
+    .catalog-page-form__inputs-container {
+        max-width: 256px;
+    }
+    .catalog-page-form__inputs-heading {
+        max-width: 256px;
+    }
+    .catalog-page-form__input-container {
+        width: 256px;
+    }
+    .catalog-page-form__submit-container {
+        margin: 16px 0 0;
+    }
+    .catalog-page-form__under-submit-button-text {
+        font-size: 10px;
+        line-height: 12px;
+        max-width: 230px;
+    }
+}

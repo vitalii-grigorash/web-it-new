@@ -30,6 +30,7 @@
 }
 .drop-down-menu__close-button:hover {
     cursor: pointer;
+    opacity: .7;
 }
 .drop-down-menu__container {
     display: flex;
@@ -52,6 +53,7 @@
     line-height: 26px;
     color: #FFFFFF;
     padding-bottom: 8px;
+    text-decoration: none;
     border-bottom: 4px solid transparent;
 }
 .drop-down-menu__heading_web {
