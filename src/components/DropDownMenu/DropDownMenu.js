@@ -20,11 +20,11 @@ function DropDownMenu (props) {
                 <nav className="drop-down-menu__container">
                     <Link to={'/web'} className="drop-down-menu__heading drop-down-menu__heading_web" onClick={onCloseDropDownMenu}>WEB Студия</Link>
                     <Link to={'/shop'} className="drop-down-menu__links drop-down-menu__links_web" onClick={onCloseDropDownMenu}>Интернет-магазин</Link>
-                    <Link to={'/multipage'} className="drop-down-menu__links drop-down-menu__links_web" onClick={onCloseDropDownMenu}>Многостраничный сайт</Link>
                     <a href="#" className="drop-down-menu__links drop-down-menu__links_web" onClick={onCloseDropDownMenu}>Landing page</a>
                     <a href="#" className="drop-down-menu__links drop-down-menu__links_web" onClick={onCloseDropDownMenu}>Сайт-визитка</a>
-                    <a href="#" className="drop-down-menu__links drop-down-menu__links_web" onClick={onCloseDropDownMenu}>Корпоративный сайт</a>
+                    <Link to={'/multipage'} className="drop-down-menu__links drop-down-menu__links_web" onClick={onCloseDropDownMenu}>Корпоративный сайт</Link>
                     <Link to={'/catalog'} className="drop-down-menu__links drop-down-menu__links_web" onClick={onCloseDropDownMenu}>Сайт-каталог</Link>
+                    <a href="#" className="drop-down-menu__links drop-down-menu__links_web" onClick={onCloseDropDownMenu}>SEO</a>
                 </nav>
 
                 <nav className="drop-down-menu__container drop-down-menu__container_it">
