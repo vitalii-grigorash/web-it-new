@@ -176,10 +176,10 @@
         background-position-x: -700px;
     }
     .catalog__heading {
-        margin: 148px auto 0 15px;
+        margin: 180px auto 0 15px;
     }
     .catalog__button {
-        margin: 64px auto auto 15px;
+        margin: 62px auto auto 15px;
     }
 }
 @media screen and (max-width: 420px) {

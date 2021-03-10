@@ -127,11 +127,11 @@
         background-position-x: -400px;
     }
     .web__heading {
-        margin: 200px auto 0;
+        margin: 180px auto 0;
         min-width: 250px;
         text-align: center;
     }
     .web__button {
-        margin: 56px auto 0;
+        margin: 62px auto 0;
     }
 }

@@ -56,6 +56,7 @@
     color: red;
     height: 32px;
     border-top: 1px solid #000000;
+    margin-top: 5px;
     padding-left: 10px;
 }
 .page-form__radio-container {

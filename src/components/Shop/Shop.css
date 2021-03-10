@@ -181,7 +181,7 @@
         background-position-x: -550px;
     }
     .shop__heading {
-        margin: 144px auto 0 15px;
+        margin: 180px auto 0 15px;
         font-size: 28px;
         line-height: 36px;
         max-width: 290px;
@@ -189,6 +189,6 @@
     .shop__button {
         width: 211px;
         height: 44px;
-        margin: 24px auto auto 15px;
+        margin: 62px auto auto 15px;
     }
 }

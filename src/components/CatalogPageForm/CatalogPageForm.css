@@ -163,6 +163,7 @@
     height: 44px;
     border-top: 1px solid #000000;
     padding-left: 10px;
+    margin-top: 5px;
 }
 .catalog-page-form__submit-container {
     display: flex;
