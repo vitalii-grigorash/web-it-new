@@ -38,17 +38,17 @@ function MobileNavigation (props) {
                 ( 
                     <>
                         <Link to={'/shop'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Интернет-магазин</Link>
-                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Landing page</a>
-                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Сайт-визитка</a>
+                        <Link to={'/landing'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Landing page</Link>
+                        <Link to={'/business-card'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Сайт-визитка</Link>
                         <Link to={'/multipage'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Корпоративный сайт</Link>
                         <Link to={'/catalog'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Сайт-каталог</Link>
-                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>SEO</a>
+                        <Link to={'/seo'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>SEO</Link>
                     </>
                 )
             }
-            <a href="#" className="mobile-navigation__links">О Компании</a>
-            <a href="#" className="mobile-navigation__links">Портфолио</a>
-            <a href="#" className="mobile-navigation__links">Контакты</a>
+            <Link to={'/'} className="mobile-navigation__links" onClick={onCloseMobileNavigation}>О Компании</Link>
+            <Link to={'/portfolio'} className="mobile-navigation__links" onClick={onCloseMobileNavigation}>Портфолио</Link>
+            <Link to={'/contacts'} className="mobile-navigation__links" onClick={onCloseMobileNavigation}>Контакты</Link>
         </nav>
         <nav className="mobile-navigation__info-container">
             <p className="mobile-navigation__info-heading">Позвоните нам</p>

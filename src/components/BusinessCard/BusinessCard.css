@@ -1,0 +1,189 @@
+.business-card {
+    
+}
+.business-card__image-container {
+    background-image: url('../../images/business-card-page-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 970px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.business-card__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58px;
+    color: #FFFFFF;
+    max-width: 660px;
+    margin: 361px auto 0 258px;
+}
+.business-card__subheading {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 32px auto 0 258px;
+    max-width: 500px;
+}
+.business-card__button {
+    width: 241px;
+    height: 54px;
+    background: linear-gradient(79.69deg, #FF3232 6.7%, #FF612F 97.83%);
+    box-shadow: -2px 18px 30px -12px rgba(64, 0, 0, 0.7);
+    border-radius: 30px;
+    border: none;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 64px auto auto 258px;
+}
+.business-card__button:hover {
+    background: linear-gradient(85.68deg, #FF0F00 15.58%, #FF9533 53.24%, #FF0000 104.41%);
+    cursor: pointer;
+}
+.business-card__button:focus {
+    outline: none;
+}
+.business-card__button:active {
+    box-shadow: inset 6px 7px 6px rgba(0, 0, 0, 0.4);
+}
+.business-card__bottom-container {
+    display: flex;
+    margin: auto auto 32px;
+}
+.business-card__mouse-icon {
+    max-height: 53px;
+    max-width: 47px;
+}
+.business-card__text {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: auto 0 auto 19px;
+    max-width: 120px;
+}
+@media screen and (max-width: 1680px) {
+    .business-card__heading {
+        margin: 300px auto 0 200px;
+    }
+    .business-card__subheading {
+        margin: 32px auto 0 200px;
+    }
+    .business-card__button {
+        margin: 64px auto auto 200px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .business-card__heading {
+        margin: 300px auto 0 150px;
+    }
+    .business-card__subheading {
+        margin: 32px auto 0 150px;
+    }
+    .business-card__button {
+        margin: 64px auto auto 150px;
+    }
+}
+@media screen and (max-width: 1245px) {
+    .business-card__image-container {
+        min-height: 829px;
+    }
+    .business-card__heading {
+        margin: 250px auto 0 100px;
+    }
+    .business-card__subheading {
+        margin: 32px auto 0 100px;
+    }
+    .business-card__button {
+        margin: 64px auto auto 100px;
+    }
+}
+@media screen and (max-width: 1095px) {
+    .business-card__image-container {
+        min-height: 729px;
+    }
+    .business-card__heading {
+        margin: 230px auto 0 80px;
+        font-size: 35px;
+        line-height: 48px;
+        max-width: 550px;
+    }
+    .business-card__subheading {
+        font-size: 16px;
+        line-height: 130%;
+        max-width: 430px;
+        margin: 22px auto 0 80px;
+    }
+    .business-card__button {
+        margin: 40px auto auto 80px;
+        width: 230px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 130%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .business-card__image-container {
+        min-height: 629px;
+    }
+    .business-card__heading {
+        margin: 200px auto 0 80px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .business-card__image-container {
+        min-height: 340px;
+    }
+    .business-card__heading {
+        margin: 100px auto 0 80px;
+    }
+    .business-card__subheading {
+        display: none;
+    }
+    .business-card__button {
+        margin: 20px auto auto 80px;
+    }
+    .business-card__bottom-container {
+        display: none;
+    }
+}
+@media screen and (max-width: 690px) {
+    .business-card__heading {
+        margin: 128px auto 0 15px;
+        max-width: 450px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .business-card__button {
+        margin: 24px auto auto 15px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .business-card__image-container {
+        min-height: 636px;
+        background-position-x: -600px;
+    }
+    .business-card__heading {
+        margin: 180px auto 0 15px;
+    }
+    .business-card__button {
+        margin: 62px auto auto 15px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .business-card__heading {
+        max-width: 300px;
+    }
+}

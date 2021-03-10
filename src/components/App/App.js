@@ -6,6 +6,11 @@ import Web from '../Web/Web';
 import Shop from '../Shop/Shop';
 import Multipage from '../Multipage/Multipage';
 import Catalog from '../Catalog/Catalog';
+import BusinessCard from '../BusinessCard/BusinessCard';
+import Landing from '../Landing/Landing';
+import Seo from '../Seo/Seo';
+import Portfolio from '../Portfolio/Portfolio';
+import Contacts from '../Contacts/Contacts';
 import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
@@ -118,6 +123,32 @@ function App () {
       />
 
       <Switch>
+
+        <Route path='/contacts'>
+          <Contacts />
+        </Route>
+
+        <Route path='/portfolio'>
+          <Portfolio />
+        </Route>
+
+        <Route path='/seo'>
+          <Seo
+            onOpenPopup={handlePopupOpen}
+          />
+        </Route>
+
+        <Route path='/landing'>
+          <Landing
+            onOpenPopup={handlePopupOpen}
+          />
+        </Route>
+
+        <Route path='/business-card'>
+          <BusinessCard
+            onOpenPopup={handlePopupOpen}
+          />
+        </Route>
 
         <Route path='/catalog'>
           <Catalog

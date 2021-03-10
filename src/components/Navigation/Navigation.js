@@ -28,13 +28,13 @@ function Navigation(props) {
                     <Link to={'/web'} className="navigation__links navigation__links_web">WEB Студия</Link>
                 </nav>
                 <nav className="navigation__links-container">
-                    <a href="#" className="navigation__links">О Компании</a>
+                    <Link to={'/'} className="navigation__links">О Компании</Link>
                     <p className="navigation__links navigation__links_services" onClick={handleDropDownMunu}>
                         Услуги
                         <img src={arrow} alt="Стрелка" className="navigation__arrow"/>
                     </p>
-                    <a href="#" className="navigation__links">Портфолио</a>
-                    <a href="#" className="navigation__links">Контакты</a>
+                    <Link to={'/portfolio'} className="navigation__links">Портфолио</Link>
+                    <Link to={'/contacts'} className="navigation__links">Контакты</Link>
                     <DropDownMenu
                         isOpen={isOpen}
                         onCloseDropDownMenu={onCloseDropDownMenu}
