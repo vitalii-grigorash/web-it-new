@@ -1,7 +1,10 @@
 import React from 'react';
 import mouse from '../../images/svg/mouse.svg';
+// import pointOnMap from '../../images/svg/point-on-map.svg';
+import { YMaps, Map } from 'react-yandex-maps';
 
 function Contacts () {
+
     return (
         <section className="contacts">
             <div className="contacts__image-container">
@@ -45,6 +48,17 @@ function Contacts () {
                     <p className="contacts__text">Прокрутите вниз</p>
                 </div>
             </div>
+
+            <YMaps>
+
+                <Map 
+                    defaultState={{ center: [59.867990, 30.461278], zoom: 17 }}
+                    width="100%" 
+                    height="562px"
+                />
+
+            </YMaps>
+
         </section>
     );
 }
