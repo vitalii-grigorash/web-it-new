@@ -51,11 +51,15 @@ function Contacts () {
 
             <YMaps>
 
-                <Map 
-                    defaultState={{ center: [59.867990, 30.461278], zoom: 17 }}
-                    width="100%" 
-                    height="562px"
-                />
+                <div className="contacts__yandex-maps">
+
+                    <Map 
+                        defaultState={{ center: [59.867990, 30.461278], zoom: 17 }}
+                        width="100%" 
+                        height="100%"
+                    />
+
+                </div>
 
             </YMaps>
 

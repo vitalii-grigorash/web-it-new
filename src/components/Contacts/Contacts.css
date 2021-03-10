@@ -186,6 +186,10 @@
     margin: auto 0 auto 19px;
     max-width: 120px;
 }
+.contacts__yandex-maps {
+    width: 100%;
+    height: 562px;
+}
 @media screen and (max-width: 1580px) {
     .contacts__main-container {
         margin: 230px auto auto 160px;
@@ -267,12 +271,18 @@
     .contacts__heading {
         display: block;
     }
+    .contacts__yandex-maps {
+        height: 440px;
+    }
 }
 @media screen and (max-width: 568px) {
     .contacts__heading {
         font-size: 40px;
         line-height: 50px;
         margin: 148px auto auto 15px;
+    }
+    .contacts__yandex-maps {
+        height: 367px;
     }
 }
 @media screen and (max-width: 470px) {
