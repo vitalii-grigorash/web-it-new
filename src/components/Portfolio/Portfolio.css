@@ -39,6 +39,112 @@
     margin: auto 0 auto 19px;
     max-width: 120px;
 }
+.grid-container {
+    max-width: 1140px;
+    margin: 96px auto 128px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.grid-container__group {
+    position: relative;
+}
+.grid-container__group:hover .overlay {
+    display: flex;
+}
+.grid-container__group:hover .grid-container__img_telecom-service {
+    display: none;
+}
+.grid-container__group:hover .grid-container__img_telecom-service-hover {
+    display: block;
+}
+.grid-container__group:hover .grid-container__img_voleks {
+    display: none;
+}
+.grid-container__group:hover .grid-container__img_voleks-hover {
+    display: block;
+}
+.grid-container__img {
+    width: 100%;
+    height: 100%;
+}
+.grid-container__img_telecom-service-hover {
+    display: none;
+}
+.grid-container__img_voleks-hover {
+    display: none;
+}
+.overlay {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.overlay__icon {
+    margin: 64px auto 0;
+}
+.overlay__icon_stroi-snab {
+    width: 60px;
+    height: 54px;
+}
+.overlay__icon_voleks {
+    width: 60px;
+    height: 60px;
+}
+.overlay__icon_arbellos {
+    width: 173px;
+    height: 34px;
+}
+.overlay__icon_ur-konsul {
+    width: 60px;
+    height: 60px;
+}
+.overlay__icon_ost-meb-consalt {
+    width: 75px;
+    height: 68px;
+}
+.overlay__icon_telecom-service {
+    width: 60px;
+    height: 60px;
+}
+.overlay__icon_la-mia-borsa {
+    width: 249px;
+    height: 35px;
+}
+.overlay__heading {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 32px auto 0;
+}
+.overlay__subheading {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 133.53%;
+    color: #FFFFFF;
+    margin: 16px auto 0;
+    max-width: 230px;
+    text-align: center;
+}
+.overlay__subheading_voleks {
+    max-width: 290px;
+}
+.overlay__subheading_ur-konsul {
+    max-width: 304px;
+}
+.overlay__subheading_telecom-service {
+    max-width: 279px;
+}
 @media screen and (max-width: 1440px) {
     .portfolio__heading {
         margin: 455px auto auto 230px;
@@ -50,6 +156,13 @@
     }
     .portfolio__heading {
         margin: 355px auto auto 130px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        max-width: 753.32px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
 }
 @media screen and (max-width: 1095px) {
@@ -78,10 +191,34 @@
     .portfolio__bottom-container {
         display: none;
     }
+    .overlay {
+        display: flex;
+    }
+    .grid-container__img_telecom-service {
+        display: none;
+    }
+    .grid-container__img_telecom-service-hover {
+        display: block;
+    }
+    .grid-container__img_voleks {
+        display: none;
+    }
+    .grid-container__img_voleks-hover {
+        display: block;
+    }
+}
+@media screen and (max-width: 800px) {
+    .grid-container {
+        max-width: 366.66px;
+        margin: 64px auto 128px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-gap: 32px;
+    }
 }
 @media screen and (max-width: 690px) {
     .portfolio__heading {
-        margin: 175px auto auto 80px;
+        margin: 128px auto auto 15px;
         max-width: 450px;
         font-size: 36px;
         line-height: 140%;
@@ -92,8 +229,10 @@
         min-height: 636px;
         background-position-x: -700px;
     }
-    .portfolio__heading {
-        margin: 180px auto auto;
+}
+@media screen and (max-width: 350px) {
+    .portfolio__image-container {
+        background-position-x: -850px;
     }
 }
 @media screen and (max-width: 420px) {

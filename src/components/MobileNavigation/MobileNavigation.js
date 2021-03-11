@@ -25,8 +25,8 @@ function MobileNavigation (props) {
             {isItOpen && 
                 ( 
                     <>
-                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Абонентское обслуживание</a>
-                        <a href="#" className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Разовые услуги IT</a>
+                        <Link to={'/it'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Абонентское обслуживание</Link>
+                        <Link to={'/it'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Разовые услуги IT</Link>
                     </>
                 )
             }

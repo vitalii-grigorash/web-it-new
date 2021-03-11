@@ -289,6 +289,18 @@
         max-width: 288px;
         margin: 48px auto 0 0;
     }
+    .contacts__location:hover {
+        color: #FFFFFF;
+    }
+    .contacts__location:hover .contacts__location-icon {
+        background-image: url('../../images/svg/location-icon.svg');
+    }
+    .contacts__location:active .contacts__location-icon {
+        background-image: url('../../images/svg/location-icon-active.svg');
+    }
+    .contacts__location:active {
+        color: #ff592f;
+    }
     .contacts__location-icon {
         min-width: 20px;
         min-height: 28px;
