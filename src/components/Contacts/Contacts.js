@@ -8,8 +8,8 @@ function Contacts () {
     const placeMark = {
         geometry: [59.867990, 30.461278],
         properties: {
-            hintContent: 'пр. Обуховской Обороны, д.199',
-            balloonContent: 'Группа Компаний Vimpel',
+            hintContent: 'Группа Компаний Vimpel',
+            balloonContent: 'пр. Обуховской Обороны, д.199',
         },
         options: {
             iconLayout: 'default#image',
