@@ -1,9 +1,24 @@
 import React from 'react';
 import mouse from '../../images/svg/mouse.svg';
-// import pointOnMap from '../../images/svg/point-on-map.svg';
-import { YMaps, Map } from 'react-yandex-maps';
+import pointOnMap from '../../images/svg/point-on-map.svg';
+import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
 function Contacts () {
+
+    const placeMark = {
+        geometry: [59.867990, 30.461278],
+        properties: {
+            hintContent: 'пр. Обуховской Обороны, д.199',
+            balloonContent: 'Группа Компаний Vimpel',
+        },
+        options: {
+            iconLayout: 'default#image',
+            iconImageHref: pointOnMap,
+            iconImageSize: [45, 55],
+            iconImageOffset: [-20, -48],
+        },
+        modules: ['geoObject.addon.balloon', 'geoObject.addon.hint']
+    }
 
     return (
         <section className="contacts">
@@ -55,9 +70,11 @@ function Contacts () {
 
                     <Map 
                         defaultState={{ center: [59.867990, 30.461278], zoom: 17 }}
-                        width="100%" 
-                        height="100%"
-                    />
+                        width={"100%"} 
+                        height={"100%"}
+                    >
+                        <Placemark {...placeMark} />
+                    </Map>
 
                 </div>
 
