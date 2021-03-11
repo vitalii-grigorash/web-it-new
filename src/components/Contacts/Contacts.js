@@ -23,7 +23,6 @@ function Contacts () {
     return (
         <section className="contacts">
             <div className="contacts__image-container">
-                <h2 className="contacts__heading">КОНТАКТЫ</h2>
                 <div className="contacts__main-container">
                     <a href="tel:+78123728561" className="contacts__main-phone">
                         +7 (812)-372-85-61
@@ -65,9 +64,7 @@ function Contacts () {
             </div>
 
             <YMaps>
-
                 <div className="contacts__yandex-maps">
-
                     <Map 
                         defaultState={{ center: [59.867990, 30.461278], zoom: 17 }}
                         width={"100%"} 
@@ -75,9 +72,7 @@ function Contacts () {
                     >
                         <Placemark {...placeMark} />
                     </Map>
-
                 </div>
-
             </YMaps>
 
         </section>
