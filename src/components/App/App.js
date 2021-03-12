@@ -126,7 +126,7 @@ function App () {
       />
 
       <Switch>
-
+        
         <Route path='/yur-konsul'>
           <YurKonsul />
         </Route>
