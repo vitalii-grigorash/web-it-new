@@ -11,12 +11,12 @@
     border-top: 1px solid #ffffff;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    z-index: 1;
 }
 .mobile-navigation_opened {
     visibility: visible;
     opacity: 1;
     transition: opacity .2s;
-    z-index: 1;
 }
 .mobile-navigation__nav-container {
     display: flex;

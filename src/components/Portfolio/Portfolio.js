@@ -16,6 +16,7 @@ import urKonsulIcon from '../../images/svg/ur-consul-icon.svg';
 import ostMebConsaltIcon from '../../images/svg/ost-med-consalt-icon.svg';
 import telecomServiceIcon from '../../images/svg/telecom-service-icon.svg';
 import laMiaBorsaIcon from '../../images/svg/la-mia-borsa-icon.svg';
+import { Link } from 'react-router-dom';
 
 function Portfolio () {
 
@@ -31,14 +32,14 @@ function Portfolio () {
 
             <section className="grid-container">
 
-                <a href="#" className="grid-container__group">
+                <Link to={'/stroj-snab'} className="grid-container__group">
                     <img src={stroiSnab} alt="Фото Строй Снаб" className="grid-container__img"/>
                     <div className="overlay">
                        <img src={stroiSnabIcon} alt="Иконка Строй Снаб" className="overlay__icon overlay__icon_stroi-snab"/>
                        <h3 className="overlay__heading">СтройСнаб</h3>
                        <p className="overlay__subheading">Компания осуществляет строительные работы</p>
                     </div>
-                </a>
+                </Link>
 
                 <a href="#" className="grid-container__group">
                     <img src={voleks} alt="Фото Волекс" className="grid-container__img grid-container__img_voleks"/>

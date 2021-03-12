@@ -7,6 +7,7 @@
     left: 20px;
     top: 60px;
     max-width: 413px;
+    z-index: 1;
 }
 .drop-down-menu_opened {
     visibility: visible;

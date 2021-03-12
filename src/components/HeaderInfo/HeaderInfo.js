@@ -8,7 +8,10 @@ function HeaderInfo(props) {
     } = props;
 
     const { pathname } = useLocation();
-    const header = `${pathname === '/' ? `header-info header-info_background` : `header-info`}`;
+    const header = `${
+        pathname === '/' || 
+        pathname === '/stroj-snab' ? `header-info header-info_background` : `header-info`
+    }`;
 
     return (
         <section className={header}>
