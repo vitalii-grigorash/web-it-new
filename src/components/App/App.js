@@ -12,6 +12,8 @@ import Seo from '../Seo/Seo';
 import Portfolio from '../Portfolio/Portfolio';
 import Contacts from '../Contacts/Contacts';
 import StrojSnab from '../StrojSnab/StrojSnab';
+import Voleks from '../Voleks/Voleks';
+import YurKonsul from '../YurKonsul/YurKonsul';
 import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
@@ -124,6 +126,14 @@ function App () {
       />
 
       <Switch>
+
+        <Route path='/yur-konsul'>
+          <YurKonsul />
+        </Route>
+
+        <Route path='/voleks'>
+          <Voleks />
+        </Route>
 
         <Route path='/stroj-snab'>
           <StrojSnab />

@@ -41,7 +41,7 @@ function Portfolio () {
                     </div>
                 </Link>
 
-                <a href="#" className="grid-container__group">
+                <Link to={'/voleks'} className="grid-container__group">
                     <img src={voleks} alt="Фото Волекс" className="grid-container__img grid-container__img_voleks"/>
                     <img src={voleksHover} alt="Фото Волекс" className="grid-container__img grid-container__img_voleks-hover"/>
                     <div className="overlay">
@@ -49,7 +49,7 @@ function Portfolio () {
                        <h3 className="overlay__heading">Волекс</h3>
                        <p className="overlay__subheading overlay__subheading_voleks">Продажа промышленного инструмента абразивных материалов</p>
                     </div>
-                </a>
+                </Link>
 
                 <a href="#" className="grid-container__group">
                     <img src={arbellos} alt="Фото Арбеллос" className="grid-container__img"/>
@@ -60,14 +60,14 @@ function Portfolio () {
                     </div>
                 </a>
 
-                <a href="#" className="grid-container__group">
+                <Link to={'/yur-konsul'} className="grid-container__group">
                     <img src={urKonsul} alt="Фото Юр Консул" className="grid-container__img"/>
                     <div className="overlay">
                        <img src={urKonsulIcon} alt="Иконка Строй Снаб" className="overlay__icon overlay__icon_ur-konsul"/>
                        <h3 className="overlay__heading">ЮрКонсул</h3>
                        <p className="overlay__subheading overlay__subheading_ur-konsul">Реализация деятельности ТСН(Ж), ЖСК и УК по управлению недвижимым имуществом</p>
                     </div>
-                </a>
+                </Link>
 
                 <a href="#" className="grid-container__group">
                     <img src={ostMebConsalt} alt="Фото Ост Мед Консалт" className="grid-container__img"/>

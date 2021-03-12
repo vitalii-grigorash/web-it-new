@@ -1,0 +1,135 @@
+.voleks {
+    padding-top: 179px;
+}
+.voleks__image {
+    position: relative;
+    background-image: url('../../images/voleks-img-main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 791px;
+    width: 100%;
+}
+.voleks__overlay-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: rgba(24, 24, 24, 0.4);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.voleks__icon {
+    width: 136px;
+    height: 136px;
+    margin: 128px auto 0;
+}
+.voleks__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #FFFFFF;
+    margin: 96px auto 0;
+
+}
+.voleks__subheading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 395px;
+    margin: 48px auto 0;
+}
+@media screen and (max-width: 1245px) {
+    .voleks__image {
+      min-height: 650px;
+    }
+    .voleks__icon {
+        margin: 50px auto 0;
+    }
+}
+@media screen and (max-width: 1095px) {
+    .voleks__image {
+      min-height: 550px;
+    }
+    .voleks__heading {
+        font-size: 34px;
+        line-height: 47px;
+        margin: 56px auto 0;
+    
+    }
+    .voleks__subheading {
+        font-size: 25px;
+        line-height: 35px;
+        margin: 38px auto 0;
+    }
+}
+@media screen and (max-width: 950px) {
+    .voleks__image {
+      min-height: 450px;
+    }
+    .voleks__icon {
+        width: 100px;
+        height: 100px;
+        margin: 32px auto 0;
+    }
+    .voleks__heading {
+        font-size: 32px;
+        line-height: 45px;
+        margin: 46px auto 0;
+    }
+    .voleks__subheading {
+        font-size: 23px;
+        line-height: 32px;
+        margin: 28px auto 0;
+    }
+}
+@media screen and (max-width: 930px) {
+    .voleks {
+      padding-top: 80px;
+    }
+    .voleks__image {
+        min-height: 260px;
+    }
+    .voleks__icon {
+        width: 46px;
+        height: 46px;
+    }
+    .voleks__heading {
+        font-size: 20px;
+        line-height: 26px;
+        margin: 32px auto 0;
+    }
+    .voleks__subheading {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 288px;
+        margin: 12px auto 0;
+    }
+}
+@media screen and (max-width: 470px) {
+    .voleks__image {
+        min-height: 556px;
+        background-position-x: -800px;
+    }
+    .voleks__icon {
+        margin: 96px auto 0;
+        width: 76px;
+        height: 76px;
+    }
+    .voleks__heading {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 52px auto 0;
+    }
+    .voleks__subheading {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 32px auto 0;
+    }
+}
