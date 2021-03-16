@@ -311,7 +311,7 @@
 .adaptive__info-container {
     height: 536px;
     background: #FFFDFD;
-    margin: auto;
+    margin: auto 150px auto auto;
 }
 .adaptive__heading {
     font-family: 'IBM Plex Mono';
@@ -335,7 +335,7 @@
 .adaptive__phones-img {
     width: 564px;
     height: 636px;
-    margin:  auto;
+    margin: auto auto auto 0;
 }
 @media screen and (max-width: 1350px) {
     .stages__heading {
@@ -430,6 +430,9 @@
     .colors__icon {
         width: 115px;
         height: 115px;
+    }
+    .adaptive__info-container {
+        margin: auto;
     }
 }
 @media screen and (max-width: 1150px) {
