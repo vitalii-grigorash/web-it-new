@@ -11,6 +11,9 @@ import handsIcon from '../../images/svg/hands-icon.svg';
 import miniEllipse from '../../images/svg/mini-ellipse.svg';
 import stroiSnabAboutImg from '../../images/stroi-snab-about-img.jpg';
 import phonesImg from '../../images/svg/phones-img.svg';
+import stroySnabOneImg from '../../images/stroy-snab-1-img.jpg'
+import stroySnabTwoImg from '../../images/stroy-snab-2-img.jpg'
+import stroySnabThreeImg from '../../images/stroy-snab-3-img.jpg'
 
 function StrojSnab() {
 
@@ -165,6 +168,14 @@ function StrojSnab() {
                 </div>
                 <div className="adaptive__shadow"></div>
                 <img className="adaptive__phones-img" src={phonesImg} alt="Картинка телефонов"/>
+            </section>
+
+            <section className="preview">
+                <div className="preview__container">
+                    <img className="preview__img-one" src={stroySnabOneImg} alt="Изображение сайта"/>
+                    <img className="preview__img-two" src={stroySnabTwoImg} alt="Изображение сайта"/>
+                </div>
+                <img className="preview__img-three" src={stroySnabThreeImg} alt="Изображение сайта"/>
             </section>
 
         </section>
