@@ -163,6 +163,7 @@ function StrojSnab() {
                         чтобы не промахнуться мимо нужной ссылки.
                     </p>
                 </div>
+                <div className="adaptive__shadow"></div>
                 <img className="adaptive__phones-img" src={phonesImg} alt="Картинка телефонов"/>
             </section>
 

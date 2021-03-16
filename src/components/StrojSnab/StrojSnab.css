@@ -305,13 +305,24 @@
 }
 .adaptive {
     display: flex;
+    position: relative;
     background: #D2D2D2;
     height: 760px;
+}
+.adaptive__shadow {
+    position: absolute;
+    width: 100%;
+    height: 230px;
+    background: #D2D2D2;
+    box-shadow: 2px -36px 70px rgba(0, 0, 0, 0.15);
+    bottom: 0;
+    left: 0;
 }
 .adaptive__info-container {
     height: 536px;
     background: #FFFDFD;
     margin: auto 150px auto auto;
+    z-index: 1;
 }
 .adaptive__heading {
     font-family: 'IBM Plex Mono';
@@ -336,6 +347,7 @@
     width: 564px;
     height: 636px;
     margin: auto auto auto 0;
+    z-index: 1;
 }
 @media screen and (max-width: 1350px) {
     .stages__heading {
@@ -460,7 +472,10 @@
         height: 318px;
     }
     .adaptive {
-        height: 760px;
+        height: 560px;
+    }
+    .adaptive__shadow {
+        height: 190px;
     }
     .adaptive__info-container {
         height: 400px;
@@ -641,6 +656,9 @@
     .adaptive__phones-img {
         order: 1;
         margin:  40px auto 0;
+    }
+    .adaptive__shadow {
+        display: none;
     }
 }
 @media screen and (max-width: 840px) {
