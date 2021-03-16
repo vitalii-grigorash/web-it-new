@@ -251,6 +251,58 @@
     width: 160px;
     height: 160px;
 }
+.typography {
+    display: flex;
+    flex-direction: column;
+}
+.typography__header {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #121212;
+    margin: 60px auto 0;
+}
+.typography__container {
+    display: flex;
+    margin: 96px auto 283px;
+}
+.typography__letter-main {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 340px;
+    line-height: 85%;
+    color: rgba(201, 201, 201, 0.7);
+    margin: 0 30px 0 0;
+}
+.typography__roboto-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 366px;
+}
+.typography__roboto-heading {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #121212;
+    margin: 0 auto 32px 0;
+}
+.typography__roboto-letters {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #121212;
+    margin: 16px auto 0 0;
+}
+.typography__roboto-letters:first-of-type {
+    margin-top: 0;
+}
 @media screen and (max-width: 1350px) {
     .stages__heading {
         margin: 104px auto 0;
@@ -487,6 +539,25 @@
     .colors__icon_sun {
         height: 95px;
     }
+    .typography__header {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .typography__roboto-heading {
+        margin: 0 auto 24px 0;
+    }
+    .typography__letter-main {
+        font-size: 264px;
+        line-height: 85%;
+        margin: 130px -260px 0 0;
+        color: rgba(201, 201, 201, 0.3);
+    }
+    .typography__container {
+        margin: 96px auto 128px;
+    }
+    .typography__roboto-container {
+        max-width: 398px;
+    }
 }
 @media screen and (max-width: 840px) {
     .stroj-snab__image {
@@ -563,6 +634,20 @@
     }
     .colors__icon_sun {
         height: 40px;
+    }
+    .typography__header {
+        margin: 0 auto;
+    }
+    .typography__letter-main {
+        font-size: 200px;
+        margin: 50px -210px 0 0;
+        color: rgba(201, 201, 201, 0.5);
+    }
+    .typography__container {
+        margin: 48px auto 64px;
+    }
+    .typography__roboto-container {
+        max-width: 212px;
     }
 }
 @media screen and (max-width: 470px) {

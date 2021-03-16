@@ -93,17 +93,11 @@ function StrojSnab() {
             </section>
 
             <section className="colors">
-
                 <div className="colors__main-container">
-
                     <h3 className="colors__heading">ЦВЕТА И ИКОНКИ</h3>
-
                     <div className="colors__content-container">
-
                         <div className="colors__container">
-
                             <div className="colors__square-container">
-
                                 <div className="colors__square-group">
                                     <div className="colors__square colors__square_gradient"></div>
                                     <div className="colors__type-container">
@@ -111,32 +105,26 @@ function StrojSnab() {
                                         <p className="colors__type">#FF7304</p>
                                     </div>
                                 </div>
-
                                 <div className="colors__square-group">
                                     <div className="colors__square colors__square_black"></div>
                                     <div className="colors__type-container">
                                         <p className="colors__type">#030303</p>
                                     </div>
                                 </div>
-
                                 <div className="colors__square-group">
                                     <div className="colors__square colors__square_yellow"></div>
                                     <div className="colors__type-container">
                                         <p className="colors__type">#FFC300</p>
                                     </div>
                                 </div>
-
                             </div>
-
                             <div className="colors__rectangle-group">
                                 <div className="colors__rectangle"></div>
                                 <div className="colors__type-container">
                                     <p className="colors__type">#FA903C</p>
                                 </div>
                             </div>
-                            
                         </div>
-
                         <div className="colors__icon-container">
                             <div className="colors__ferst-container">
                                 <img className="colors__icon" src={moneyIcon} alt="Иконка денег"/>
@@ -147,7 +135,24 @@ function StrojSnab() {
                                 <img className="colors__icon" src={handsIcon} alt="Иконка рук"/>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
 
+            <section className="typography">
+
+                <h3 className="typography__header">ТИПОГРАФИКА</h3>
+
+                <div className="typography__container">
+
+                    <p className="typography__letter-main">Aa</p>
+
+                    <div className="typography__roboto-container">
+
+                        <h4 className="typography__roboto-heading">Roboto</h4>
+                        <p className="typography__roboto-letters">Aa Bb Cc Dd Ee Ff Gg Hh Ii Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy and Zz</p>
+                        <p className="typography__roboto-letters">Aa Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъ Ы Ь Ээ Юю Яя</p>
+                        
                     </div>
 
                 </div>
