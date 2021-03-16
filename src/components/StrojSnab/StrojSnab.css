@@ -303,6 +303,40 @@
 .typography__roboto-letters:first-of-type {
     margin-top: 0;
 }
+.adaptive {
+    display: flex;
+    background: #D2D2D2;
+    height: 760px;
+}
+.adaptive__info-container {
+    height: 536px;
+    background: #FFFDFD;
+    margin: auto;
+}
+.adaptive__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #373737;
+    margin: 64px auto 0 67px;
+}
+.adaptive__description {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #121212;
+    margin: 32px 67px 96px;
+    max-width: 382px;
+}
+.adaptive__phones-img {
+    width: 564px;
+    height: 636px;
+    margin:  auto;
+}
 @media screen and (max-width: 1350px) {
     .stages__heading {
         margin: 104px auto 0;
@@ -332,6 +366,9 @@
         font-size: 14px;
         line-height: 133%;
         margin: 16px auto 0;
+    }
+    .adaptive__phones-img {
+        margin:  auto 0;
     }
 }
 @media screen and (max-width: 1245px) {
@@ -395,6 +432,11 @@
         height: 115px;
     }
 }
+@media screen and (max-width: 1150px) {
+    .adaptive__info-container {
+        margin: auto 0 auto auto;
+    }
+}
 @media screen and (max-width: 1095px) {
     .stroj-snab__image {
       min-height: 550px;
@@ -413,6 +455,28 @@
     .about__img {
         width: 302px;
         height: 318px;
+    }
+    .adaptive {
+        height: 760px;
+    }
+    .adaptive__info-container {
+        height: 400px;
+        margin: auto;
+    }
+    .adaptive__heading {
+        font-size: 28px;
+        line-height: 36px;
+        margin: 48px auto 0 40px;
+    }
+    .adaptive__description {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 32px 40px 64px;
+    }
+    .adaptive__phones-img {
+        width: 377px;
+        height: 426px;
+        margin:  auto;
     }
 }
 @media screen and (max-width: 950px) {
@@ -562,6 +626,20 @@
         max-width: 398px;
     }
 }
+@media screen and (max-width: 880px) {
+    .adaptive {
+        flex-direction: column;
+        height: 1014px;
+    }
+    .adaptive__info-container {
+        margin: 52px auto 0;
+        order: 2;
+    }
+    .adaptive__phones-img {
+        order: 1;
+        margin:  40px auto 0;
+    }
+}
 @media screen and (max-width: 840px) {
     .stroj-snab__image {
         background-position-y: -50px;
@@ -651,6 +729,27 @@
     }
     .typography__roboto-container {
         max-width: 212px;
+    }
+}
+@media screen and (max-width: 510px) {
+    .adaptive {
+        height: 971px;
+    }
+    .adaptive__info-container {
+        margin: 24px auto 0;
+        height: 568px;
+    }
+    .adaptive__heading {
+        margin: 48px auto 0 28px;
+        max-width: 233px;
+    }
+    .adaptive__description {
+        margin: 32px 28px 64px;
+        max-width: 233px;
+    }
+    .adaptive__phones-img {
+        width: 197px;
+        height: 223px;
     }
 }
 @media screen and (max-width: 470px) {

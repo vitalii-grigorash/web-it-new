@@ -10,6 +10,7 @@ import calendarIcon from '../../images/svg/calendar-icon.svg';
 import handsIcon from '../../images/svg/hands-icon.svg';
 import miniEllipse from '../../images/svg/mini-ellipse.svg';
 import stroiSnabAboutImg from '../../images/stroi-snab-about-img.jpg';
+import phonesImg from '../../images/svg/phones-img.svg';
 
 function StrojSnab() {
 
@@ -140,23 +141,29 @@ function StrojSnab() {
             </section>
 
             <section className="typography">
-
                 <h3 className="typography__header">ТИПОГРАФИКА</h3>
-
                 <div className="typography__container">
-
                     <p className="typography__letter-main">Aa</p>
-
                     <div className="typography__roboto-container">
-
                         <h4 className="typography__roboto-heading">Roboto</h4>
                         <p className="typography__roboto-letters">Aa Bb Cc Dd Ee Ff Gg Hh Ii Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy and Zz</p>
                         <p className="typography__roboto-letters">Aa Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъ Ы Ь Ээ Юю Яя</p>
-                        
                     </div>
-
                 </div>
+            </section>
 
+            <section className="adaptive">
+                <div className="adaptive__info-container">
+                    <h4 className="adaptive__heading">АДАПТИНЫЙ ДИЗАЙН</h4>
+                    <p className="adaptive__description">
+                        Все наши сайты можно просматривать на самых разных устройствах, 
+                        таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 
+                        Все элементы интерфейса одинаково удобны для всех устройств и их пользователей, 
+                        например,  пользователям мобильных устройств не нужно приближать кнопку на сайте, 
+                        чтобы не промахнуться мимо нужной ссылки.
+                    </p>
+                </div>
+                <img className="adaptive__phones-img" src={phonesImg} alt="Картинка телефонов"/>
             </section>
 
         </section>
