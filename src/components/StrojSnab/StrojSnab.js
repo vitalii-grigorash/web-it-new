@@ -4,6 +4,10 @@ import iconOne from '../../images/svg/stages-1.svg';
 import iconTwo from '../../images/svg/stages-2.svg';
 import iconThree from '../../images/svg/stages-3.svg';
 import iconFour from '../../images/svg/stages-4.svg';
+import moneyIcon from '../../images/svg/money-icon.svg';
+import sunIcon from '../../images/svg/sun-icon.svg';
+import calendarIcon from '../../images/svg/calendar-icon.svg';
+import handsIcon from '../../images/svg/hands-icon.svg';
 import miniEllipse from '../../images/svg/mini-ellipse.svg';
 import stroiSnabAboutImg from '../../images/stroi-snab-about-img.jpg';
 
@@ -94,38 +98,53 @@ function StrojSnab() {
 
                     <h3 className="colors__heading">ЦВЕТА И ИКОНКИ</h3>
 
-                    <div className="colors__container">
+                    <div className="colors__content-container">
 
-                        <div className="colors__square-container">
+                        <div className="colors__container">
 
-                            <div className="colors__square-group">
-                                <div className="colors__square colors__square_gradient"></div>
-                                <div className="colors__type-container">
-                                    <p className="colors__type">#FFC300</p>
-                                    <p className="colors__type">#FF7304</p>
+                            <div className="colors__square-container">
+
+                                <div className="colors__square-group">
+                                    <div className="colors__square colors__square_gradient"></div>
+                                    <div className="colors__type-container">
+                                        <p className="colors__type">#FFC300</p>
+                                        <p className="colors__type">#FF7304</p>
+                                    </div>
                                 </div>
+
+                                <div className="colors__square-group">
+                                    <div className="colors__square colors__square_black"></div>
+                                    <div className="colors__type-container">
+                                        <p className="colors__type">#030303</p>
+                                    </div>
+                                </div>
+
+                                <div className="colors__square-group">
+                                    <div className="colors__square colors__square_yellow"></div>
+                                    <div className="colors__type-container">
+                                        <p className="colors__type">#FFC300</p>
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <div className="colors__square-group">
-                                <div className="colors__square colors__square_black"></div>
+                            <div className="colors__rectangle-group">
+                                <div className="colors__rectangle"></div>
                                 <div className="colors__type-container">
-                                    <p className="colors__type">#030303</p>
+                                    <p className="colors__type">#FA903C</p>
                                 </div>
                             </div>
-
-                            <div className="colors__square-group">
-                                <div className="colors__square colors__square_yellow"></div>
-                                <div className="colors__type-container">
-                                    <p className="colors__type">#FFC300</p>
-                                </div>
-                            </div>
-
+                            
                         </div>
 
-                        <div className="colors__rectangle-group">
-                            <div className="colors__rectangle"></div>
-                            <div className="colors__type-container">
-                                <p className="colors__type">#FA903C</p>
+                        <div className="colors__icon-container">
+                            <div className="colors__ferst-container">
+                                <img className="colors__icon" src={moneyIcon} alt="Иконка денег"/>
+                                <img className="colors__icon colors__icon_sun" src={sunIcon} alt="Иконка солнца"/>
+                            </div>
+                            <div className="colors__second-container">
+                                <img className="colors__icon" src={calendarIcon} alt="Иконка календаря"/>
+                                <img className="colors__icon" src={handsIcon} alt="Иконка рук"/>
                             </div>
                         </div>
 
