@@ -1,5 +1,15 @@
 import React from 'react';
 import voleksIcon from '../../images/svg/voleks-icon.svg';
+import voleksAboutImg from '../../images/voleks-about-img.jpg';
+import miniEllipse from '../../images/svg/mini-ellipse.svg';
+import iconOne from '../../images/svg/stages-1.svg';
+import iconTwo from '../../images/svg/stages-2.svg';
+import iconThree from '../../images/svg/stages-3.svg';
+import iconFour from '../../images/svg/stages-4.svg';
+import certificateIcon from '../../images/svg/certificate-icon.svg';
+import paperIcon from '../../images/svg/paper-icon.svg';
+import paperNumbersIcon from '../../images/svg/paper-numbers-icon.svg';
+import awardIcon from '../../images/svg/award-icon.svg';
 
 function Voleks () {
 
@@ -12,6 +22,121 @@ function Voleks () {
                     <p className="voleks__subheading">Продажа инстремуента и аббразинвных материалов</p>
                 </div>
             </div>
+
+            <section className="about">
+                <h3 className="about__heading">О ПРОЕКТЕ</h3>
+                <div className="about__container">
+                    <img src={voleksAboutImg} alt="Фотография" className="about__img about__img_voleks" />
+                    <div className="about__text-container">
+                        <p className="about__subheading">Компания Волекс аббразив занимается продажей промышленного инструмента Dynabrade и абразивных материалов 3M.</p>
+                        <p className="about__list-heading">Среди ассортимента компании:</p>
+                        <ul className="about__list">
+                            <li className="about__list-item">- электроинструмент;</li>
+                            <li className="about__list-item">- станки и оборудование;</li>
+                            <li className="about__list-item">- средства индивидуальной защиты;</li>
+                            <li className="about__list-item">- борфрезы;</li>
+                            <li className="about__list-item">- пневмоинструмент;</li>
+                            <li className="about__list-item">- электроинструмент;</li>
+                            <li className="about__list-item">- ленто-шлифовальные станки;</li>
+                            <li className="about__list-item">- асфальтирование;</li>
+                            <li className="about__list-item">- благоустройство территорий.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section className="stages">
+                <h3 className="stages__heading">ЭТАПЫ РАБОТЫ</h3>
+                <div className="stages__container">
+                    <div className="stages__item-container">
+                        <div className="stages__icon-container">
+                            <img className="stages__icon" src={iconOne} alt="Иконка" />
+                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                        </div>
+                        <p className="stages__item-heading">Техническое задание</p>
+                        <p className="stages__item-subheding">Получите бесплатную консультацию от наших специалистов.</p>
+                    </div>
+                    <div className="stages__item-container">
+                        <div className="stages__icon-container">
+                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                            <img className="stages__icon" src={iconTwo} alt="Иконка" />
+                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                        </div>
+                        <p className="stages__item-heading">Прототип дизайна</p>
+                        <p className="stages__item-subheding">Получите бесплатную консультацию от наших специалистов.</p>
+                    </div>
+                    <div className="stages__item-container">
+                        <div className="stages__icon-container">
+                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                            <img className="stages__icon" src={iconThree} alt="Иконка" />
+                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                        </div>
+                        <p className="stages__item-heading">Програмирование</p>
+                        <p className="stages__item-subheding">Получите бесплатную консультацию от наших специалистов.</p>
+                    </div>
+                    <div className="stages__item-container">
+                        <div className="stages__icon-container">
+                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                            <img className="stages__icon" src={iconFour} alt="Иконка" />
+                        </div>
+                        <p className="stages__item-heading">Сдача проекта</p>
+                        <p className="stages__item-subheding">Получите бесплатную консультацию от наших специалистов.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section className="colors">
+                <div className="colors__main-container">
+                    <h3 className="colors__heading">ЦВЕТА И ИКОНКИ</h3>
+                    <div className="colors__content-container">
+                        <div className="colors__container">
+                            <div className="colors__square-container">
+                                <div className="colors__square-group">
+                                    <div className="colors__square colors__square_blue"></div>
+                                    <div className="colors__type-container">
+                                        <p className="colors__type">#229DE0</p>
+                                    </div>
+                                </div>
+                                <div className="colors__square-group">
+                                    <div className="colors__square colors__square_red"></div>
+                                    <div className="colors__type-container">
+                                        <p className="colors__type">#FF2938</p>
+                                    </div>
+                                </div>
+                                <div className="colors__square-group">
+                                    <div className="colors__square colors__square_black"></div>
+                                    <div className="colors__type-container">
+                                        <p className="colors__type">#030303</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="colors__rectangle-group">
+                                <div className="colors__rectangle colors__rectangle_pink"></div>
+                                <div className="colors__type-container">
+                                    <p className="colors__type">#EC555F</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="colors__icon-container">
+                            <div className="colors__ferst-container colors__ferst-container_voleks">
+                                <img className="colors__icon colors__icon_certificate" src={certificateIcon} alt="Иконка сертификата"/>
+                                <img className="colors__icon colors__icon_paper" src={paperIcon} alt="Иконка бумаги"/>
+                            </div>
+                            <div className="colors__second-container colors__second-container_voleks">
+                                <img className="colors__icon colors__icon_paper-numbers" src={paperNumbersIcon} alt="Иконка бумаги с линейкой"/>
+                                <img className="colors__icon colors__icon_award" src={awardIcon} alt="Иконка награды"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </section>
     );
 }

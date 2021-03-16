@@ -45,12 +45,61 @@
     max-width: 395px;
     margin: 48px auto 0;
 }
+.colors__ferst-container_voleks {
+    margin-top: 50px;
+    max-width: 323px;
+    margin-left: 70px;
+}
+.colors__second-container_voleks {
+    margin-top: 150px;
+    max-width: 323px;
+    margin-left: 70px;
+}
+.colors__icon_certificate {
+    width: 95px;
+    height: 90px;
+}
+.colors__icon_paper {
+    width: 90px;
+    height: 90px;
+}
+.colors__icon_paper-numbers {
+    width: 90px;
+    height: 90px;
+}
+.colors__icon_award {
+    width: 90px;
+    height: 90px;
+}
+.colors__square_blue {
+    background: #229DE0;
+}
+.colors__square_red {
+    background: #FF2938;
+}
+.colors__square_black {
+    background: #030303;
+}
+.colors__rectangle_pink {
+    background: #EC555F;
+}
 @media screen and (max-width: 1245px) {
     .voleks__image {
       min-height: 650px;
     }
     .voleks__icon {
         margin: 50px auto 0;
+    }
+    .about__img_voleks {
+        height: 290px;
+    }
+    .colors__ferst-container_voleks {
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .colors__second-container_voleks {
+        margin-top: 105px;
+        margin-left: 40px;
     }
 }
 @media screen and (max-width: 1095px) {
@@ -88,6 +137,10 @@
         line-height: 32px;
         margin: 28px auto 0;
     }
+    .about__img_voleks {
+        height: 380px;
+        object-position: -210px;
+    }
 }
 @media screen and (max-width: 930px) {
     .voleks {
@@ -110,6 +163,61 @@
         line-height: 22px;
         max-width: 288px;
         margin: 12px auto 0;
+    }
+    .colors__ferst-container_voleks {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .colors__second-container_voleks {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .colors__icon_certificate {
+        margin-right: 55px;
+    }
+    .colors__icon_paper-numbers {
+        margin-right: 55px;
+    }
+    .colors__icon_award {
+        width: 82px;
+        height: 90px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .about__img_voleks {
+        height: 315px;
+        object-position: -155px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .about__img_voleks {
+        height: 415px;
+        object-position: -225px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .about__img_voleks {
+        width: 290px;
+        height: 246px;
+        object-position: 0;
+    }
+    .colors__icon_certificate {
+        width: 51px;
+        height: 49px;
+        margin-right: 30px;
+    }
+    .colors__icon_paper {
+        width: 49px;
+        height: 49px;
+    }
+    .colors__icon_paper-numbers {
+        width: 49px;
+        height: 49px;
+        margin-right: 30px;
+    }
+    .colors__icon_award {
+        width: 44px;
+        height: 53px;
     }
 }
 @media screen and (max-width: 470px) {

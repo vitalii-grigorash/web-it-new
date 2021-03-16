@@ -63,9 +63,10 @@
 }
 .about__img {
     width: 502px;
-    height: 481px;
+    height: 372px;
     margin: 0 78px 0 0;
     object-fit: cover;
+    object-position: top;
 }
 .about__text-container {
     display: flex;
@@ -419,7 +420,7 @@
     }
     .about__img {
         width: 402px;
-        height: 381px;
+        height: 315px;
         margin: 0 26px 0 0;
     }
     .about__text-container {
@@ -552,8 +553,8 @@
     }
     .about__img {
         width: 259px;
-        height: 459px;
-        object-position: -170px;
+        height: 410px;
+        object-position: -135px;
     }
     .about__text-container {
         max-width: 502px;
@@ -715,6 +716,9 @@
         font-size: 16px;
         line-height: 140%;
     }
+    .about__img {
+        height: 380px;
+    }
 }
 @media screen and (max-width: 730px) {
     .stroj-snab__image {
@@ -727,6 +731,10 @@
     }
     .about__list-heading {
         margin: 24px auto 0 0;
+    }
+    .about__img {
+        height: 460px;
+        object-position: -160px;
     }
 }
 @media screen and (max-width: 560px) {
