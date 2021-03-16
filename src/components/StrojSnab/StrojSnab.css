@@ -542,8 +542,11 @@
     .typography__header {
         font-size: 28px;
         line-height: 36px;
+        margin: 32px auto 0;
     }
     .typography__roboto-heading {
+        font-size: 24px;
+        line-height: 28px;
         margin: 0 auto 24px 0;
     }
     .typography__letter-main {
@@ -553,7 +556,7 @@
         color: rgba(201, 201, 201, 0.3);
     }
     .typography__container {
-        margin: 96px auto 128px;
+        margin: 48px auto 128px;
     }
     .typography__roboto-container {
         max-width: 398px;
