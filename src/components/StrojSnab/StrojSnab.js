@@ -11,9 +11,9 @@ import handsIcon from '../../images/svg/hands-icon.svg';
 import miniEllipse from '../../images/svg/mini-ellipse.svg';
 import stroiSnabAboutImg from '../../images/stroi-snab-about-img.jpg';
 import phonesImg from '../../images/svg/phones-img.svg';
-import stroySnabOneImg from '../../images/stroy-snab-1-img.jpg'
-import stroySnabTwoImg from '../../images/stroy-snab-2-img.jpg'
-import stroySnabThreeImg from '../../images/stroy-snab-3-img.jpg'
+import stroySnabOneImg from '../../images/stroy-snab-1-img.jpg';
+import stroySnabTwoImg from '../../images/stroy-snab-2-img.jpg';
+import stroySnabThreeImg from '../../images/stroy-snab-3-img.jpg';
 
 function StrojSnab() {
 

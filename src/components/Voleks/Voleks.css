@@ -83,6 +83,44 @@
 .colors__rectangle_pink {
     background: #EC555F;
 }
+.adaptive__voleks {
+    background-image: url('../../images/svg/laptop-img.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+}
+.adaptive__info-container_voleks {
+    margin: 96px auto auto 300px;
+}
+.adaptive__laptop-img {
+    display: none;
+}
+@media screen and (max-width: 1800px) {
+    .adaptive__info-container_voleks {
+        margin: 96px auto auto 200px;
+    }
+}
+@media screen and (max-width: 1700px) {
+    .adaptive__info-container_voleks {
+        margin: 96px auto auto 100px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .adaptive__voleks {
+        height: 560px;
+    }
+    .adaptive__info-container_voleks {
+        height: 436px;
+        margin: auto auto auto 50px;
+    }
+    .adaptive__heading_voleks {
+        margin: 20px auto 0 40px;
+    }
+    .adaptive__description_voleks {
+        margin: 15px 40px 50px;
+        max-width: 382px;
+    }
+}
 @media screen and (max-width: 1245px) {
     .voleks__image {
       min-height: 650px;
@@ -116,6 +154,9 @@
         font-size: 25px;
         line-height: 35px;
         margin: 38px auto 0;
+    }
+    .adaptive__description_voleks {
+        max-width: 270px;
     }
 }
 @media screen and (max-width: 950px) {
@@ -183,6 +224,24 @@
         height: 90px;
     }
 }
+@media screen and (max-width: 880px) {
+    .adaptive__voleks {
+        background-image: none;
+        flex-direction: column;
+        height: 1014px;
+    }
+    .adaptive__info-container_voleks {
+        margin: 52px auto 0;
+        order: 2;
+    }
+    .adaptive__laptop-img {
+        display: block;
+        width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+        margin: 0 auto 0;
+    }
+}
 @media screen and (max-width: 840px) {
     .about__img_voleks {
         height: 315px;
@@ -220,6 +279,23 @@
         height: 53px;
     }
 }
+@media screen and (max-width: 510px) {
+    .adaptive__voleks {
+        height: 971px;
+    }
+    .adaptive__info-container_voleks {
+        margin: 24px auto 0;
+        height: 528px;
+    }
+    .adaptive__heading_voleks {
+        margin: 48px auto 0 28px;
+        max-width: 233px;
+    }
+    .adaptive__description_voleks {
+        margin: 32px 28px auto;
+        max-width: 233px;
+    }
+}
 @media screen and (max-width: 470px) {
     .voleks__image {
         min-height: 556px;
@@ -239,5 +315,10 @@
         font-size: 20px;
         line-height: 24px;
         margin: 32px auto 0;
+    }
+}
+@media screen and (max-width: 380px) {
+    .adaptive__info-container_voleks {
+        height: 568px;
     }
 }
