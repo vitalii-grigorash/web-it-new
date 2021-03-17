@@ -1,6 +1,7 @@
 import React from 'react';
 import voleksIcon from '../../images/svg/voleks-icon.svg';
 import voleksAboutImg from '../../images/voleks-about-img.jpg';
+import voleksPreviewImg from '../../images/voleks-img-preview.jpg';
 import miniEllipse from '../../images/svg/mini-ellipse.svg';
 import iconOne from '../../images/svg/stages-1.svg';
 import iconTwo from '../../images/svg/stages-2.svg';
@@ -162,6 +163,10 @@ function Voleks () {
                     </p>
                 </div>
                 <img className="adaptive__laptop-img" src={laptopImgMobile} alt="Картинка Ноутбука"/>
+            </section>
+
+            <section className="preview preview__voleks">
+                <img className="preview__voleks-img" src={voleksPreviewImg} alt="Изображение Волекс Сайт"/>
             </section>
 
         </section>
