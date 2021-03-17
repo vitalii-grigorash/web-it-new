@@ -234,12 +234,19 @@
         margin: 52px auto 0;
         order: 2;
     }
+    .adaptive__heading_voleks {
+        margin: 48px auto 0 40px;
+    }
     .adaptive__laptop-img {
         display: block;
         width: 100%;
         max-height: 450px;
         object-fit: cover;
         margin: 0 auto 0;
+    }
+    .adaptive__description_voleks {
+        margin-top: 32px;
+        max-width: 382px;
     }
 }
 @media screen and (max-width: 840px) {
