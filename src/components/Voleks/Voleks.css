@@ -8,6 +8,7 @@
     background-size: cover;
     min-height: 791px;
     width: 100%;
+    background-position: right;
 }
 .voleks__overlay-container {
     display: flex;
@@ -202,13 +203,13 @@
         min-height: 260px;
     }
     .voleks__icon {
-        width: 46px;
-        height: 46px;
+        width: 48px;
+        height: 48px;
     }
     .voleks__heading {
         font-size: 20px;
         line-height: 26px;
-        margin: 32px auto 0;
+        margin: 28px auto 0;
     }
     .voleks__subheading {
         font-size: 16px;
@@ -321,22 +322,12 @@
 }
 @media screen and (max-width: 470px) {
     .voleks__image {
-        min-height: 556px;
-        background-position-x: -800px;
+        min-height: 410px;
     }
     .voleks__icon {
         margin: 96px auto 0;
-        width: 76px;
-        height: 76px;
     }
     .voleks__heading {
-        font-size: 24px;
-        line-height: 28px;
-        margin: 52px auto 0;
-    }
-    .voleks__subheading {
-        font-size: 20px;
-        line-height: 24px;
         margin: 32px auto 0;
     }
 }

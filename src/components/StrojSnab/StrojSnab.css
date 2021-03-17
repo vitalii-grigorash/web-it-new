@@ -8,6 +8,7 @@
     background-size: cover;
     min-height: 791px;
     width: 100%;
+    background-position: right;
 }
 .stroj-snab__overlay-container {
     display: flex;
@@ -583,7 +584,7 @@
     }
     .stroj-snab__icon {
         width: 46px;
-        height: 46px;
+        height: 49px;
     }
     .stroj-snab__heading {
         font-size: 20px;
@@ -846,21 +847,9 @@
 @media screen and (max-width: 470px) {
     .stroj-snab__image {
         min-height: 410px;
-        background-position-x: -200px;
+        background-position-x: -350px;
     }
     .stroj-snab__icon {
         margin: 96px auto 0;
-        width: 76px;
-        height: 76px;
-    }
-    .stroj-snab__heading {
-        font-size: 24px;
-        line-height: 28px;
-        margin: 52px auto 0;
-    }
-    .stroj-snab__subheading {
-        font-size: 20px;
-        line-height: 24px;
-        margin: 32px auto 0;
     }
 }

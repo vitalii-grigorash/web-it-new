@@ -8,6 +8,7 @@
     background-size: cover;
     min-height: 791px;
     width: 100%;
+    background-position: right;
 }
 .yur-konsul__overlay-container {
     display: flex;
@@ -45,11 +46,6 @@
     max-width: 589px;
     margin: 48px auto 0;
 }
-@media screen and (max-width: 1440px) {
-    .yur-konsul__image {
-      background-position-x: -200px;
-    }
-}
 @media screen and (max-width: 1245px) {
     .yur-konsul__image {
       min-height: 650px;
@@ -78,7 +74,6 @@
 @media screen and (max-width: 950px) {
     .yur-konsul__image {
       min-height: 450px;
-      background-position-x: -100px;
     }
     .yur-konsul__icon {
         width: 100px;
@@ -103,16 +98,15 @@
     }
     .yur-konsul__image {
         min-height: 260px;
-        background-position-x: 0;
     }
     .yur-konsul__icon {
-        width: 46px;
-        height: 46px;
+        width: 48px;
+        height: 48px;
     }
     .yur-konsul__heading {
         font-size: 20px;
         line-height: 26px;
-        margin: 32px auto 0;
+        margin: 28px auto 0;
     }
     .yur-konsul__subheading {
         font-size: 16px;
@@ -123,28 +117,16 @@
 }
 @media screen and (max-width: 470px) {
     .yur-konsul__image {
-        min-height: 556px;
-        background-position-x: -450px;
+        min-height: 410px;
+        background-position-x: -200px;
     }
     .yur-konsul__icon {
         margin: 96px auto 0;
-        width: 76px;
-        height: 76px;
     }
     .yur-konsul__heading {
-        font-size: 24px;
-        line-height: 28px;
-        margin: 52px auto 0;
+        margin: 32px auto 0;
     }
     .yur-konsul__subheading {
-        font-size: 20px;
-        line-height: 24px;
-        margin: 32px auto 0;
-        max-width: 350px;
-    }
-}
-@media screen and (max-width: 375px) {
-    .yur-konsul__image {
-        background-position-x: -500px;
+        max-width: 260px;
     }
 }
