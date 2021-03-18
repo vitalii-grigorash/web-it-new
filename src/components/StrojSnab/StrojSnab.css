@@ -846,10 +846,16 @@
 }
 @media screen and (max-width: 470px) {
     .stroj-snab__image {
+        background-image: url('../../images/stroi-snab-main-mobile.jpg');
         min-height: 410px;
-        background-position-x: -350px;
+        background-position-y: -100px;
     }
     .stroj-snab__icon {
         margin: 96px auto 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .stroj-snab__image {
+        background-position-y: 0;
     }
 }
