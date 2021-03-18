@@ -74,6 +74,11 @@
     margin: auto 0 auto 19px;
     max-width: 120px;
 }
+@media screen and (max-width: 1750px) {
+    .shop__image-container {
+        background-position-x: 0;
+    }
+}
 @media screen and (max-width: 1680px) {
     .shop__heading {
         margin: 300px auto 0 200px;
@@ -147,13 +152,19 @@
         min-height: 340px;
     }
     .shop__heading {
-        margin: 100px auto 0 80px;
+        font-size: 28px;
+        line-height: 36px;
+        max-width: 450px;
+        margin: 128px auto 0 80px;
     }
     .shop__subheading {
         display: none;
     }
     .shop__button {
-        margin: 20px auto auto 80px;
+        width: 211px;
+        height: 44px;
+        line-height: 140%;
+        margin: 24px auto auto 80px;
     }
     .shop__bottom-container {
         display: none;
@@ -161,34 +172,25 @@
 }
 @media screen and (max-width: 690px) {
     .shop__heading {
-        max-width: 450px;
-        font-size: 28px;
-        line-height: 36px;
-        max-width: 450px;
-    }
-}
-@media screen and (max-width: 568px) {
-    .shop__heading {
         margin: 128px auto 0 15px;
     }
     .shop__button {
         margin: 24px auto auto 15px;
     }
 }
+@media screen and (max-width: 568px) {
+    .shop__image-container {
+        background-position-y: 60px;
+    }
+}
 @media screen and (max-width: 470px) {
     .shop__image-container {
-        min-height: 636px;
-        background-position-x: -550px;
+        min-height: 490px;
+        background-position-x: -300px;
+        background-position-y: 50px;
     }
     .shop__heading {
-        margin: 180px auto 0 15px;
-        font-size: 28px;
-        line-height: 36px;
+        margin: 144px auto 0 15px;
         max-width: 290px;
-    }
-    .shop__button {
-        width: 211px;
-        height: 44px;
-        margin: 62px auto auto 15px;
     }
 }

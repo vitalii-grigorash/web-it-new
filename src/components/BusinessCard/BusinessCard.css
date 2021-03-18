@@ -147,24 +147,30 @@
         min-height: 340px;
     }
     .business-card__heading {
-        margin: 100px auto 0 80px;
+        max-width: 450px;
+        font-size: 28px;
+        line-height: 36px;
+        margin: 128px auto 0 80px;
     }
     .business-card__subheading {
         display: none;
     }
     .business-card__button {
-        margin: 20px auto auto 80px;
+        width: 211px;
+        height: 44px;
+        line-height: 140%;
+        margin: 24px auto auto 80px;
     }
     .business-card__bottom-container {
         display: none;
     }
 }
 @media screen and (max-width: 690px) {
+    .business-card__image-container {
+        background-position-y: 40px;
+    }
     .business-card__heading {
         margin: 128px auto 0 15px;
-        max-width: 450px;
-        font-size: 28px;
-        line-height: 36px;
     }
     .business-card__button {
         margin: 24px auto auto 15px;
@@ -172,18 +178,11 @@
 }
 @media screen and (max-width: 470px) {
     .business-card__image-container {
-        min-height: 636px;
-        background-position-x: -600px;
+        min-height: 490px;
+        background-position-x: -430px;
     }
     .business-card__heading {
-        margin: 180px auto 0 15px;
-    }
-    .business-card__button {
-        margin: 62px auto auto 15px;
-    }
-}
-@media screen and (max-width: 420px) {
-    .business-card__heading {
-        max-width: 300px;
+        margin: 144px auto 0 15px;
+        max-width: 280px;
     }
 }

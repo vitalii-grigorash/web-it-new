@@ -147,13 +147,18 @@
         min-height: 340px;
     }
     .multipage__heading {
-        margin: 100px auto 0 80px;
+        font-size: 28px;
+        line-height: 36px;
+        margin: 128px auto 0 80px;
     }
     .multipage__subheading {
         display: none;
     }
     .multipage__button {
-        margin: 20px auto auto 80px;
+        width: 211px;
+        height: 44px;
+        line-height: 140%;
+        margin: 24px auto auto 80px;
     }
     .multipage__bottom-container {
         display: none;
@@ -162,25 +167,23 @@
 @media screen and (max-width: 690px) {
     .multipage__heading {
         margin: 128px auto 0 15px;
-        max-width: 530px;
-        font-size: 28px;
-        line-height: 36px;
     }
     .multipage__button {
-        width: 211px;
-        height: 44px;
         margin: 24px auto auto 15px;
+    }
+}
+@media screen and (max-width: 555px) {
+    .multipage__heading {
+        max-width: 490px;
     }
 }
 @media screen and (max-width: 470px) {
     .multipage__image-container {
-        min-height: 636px;
-        background-position-x: -700px;
+        min-height: 490px;
+        background-position-x: -450px;
     }
     .multipage__heading {
-        margin: 180px auto 0 15px;
-    }
-    .multipage__button {
-        margin: 62px auto auto 15px;
+        margin: 144px auto 0 15px;
+        max-width: 290px;
     }
 }

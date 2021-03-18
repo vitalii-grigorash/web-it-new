@@ -101,6 +101,8 @@
         font-size: 36px;
         line-height: 140%;
         margin: 128px auto 0;
+        min-width: 250px;
+        text-align: center;
     }
     .web__button {
         visibility: visible;
@@ -117,7 +119,5 @@
     }
     .web__heading {
         margin: 175px auto 0;
-        min-width: 250px;
-        text-align: center;
     }
 }

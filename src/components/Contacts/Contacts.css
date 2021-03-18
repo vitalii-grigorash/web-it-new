@@ -342,7 +342,8 @@
 @media screen and (max-width: 440px) {
     .contacts__image-container {
         background-image: url('../../images/contacts-page-img-reverse.jpg');
-        background-position-x: 0px;
+        background-position-x: 0;
+        background-position-y: 30px;
     }
 }
 @media screen and (max-width: 315px) {

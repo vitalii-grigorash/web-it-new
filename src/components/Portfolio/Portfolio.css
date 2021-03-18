@@ -186,7 +186,9 @@
         min-height: 340px;
     }
     .portfolio__heading {
-        margin: 175px auto auto 100px;
+        font-size: 36px;
+        line-height: 50px;
+        margin: 128px auto auto 100px;
     }
     .portfolio__bottom-container {
         display: none;
@@ -220,19 +222,12 @@
     .portfolio__heading {
         margin: 128px auto auto 15px;
         max-width: 450px;
-        font-size: 36px;
-        line-height: 140%;
     }
 }
 @media screen and (max-width: 470px) {
     .portfolio__image-container {
-        min-height: 636px;
-        background-position-x: -700px;
-    }
-}
-@media screen and (max-width: 350px) {
-    .portfolio__image-container {
-        background-position-x: -850px;
+        min-height: 490px;
+        background-position-y: 50px;
     }
 }
 @media screen and (max-width: 420px) {
