@@ -2,16 +2,12 @@ import React from 'react';
 import voleksIcon from '../../images/svg/voleks-icon.svg';
 import voleksAboutImg from '../../images/voleks-about-img.jpg';
 import voleksPreviewImg from '../../images/voleks-img-preview.jpg';
-import miniEllipse from '../../images/svg/mini-ellipse.svg';
-import iconOne from '../../images/svg/stages-1.svg';
-import iconTwo from '../../images/svg/stages-2.svg';
-import iconThree from '../../images/svg/stages-3.svg';
-import iconFour from '../../images/svg/stages-4.svg';
 import certificateIcon from '../../images/svg/certificate-icon.svg';
 import paperIcon from '../../images/svg/paper-icon.svg';
 import paperNumbersIcon from '../../images/svg/paper-numbers-icon.svg';
 import awardIcon from '../../images/svg/award-icon.svg';
 import laptopImgMobile from '../../images/svg/laptop-img-mobile.svg';
+import Stages from '../Stages/Stages';
 
 function Voleks () {
 
@@ -47,51 +43,7 @@ function Voleks () {
                 </div>
             </section>
 
-            <section className="stages">
-                <h3 className="stages__heading">ЭТАПЫ РАБОТЫ</h3>
-                <div className="stages__container">
-                    <div className="stages__item-container">
-                        <div className="stages__icon-container">
-                            <img className="stages__icon" src={iconOne} alt="Иконка" />
-                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                        </div>
-                        <p className="stages__item-heading">Техническое задание</p>
-                        <p className="stages__item-subheding">Получите бесплатную консультацию от наших специалистов.</p>
-                    </div>
-                    <div className="stages__item-container">
-                        <div className="stages__icon-container">
-                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                            <img className="stages__icon" src={iconTwo} alt="Иконка" />
-                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                        </div>
-                        <p className="stages__item-heading">Прототип дизайна</p>
-                        <p className="stages__item-subheding">Получите бесплатную консультацию от наших специалистов.</p>
-                    </div>
-                    <div className="stages__item-container">
-                        <div className="stages__icon-container">
-                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                            <img className="stages__icon" src={iconThree} alt="Иконка" />
-                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                        </div>
-                        <p className="stages__item-heading">Програмирование</p>
-                        <p className="stages__item-subheding">Получите бесплатную консультацию от наших специалистов.</p>
-                    </div>
-                    <div className="stages__item-container">
-                        <div className="stages__icon-container">
-                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                            <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                            <img className="stages__icon" src={iconFour} alt="Иконка" />
-                        </div>
-                        <p className="stages__item-heading">Сдача проекта</p>
-                        <p className="stages__item-subheding">Получите бесплатную консультацию от наших специалистов.</p>
-                    </div>
-                </div>
-            </section>
+            <Stages />
 
             <section className="colors">
                 <div className="colors__main-container">

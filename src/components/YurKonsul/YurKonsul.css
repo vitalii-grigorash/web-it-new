@@ -46,6 +46,35 @@
     max-width: 589px;
     margin: 48px auto 0;
 }
+.about__img_yur-konsul {
+    width: 502px;
+    height: 378px;
+}
+.about__text-container_yur-konsul {
+    max-width: 613px;
+}
+.colors__square_gold {
+    background: #CAAB74;
+}
+.colors__square_black {
+    background: #030303;
+}
+.colors__square_blue {
+    background: #6EC1E4;
+}
+.colors__rectangle_grey {
+    background: #636363;
+}
+.colors__icon_shield {
+    width: 100px;
+    height: 100px;
+}
+.typography__roboto-heading_yur-konsul {
+    font-family: 'Alegreya SC', serif;
+}
+.typography__roboto-letters_yur-konsul {
+    font-family: 'Alegreya SC', serif;
+}
 @media screen and (max-width: 1440px) {
     .yur-konsul__image {
         background-position-x: -100px;
@@ -57,6 +86,19 @@
     }
     .yur-konsul__icon {
         margin: 50px auto 0;
+    }
+    .about__img_yur-konsul {
+        height: 295px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .about__img_yur-konsul {
+        width: 300px;
+        height: 402px;
+        object-position: -200px;
+    }
+    .about__text-container_yur-konsul {
+        max-width: 420px;
     }
 }
 @media screen and (max-width: 1095px) {
@@ -96,6 +138,10 @@
         margin: 28px auto 0;
         max-width: 510px;
     }
+    .about__img_yur-konsul {
+        height: 570px;
+        object-position: -380px;
+    }
 }
 @media screen and (max-width: 930px) {
     .yur-konsul {
@@ -119,6 +165,38 @@
         line-height: 22px;
         max-width: 350px;
         margin: 12px auto 0;
+    }
+}
+@media screen and (max-width: 840px) {
+    .about__img_yur-konsul {
+        height: 402px;
+        object-position: -185px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .about__img_yur-konsul {
+        width: 214px;
+        height: 558px;
+        object-position: -400px;
+    }
+    .about__text-container_yur-konsul {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .about__img_yur-konsul {
+        width: 290px;
+        height: 246px;
+        object-position: 0;
+    }
+    .about__text-container_yur-konsul {
+        max-width: 290px;
+    }
+    .colors__icon_shield {
+        width: 49px;
+        height: 49px;
+        padding-top: 5px;
+        margin-right: 34px;
     }
 }
 @media screen and (max-width: 470px) {
