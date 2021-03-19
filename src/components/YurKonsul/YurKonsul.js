@@ -6,6 +6,7 @@ import shieldIcon from '../../images/svg/shield-icon.svg';
 import markIcon from '../../images/svg/mark-icon.svg';
 import peopleIcon from '../../images/svg/people-icon.svg';
 import likeIcon from '../../images/svg/like-icon.svg';
+import previewImg from '../../images/yur-konsul-img-preview.jpg'
 
 function YurKonsul () {
 
@@ -94,6 +95,24 @@ function YurKonsul () {
                         <p className="typography__roboto-letters typography__roboto-letters_yur-konsul">Aa Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъ Ы Ь Ээ Юю Яя</p>
                     </div>
                 </div>
+            </section>
+
+            <section className="adaptive-yur-konsul">
+                <div className="adaptive-yur-konsul__img"></div>
+                <div className="adaptive-yur-konsul__info-container">
+                <h4 className="adaptive-yur-konsul__heading">АДАПТИНЫЙ ДИЗАЙН</h4>
+                    <p className="adaptive-yur-konsul__description">
+                        Все наши сайты можно просматривать на самых разных устройствах, 
+                        таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 
+                        Все элементы интерфейса одинаково удобны для всех устройств и их пользователей, 
+                        например,  пользователям мобильных устройств не нужно приближать кнопку на сайте, 
+                        чтобы не промахнуться мимо нужной ссылки.
+                    </p>
+                </div>
+            </section>
+
+            <section className="preview preview__yur-konsul">
+                <img className="preview__yur-konsul-img" src={previewImg} alt="Превью"/>
             </section>
 
         </section>

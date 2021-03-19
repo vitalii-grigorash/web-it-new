@@ -75,10 +75,91 @@
 .typography__roboto-letters_yur-konsul {
     font-family: 'Alegreya SC', serif;
 }
+.adaptive-yur-konsul {
+    display: flex;
+    background-image: url('../../images/desktop-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: bottom;
+    width: 100%;
+    height: 753px;
+}
+.adaptive-yur-konsul__info-container {
+    background: #FFFDFD;
+    width: 516px;
+    height: 536px;
+    margin: 96px 1014px auto auto;
+}
+.adaptive-yur-konsul__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #373737;
+    margin: 64px auto 0 67px
+}
+.adaptive-yur-konsul__description {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #121212;
+    margin: 32px 67px auto;
+}
+.adaptive-yur-konsul__img {
+    display: none;
+}
+.preview__yur-konsul {
+    display: flex;
+}
+.preview__yur-konsul-img {
+    margin: 128px auto 256px;
+}
+@media screen and (max-width: 1550px) {
+    .adaptive-yur-konsul__info-container {
+        margin: 96px 900px auto auto;
+    }
+}
+@media screen and (max-width: 1460px) {
+    .adaptive-yur-konsul {
+        background-position-x: -400px;
+    }
+    .adaptive-yur-konsul__info-container {
+        margin: 96px 850px auto auto;
+    }
+}
+@media screen and (max-width: 1420px) {
+    .adaptive-yur-konsul {
+        height: 650px;
+        background-position-x: right;
+    }
+    .adaptive-yur-konsul__info-container {
+        margin: 56px 750px auto auto;
+    }
+}
 @media screen and (max-width: 1440px) {
     .yur-konsul__image {
         background-position-x: -100px;
       }
+}
+@media screen and (max-width: 1300px) {
+    .adaptive-yur-konsul {
+        height: 600px;
+    }
+    .adaptive-yur-konsul__info-container {
+        width: 446px;
+        height: 476px;
+        margin: 46px 700px auto auto;
+    }
+    .adaptive-yur-konsul__heading {
+        margin: 34px auto 0 47px
+    }
+    .adaptive-yur-konsul__description {
+        margin: 22px 47px auto;
+    }
 }
 @media screen and (max-width: 1245px) {
     .yur-konsul__image {
@@ -100,6 +181,27 @@
     .about__text-container_yur-konsul {
         max-width: 420px;
     }
+    .preview__yur-konsul-img {
+        width: 538px;
+        height: 785px;
+        margin: 96px auto 128px;
+    }
+}
+@media screen and (max-width: 1180px) {
+    .adaptive-yur-konsul {
+        height: 500px;
+    }
+    .adaptive-yur-konsul__info-container {
+        width: 426px;
+        height: 436px;
+        margin: 26px 590px auto auto;
+    }
+    .adaptive-yur-konsul__heading {
+        margin: 24px auto 0 37px
+    }
+    .adaptive-yur-konsul__description {
+        margin: 12px 37px auto;
+    }
 }
 @media screen and (max-width: 1095px) {
     .yur-konsul__image {
@@ -116,6 +218,26 @@
         line-height: 35px;
         margin: 38px auto 0;
         max-width: 550px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .adaptive-yur-konsul {
+        height: 450px;
+    }
+    .adaptive-yur-konsul__info-container {
+        width: 400px;
+        height: 360px;
+        margin: auto 510px auto auto;
+    }
+    .adaptive-yur-konsul__heading {
+        font-size: 28px;
+        line-height: 36px;
+        margin: 34px auto 0 37px
+    }
+    .adaptive-yur-konsul__description {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 10px 37px auto;
     }
 }
 @media screen and (max-width: 950px) {
@@ -166,6 +288,44 @@
         max-width: 350px;
         margin: 12px auto 0;
     }
+    .adaptive-yur-konsul__info-container {
+        width: 350px;
+        height: 400px;
+        margin: auto 500px auto auto;
+    }
+    .adaptive-yur-konsul__heading {
+        margin: 20px auto 0 37px
+    }
+}
+@media screen and (max-width: 870px) {
+    .adaptive-yur-konsul {
+        flex-direction: column;
+        background-image: none;
+        width: 100%;
+        height: auto;
+    }
+    .adaptive-yur-konsul__info-container {
+        background: #D2D2D2;
+        width: 462px;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .adaptive-yur-konsul__heading {
+        margin: 48px auto 0 32px
+    }
+    .adaptive-yur-konsul__description {
+        margin: 32px auto 0 32px;
+        max-width: 382px;
+    }
+    .adaptive-yur-konsul__img {
+        background-image: url('../../images/desktop-img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: right;
+        display: block;
+        width: 100%;
+        height: 450px;
+    }
 }
 @media screen and (max-width: 840px) {
     .about__img_yur-konsul {
@@ -197,6 +357,28 @@
         height: 49px;
         padding-top: 5px;
         margin-right: 34px;
+    }
+    .preview__yur-konsul-img {
+        width: 290px;
+        height: 423px;
+        margin: 48px auto 96px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .adaptive-yur-konsul__info-container {
+        width: 290px;
+        height: 568px;
+        margin: 0 auto 49px;
+    }
+    .adaptive-yur-konsul__heading {
+        margin: 48px auto 0 28px
+    }
+    .adaptive-yur-konsul__description {
+        margin: 32px auto 0 28px;
+        max-width: 233px;
+    }
+    .adaptive-yur-konsul__img {
+        height: 254px;
     }
 }
 @media screen and (max-width: 470px) {
