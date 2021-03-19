@@ -78,7 +78,7 @@ function Portfolio () {
                     </div>
                 </a>
 
-                <a href="#" className="grid-container__group">
+                <Link to={'/telecom-service'} className="grid-container__group">
                     <img src={telecomService} alt="Фото Телеком Сервис" className="grid-container__img grid-container__img_telecom-service"/>
                     <img src={telecomServiceHover} alt="Фото Телеком Сервис" className="grid-container__img grid-container__img_telecom-service-hover"/>
                     <div className="overlay">
@@ -86,7 +86,7 @@ function Portfolio () {
                        <h3 className="overlay__heading">ТелекомСервис</h3>
                        <p className="overlay__subheading overlay__subheading_telecom-service">Телекоммуникации, благоустройство и асфалтировании</p>
                     </div>
-                </a>
+                </Link>
 
                 <a href="#" className="grid-container__group">
                     <img src={laMiaBorsa} alt="Фото Ля Миа Борса" className="grid-container__img"/>

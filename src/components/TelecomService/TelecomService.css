@@ -1,0 +1,418 @@
+.telecom-service {
+    padding-top: 179px;
+}
+.telecom-service__image {
+    position: relative;
+    background-image: url('../../images/telecom-service-main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 791px;
+    width: 100%;
+    background-position: left;
+}
+.telecom-service__overlay-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: rgba(24, 24, 24, 0.4);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.telecom-service__icon {
+    width: 136px;
+    height: 136px;
+    margin: 128px auto 0;
+}
+.telecom-service__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #FFFFFF;
+    margin: 96px auto 0;
+
+}
+.telecom-service__subheading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 589px;
+    margin: 48px auto 0;
+}
+.about-telecom-service {
+    display: flex;
+    flex-direction: column;
+}
+.about-telecom-service__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #373737;
+    margin: 96px auto 0;
+}
+.about-telecom-service__container {
+    display: flex;
+    margin: 32px auto 126px;
+}
+.about-telecom-service__img {
+    width: 502px;
+    height: 378px;
+    margin: 0 25px 0 0;
+}
+.about-telecom-service__text-container {
+    max-width: 613px;
+    margin: 0;
+}
+.about-telecom-service__text {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    margin: 28px 0 0 0;
+}
+.about-telecom-service__text:first-of-type {
+    margin-top: 0;
+}
+.colors-telecom-service {
+    display: flex;
+}
+.colors-telecom-service__main-container {
+    display: flex;
+    margin: 112px auto 164px;
+}
+.colors-telecom-service__colors-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 90px;
+}
+.colors-telecom-service__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #121212;
+    margin: 0 auto 0 0;
+}
+.colors-telecom-service__first-container {
+    display: flex;
+    margin: 64px 0 0 0;
+}
+.colors-telecom-service__colors {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.colors-telecom-service__colors:last-of-type {
+    margin-right: 0;
+}
+.colors-telecom-service__color {
+    width: 193px;
+    height: 186px;
+    border-radius: 20px;
+}
+.colors-telecom-service__color_black {
+    background: #180000;
+}
+.colors-telecom-service__color_blue {
+    background: #009EE2;
+}
+.colors-telecom-service__color_grey {
+    background: #A9A9A9;
+}
+.colors-telecom-service__color_silver {
+    background: #EAEAEA;
+}
+.colors-telecom-service__color_yellow {
+    background: #EFEAD7;
+    height: 155px;
+}
+.colors-telecom-service__color-value {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    margin: 8px auto 0 0;
+}
+.colors-telecom-service__second-container {
+    display: flex;
+    margin: 32px 0 0 0;
+}
+.colors-telecom-service__color_rectangle {
+    width: 639px;
+    height: 155px;
+    background: #61CE70;
+}
+.colors-telecom-service__icons-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 145px;
+}
+.colors-telecom-service__icon {
+    width: 80px;
+    height: 80px;
+    margin-top: 57px;
+}
+.colors-telecom-service__icon:first-of-type {
+    margin-top: 0;
+}
+.typography__roboto-heading_telecom-service {
+    font-family: 'Amatic SC', cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    color: #373737;
+}
+.typography__roboto-letters_telecom-service {
+    font-family: 'Amatic SC', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 38px;
+    color: #373737;
+}
+@media screen and (max-width: 1245px) {
+    .telecom-service__image {
+      min-height: 650px;
+    }
+}
+@media screen and (max-width: 1190px) {
+    .about-telecom-service__img {
+        width: 400px;
+        height: 490px;
+        object-fit: cover;
+        object-position: -100px;
+    }
+    .about-telecom-service__text-container {
+        max-width: 450px;
+    }
+    .about-telecom-service__text {
+        margin: 16px 0 0 0;
+    }
+}
+@media screen and (max-width: 1095px) {
+    .telecom-service__image {
+      min-height: 550px;
+    }
+    .telecom-service__icon {
+        width: 100px;
+        height: 100px;
+        margin: 100px auto 0;
+    }
+    .telecom-service__heading {
+        font-size: 32px;
+        line-height: 45px;
+        margin: 56px auto 0;
+    
+    }
+    .telecom-service__subheading {
+        font-size: 23px;
+        line-height: 33px;
+        margin: 38px auto 0;
+    }
+    .colors-telecom-service__main-container {
+        flex-direction: column;
+    }
+    .colors-telecom-service__colors-container {
+        margin-right: 0;
+    }
+    .colors-telecom-service__icons-container {
+        flex-direction: row;
+        margin: 50px auto 0;
+    }
+    .colors-telecom-service__icon {
+        margin-top: 0;
+        margin-right: 100px;
+    }
+    .colors-telecom-service__icon:last-of-type {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 950px) {
+    .telecom-service__image {
+      min-height: 450px;
+    }
+    .telecom-service__icon {
+        margin: 70px auto 0;
+    }
+    .telecom-service__heading {
+        margin: 46px auto 0;
+    }
+    .telecom-service__subheading {
+        margin: 28px auto 0;
+    }
+}
+@media screen and (max-width: 930px) {
+    .telecom-service {
+      padding-top: 80px;
+    }
+    .telecom-service__image {
+        min-height: 260px;
+    }
+    .telecom-service__icon {
+        width: 48px;
+        height: 48px;
+        margin: 32px auto 0;
+    }
+    .telecom-service__heading {
+        font-size: 20px;
+        line-height: 26px;
+        margin: 28px auto 0;
+    }
+    .telecom-service__subheading {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 363px;
+        margin: 12px auto 0;
+    }
+    .about-telecom-service__heading {
+        font-size: 28px;
+        line-height: 36px;
+        margin: 64px auto 0;
+    }
+    .about-telecom-service__img {
+        width: 314px;
+        height: 560px;
+        object-position: -200px;
+    }
+    .about-telecom-service__text-container {
+        max-width: 299px;
+    }
+    .about-telecom-service__text {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 16px 0 0 0;
+    }
+    .colors-telecom-service__main-container {
+        margin: 128px auto 136px;
+    }
+    .colors-telecom-service__heading {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .colors-telecom-service__first-container {
+        margin: 48px 0 0 0;
+    }
+    .colors-telecom-service__colors {
+        margin-right: 19px;
+    }
+    .colors-telecom-service__color {
+        width: 118px;
+        height: 114px;
+        border-radius: 12px;
+    }
+    .colors-telecom-service__color_yellow {
+        height: 95px;
+    }
+    .colors-telecom-service__color_rectangle {
+        width: 392px;
+        height: 95px;
+    }
+    .colors-telecom-service__color-value {
+        font-size: 11px;
+        margin: 5px auto 0 0;
+    }
+    .colors-telecom-service__second-container {
+        margin: 20px 0 0 0;
+    }
+    .colors-telecom-service__icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .about-telecom-service__container {
+        margin: 32px auto 96px;
+    }
+    .about-telecom-service__img {
+        width: 214px;
+        height: 567px;
+        object-position: -250px;
+    }
+    .about-telecom-service__text {
+        margin: 18px 0 0 0;
+    }
+}
+@media screen and (max-width: 560px) {
+    .about-telecom-service__container {
+        flex-direction: column;
+        margin: 32px auto 64px;
+    }
+    .about-telecom-service__text-container {
+        max-width: 290px;
+        margin-top: 24px;
+    }
+    .about-telecom-service__img {
+        width: 290px;
+        height: 246px;
+        margin: 0;
+        object-position: -15px;
+    }
+    .colors-telecom-service__main-container {
+        margin: 96px auto 100px;
+    }
+    .colors-telecom-service__colors {
+        margin-right: 6px;
+    }
+    .colors-telecom-service__color {
+        width: 68px;
+        height: 61px;
+        border-radius: 7px;
+    }
+    .colors-telecom-service__color_yellow {
+        height: 51px;
+    }
+    .colors-telecom-service__color_rectangle {
+        width: 216px;
+        height: 51px;
+    }
+    .colors-telecom-service__color-value {
+        font-size: 6px;
+        margin: 3px auto 0 0;
+    }
+    .colors-telecom-service__second-container {
+        margin: 10px 0 0 0;
+    }
+    .colors-telecom-service__icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 53px;
+    }
+    .colors-telecom-service__icons-container {
+        margin: 25px auto 0;
+    }
+    .typography__roboto-letters_telecom-service {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .telecom-service__image {
+        background-image: url('../../images/telecom-service-main-mobile.jpg');
+        min-height: 410px;
+        background-position-y: top;
+    }
+    .telecom-service__icon {
+        margin: 96px auto 0;
+    }
+    .telecom-service__heading {
+        margin: 32px auto 0;
+    }
+    .telecom-service__subheading {
+        max-width: 260px;
+    }
+}

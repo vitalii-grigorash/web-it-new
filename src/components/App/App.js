@@ -14,6 +14,7 @@ import Contacts from '../Contacts/Contacts';
 import StrojSnab from '../StrojSnab/StrojSnab';
 import Voleks from '../Voleks/Voleks';
 import YurKonsul from '../YurKonsul/YurKonsul';
+import TelecomService from '../TelecomService/TelecomService';
 import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
@@ -126,6 +127,10 @@ function App () {
       />
 
       <Switch>
+
+        <Route path='/telecom-service'>
+          <TelecomService />
+        </Route>
         
         <Route path='/yur-konsul'>
           <YurKonsul />
