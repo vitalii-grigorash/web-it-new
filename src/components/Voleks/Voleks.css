@@ -85,7 +85,7 @@
     background: #EC555F;
 }
 .adaptive__voleks {
-    background-image: url('../../images/svg/laptop-img.svg');
+    background-image: url('../../images/laptop-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
@@ -290,7 +290,7 @@
         max-width: 382px;
     }
     .adaptive__laptop-img {
-        background-image: url('../../images/svg/laptop-img.svg');
+        background-image: url('../../images/laptop-img.jpg');
         display: block;
         background-repeat: no-repeat;
         background-size: cover;
