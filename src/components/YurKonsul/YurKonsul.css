@@ -308,12 +308,16 @@
         background: #D2D2D2;
         width: 462px;
         height: 400px;
-        margin: 0 auto;
+        margin: 0 auto 0;
     }
     .adaptive-yur-konsul__heading {
+        font-size: 28px;
+        line-height: 36px;
         margin: 48px auto 0 32px
     }
     .adaptive-yur-konsul__description {
+        font-size: 16px;
+        line-height: 140%;
         margin: 32px auto 0 32px;
         max-width: 382px;
     }
@@ -368,7 +372,7 @@
     .adaptive-yur-konsul__info-container {
         width: 290px;
         height: 568px;
-        margin: 0 auto 49px;
+        margin: 0 auto;
     }
     .adaptive-yur-konsul__heading {
         margin: 48px auto 0 28px

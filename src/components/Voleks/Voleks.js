@@ -6,7 +6,6 @@ import certificateIcon from '../../images/svg/certificate-icon.svg';
 import paperIcon from '../../images/svg/paper-icon.svg';
 import paperNumbersIcon from '../../images/svg/paper-numbers-icon.svg';
 import awardIcon from '../../images/svg/award-icon.svg';
-import laptopImgMobile from '../../images/svg/laptop-img-mobile.svg';
 import Stages from '../Stages/Stages';
 
 function Voleks () {
@@ -104,6 +103,7 @@ function Voleks () {
             </section>
 
             <section className="adaptive adaptive__voleks">
+                <div className="adaptive__laptop-img"></div>
                 <div className="adaptive__info-container adaptive__info-container_voleks">
                     <h4 className="adaptive__heading adaptive__heading_voleks">АДАПТИНЫЙ ДИЗАЙН</h4>
                     <p className="adaptive__description adaptive__description_voleks">
@@ -114,7 +114,6 @@ function Voleks () {
                         чтобы не промахнуться мимо нужной ссылки.
                     </p>
                 </div>
-                <img className="adaptive__laptop-img" src={laptopImgMobile} alt="Картинка Ноутбука"/>
             </section>
 
             <section className="preview preview__voleks">
