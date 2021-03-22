@@ -45,12 +45,60 @@
     max-width: 396px;
     margin: 48px auto 0;
 }
+.about-la-mia-borsa {
+    display: flex;
+    flex-direction: column;
+}
+.about-la-mia-borsa__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #373737;
+    margin: 96px auto 0;
+}
+.about-la-mia-borsa__container {
+    display: flex;
+    margin: 32px auto 128px;
+}
+.about-la-mia-borsa__img {
+    background-image: url('../../images/la-mia-borsa-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 502px;
+    height: 405px;
+    margin: 0 25px 0 0;
+}
+.about-la-mia-borsa__text-container {
+    max-width: 613px;
+}
+.about-la-mia-borsa__text {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    margin: 32px 0 0 0;
+}
+.about-la-mia-borsa__text:first-of-type {
+    margin-top: 0;
+}
 @media screen and (max-width: 1245px) {
     .la-mia-borsa__image {
         min-height: 650px;
     }
     .la-mia-borsa__icon {
         margin: 50px auto 0;
+    }
+    .about-la-mia-borsa__img {
+        width: 400px;
+        height: 520px;
+        background-position-x: -50px;
+    }
+    .about-la-mia-borsa__text-container {
+        max-width: 513px;
     }
 }
 @media screen and (max-width: 1095px) {
@@ -68,6 +116,16 @@
         line-height: 35px;
         margin: 38px auto 0;
         max-width: 280px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .about-la-mia-borsa__img {
+        width: 350px;
+        height: 625px;
+        background-position-x: -125px;
+    }
+    .about-la-mia-borsa__text-container {
+        max-width: 400px;
     }
 }
 @media screen and (max-width: 950px) {
@@ -107,6 +165,51 @@
         line-height: 22px;
         max-width: 220px;
         margin: 12px auto 0;
+    }
+}
+@media screen and (max-width: 820px) {
+    .about-la-mia-borsa__heading {
+        font-size: 28px;
+        line-height: 36px;
+        margin: 64px auto 0;
+    }
+    .about-la-mia-borsa__container {
+        margin: 32px auto 96px;
+    }
+    .about-la-mia-borsa__img {
+        background-image: url('../../images/la-mia-borsa-img-mobile.jpg');
+        width: 259px;
+        height: 715px;
+        background-position-x: 0;
+        margin: 0 20px 0 0;
+    }
+    .about-la-mia-borsa__text-container {
+        max-width: 259px;
+    }
+    .about-la-mia-borsa__text {
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+@media screen and (max-width: 560px) {
+    .about-la-mia-borsa__container {
+        flex-direction: column;
+        margin: 32px auto 64px;
+    }
+    .about-la-mia-borsa__img {
+        background-image: url('../../images/la-mia-borsa-img.jpg');
+        width: 290px;
+        height: 246px;
+        margin: 0;
+    }
+    .about-la-mia-borsa__text-container {
+        max-width: 290px;
+    }
+    .about-la-mia-borsa__text {
+        margin-top: 24px;
+    }
+    .about-la-mia-borsa__text:first-of-type {
+        margin-top: 24px;
     }
 }
 @media screen and (max-width: 470px) {
