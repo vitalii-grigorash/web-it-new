@@ -607,6 +607,9 @@
         height: 460px;
         object-position: -160px;
     }
+    .colors__square {
+        border-radius: 16px;
+    }
 }
 @media screen and (max-width: 560px) {
     .about__container {
@@ -722,6 +725,9 @@
     }
     .stroj-snab__icon {
         margin: 96px auto 0;
+    }
+    .colors__square {
+        border-radius: 9px;
     }
 }
 @media screen and (max-width: 400px) {

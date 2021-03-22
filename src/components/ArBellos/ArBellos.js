@@ -5,6 +5,8 @@ import handsIcon from '../../images/svg/hands-icon-arbellos.svg';
 import instagramIcon from '../../images/svg/instagram-icon-arbellos.svg';
 import questionIcon from '../../images/svg/question-icon.svg';
 import listIcon from '../../images/svg/list-icon.svg';
+import whiteLaptop from '../../images/svg/white-laptop.svg';
+import arBellosPreviewImg from '../../images/ar-bellos-img-preview.jpg';
 import Stages from '../Stages/Stages';
 
 function ArBellos () {
@@ -88,6 +90,36 @@ function ArBellos () {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section className="typography">
+                <h3 className="typography__header">ТИПОГРАФИКА</h3>
+                <div className="typography__container">
+                    <p className="typography__letter-main">Aa</p>
+                    <div className="typography__roboto-container">
+                        <h4 className="typography__roboto-heading typography__roboto-heading_exo">Exo 2</h4>
+                        <p className="typography__roboto-letters typography__roboto-letters_exo">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+                        <p className="typography__roboto-letters typography__roboto-letters_exo">Aa Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъ Ы Ь Ээ Юю Яя</p>
+                    </div>
+                </div>
+            </section>
+
+            <section className="ar-bellos-adaptive">
+                <div className="ar-bellos-adaptive__info-container">
+                    <h4 className="ar-bellos-adaptive__heading">АДАПТИВНЫЙ ДИЗАЙН</h4>
+                    <p className="ar-bellos-adaptive__description">
+                        Все наши сайты можно просматривать на самых разных устройствах, 
+                        таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 
+                        Все элементы интерфейса одинаково удобны для всех устройств и их пользователей, 
+                        например, пользователям мобильных устройств не нужно приближать кнопку на сайте, 
+                        чтобы не промахнуться мимо нужной ссылки.
+                    </p>
+                </div>
+                <img className="ar-bellos-adaptive__img" src={whiteLaptop} alt="Картинка ноутбука"/>
+            </section>
+
+            <section className="ar-bellos-preview">
+                <img className="ar-bellos-preview__img" src={arBellosPreviewImg} alt="Изображение Арбеллос превью"/>
             </section>
 
         </section>
