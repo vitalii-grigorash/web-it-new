@@ -88,14 +88,14 @@ function Portfolio () {
                     </div>
                 </Link>
 
-                <a href="#" className="grid-container__group">
+                <Link to={'/la-mia-borsa'} className="grid-container__group">
                     <img src={laMiaBorsa} alt="Фото Ля Миа Борса" className="grid-container__img"/>
                     <div className="overlay">
                        <img src={laMiaBorsaIcon} alt="Иконка Ля Миа Борса" className="overlay__icon overlay__icon_la-mia-borsa"/>
                        <h3 className="overlay__heading">La mia Borsa</h3>
                        <p className="overlay__subheading">Итальянские сумки в <nobr>Санкт-Петербурге</nobr></p>
                     </div>
-                </a>
+                </Link>
 
             </section>
 

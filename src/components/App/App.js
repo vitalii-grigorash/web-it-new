@@ -16,6 +16,7 @@ import Voleks from '../Voleks/Voleks';
 import YurKonsul from '../YurKonsul/YurKonsul';
 import TelecomService from '../TelecomService/TelecomService';
 import ArBellos from '../ArBellos/ArBellos';
+import LaMiaBorsa from '../LaMiaBorsa/LaMiaBorsa';
 import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
@@ -128,6 +129,10 @@ function App () {
       />
 
       <Switch>
+
+        <Route path='/la-mia-borsa'>
+          <LaMiaBorsa />
+        </Route>
 
         <Route path='/ar-bellos'>
           <ArBellos />
