@@ -100,7 +100,7 @@ function YurKonsul () {
             <section className="adaptive-yur-konsul">
                 <div className="adaptive-yur-konsul__img"></div>
                 <div className="adaptive-yur-konsul__info-container">
-                <h4 className="adaptive-yur-konsul__heading">АДАПТИНЫЙ ДИЗАЙН</h4>
+                <h4 className="adaptive-yur-konsul__heading">АДАПТИВНЫЙ ДИЗАЙН</h4>
                     <p className="adaptive-yur-konsul__description">
                         Все наши сайты можно просматривать на самых разных устройствах, 
                         таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 

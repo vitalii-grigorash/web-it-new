@@ -105,12 +105,12 @@ function Voleks () {
             <section className="adaptive adaptive__voleks">
                 <div className="adaptive__laptop-img"></div>
                 <div className="adaptive__info-container adaptive__info-container_voleks">
-                    <h4 className="adaptive__heading adaptive__heading_voleks">АДАПТИНЫЙ ДИЗАЙН</h4>
+                    <h4 className="adaptive__heading adaptive__heading_voleks">АДАПТИВНЫЙ ДИЗАЙН</h4>
                     <p className="adaptive__description adaptive__description_voleks">
                         Все наши сайты можно просматривать на самых разных устройствах, 
                         таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 
                         Все элементы интерфейса одинаково удобны для всех устройств и их пользователей, 
-                        например,  пользователям мобильных устройств не нужно приближать кнопку на сайте, 
+                        например, пользователям мобильных устройств не нужно приближать кнопку на сайте, 
                         чтобы не промахнуться мимо нужной ссылки.
                     </p>
                 </div>

@@ -456,7 +456,7 @@
         margin: 16px auto 32px 0;
     }
     .footer__input-container {
-        max-width: 180px;
+        width: 180px;
         margin-right: auto;
         margin-top: 36px;
     }
@@ -469,7 +469,7 @@
     .footer-form__input_error {
         font-size: 10px;
         line-height: 13px;
-        max-width: 180px;
+        width: 180px;
     }
     .footer__contacts-container {
         width: 400px;
