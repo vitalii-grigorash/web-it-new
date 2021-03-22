@@ -610,6 +610,9 @@
     .colors__square {
         border-radius: 16px;
     }
+    .colors__rectangle {
+        border-radius: 16px;
+    }
 }
 @media screen and (max-width: 560px) {
     .about__container {
@@ -727,6 +730,9 @@
         margin: 96px auto 0;
     }
     .colors__square {
+        border-radius: 9px;
+    }
+    .colors__rectangle {
         border-radius: 9px;
     }
 }
