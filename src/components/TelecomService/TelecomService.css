@@ -185,6 +185,62 @@
     line-height: 38px;
     color: #373737;
 }
+.adaptive-telecom-service {
+    display: flex;
+}
+.adaptive-telecom-service__info-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background: #D2D2D2;
+}
+.adaptive-telecom-service__info-heding {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #373737;
+    margin: 64px auto 0 67px;
+
+}
+.adaptive-telecom-service__info-description {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #121212;
+    margin: 32px 67px 96px;
+    max-width: 382px;
+}
+.adaptive-telecom-service__ipad {
+    margin: auto auto auto 0;
+}
+.preview-telecom-service {
+    display: flex;
+}
+.preview-telecom-service__img {
+    margin: 256px auto;
+}
+@media screen and (max-width: 1300px) {
+    .adaptive-telecom-service__info-heding {
+        font-size: 32px;
+        line-height: 42px;
+        margin: 40px auto 0 58px;
+    
+    }
+    .adaptive-telecom-service__info-description {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 30px 58px 56px;
+        max-width: 340px;
+    }
+    .adaptive-telecom-service__ipad {
+        width: 510px;
+        height: 300px;
+    }
+}
 @media screen and (max-width: 1245px) {
     .telecom-service__image {
       min-height: 650px;
@@ -202,6 +258,11 @@
     }
     .about-telecom-service__text {
         margin: 16px 0 0 0;
+    }
+    .preview-telecom-service__img {
+        margin: 96px auto 128px;
+        width: 538px;
+        height: 2154px;
     }
 }
 @media screen and (max-width: 1095px) {
@@ -240,6 +301,30 @@
     }
     .colors-telecom-service__icon:last-of-type {
         margin-right: 0;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .adaptive-telecom-service {
+        flex-direction: column;
+    }
+    .adaptive-telecom-service__info-container {
+        margin: 49px auto 0;
+        order: 2;
+    }
+    .adaptive-telecom-service__info-heding {
+        font-size: 28px;
+        line-height: 36px;
+        margin: 48px auto 0 32px;
+    }
+    .adaptive-telecom-service__info-description {
+        margin: 32px 48px 64px 32px;
+        max-width: 382px;
+    }
+    .adaptive-telecom-service__ipad {
+        margin: 0 auto;
+        width: 509px;
+        height: 295px;
+        order: 1;
     }
 }
 @media screen and (max-width: 950px) {
@@ -398,6 +483,26 @@
     .typography__roboto-letters_telecom-service {
         font-size: 28px;
         line-height: 32px;
+    }
+    .adaptive-telecom-service__info-container {
+        margin: 32px auto 0;
+    }
+    .adaptive-telecom-service__info-heding {
+        margin: 48px auto 0 28px;
+        max-width: 233px;
+    }
+    .adaptive-telecom-service__info-description {
+        margin: 32px 29px 64px 28px;
+        max-width: 233px;
+    }
+    .adaptive-telecom-service__ipad {
+        width: 300px;
+        height: 180px;
+    }
+    .preview-telecom-service__img {
+        margin: 64px auto 96px;
+        width: 290px;
+        height: 1161px;
     }
 }
 @media screen and (max-width: 470px) {

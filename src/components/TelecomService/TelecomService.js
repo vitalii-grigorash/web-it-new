@@ -5,6 +5,8 @@ import Stages from '../Stages/Stages';
 import callIcon from '../../images/svg/call-icon.svg';
 import vectorIcon from '../../images/svg/vector-icon.svg';
 import mailIcon from '../../images/svg/mail-icon.svg';
+import iPad from '../../images/svg/ipad.svg';
+import previewImg from '../../images/telecom-service-img-preview.jpg';
 
 function TelecomService() {
 
@@ -95,6 +97,24 @@ function TelecomService() {
                         <p className="typography__roboto-letters typography__roboto-letters_telecom-service">Aa Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъ Ы Ь Ээ Юю Яя</p>
                     </div>
                 </div>
+            </section>
+
+            <section className="adaptive-telecom-service">
+                <div className="adaptive-telecom-service__info-container">
+                    <h4 className="adaptive-telecom-service__info-heding">АДАПТИВНЫЙ ДИЗАЙН</h4>
+                    <p className="adaptive-telecom-service__info-description">
+                        Все наши сайты можно просматривать на самых разных 
+                        устройствах, таких как смартфон, планшет, ноутбук и т.д., независимо от 
+                        разрешения экрана. Все элементы интерфейса одинаково удобны для всех устройств и их 
+                        пользователей, например,  пользователям мобильных устройств не нужно приближать кнопку 
+                        на сайте, чтобы не промахнуться мимо нужной ссылки.
+                    </p>
+                </div>
+                <img className="adaptive-telecom-service__ipad" src={iPad} alt="Изображение Айпада"/>
+            </section>
+
+            <section className="preview-telecom-service">
+                <img className="preview-telecom-service__img" src={previewImg} alt="Изображение сайта"/>
             </section>
 
         </section>
