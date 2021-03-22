@@ -45,25 +45,25 @@ function Portfolio () {
                     <img src={voleks} alt="Фото Волекс" className="grid-container__img grid-container__img_voleks"/>
                     <img src={voleksHover} alt="Фото Волекс" className="grid-container__img grid-container__img_voleks-hover"/>
                     <div className="overlay">
-                       <img src={voleksIcon} alt="Иконка Строй Снаб" className="overlay__icon overlay__icon_voleks"/>
+                       <img src={voleksIcon} alt="Иконка Волекс" className="overlay__icon overlay__icon_voleks"/>
                        <h3 className="overlay__heading">Волекс</h3>
                        <p className="overlay__subheading overlay__subheading_voleks">Продажа промышленного инструмента абразивных материалов</p>
                     </div>
                 </Link>
 
-                <a href="#" className="grid-container__group">
+                <Link to={'/ar-bellos'} className="grid-container__group">
                     <img src={arbellos} alt="Фото Арбеллос" className="grid-container__img"/>
                     <div className="overlay">
-                       <img src={arbellosIcon} alt="Иконка Строй Снаб" className="overlay__icon overlay__icon_arbellos"/>
+                       <img src={arbellosIcon} alt="Иконка Арбеллос" className="overlay__icon overlay__icon_arbellos"/>
                        <h3 className="overlay__heading">ARbellos</h3>
                        <p className="overlay__subheading">Инсталяция светопрозрачных решений</p>
                     </div>
-                </a>
+                </Link>
 
                 <Link to={'/yur-konsul'} className="grid-container__group">
                     <img src={urKonsul} alt="Фото Юр Консул" className="grid-container__img"/>
                     <div className="overlay">
-                       <img src={urKonsulIcon} alt="Иконка Строй Снаб" className="overlay__icon overlay__icon_ur-konsul"/>
+                       <img src={urKonsulIcon} alt="Иконка Юр Консул" className="overlay__icon overlay__icon_ur-konsul"/>
                        <h3 className="overlay__heading">ЮрКонсул</h3>
                        <p className="overlay__subheading overlay__subheading_ur-konsul">Реализация деятельности ТСН(Ж), ЖСК и УК по управлению недвижимым имуществом</p>
                     </div>
@@ -72,7 +72,7 @@ function Portfolio () {
                 <a href="#" className="grid-container__group">
                     <img src={ostMebConsalt} alt="Фото Ост Мед Консалт" className="grid-container__img"/>
                     <div className="overlay">
-                       <img src={ostMebConsaltIcon} alt="Иконка Строй Снаб" className="overlay__icon overlay__icon_ost-meb-consalt"/>
+                       <img src={ostMebConsaltIcon} alt="Иконка Ост Медиа Консалт" className="overlay__icon overlay__icon_ost-meb-consalt"/>
                        <h3 className="overlay__heading">Остмедконсалт</h3>
                        <p className="overlay__subheading">Многопрофильная клиника: эстетическая медецины и пластическая хирургия</p>
                     </div>
@@ -82,7 +82,7 @@ function Portfolio () {
                     <img src={telecomService} alt="Фото Телеком Сервис" className="grid-container__img grid-container__img_telecom-service"/>
                     <img src={telecomServiceHover} alt="Фото Телеком Сервис" className="grid-container__img grid-container__img_telecom-service-hover"/>
                     <div className="overlay">
-                       <img src={telecomServiceIcon} alt="Иконка Строй Снаб" className="overlay__icon overlay__icon_telecom-service"/>
+                       <img src={telecomServiceIcon} alt="Иконка Телеком Сервис" className="overlay__icon overlay__icon_telecom-service"/>
                        <h3 className="overlay__heading">ТелекомСервис</h3>
                        <p className="overlay__subheading overlay__subheading_telecom-service">Телекоммуникации, благоустройство и асфалтировании</p>
                     </div>
@@ -91,7 +91,7 @@ function Portfolio () {
                 <a href="#" className="grid-container__group">
                     <img src={laMiaBorsa} alt="Фото Ля Миа Борса" className="grid-container__img"/>
                     <div className="overlay">
-                       <img src={laMiaBorsaIcon} alt="Иконка Строй Снаб" className="overlay__icon overlay__icon_la-mia-borsa"/>
+                       <img src={laMiaBorsaIcon} alt="Иконка Ля Миа Борса" className="overlay__icon overlay__icon_la-mia-borsa"/>
                        <h3 className="overlay__heading">La mia Borsa</h3>
                        <p className="overlay__subheading">Итальянские сумки в <nobr>Санкт-Петербурге</nobr></p>
                     </div>

@@ -13,7 +13,8 @@ function HeaderInfo(props) {
         pathname === '/stroj-snab' ||
         pathname === '/voleks' ||
         pathname === '/yur-konsul' ||
-        pathname === '/telecom-service' ? `header-info header-info_background` : `header-info`
+        pathname === '/telecom-service' ||
+        pathname === '/ar-bellos' ? `header-info header-info_background` : `header-info`
     }`;
 
     return (

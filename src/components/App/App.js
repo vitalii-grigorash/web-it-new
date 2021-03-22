@@ -15,6 +15,7 @@ import StrojSnab from '../StrojSnab/StrojSnab';
 import Voleks from '../Voleks/Voleks';
 import YurKonsul from '../YurKonsul/YurKonsul';
 import TelecomService from '../TelecomService/TelecomService';
+import ArBellos from '../ArBellos/ArBellos';
 import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
@@ -127,6 +128,10 @@ function App () {
       />
 
       <Switch>
+
+        <Route path='/ar-bellos'>
+          <ArBellos />
+        </Route>
 
         <Route path='/telecom-service'>
           <TelecomService />
