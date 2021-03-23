@@ -48,34 +48,61 @@ function App () {
     }
   }
 
-  const handleCloseDropDownMenu = (evt) => {
-    if (
-      (evt.target).classList.contains("navigation__links_services") || 
-      (evt.target).classList.contains("navigation__arrow")) 
-      {
-      dropDownMenuOpen();
-    } else {
-      if (!
-        (
-          (evt.target).classList.contains("drop-down-menu__background") ||
-          (evt.target).classList.contains("drop-down-menu__container") ||
-          (evt.target).classList.contains("drop-down-menu__heading") ||
-          (evt.target).classList.contains("drop-down-menu__links")
-        )
-      ) {
-        dropDownMenuClose();
-      }
+  const handleDropDownMenu = (evt) => {
+    if (!
+      (
+        (evt.target).classList.contains("drop-down-menu__background") ||
+        (evt.target).classList.contains("drop-down-menu__container") ||
+        (evt.target).classList.contains("navigation__links_services") || 
+        (evt.target).classList.contains("navigation__arrow")
+      )
+    ) {
+      dropDownMenuClose();
     }
   }
+
+  const memoizedOnClickDropDown = useCallback(handleDropDownMenu, []);
+
+  function dropDownMenuOpen () {
+    setDropDownMenuOpen(true);
+    document.addEventListener('click', memoizedOnClickDropDown);
+  }
+
+  function dropDownMenuClose () {
+    setDropDownMenuOpen(false);
+    document.removeEventListener('click', memoizedOnClickDropDown);
+  }
+
+  const handleMobileNavigatinClose = (evt) => {
+    if (!
+      (
+        (evt.target).classList.contains("mobile-header") ||
+        (evt.target).classList.contains("mobile-header__menu-button") ||
+        (evt.target).classList.contains("mobile-navigation") ||
+        (evt.target).classList.contains("mobile-navigation__nav-container") ||
+        (evt.target).classList.contains("mobile-navigation__links") ||
+        (evt.target).classList.contains("mobile-navigation__arrow") ||
+        (evt.target).classList.contains("mobile-navigation__info-container") ||
+        (evt.target).classList.contains("mobile-navigation__info-heading") ||
+        (evt.target).classList.contains("mobile-navigation__icon-container")
+      )
+    ) {
+      handleMobileNavigationClose();
+    }
+  }
+
+  const memoizedOnCloseMobileNavigatin = useCallback(handleMobileNavigatinClose, []);
 
   function handleMobileNavigationOpen () {
     setItOpen(false);
     setWebOpen(false);
     setMobileNavigationOpen(true);
+    document.addEventListener('click', memoizedOnCloseMobileNavigatin);
   }
 
   function handleMobileNavigationClose () {
     setMobileNavigationOpen(false);
+    document.removeEventListener('click', memoizedOnCloseMobileNavigatin);
   }
 
   function handlePopupOpen () {
@@ -93,18 +120,6 @@ function App () {
 
   function handleSuccessPopupClose () {
     setSuccessPopupOpen(false);
-  }
-
-  const memoizedOnClick = useCallback(handleCloseDropDownMenu, []);
-
-  function dropDownMenuOpen () {
-    setDropDownMenuOpen(true);
-    document.addEventListener('click', memoizedOnClick);
-  }
-
-  function dropDownMenuClose () {
-    setDropDownMenuOpen(false);
-    document.removeEventListener('click', memoizedOnClick);
   }
 
   function feedbackFormSend (name, number, method) {
@@ -220,6 +235,7 @@ function App () {
 
         <Route path='/'>
           <MainPage 
+            isDropDownMenuOpen={isDropDownMenuOpen}
             onSendForm={feedbackFormSend}
           />
         </Route>

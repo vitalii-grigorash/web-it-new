@@ -37,7 +37,6 @@ function Navigation(props) {
                     <Link to={'/contacts'} className="navigation__links">Контакты</Link>
                     <DropDownMenu
                         isOpen={isOpen}
-                        onCloseDropDownMenu={onCloseDropDownMenu}
                     />
                 </nav>
             </nav>
