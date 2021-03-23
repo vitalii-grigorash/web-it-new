@@ -123,6 +123,74 @@
     width: 100px;
     height: 100px;
 }
+.adaptive-la-mia-borsa {
+    display: flex;
+    background: #F2F2F2;
+}
+.adaptive-la-mia-borsa__phones-img {
+    width: 960px;
+    height: 760px;
+    margin: auto 0 auto auto;
+}   
+.adaptive-la-mia-borsa__info-container {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin: 96px auto 128px 54px;
+}
+.adaptive-la-mia-borsa__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #373737;
+    margin: 64px auto 0 67px;
+}
+.adaptive-la-mia-borsa__description {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #121212;
+    margin: 32px 67px 96px;
+    max-width: 382px;
+}
+.preview-la-mia-borsa {
+    display: flex;
+}
+.preview-la-mia-borsa__img {
+    margin: 128px auto 256px;
+}
+@media screen and (max-width: 1570px) {
+    .adaptive-la-mia-borsa__info-container {
+        margin: 96px auto 128px 0;
+    }
+}
+@media screen and (max-width: 1510px) {
+    .adaptive-la-mia-borsa__phones-img {
+        width: 760px;
+        height: 560px;
+    } 
+}
+@media screen and (max-width: 1310px) {
+    .adaptive-la-mia-borsa__phones-img {
+        width: 548px;
+        height: 387px;
+    } 
+    .adaptive-la-mia-borsa__heading {
+        font-size: 28px;
+        line-height: 36px;
+        margin: 48px auto 0 32px;
+    }
+    .adaptive-la-mia-borsa__description {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 32px 48px 64px 32px;
+        max-width: 350px;
+    }
+}
 @media screen and (max-width: 1245px) {
     .la-mia-borsa__image {
         min-height: 650px;
@@ -145,6 +213,13 @@
         margin-top: 90px;
     }
 }
+@media screen and (max-width: 1170px) {
+    .preview-la-mia-borsa__img {
+        width: 538px;
+        height: 916px;
+        margin: 96px auto 128px;
+    }
+}
 @media screen and (max-width: 1095px) {
     .la-mia-borsa__image {
         min-height: 550px;
@@ -160,6 +235,20 @@
         line-height: 35px;
         margin: 38px auto 0;
         max-width: 280px;
+    }
+}
+@media screen and (max-width: 1040px) {
+    .adaptive-la-mia-borsa {
+        flex-direction: column;
+    }
+    .adaptive-la-mia-borsa__phones-img {
+        margin: 0 auto;
+    } 
+    .adaptive-la-mia-borsa__info-container {
+        margin: 29px auto 96px;
+    }
+    .adaptive-la-mia-borsa__description {
+        max-width: 382px;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -319,6 +408,26 @@
         width: 36px;
         height: 36px;
         margin: 0;
+    }
+    .adaptive-la-mia-borsa__phones-img {
+        width: 300px;
+        height: 209px;
+    } 
+    .adaptive-la-mia-borsa__info-container {
+        margin: 32px auto 96px;
+    }
+    .adaptive-la-mia-borsa__heading {
+        max-width: 233px;
+        margin: 48px auto 0 28px;
+    }
+    .adaptive-la-mia-borsa__description {
+        max-width: 233px;
+        margin: 32px 29px 64px 28px;
+    }
+    .preview-la-mia-borsa__img {
+        width: 290px;
+        height: 494px;
+        margin: 64px auto 96px;
     }
 }
 @media screen and (max-width: 470px) {

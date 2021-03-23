@@ -4,6 +4,8 @@ import callCenterIcon from '../../images/call-center-icon.jpg';
 import firstBagIcon from '../../images/first-bag-icon.jpg';
 import bestIcon from '../../images/best-icon.jpg';
 import secondBagIcon from '../../images/second-bag-icon.jpg';
+import iPhone from '../../images/svg/iphones.svg';
+import previewImg from '../../images/la-mia-borsa-img-preview.jpg';
 import Stages from '../Stages/Stages';
 
 function LaMiaBorsa () {
@@ -100,6 +102,24 @@ function LaMiaBorsa () {
                         <p className="typography__roboto-letters">Aa Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъ Ы Ь Ээ Юю Яя</p>
                     </div>
                 </div>
+            </section>
+
+            <section className="adaptive-la-mia-borsa">
+                <img className="adaptive-la-mia-borsa__phones-img" src={iPhone} alt="Картинка телефонов"/>
+                <div className="adaptive-la-mia-borsa__info-container">
+                    <h4 className="adaptive-la-mia-borsa__heading">АДАПТИВНЫЙ ДИЗАЙН</h4>
+                    <p className="adaptive-la-mia-borsa__description">
+                        Все наши сайты можно просматривать на самых разных устройствах, 
+                        таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 
+                        Все элементы интерфейса одинаково удобны для всех устройств и их пользователей, 
+                        например, пользователям мобильных устройств не нужно приближать кнопку на сайте, 
+                        чтобы не промахнуться мимо нужной ссылки.
+                    </p>
+                </div>
+            </section>
+
+            <section className="preview-la-mia-borsa">
+                <img className="preview-la-mia-borsa__img" src={previewImg} alt="Превью Ля Миа Борса"/>
             </section>
 
         </section>
