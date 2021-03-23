@@ -17,6 +17,7 @@ import YurKonsul from '../YurKonsul/YurKonsul';
 import TelecomService from '../TelecomService/TelecomService';
 import ArBellos from '../ArBellos/ArBellos';
 import LaMiaBorsa from '../LaMiaBorsa/LaMiaBorsa';
+import OstMedConsult from '../OstMedConsult/OstMedConsult';
 import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
@@ -129,6 +130,10 @@ function App () {
       />
 
       <Switch>
+
+        <Route path='/ost-med-consult'>
+          <OstMedConsult />
+        </Route>
 
         <Route path='/la-mia-borsa'>
           <LaMiaBorsa />

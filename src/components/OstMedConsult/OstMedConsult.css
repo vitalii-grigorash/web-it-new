@@ -1,0 +1,395 @@
+.ost-med-consult {
+    padding-top: 179px;
+}
+.ost-med-consult__image {
+    position: relative;
+    background-image: url('../../images/ost-med-consalt-main-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 791px;
+    width: 100%;
+}
+.ost-med-consult__overlay-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: rgba(24, 24, 24, 0.4);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.ost-med-consult__icon {
+    width: 131px;
+    height: 120px;
+    margin: 128px auto 0;
+}
+.ost-med-consult__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #FFFFFF;
+    margin: 96px auto 0;
+
+}
+.ost-med-consult__subheading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 673px;
+    margin: 48px auto 0;
+}
+.about-ost-med-consult {
+    display: flex;
+    flex-direction: column;
+}
+.about-ost-med-consult__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #373737;
+    margin: 96px auto 0;
+}
+.about-ost-med-consult__container {
+    margin: 32px auto 128px;
+    display: flex;
+}
+.about-ost-med-consult__img {
+    width: 502px;
+    height: 405px;
+    margin: 0 25px 0 0; 
+}
+.about-ost-med-consult__text-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 613px;
+    margin: 0;
+}
+.about-ost-med-consult__text {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    margin: 0;
+}
+.about-ost-med-consult__text:last-of-type {
+    margin-top: 32px;
+}
+.colors__square_grey {
+    background: #54595F;
+}
+.colors__square_green {
+    background: #00BA6F;
+}
+.colors__square_yellow {
+    background: #F2E972;
+}
+.colors__rectangle_light-grey {
+    background: #E6E9E7;
+}
+.typography__roboto-heading_open-sans {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+.typography__roboto-letters_open-sans {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+.adaptive-ost-med-consult {
+    display: flex;
+    width: 100%;
+    height: 760px;
+    background-image: url('../../images/girl-adaptive-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.adaptive-ost-med-consult__img {
+    display: none;
+}
+.adaptive-ost-med-consult__info-container {
+    display: flex;
+    flex-direction: column;
+    background: #FFFDFD;
+    margin: 96px auto auto 390px;
+}
+.adaptive-ost-med-consult__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #373737;
+    margin: 64px auto 0 67px;
+}
+.adaptive-ost-med-consult__description {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #121212;
+    margin: 32px 67px 96px;
+    max-width: 382px;
+}
+.preview-ost-med-consult {
+    display: flex;
+}
+.preview-ost-med-consult__img {
+    margin: 128px auto 256px;
+}
+@media screen and (max-width: 1845px) {
+    .adaptive-ost-med-consult__info-container {
+        margin: 96px auto auto 150px;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .adaptive-ost-med-consult__info-container {
+        margin: 96px auto auto 50px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .adaptive-ost-med-consult {
+        height: 560px;
+    }
+    .adaptive-ost-med-consult__info-container {
+        margin: 80px auto auto 50px;
+    }
+    .adaptive-ost-med-consult__heading {
+        font-size: 28px;
+        line-height: 36px;
+        margin: 48px auto 0 32px;
+    }
+    .adaptive-ost-med-consult__description {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 32px 48px 64px 32px;
+    }
+}
+@media screen and (max-width: 1245px) {
+    .ost-med-consult__image {
+        min-height: 650px;
+    }
+    .ost-med-consult__icon {
+        margin: 50px auto 0;
+    }
+    .about-ost-med-consult__img {
+        width: 400px;
+        height: 570px;
+        object-fit: cover;
+    }
+    .about-ost-med-consult__text-container {
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .adaptive-ost-med-consult {
+        height: 460px;
+    }
+    .adaptive-ost-med-consult__info-container {
+        margin: 40px auto auto 50px;
+    }
+    .preview-ost-med-consult__img {
+        width: 538px;
+        height: 2445px;
+        margin: 96px auto 128px;
+    }
+}
+@media screen and (max-width: 1070px) {
+    .adaptive-ost-med-consult__info-container {
+        margin: 30px auto auto 50px;
+    }
+    .adaptive-ost-med-consult__heading {
+        margin: 28px auto 0 22px;
+    }
+    .adaptive-ost-med-consult__description {
+        max-width: 300px;
+        margin: 22px 40px 44px 22px;
+    }
+}
+@media screen and (max-width: 1095px) {
+    .ost-med-consult__image {
+        min-height: 550px;
+    }
+    .ost-med-consult__heading {
+        font-size: 34px;
+        line-height: 47px;
+        margin: 56px auto 0;
+    
+    }
+    .ost-med-consult__subheading {
+        font-size: 25px;
+        line-height: 35px;
+        margin: 38px auto 0;
+    }
+}
+@media screen and (max-width: 980px) {
+    .adaptive-ost-med-consult {
+        height: 416px;
+    }
+    .adaptive-ost-med-consult__info-container {
+        margin: 76px auto auto 50px;
+    }
+    .adaptive-ost-med-consult__heading {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 20px auto 0 20px;
+    }
+    .adaptive-ost-med-consult__description {
+        font-size: 12px;
+        line-height: 130%;
+        max-width: 250px;
+        margin: 20px 20px 40px 20px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .ost-med-consult__image {
+        min-height: 450px;
+    }
+    .ost-med-consult__icon {
+        width: 59px;
+        height: 54px;
+        margin: 32px auto 0;
+    }
+    .ost-med-consult__heading {
+        font-size: 32px;
+        line-height: 45px;
+        margin: 46px auto 0;
+    }
+    .ost-med-consult__subheading {
+        font-size: 23px;
+        line-height: 32px;
+        margin: 28px auto 0;
+    }
+}
+@media screen and (max-width: 930px) {
+    .ost-med-consult {
+        padding-top: 80px;
+    }
+    .ost-med-consult__image {
+        min-height: 260px;
+    }
+    .ost-med-consult__heading {
+        font-size: 20px;
+        line-height: 26px;
+        margin: 28px auto 0;
+    }
+    .ost-med-consult__subheading {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 361px;
+        margin: 12px auto 0;
+    }
+}
+@media screen and (max-width: 890px) {
+    .about-ost-med-consult__img {
+        width: 259px;
+        height: 625px;
+        margin-right: 20px;
+    }
+    .about-ost-med-consult__text-container {
+        max-width: 259px;
+    }
+    .about-ost-med-consult__text {
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .adaptive-ost-med-consult {
+        background-image: none;
+        height: auto;
+        flex-direction: column;
+    }
+    .adaptive-ost-med-consult__img {
+        display: block;
+        width: 100%;
+        height: 416px;
+        object-fit: cover;
+        object-position: right;
+        margin: 0;
+    }
+    .adaptive-ost-med-consult__info-container {
+        margin: 0 auto;
+        background: #D2D2D2;
+    }
+    .adaptive-ost-med-consult__heading {
+        font-size: 28px;
+        line-height: 36px;
+        margin: 48px auto 0 32px;
+    }
+    .adaptive-ost-med-consult__description {
+        font-size: 16px;
+        line-height: 140%;
+        max-width: 382px;
+        margin: 32px 48px 64px 32px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .about-ost-med-consult__container {
+        margin: 32px auto 64px;
+        flex-direction: column;
+    }
+    .about-ost-med-consult__img {
+        width: 290px;
+        height: 246px;
+        margin: 0; 
+    }
+    .about-ost-med-consult__text-container {
+        max-width: 290px;
+        margin: 24px auto 0;
+    }
+    .about-ost-med-consult__text:last-of-type {
+        margin-top: 20px;
+    }
+    .preview-ost-med-consult__img {
+        width: 290px;
+        height: 1316px;
+        margin: 64px auto 96px;
+    }
+}
+@media screen and (max-width: 505px) {
+    .adaptive-ost-med-consult__img {
+        height: 235px;
+    }
+    .adaptive-ost-med-consult__heading {
+        max-width: 233px;
+        margin: 48px auto 0 28px;
+    }
+    .adaptive-ost-med-consult__description {
+        max-width: 233px;
+        margin: 32px 29px 64px 28px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .ost-med-consult__image {
+        background-position-x: -57px;
+        min-height: 410px;
+    }
+    .ost-med-consult__icon {
+        margin: 96px auto 0;
+    }
+    .ost-med-consult__heading {
+        margin: 32px auto 0;
+    }
+    .ost-med-consult__subheading {
+        max-width: 270px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .ost-med-consult__image {
+        background-position-x: -84px;
+    }
+}

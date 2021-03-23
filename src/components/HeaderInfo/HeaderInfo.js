@@ -15,7 +15,8 @@ function HeaderInfo(props) {
         pathname === '/yur-konsul' ||
         pathname === '/telecom-service' ||
         pathname === '/ar-bellos' ||
-        pathname === '/la-mia-borsa' ? `header-info header-info_background` : `header-info`
+        pathname === '/la-mia-borsa' ||
+        pathname === '/ost-med-consult' ? `header-info header-info_background` : `header-info`
     }`;
 
     return (

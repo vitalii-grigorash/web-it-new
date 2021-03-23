@@ -69,14 +69,14 @@ function Portfolio () {
                     </div>
                 </Link>
 
-                <a href="#" className="grid-container__group">
+                <Link to={'/ost-med-consult'} className="grid-container__group">
                     <img src={ostMebConsalt} alt="Фото Ост Мед Консалт" className="grid-container__img"/>
                     <div className="overlay">
-                       <img src={ostMebConsaltIcon} alt="Иконка Ост Медиа Консалт" className="overlay__icon overlay__icon_ost-meb-consalt"/>
+                       <img src={ostMebConsaltIcon} alt="Иконка Ост Мед Консалт" className="overlay__icon overlay__icon_ost-meb-consalt"/>
                        <h3 className="overlay__heading">Остмедконсалт</h3>
                        <p className="overlay__subheading">Многопрофильная клиника: эстетическая медецины и пластическая хирургия</p>
                     </div>
-                </a>
+                </Link>
 
                 <Link to={'/telecom-service'} className="grid-container__group">
                     <img src={telecomService} alt="Фото Телеком Сервис" className="grid-container__img grid-container__img_telecom-service"/>
