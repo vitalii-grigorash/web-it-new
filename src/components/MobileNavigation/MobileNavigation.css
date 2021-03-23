@@ -32,6 +32,7 @@
     color: #FFFFFF;
     text-decoration: none;
     margin-bottom: 16px;
+    margin-right: auto;
 }
 .mobile-navigation__links:last-of-type {
     margin-bottom: 0;
@@ -44,7 +45,7 @@
 .mobile-navigation__links_menu {
     display: flex;
     align-items: center;
-    margin: 0 0 16px;
+    margin: 0 auto 16px 0;
 }
 .mobile-navigation__links_menu:last-of-type {
     margin-bottom: 16px;
@@ -59,7 +60,7 @@
 }
 .mobile-navigation__links_drop-down {
     margin-left: 22px;
-    max-width: 164px;
+    max-width: 154px;
 }
 .mobile-navigation__info-container {
     display: flex;
