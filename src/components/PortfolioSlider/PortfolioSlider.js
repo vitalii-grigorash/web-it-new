@@ -9,11 +9,11 @@ import ostMebConsaltIcon from '../../images/svg/ost-med-consalt-icon.svg';
 import telecomServiceIcon from '../../images/svg/telecom-service-icon.svg';
 import laMiaBorsaIcon from '../../images/svg/la-mia-borsa-icon.svg';
 import prevArrow from '../../images/svg/prev-arrow.svg';
-import nextArrow from '../../images/svg/next-arrow.svg'
+import nextArrow from '../../images/svg/next-arrow.svg';
 
 export default class PortfolioSlider extends Component {
 
-    render() {
+    render () {
 
         function SamplePrevArrow (props) {
             const { className, style, onClick } = props;

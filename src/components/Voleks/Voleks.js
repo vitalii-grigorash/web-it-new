@@ -15,7 +15,7 @@ function Voleks () {
             <div className="voleks__image">
                 <div className="voleks__overlay-container">
                     <img src={voleksIcon} alt="Иконка Строй Снаб" className="voleks__icon" />
-                    <h3 className="voleks__heading">Волекс аббразив</h3>
+                    <h3 className="voleks__heading">Волекс абразив</h3>
                     <p className="voleks__subheading">Продажа инстремуента и аббразинвных материалов</p>
                 </div>
             </div>
@@ -25,7 +25,7 @@ function Voleks () {
                 <div className="about__container">
                     <img src={voleksAboutImg} alt="Фотография" className="about__img about__img_voleks" />
                     <div className="about__text-container">
-                        <p className="about__subheading">Компания Волекс аббразив занимается продажей промышленного инструмента Dynabrade и абразивных материалов 3M.</p>
+                        <p className="about__subheading">Компания Волекс абразив занимается продажей промышленного инструмента Dynabrade и абразивных материалов 3M.</p>
                         <p className="about__list-heading">Среди ассортимента компании:</p>
                         <ul className="about__list">
                             <li className="about__list-item">- электроинструмент;</li>

@@ -1,10 +1,10 @@
 import React from 'react';
-import mouse from '../../images/svg/mouse.svg';
 import PageForm from '../PageForm/PageForm';
 import Stages from '../Stages/Stages';
 import PortfolioSlider from '../PortfolioSlider/PortfolioSlider';
+import mouse from '../../images/svg/mouse.svg';
 
-function Web(props) {
+function Web (props) {
 
     const {
         onSendForm,
