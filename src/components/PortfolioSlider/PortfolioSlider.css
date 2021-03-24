@@ -144,6 +144,12 @@
     .carousel-overlay {
         display: flex;
     }
+    .carousel__container_voleks {
+        background-image: url('../../images/voleks-img-hover.jpg');
+    }
+    .carousel__container_telecom-service {
+        background-image: url('../../images/telecom-service-img-hover.jpg');
+    }
 }
 @media screen and (max-width: 580px) {
     .portfolio-slider__container {
