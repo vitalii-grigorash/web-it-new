@@ -26,7 +26,7 @@ export default class PortfolioSlider extends Component {
                         width: 20, 
                         height: 44,
                         top: 170,
-                        left: -76,
+                        left: -65,
                     }}
                     src={prevArrow} 
                     alt="Стрелочка"
@@ -45,7 +45,7 @@ export default class PortfolioSlider extends Component {
                         width: 20, 
                         height: 44,
                         top: 170,
-                        right: -76
+                        right: -65,
                     }}
                     src={nextArrow} 
                     alt="Стрелочка"
@@ -86,7 +86,7 @@ export default class PortfolioSlider extends Component {
                     }
                 },
                 {
-                    breakpoint: 750,
+                    breakpoint: 718,
                     settings: {
                         arrows: false,
                         slidesToShow: 1,
