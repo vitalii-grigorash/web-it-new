@@ -1,8 +1,10 @@
 import React from 'react';
 import mouse from '../../images/svg/mouse.svg';
 import PageForm from '../PageForm/PageForm';
+import Stages from '../Stages/Stages';
+import PortfolioSlider from '../PortfolioSlider/PortfolioSlider';
 
-function Web (props) {
+function Web(props) {
 
     const {
         onSendForm,
@@ -21,9 +23,15 @@ function Web (props) {
                     <p className="web__text">Прокрутите вниз</p>
                 </div>
             </div>
+
+            <Stages />
+
             <PageForm
                 onSendForm={onSendForm}
             />
+
+            <PortfolioSlider />           
+
         </section>
     );
 }

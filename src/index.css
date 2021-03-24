@@ -31,3 +31,6 @@
 @import url(./components/ArBellos/ArBellos.css);
 @import url(./components/LaMiaBorsa/LaMiaBorsa.css);
 @import url(./components/OstMedConsult/OstMedConsult.css);
+@import url(./components/PortfolioSlider/PortfolioSlider.css);
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";

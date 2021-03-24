@@ -29,6 +29,27 @@ function MainPage (props) {
             <PageForm
                 onSendForm={onSendForm}
             />
+            <section className="schedule">
+                <h4 className="schedule__heading">МЫ В ЦИФРАХ</h4>
+                <div className="schedule__container">
+                    <div className="schedule__info-container">
+                        <p className="schedule__number">97%</p>
+                        <p className="schedule__info">довольных клиентов</p>
+                    </div>
+                    <div className="schedule__info-container">
+                        <p className="schedule__number">23</p>
+                        <p className="schedule__info">сотрудника</p>
+                    </div>
+                    <div className="schedule__info-container">
+                        <p className="schedule__number">106</p>
+                        <p className="schedule__info">компьютеров обслужено</p>
+                    </div>
+                    <div className="schedule__info-container">
+                        <p className="schedule__number">59</p>
+                        <p className="schedule__info">макетов уже сделано</p>
+                    </div>
+                </div>
+            </section>
         </section>
     );
 }

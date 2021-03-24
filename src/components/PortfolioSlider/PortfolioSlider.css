@@ -1,0 +1,241 @@
+.portfolio-slider {
+    display: flex;
+}
+.portfolio-slider__container {
+    width: 1528px;
+    margin: 128px auto 256px;
+    position: relative;
+}
+.portfolio-slider__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #373737;
+    margin: 0 auto 64px 190px;
+}
+.carousel__container {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 367px;
+    height: 325px;
+    position: relative;
+    margin-left: 8px;
+}
+.carousel__container:hover .carousel-overlay {
+    display: flex;
+}
+.carousel__container_stroj-snab {
+    background-image: url('../../images/stroi-snab-img.jpg');
+}
+.carousel__container_voleks {
+    background-image: url('../../images/voleks-img.jpg');
+}
+.carousel__container_voleks:hover {
+    background-image: url('../../images/voleks-img-hover.jpg');
+}
+.carousel__container_ar-bellos {
+    background-image: url('../../images/arbellos-img.jpg');
+}
+.carousel__container_yur-konsul {
+    background-image: url('../../images/ur-konsul-img.jpg');
+}
+.carousel__container_ost-med-consult {
+    background-image: url('../../images/ost-meb-consalt-img.jpg');
+}
+.carousel__container_telecom-service {
+    background-image: url('../../images/telecom-service-img.jpg');
+}
+.carousel__container_telecom-service:hover {
+    background-image: url('../../images/telecom-service-img-hover.jpg');
+}
+.carousel__container_la-mia-borsa {
+    background-image: url('../../images/la-mia-borsa-img.jpg');
+}
+.carousel-overlay {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.carousel-overlay__icon {
+    margin: 81px auto 0;
+}
+.carousel-overlay__icon_stroi-snab {
+    width: 60px;
+    height: 54px;
+}
+.carousel-overlay__icon_voleks {
+    width: 60px;
+    height: 60px;
+}
+.carousel-overlay__icon_arbellos {
+    width: 173px;
+    height: 34px;
+}
+.carousel-overlay__icon_ur-konsul {
+    width: 60px;
+    height: 60px;
+}
+.carousel-overlay__icon_ost-meb-consalt {
+    width: 75px;
+    height: 68px;
+}
+.carousel-overlay__icon_telecom-service {
+    width: 60px;
+    height: 60px;
+}
+.carousel-overlay__icon_la-mia-borsa {
+    width: 249px;
+    height: 35px;
+}
+.carousel-overlay__heading {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin: 32px auto 0;
+}
+.carousel-overlay__subheading {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 16px auto 0;
+    max-width: 223px;
+}
+@media screen and (max-width: 1760px) {
+    .portfolio-slider__heading {
+        margin: 0 auto 32px 90px;
+    }
+    .portfolio-slider__container {
+        width: 1160px;
+        margin: 96px auto 128px;
+    }
+}
+@media screen and (max-width: 1380px) {
+    .portfolio-slider__heading {
+        margin: 0 auto 32px 80px;
+    }
+    .portfolio-slider__container {
+        width: 770px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .portfolio-slider__heading {
+        font-size: 28px;
+        line-height: 36px;
+        margin: 0 auto 54px 19px;
+    }
+    .portfolio-slider__container {
+        width: 560px;
+    }
+    .carousel-overlay {
+        display: flex;
+    }
+}
+@media screen and (max-width: 580px) {
+    .portfolio-slider__container {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 560px) {
+    .portfolio-slider__container {
+        margin: 50px auto 74px;
+    }
+    .portfolio-slider__heading {
+        font-size: 24px;
+        line-height: 35px;
+        margin: 0 auto 40px 18px;
+        max-width: 239px;
+    }
+    .carousel__container {
+        max-width: 261px;
+        height: 231px;
+        margin-left: 10px;
+    }
+    .carousel-overlay__icon {
+        margin: 47px auto 0;
+    }
+    .carousel-overlay__icon_stroi-snab {
+        width: 42px;
+        height: 38px;
+        margin-bottom: 10px;
+    }
+    .carousel-overlay__icon_voleks {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 5px;
+    }
+    .carousel-overlay__icon_arbellos {
+        width: 175px;
+        height: 30px;
+        margin-top: 55px;
+        margin-bottom: 10px;
+    }
+    .carousel-overlay__icon_ur-konsul {
+        width: 42px;
+        height: 42px;
+    }
+    .carousel-overlay__icon_ost-meb-consalt {
+        width: 57px;
+        height: 50px;
+    }
+    .carousel-overlay__icon_telecom-service {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 10px;
+    }
+    .carousel-overlay__icon_la-mia-borsa {
+        width: 180px;
+        height: 26px;
+        margin-top: 52px;
+        margin-bottom: 15px;
+    }
+    .carousel-overlay__heading {
+        font-size: 13px;
+        line-height: 19px;
+        margin: 9px auto 0;
+    }
+    .carousel-overlay__subheading {
+        font-size: 13px;
+        margin: 14px auto 0;
+        max-width: 210px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .carousel__container {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .carousel__container {
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .carousel__container {
+        margin-left: 6px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .carousel__container {
+        margin-left: 8px;
+    }
+}
+@media screen and (max-width: 310px) {
+    .carousel__container {
+        margin-left: 5px;
+    }
+}
