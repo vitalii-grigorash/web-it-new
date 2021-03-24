@@ -79,7 +79,17 @@ export default class PortfolioSlider extends Component {
                     breakpoint: 980,
                     settings: {
                         slidesToShow: 1,
+                        swipe: true,
+                        className: "center",
+                        centerMode: true,
+                        centerPadding: "90px",
+                    }
+                },
+                {
+                    breakpoint: 750,
+                    settings: {
                         arrows: false,
+                        slidesToShow: 1,
                         swipe: true,
                         className: "center",
                         centerMode: true,
