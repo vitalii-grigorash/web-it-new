@@ -1,19 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { hydrate, render } from "react-dom";
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './components/App/App';
-import reportWebVitals from './reportWebVitals';
 import ScrollToTop from './utils/ScrollToTop';
 
-ReactDOM.render(
+const APP = (
   <React.StrictMode>
-    <BrowserRouter> 
+    <BrowserRouter>
       <ScrollToTop />
       <App />
-    </BrowserRouter> 
-  </React.StrictMode>,
-  document.getElementById('root')
+    </BrowserRouter>
+  </React.StrictMode>
 );
 
-reportWebVitals();
+const rootElement = document.getElementById("root");
+
+if (rootElement.hasChildNodes()) {
+  hydrate(APP, rootElement);
+} else {
+  render(APP, rootElement);
+}
