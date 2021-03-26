@@ -29,7 +29,7 @@ function PageForm(props) {
                 className="page-form__form"
                 onSubmit={submitForm}
             >
-                <p className="page-form__form-heading">Получите бесплатную консультацию от наших специалистов</p>
+                <h4 className="page-form__form-heading">Получите бесплатную консультацию от наших специалистов</h4>
                 <div className="page-form__form-container">
                     <div className="page-form__inputs-container">
                         <div className="page-form__input-container">
@@ -66,7 +66,7 @@ function PageForm(props) {
                         </div>
                     </div>
                     <div className="page-form__radio-container">
-                        <p className="page-form__question">Как удобнее связаться с Вами?</p>
+                        <h5 className="page-form__question">Как удобнее связаться с Вами?</h5>
                         <div className="page-form__radio-buttons-container">
                             <div className="page-form__radio">
                                 <input

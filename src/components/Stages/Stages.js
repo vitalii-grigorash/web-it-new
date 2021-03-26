@@ -9,47 +9,47 @@ function Stages () {
 
     return (
         <section className="stages">
-            <h3 className="stages__heading">ЭТАПЫ РАБОТЫ</h3>
+            <h2 className="stages__heading">этапы работы</h2>
             <div className="stages__container">
                 <div className="stages__item-container">
                     <div className="stages__icon-container">
-                        <img className="stages__icon" src={iconOne} alt="Иконка" />
-                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                        <img className="stages__icon" src={iconOne} alt="Иконка листа" />
+                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Иконка кружка" />
+                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Иконка кружка" />
                     </div>
-                    <p className="stages__item-heading">Техническое задание</p>
-                    <p className="stages__item-subheding">Получите бесплатную консультацию от наших специалистов.</p>
+                    <h3 className="stages__item-heading">Техническое задание</h3>
+                    <p className="stages__item-subheding">Определяем требования, по которым будет разработан ваш сайт</p>
                 </div>
                 <div className="stages__item-container">
                     <div className="stages__icon-container">
-                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                        <img className="stages__icon" src={iconTwo} alt="Иконка" />
-                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Иконка кружка" />
+                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Иконка кружка" />
+                        <img className="stages__icon" src={iconTwo} alt="Иконка чернильной ручки" />
+                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Иконка кружка" />
+                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Иконка кружка" />
                     </div>
-                    <p className="stages__item-heading">Прототип дизайна</p>
-                    <p className="stages__item-subheding">Получите бесплатную консультацию от наших специалистов.</p>
+                    <h3 className="stages__item-heading">Прототип дизайна</h3>
+                    <p className="stages__item-subheding">Показываем вам, как будет выглядеть ваш будущий сайт</p>
                 </div>
                 <div className="stages__item-container">
                     <div className="stages__icon-container">
-                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                        <img className="stages__icon" src={iconThree} alt="Иконка" />
-                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
+                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Иконка кружка" />
+                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Иконка кружка" />
+                        <img className="stages__icon" src={iconThree} alt="Иконка тега" />
+                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Иконка кружка" />
+                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Иконка кружка" />
                     </div>
-                    <p className="stages__item-heading">Програмирование</p>
-                    <p className="stages__item-subheding">Получите бесплатную консультацию от наших специалистов.</p>
+                    <h3 className="stages__item-heading">Програмирование</h3>
+                    <p className="stages__item-subheding">Наши программисты создают сайт, адаптивный под любые устройства</p>
                 </div>
                 <div className="stages__item-container">
                     <div className="stages__icon-container">
-                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Кружок" />
-                        <img className="stages__icon" src={iconFour} alt="Иконка" />
+                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Иконка кружка" />
+                        <img className="stages__mini-ellipse" src={miniEllipse} alt="Иконка кружка" />
+                        <img className="stages__icon" src={iconFour} alt="Иконка галочки" />
                     </div>
-                    <p className="stages__item-heading">Сдача проекта</p>
-                    <p className="stages__item-subheding">Получите бесплатную консультацию от наших специалистов.</p>
+                    <h3 className="stages__item-heading">Сдача проекта</h3>
+                    <p className="stages__item-subheding">Вы принимаете готовый сайт и получаете необходимые консультации</p>
                 </div>
             </div>
         </section>

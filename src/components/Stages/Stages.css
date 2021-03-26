@@ -11,6 +11,7 @@
     line-height: 47px;
     color: #121212;
     margin: 96px auto 0;
+    text-transform: uppercase;
 }
 .stages__container {
     display: flex;
@@ -61,6 +62,7 @@
     line-height: 150%;
     color: #121212;
     margin: 16px auto 0;
+    max-width: 275px;
 }
 @media screen and (max-width: 1350px) {
     .stages__heading {
@@ -70,7 +72,7 @@
         margin: 64px auto 125px;
     }
     .stages__item-container {
-        max-width: 202px;
+        max-width: 206px;
         margin-right: 27px;
     }
     .stages__icon {
@@ -130,5 +132,6 @@
         font-size: 16px;
         line-height: 140%;
         margin: 24px auto 0;
+        max-width: 245px;
     }
 }
