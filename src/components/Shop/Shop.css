@@ -74,6 +74,116 @@
     margin: auto 0 auto 19px;
     max-width: 120px;
 }
+.web-shop {
+    display: flex;
+    flex-direction: column;
+}
+.web-shop__info-container {
+    display: flex;
+    flex-direction: column;
+    margin: 96px auto 0;
+    max-width: 1140px;
+}
+.web-shop__info-heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #373737;
+    margin: 0 auto 0 0;
+    text-transform: uppercase;
+}
+.web-shop__info-description {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #373737;
+    margin: 32px auto 0 0;
+}
+.web-shop__price-container {
+    display: flex;
+    flex-direction: column;
+    margin: 48px auto 0;
+    max-width: 1140px;
+}
+.web-shop__price-heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 140%;
+    color: #373737;
+    margin: 0 auto 0 0;
+    text-transform: uppercase;
+}
+.web-shop__price-description {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #373737;
+    margin: 24px auto 0 0;
+}
+.web-shop__price-description:last-of-type {
+    margin-top: 0;
+}
+.price {
+    display: flex;
+}
+.price__main-container {
+    display: flex;
+    margin: 128px auto 256px;
+    background: linear-gradient(86.98deg, #00133E 2%, #05D0DF 98%);
+}
+.price__cards-container {
+    display: flex;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 387px;
+    margin: 2px;
+}
+.card__heading {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    color: #121212;
+    margin: 22px auto 0;
+    text-transform: uppercase;
+}
+.card__list {
+    width: 322px;
+    margin: 70px auto 0;
+    padding: 0;
+}
+.card__item {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #373737;
+    margin-left: 20px;
+}
+.card__value {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(76.57deg, #FF3528 0.81%, #FF4E32 99.3%);
+    margin: 26px auto 100px 41px;
+}
 @media screen and (max-width: 1750px) {
     .shop__image-container {
         background-position-x: 0;
@@ -88,6 +198,11 @@
     }
     .shop__button {
         margin: 64px auto auto 200px;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .price__main-container {
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 1440px) {
@@ -113,6 +228,12 @@
     }
     .shop__button {
         margin: 64px auto auto 100px;
+    }
+    .web-shop__info-container {
+        max-width: 850px;
+    }
+    .web-shop__price-container {
+        max-width: 850px;
     }
 }
 @media screen and (max-width: 1095px) {
@@ -169,6 +290,46 @@
     .shop__bottom-container {
         display: none;
     }
+    .web-shop__info-container {
+        max-width: 650px;
+    }
+    .web-shop__price-container {
+        max-width: 650px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .price__main-container {
+        margin: 32px auto 128px;
+        background: none;
+    }
+    .price__cards-container {
+        flex-direction: column;
+    }
+    .card {
+        width: 484px;
+        margin: 32px auto 0;
+        border: 2px solid skyblue;
+        border-image: linear-gradient(90.33deg, #071D55 -5.85%, #071D55 -5.84%, #00F0FF 101.87%);
+        border-image-slice: 1;
+    }
+    .card__heading {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 32px auto 0;
+    }
+    .card__list {
+        width: 367px;
+        margin: 16px auto 0;
+    }
+    .card__item {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .card__value {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 32px auto 48px 59px;
+    }
 }
 @media screen and (max-width: 690px) {
     .shop__heading {
@@ -177,10 +338,54 @@
     .shop__button {
         margin: 24px auto auto 15px;
     }
+    .web-shop__info-container {
+        margin: 64px auto 0;
+        max-width: 538px;
+    }
+    .web-shop__info-heading {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .web-shop__info-description {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .web-shop__price-container {
+        margin: 32px auto 0;
+        max-width: 538px;
+    }
+    .web-shop__price-heading {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .web-shop__price-description {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 32px auto 0 0;
+    }
 }
 @media screen and (max-width: 568px) {
     .shop__image-container {
         background-position-y: 60px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .web-shop__info-container {
+        max-width: 290px;
+    }
+    .web-shop__price-container {
+        max-width: 290px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .card {
+        width: 290px;
+    }
+    .card__list {
+        width: 257px;
+    }
+    .card__value {
+        margin: 32px auto 48px 17px;
     }
 }
 @media screen and (max-width: 470px) {
