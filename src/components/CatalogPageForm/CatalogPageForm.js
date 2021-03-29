@@ -35,7 +35,7 @@ function CatalogPageForm (props) {
                     <li className="catalog-page-form__price-list">Наполнение до 10 страниц</li>
                     <li className="catalog-page-form__price-list">Наполнение до 20 позиций</li>
                 </ul>
-                <p className="catalog-page-form__price-cost">От 30 000 руб.</p>
+                <p className="catalog-page-form__price-cost">От 45 000 руб.</p>
             </div>
             <form
                 className="catalog-page-form__form"
