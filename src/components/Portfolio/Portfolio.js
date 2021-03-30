@@ -20,6 +20,55 @@ import { Link } from 'react-router-dom';
 
 function Portfolio () {
 
+    const user = {
+        id: 20,
+        name: "John Dow",
+        role: "QA",
+        salary: 100
+    }
+
+    const apiTemplatesSet1 = [
+        "/api/items/id/name",
+        "/api/items/id/role",
+        "/api/items/id/salary",
+    ];
+
+    function getApiPath(obj, template) {
+
+        const result = (template.split("/").map(item => {
+            if (item === "id") {
+                return obj.id
+            }
+            else if (item === "name") {
+                return obj.name
+            }
+            else if (item === "role") {
+                return obj.role
+            }
+            else if (item === "salary") {
+                return obj.salary
+            } else {
+                return item;
+            }
+        })).join("/");
+
+        return result;
+    }
+
+    const apiPathes = apiTemplatesSet1.map(
+        apiPathTemplate => {
+            return getApiPath(user, apiPathTemplate);
+        }
+    )
+
+    console.log(JSON.stringify(apiPathes));
+
+
+
+
+
+
+
     return (
         <section className="portfolio">
             <div className="portfolio__image-container">
