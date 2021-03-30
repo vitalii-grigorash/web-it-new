@@ -9,7 +9,7 @@ import adaptiveImg from '../../images/animation-adaptive.jpg';
 import mediaImg from '../../images/animation-media.jpg';
 import advertisImg from '../../images/animation-advertis.jpg';
 
-function Table() {
+function Table () {
 
     const [img, setImg] = useState(mainImg);
     const [text, setText] = useState('Система управления сайтом (например, CMS WordPress)')

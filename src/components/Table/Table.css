@@ -82,15 +82,24 @@
     text-decoration: underline;
     cursor: pointer;
 }
+.design__body-text:hover {
+    color: #F9461F;
+}
 .design__body-text_center {
     text-align: center;
     padding: 0;
     text-decoration: none;
     cursor: text;
 }
+.design__body-text_center:hover {
+    color: #373737;
+}
 .design__body-text_pay {
     text-decoration: none;
     cursor: text;
+}
+.design__body-text_pay:hover {
+    color: #373737;
 }
 .design__body-img {
     text-align: center;
