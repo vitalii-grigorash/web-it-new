@@ -20,6 +20,7 @@
     color: #FFFFFF;
     max-width: 750px;
     margin: 361px auto 0 258px;
+    text-transform: uppercase;
 }
 .multipage__subheading {
     font-family: 'Verdana';
@@ -74,6 +75,50 @@
     margin: auto 0 auto 19px;
     max-width: 120px;
 }
+.multipage-info {
+    display: flex;
+}
+.multipage-info__container {
+    display: flex;
+    flex-direction: column;
+    margin: 96px auto 128px;
+    max-width: 1140px;
+}
+.multipage-info__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #373737;
+    margin: 0 auto 0 0;
+    text-transform: uppercase;
+}
+.multipage-info__description {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #373737;
+    margin: 24px auto 0 0;
+}
+.multipage-info__description:first-of-type {
+    margin-top: 32px;
+}
+.multipage-info__list-container {
+    padding: 0;
+    margin: 0;
+}
+.multipage-info__list {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #373737;
+    margin: 0 auto 0 20px;
+}
 @media screen and (max-width: 1680px) {
     .multipage__heading {
         margin: 300px auto 0 200px;
@@ -108,6 +153,9 @@
     }
     .multipage__button {
         margin: 64px auto auto 100px;
+    }
+    .multipage-info__container {
+        max-width: 900px;
     }
 }
 @media screen and (max-width: 1095px) {
@@ -163,6 +211,22 @@
     .multipage__bottom-container {
         display: none;
     }
+    .multipage-info__container {
+        margin: 64px auto 96px;
+        max-width: 538px;
+    }
+    .multipage-info__heading {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .multipage-info__description {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .multipage-info__list {
+        font-size: 16px;
+        line-height: 140%;
+    }
 }
 @media screen and (max-width: 690px) {
     .multipage__heading {
@@ -170,6 +234,11 @@
     }
     .multipage__button {
         margin: 24px auto auto 15px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .multipage-info__container {
+        max-width: 290px;
     }
 }
 @media screen and (max-width: 555px) {
