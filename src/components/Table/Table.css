@@ -216,6 +216,9 @@
         text-decoration: none;
         cursor: text;
     }
+    .design__body-text:hover {
+        color: #373737;
+    }
 }
 @media screen and (max-width: 560px) {
     .table__container {
