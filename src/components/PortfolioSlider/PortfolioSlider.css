@@ -25,16 +25,20 @@
     margin-left: 8px;
 }
 .carousel__container:hover .carousel-overlay {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
 }
 .carousel__container_stroj-snab {
     background-image: url('../../images/stroi-snab-img.jpg');
 }
 .carousel__container_voleks {
     background-image: url('../../images/voleks-img.jpg');
+    transition: all .3s linear;
 }
 .carousel__container_voleks:hover {
     background-image: url('../../images/voleks-img-hover.jpg');
+    transition: all .3s linear;
 }
 .carousel__container_ar-bellos {
     background-image: url('../../images/arbellos-img.jpg');
@@ -47,15 +51,17 @@
 }
 .carousel__container_telecom-service {
     background-image: url('../../images/telecom-service-img.jpg');
+    transition: all .3s linear;
 }
 .carousel__container_telecom-service:hover {
     background-image: url('../../images/telecom-service-img-hover.jpg');
+    transition: all .3s linear;
 }
 .carousel__container_la-mia-borsa {
     background-image: url('../../images/la-mia-borsa-img.jpg');
 }
 .carousel-overlay {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     background: rgba(0, 0, 0, 0.7);
@@ -63,6 +69,9 @@
     left: 0;
     right: 0;
     bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s, opacity .3s linear;
 }
 .carousel-overlay__icon {
     margin: 81px auto 0;
@@ -142,7 +151,8 @@
         width: 560px;
     }
     .carousel-overlay {
-        display: flex;
+        visibility: visible;
+        opacity: 1;
     }
     .carousel__container_voleks {
         background-image: url('../../images/voleks-img-hover.jpg');

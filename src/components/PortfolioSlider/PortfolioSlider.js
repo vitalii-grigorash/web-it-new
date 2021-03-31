@@ -29,7 +29,7 @@ export default class PortfolioSlider extends Component {
                         left: -65,
                     }}
                     src={prevArrow} 
-                    alt="Стрелочка"
+                    alt="Иконка прокрутки"
                 />
             );
         }
@@ -48,7 +48,7 @@ export default class PortfolioSlider extends Component {
                         right: -65,
                     }}
                     src={nextArrow} 
-                    alt="Стрелочка"
+                    alt="Иконка прокрутки"
                 />
             );
         }
@@ -212,7 +212,7 @@ export default class PortfolioSlider extends Component {
         return (
             <section className="portfolio-slider">
                 <div className="portfolio-slider__container">
-                    <h3 className="portfolio-slider__heading">НАШИ ПОСЛЕДНИЕ РАБОТЫ</h3>
+                    <h2 className="portfolio-slider__heading">НАШИ ПОСЛЕДНИЕ РАБОТЫ</h2>
                     <Slider {...settings}>
                         <Link to={'/stroj-snab'} className="carousel__container carousel__container_stroj-snab">
                             <div className="carousel-overlay">

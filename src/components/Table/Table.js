@@ -11,14 +11,28 @@ import advertisImg from '../../images/animation-advertis.jpg';
 
 function Table () {
 
-    const [img, setImg] = useState(mainImg);
     const [text, setText] = useState('Система управления сайтом (например, CMS WordPress)')
     const [textStyle, setTextStyle] = useState('animation__text');
+    const [isMain, setMain] = useState(true);
+    const [isDesign, setDesign] = useState(false);
+    const [isForm, setForm] = useState(false);
+    const [isSlider, setSlider] = useState(false);
+    const [isMap, setMap] = useState(false);
+    const [isAdaptive, setAdaptive] = useState(false);
+    const [isMedia, setMedia] = useState(false);
+    const [isAdvertis, setAdvertis] = useState(false);
 
     return (
         <section className="table">
             <section className="animation">
-                <img src={img} alt="Статичное изображение" className="animation__img"/>
+                <img src={mainImg} alt="Статичное изображение" className={`animation__img ${isMain && 'animation__img_main'}`}/>
+                <img src={designImg} alt="Статичное изображение" className={`animation__img ${isDesign && 'animation__img_design'}`}/>
+                <img src={formImg} alt="Статичное изображение" className={`animation__img ${isForm && 'animation__img_form'}`}/>
+                <img src={sliderImg} alt="Статичное изображение" className={`animation__img ${isSlider && 'animation__img_slider'}`}/>
+                <img src={mapImg} alt="Статичное изображение" className={`animation__img ${isMap && 'animation__img_map'}`}/>
+                <img src={adaptiveImg} alt="Статичное изображение" className={`animation__img ${isAdaptive && 'animation__img_adaptive'}`}/>
+                <img src={mediaImg} alt="Статичное изображение" className={`animation__img ${isMedia && 'animation__img_media'}`}/>
+                <img src={advertisImg} alt="Статичное изображение" className={`animation__img ${isAdvertis && 'animation__img_advertis'}`}/>
                 <div className="animation__text-container">
                     <p className={textStyle}>{text}</p>
                 </div>
@@ -37,8 +51,8 @@ function Table () {
                         <tr className="design__body-container">
                             <td 
                                 className="design__body-text"
-                                onMouseEnter={() => setImg(designImg)} 
-                                onMouseLeave={() => setImg(mainImg)} 
+                                onMouseEnter={() => {setMain(false); setDesign(true);}}
+                                onMouseLeave={() => {setMain(true); setDesign(false);}}
                             >
                                 Уникальный дизайн для всех страниц
                             </td>
@@ -49,8 +63,8 @@ function Table () {
                         <tr className="design__body-container">
                             <td 
                                 className="design__body-text"
-                                onMouseEnter={() => setImg(formImg)} 
-                                onMouseLeave={() => setImg(mainImg)} 
+                                onMouseEnter={() => {setMain(false); setForm(true);}}
+                                onMouseLeave={() => {setMain(true); setForm(false);}}
                             >
                                 Форма обратной связи
                             </td>
@@ -61,8 +75,8 @@ function Table () {
                         <tr className="design__body-container">
                             <td 
                                 className="design__body-text"
-                                onMouseEnter={() => setImg(sliderImg)} 
-                                onMouseLeave={() => setImg(mainImg)} 
+                                onMouseEnter={() => {setMain(false); setSlider(true);}}
+                                onMouseLeave={() => {setMain(true); setSlider(false);}}
                             >
                                 Слайдер с УТП (спец предложение)
                             </td>
@@ -73,8 +87,8 @@ function Table () {
                         <tr className="design__body-container">
                             <td 
                                 className="design__body-text"
-                                onMouseEnter={() => setImg(mapImg)} 
-                                onMouseLeave={() => setImg(mainImg)} 
+                                onMouseEnter={() => {setMain(false); setMap(true);}}
+                                onMouseLeave={() => {setMain(true); setMap(false);}}
                             >
                                 Карта проезда
                             </td>
@@ -85,8 +99,8 @@ function Table () {
                         <tr className="design__body-container">
                             <td 
                                 className="design__body-text"
-                                onMouseEnter={() => setImg(adaptiveImg)} 
-                                onMouseLeave={() => setImg(mainImg)} 
+                                onMouseEnter={() => {setMain(false); setAdaptive(true);}}
+                                onMouseLeave={() => {setMain(true); setAdaptive(false);}}
                             >
                                 Адаптивная (резиновая) верстка под планшеты и телефоны
                             </td>
@@ -97,8 +111,8 @@ function Table () {
                         <tr className="design__body-container">
                             <td 
                                 className="design__body-text"
-                                onMouseEnter={() => setImg(mediaImg)} 
-                                onMouseLeave={() => setImg(mainImg)} 
+                                onMouseEnter={() => {setMain(false); setMedia(true);}}
+                                onMouseLeave={() => {setMain(true); setMedia(false);}}
                             >
                                 Медиагалерея (фото и видео)
                             </td>
@@ -109,8 +123,8 @@ function Table () {
                         <tr className="design__body-container">
                             <td 
                                 className="design__body-text"
-                                onMouseEnter={() => setImg(advertisImg)} 
-                                onMouseLeave={() => setImg(mainImg)} 
+                                onMouseEnter={() => {setMain(false); setAdvertis(true);}}
+                                onMouseLeave={() => {setMain(true); setAdvertis(false);}}
                             >
                                 Разработка рекламного баннера
                             </td>

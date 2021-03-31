@@ -20,62 +20,16 @@ import { Link } from 'react-router-dom';
 
 function Portfolio () {
 
-    // Временно! Вариант решения тестовой задачи.
-    // const user = {
-    //     id: 20,
-    //     name: "John Dow",
-    //     role: "QA",
-    //     salary: 100
-    // }
-
-    // const apiTemplatesSet1 = [
-    //     "/api/items/id/name",
-    //     "/api/items/id/role",
-    //     "/api/items/id/salary",
-    // ];
-
-    // function getApiPath(obj, template) {
-
-    //     const result = (template.split("/").map(item => {
-    //         if (item === "id") {
-    //             return obj.id
-    //         }
-    //         else if (item === "name") {
-    //             return obj.name
-    //         }
-    //         else if (item === "role") {
-    //             return obj.role
-    //         }
-    //         else if (item === "salary") {
-    //             return obj.salary
-    //         } else {
-    //             return item;
-    //         }
-    //     })).join("/");
-
-    //     return result;
-    // }
-
-    // const apiPathes = apiTemplatesSet1.map(
-    //     apiPathTemplate => {
-    //         return getApiPath(user, apiPathTemplate);
-    //     }
-    // )
-
-    // console.log(JSON.stringify(apiPathes));
-
     return (
         <section className="portfolio">
-            <div className="portfolio__image-container">
-                <h2 className="portfolio__heading">ПОРТФОЛИО</h2>
+            <section className="portfolio__image-container">
+                <h1 className="portfolio__heading">ПОРТФОЛИО</h1>
                 <div className="portfolio__bottom-container">
                     <img src={mouse} alt="Иконка мышки" className="portfolio__mouse-icon" />
                     <p className="portfolio__text">Прокрутите вниз</p>
                 </div>
-            </div>
-
+            </section>
             <section className="grid-container">
-
                 <Link to={'/stroj-snab'} className="grid-container__group">
                     <img src={stroiSnab} alt="Фото Строй Снаб" className="grid-container__img"/>
                     <div className="overlay">
@@ -84,7 +38,6 @@ function Portfolio () {
                        <p className="overlay__subheading">Компания осуществляет строительные работы</p>
                     </div>
                 </Link>
-
                 <Link to={'/voleks'} className="grid-container__group">
                     <img src={voleks} alt="Фото Волекс" className="grid-container__img grid-container__img_voleks"/>
                     <img src={voleksHover} alt="Фото Волекс" className="grid-container__img grid-container__img_voleks-hover"/>
@@ -94,7 +47,6 @@ function Portfolio () {
                        <p className="overlay__subheading overlay__subheading_voleks">Продажа промышленного инструмента абразивных материалов</p>
                     </div>
                 </Link>
-
                 <Link to={'/ar-bellos'} className="grid-container__group">
                     <img src={arbellos} alt="Фото Арбеллос" className="grid-container__img"/>
                     <div className="overlay">
@@ -103,7 +55,6 @@ function Portfolio () {
                        <p className="overlay__subheading">Инсталяция светопрозрачных решений</p>
                     </div>
                 </Link>
-
                 <Link to={'/yur-konsul'} className="grid-container__group">
                     <img src={urKonsul} alt="Фото Юр Консул" className="grid-container__img"/>
                     <div className="overlay">
@@ -112,7 +63,6 @@ function Portfolio () {
                        <p className="overlay__subheading overlay__subheading_ur-konsul">Реализация деятельности ТСН(Ж), ЖСК и УК по управлению недвижимым имуществом</p>
                     </div>
                 </Link>
-
                 <Link to={'/ost-med-consult'} className="grid-container__group">
                     <img src={ostMebConsalt} alt="Фото Ост Мед Консалт" className="grid-container__img"/>
                     <div className="overlay">
@@ -121,7 +71,6 @@ function Portfolio () {
                        <p className="overlay__subheading">Многопрофильная клиника: эстетическая медецины и пластическая хирургия</p>
                     </div>
                 </Link>
-
                 <Link to={'/telecom-service'} className="grid-container__group">
                     <img src={telecomService} alt="Фото Телеком Сервис" className="grid-container__img grid-container__img_telecom-service"/>
                     <img src={telecomServiceHover} alt="Фото Телеком Сервис" className="grid-container__img grid-container__img_telecom-service-hover"/>
@@ -131,7 +80,6 @@ function Portfolio () {
                        <p className="overlay__subheading overlay__subheading_telecom-service">Телекоммуникации, благоустройство и асфалтировании</p>
                     </div>
                 </Link>
-
                 <Link to={'/la-mia-borsa'} className="grid-container__group">
                     <img src={laMiaBorsa} alt="Фото Ля Миа Борса" className="grid-container__img"/>
                     <div className="overlay">
@@ -140,9 +88,7 @@ function Portfolio () {
                        <p className="overlay__subheading">Итальянские сумки в <nobr>Санкт-Петербурге</nobr></p>
                     </div>
                 </Link>
-
             </section>
-
         </section>
     );
 }
