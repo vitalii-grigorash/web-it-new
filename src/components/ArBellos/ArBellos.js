@@ -10,19 +10,17 @@ import arBellosPreviewImg from '../../images/ar-bellos-img-preview.jpg';
 import Stages from '../Stages/Stages';
 
 function ArBellos () {
-
     return (
         <section className="ar-bellos">
-            <div className="ar-bellos__image">
+            <section className="ar-bellos__image">
                 <div className="ar-bellos__overlay-container">
                     <img src={arBellosIcon} alt="Иконка Арбеллос" className="ar-bellos__icon" />
-                    <h3 className="ar-bellos__heading">ARbellos</h3>
+                    <h1 className="ar-bellos__heading">ARbellos</h1>
                     <p className="ar-bellos__subheading">Инсталяция светопрозрачных решений</p>
                 </div>
-            </div>
-
+            </section>
             <section className="about">
-                <h3 className="about__heading">О ПРОЕКТЕ</h3>
+                <h2 className="about__heading">О ПРОЕКТЕ</h2>
                 <div className="about__container">
                     <img src={arBellosAboutImg} alt="Фотография" className="about__img about__img_ar-bellos" />
                     <div className="about__text-container about__text-container_ar-bellos">
@@ -43,12 +41,10 @@ function ArBellos () {
                     </div>
                 </div>
             </section>
-
             <Stages />
-
             <section className="colors">
                 <div className="colors__main-container">
-                    <h3 className="colors__heading">ЦВЕТА И ИКОНКИ</h3>
+                    <h2 className="colors__heading">ЦВЕТА И ИКОНКИ</h2>
                     <div className="colors__content-container">
                         <div className="colors__container">
                             <div className="colors__square-container">
@@ -91,9 +87,8 @@ function ArBellos () {
                     </div>
                 </div>
             </section>
-
             <section className="typography">
-                <h3 className="typography__header">ТИПОГРАФИКА</h3>
+                <h2 className="typography__header">ТИПОГРАФИКА</h2>
                 <div className="typography__container">
                     <p className="typography__letter-main">Aa</p>
                     <div className="typography__roboto-container">
@@ -103,10 +98,9 @@ function ArBellos () {
                     </div>
                 </div>
             </section>
-
             <section className="ar-bellos-adaptive">
                 <div className="ar-bellos-adaptive__info-container">
-                    <h4 className="ar-bellos-adaptive__heading">АДАПТИВНЫЙ ДИЗАЙН</h4>
+                    <h2 className="ar-bellos-adaptive__heading">АДАПТИВНЫЙ ДИЗАЙН</h2>
                     <p className="ar-bellos-adaptive__description">
                         Все наши сайты можно просматривать на самых разных устройствах, 
                         таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 
@@ -117,11 +111,9 @@ function ArBellos () {
                 </div>
                 <img className="ar-bellos-adaptive__img" src={whiteLaptop} alt="Картинка ноутбука"/>
             </section>
-
             <section className="ar-bellos-preview">
                 <img className="ar-bellos-preview__img" src={arBellosPreviewImg} alt="Изображение Арбеллос превью"/>
             </section>
-
         </section>
     );
 }

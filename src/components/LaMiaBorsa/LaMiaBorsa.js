@@ -12,17 +12,15 @@ function LaMiaBorsa () {
 
     return (
         <section className="la-mia-borsa">
-
-            <div className="la-mia-borsa__image">
+            <section className="la-mia-borsa__image">
                 <div className="la-mia-borsa__overlay-container">
                     <img src={laMiaBorsaIcon} alt="Иконка Арбеллос" className="la-mia-borsa__icon" />
-                    <h3 className="la-mia-borsa__heading">La mia Borsa</h3>
+                    <h1 className="la-mia-borsa__heading">La mia Borsa</h1>
                     <p className="la-mia-borsa__subheading">Итальянские сумки в Санкт-Петербурге</p>
                 </div>
-            </div>
-
+            </section>
             <section className="about-la-mia-borsa">
-                <h3 className="about-la-mia-borsa__heading">О ПРОЕКТЕ</h3>
+                <h2 className="about-la-mia-borsa__heading">О ПРОЕКТЕ</h2>
                 <div className="about-la-mia-borsa__container">
                     <div className="about-la-mia-borsa__img"></div>
                     <div className="about-la-mia-borsa__text-container">
@@ -43,12 +41,10 @@ function LaMiaBorsa () {
                     </div>
                 </div>
             </section>
-
             <Stages />
-
             <section className="colors">
                 <div className="colors__main-container">
-                    <h3 className="colors__heading">ЦВЕТА И ИКОНКИ</h3>
+                    <h2 className="colors__heading">ЦВЕТА И ИКОНКИ</h2>
                     <div className="colors__content-container">
                         <div className="colors__container">
                             <div className="colors__square-container">
@@ -91,9 +87,8 @@ function LaMiaBorsa () {
                     </div>
                 </div>
             </section>
-
             <section className="typography">
-                <h3 className="typography__header">ТИПОГРАФИКА</h3>
+                <h2 className="typography__header">ТИПОГРАФИКА</h2>
                 <div className="typography__container">
                     <p className="typography__letter-main">Aa</p>
                     <div className="typography__roboto-container">
@@ -103,11 +98,10 @@ function LaMiaBorsa () {
                     </div>
                 </div>
             </section>
-
             <section className="adaptive-la-mia-borsa">
                 <img className="adaptive-la-mia-borsa__phones-img" src={iPhone} alt="Картинка телефонов"/>
                 <div className="adaptive-la-mia-borsa__info-container">
-                    <h4 className="adaptive-la-mia-borsa__heading">АДАПТИВНЫЙ ДИЗАЙН</h4>
+                    <h2 className="adaptive-la-mia-borsa__heading">АДАПТИВНЫЙ ДИЗАЙН</h2>
                     <p className="adaptive-la-mia-borsa__description">
                         Все наши сайты можно просматривать на самых разных устройствах, 
                         таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 
@@ -117,11 +111,9 @@ function LaMiaBorsa () {
                     </p>
                 </div>
             </section>
-
             <section className="preview-la-mia-borsa">
                 <img className="preview-la-mia-borsa__img" src={previewImg} alt="Превью Ля Миа Борса"/>
             </section>
-
         </section>
     );
 }

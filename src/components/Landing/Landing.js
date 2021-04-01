@@ -13,21 +13,18 @@ function Landing(props) {
         setSecondActive(false);
         setLastActive(false);
     }
-
     const [isSecondActive, setSecondActive] = useState(false);
     function handleSecondSectionActive () {
         setFirstActive(false);
         setLastActive(false);
         setSecondActive(true);
     }
-
     const [isLastActive, setLastActive] = useState(false);
     function handleLastSectionActive () {
         setFirstActive(false);
         setSecondActive(false);
         setLastActive(true);
     }
-
     return (
         <section className="landing">
             <section className="landing__image-container">

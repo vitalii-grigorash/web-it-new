@@ -82,7 +82,7 @@ function Web(props) {
             <Stages />
             <section className="history-web">
                 <div className="history-web__container">
-                    <h3 className="history-web__heading">немного истории</h3>
+                    <h2 className="history-web__heading">немного истории</h2>
                     <img className="history-web__img history-web__img_mobile" src={illustrationWeb} alt="Иллюстрация совещания" />
                     <div className="history-web__text-container">
                         <p className="history-web__text">

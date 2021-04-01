@@ -6,6 +6,7 @@ function Shop (props) {
     const {
         onOpenPopup,
     } = props;
+    
     return (
         <section className="shop">
             <section className="shop__image-container">

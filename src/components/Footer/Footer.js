@@ -2,30 +2,27 @@ import React, { useState } from 'react';
 import check from '../../images/svg/check.svg';
 import { Validation } from '../../utils/Validation';
 
-function Footer (props) {
+function Footer(props) {
 
-  const { 
+  const {
     onSendForm,
   } = props;
 
   const name = Validation();
   const number = Validation();
   const [method, setMethod] = useState('Телефон');
-
-  function onRadioСhange (evt) {
+  function onRadioСhange(evt) {
     setMethod(evt.target.value);
   };
-
   function submitForm(evt) {
     evt.preventDefault();
     onSendForm(name.value, number.value, method);
     name.setValue('');
     number.setValue('');
   }
-
   return (
     <section className="footer">
-      <div className="footer__contacts-container">
+      <section className="footer__contacts-container">
         <div className="footer__links-container">
           <a href="tel:+78123728561" className="footer__phone-link">
             <p className="footer__phone-icon"></p>
@@ -44,17 +41,17 @@ function Footer (props) {
           <a href="https://www.instagram.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="footer__icon footer__icon_inst"></a>
           <a href="https://vk.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="footer__icon footer__icon_vk"></a>
         </div>
-      </div>
-      <div className="footer__form-container">
-        <form 
+      </section>
+      <section className="footer__form-container">
+        <form
           className="footer__form"
-          onSubmit={submitForm}  
+          onSubmit={submitForm}
         >
           <p className="footer__form-heading">Оставьте заявку и получите консультацию специалиста</p>
           <div className="footer__inputs-container">
             <div className="footer__input-container">
-              <input 
-                type="text" 
+              <input
+                type="text"
                 className="footer__input"
                 id="name-input"
                 name="name"
@@ -62,15 +59,15 @@ function Footer (props) {
                 onChange={name.onChange}
                 minLength="2"
                 maxLength="50"
-                placeholder="Имя" 
+                placeholder="Имя"
                 pattern="[A-Za-zа-яёА-ЯЁ -]{1,}"
                 required
               />
               <span id="name-input" className="footer-form__input_error">{name.errorMessage}</span>
             </div>
             <div className="footer__input-container">
-              <input 
-                type="text" 
+              <input
+                type="text"
                 className="footer__input"
                 id="number-input"
                 name="number"
@@ -78,7 +75,7 @@ function Footer (props) {
                 onChange={number.onChange}
                 minLength="3"
                 maxLength="20"
-                placeholder="Телефон" 
+                placeholder="Телефон"
                 pattern='^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$'
                 required
               />
@@ -88,31 +85,31 @@ function Footer (props) {
           <p className="footer__question">Как удобнее связаться с Вами?</p>
           <div className="footer__radio-container">
             <div className="footer__radio">
-              <input 
-                id="phoneInput" 
-                type="radio" 
-                name="variant" 
-                value="Телефон" 
+              <input
+                id="phoneInput"
+                type="radio"
+                name="variant"
+                value="Телефон"
                 onChange={onRadioСhange}
                 defaultChecked
               />
               <label htmlFor="phoneInput">Телефон</label>
             </div>
             <div className="footer__radio">
-              <input 
-                id="telegramInput" 
-                type="radio" 
-                name="variant" 
+              <input
+                id="telegramInput"
+                type="radio"
+                name="variant"
                 value="Telegram"
                 onChange={onRadioСhange}
               />
               <label htmlFor="telegramInput">Telegram</label>
             </div>
             <div className="footer__radio">
-              <input 
-                id="whatsAppInput" 
-                type="radio" 
-                name="variant" 
+              <input
+                id="whatsAppInput"
+                type="radio"
+                name="variant"
                 value="WhatsApp"
                 onChange={onRadioСhange}
               />
@@ -122,12 +119,12 @@ function Footer (props) {
           <div className="footer__submit-container">
             <button type="submit" className="footer__submit-button">Получить консультацию</button>
             <div className="footer__under-submit-button-container">
-              <img src={check} alt="Иконка галочки" className="footer__under-submit-button-check"/>
+              <img src={check} alt="Иконка галочки" className="footer__under-submit-button-check" />
               <p className="footer__under-submit-button-text">Принимаю пользовательское соглашение</p>
             </div>
           </div>
         </form>
-      </div>
+      </section>
     </section>
   );
 }

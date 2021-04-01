@@ -12,16 +12,15 @@ function YurKonsul () {
 
     return (
         <section className="yur-konsul">
-            <div className="yur-konsul__image">
+            <section className="yur-konsul__image">
                 <div className="yur-konsul__overlay-container">
                     <img src={urKonsulIcon} alt="Иконка Строй Снаб" className="yur-konsul__icon" />
-                    <h3 className="yur-konsul__heading">ЮрКонсул</h3>
+                    <h1 className="yur-konsul__heading">ЮрКонсул</h1>
                     <p className="yur-konsul__subheading">Реализация деятельности ТСН(Ж),  ЖСК и УК по управлению недвижимым имуществом</p>
                 </div>
-            </div>
-
+            </section>
             <section className="about">
-                <h3 className="about__heading">О ПРОЕКТЕ</h3>
+                <h2 className="about__heading">О ПРОЕКТЕ</h2>
                 <div className="about__container">
                     <img src={urKonsulAboutImg} alt="Фотография" className="about__img about__img_yur-konsul" />
                     <div className="about__text-container about__text-container_yur-konsul">
@@ -36,12 +35,10 @@ function YurKonsul () {
                     </div>
                 </div>
             </section>
-
             <Stages />
-
             <section className="colors">
                 <div className="colors__main-container">
-                    <h3 className="colors__heading">ЦВЕТА И ИКОНКИ</h3>
+                    <h2 className="colors__heading">ЦВЕТА И ИКОНКИ</h2>
                     <div className="colors__content-container">
                         <div className="colors__container">
                             <div className="colors__square-container">
@@ -84,23 +81,21 @@ function YurKonsul () {
                     </div>
                 </div>
             </section>
-
             <section className="typography">
-                <h3 className="typography__header">ТИПОГРАФИКА</h3>
+                <h2 className="typography__header">ТИПОГРАФИКА</h2>
                 <div className="typography__container">
                     <p className="typography__letter-main">Aa</p>
                     <div className="typography__roboto-container">
-                        <h4 className="typography__roboto-heading typography__roboto-heading_yur-konsul">Alegreya SC</h4>
+                        <h3 className="typography__roboto-heading typography__roboto-heading_yur-konsul">Alegreya SC</h3>
                         <p className="typography__roboto-letters typography__roboto-letters_yur-konsul">Aa Bb Cc Dd Ee Ff Gg Hh Ii Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy and Zz</p>
                         <p className="typography__roboto-letters typography__roboto-letters_yur-konsul">Aa Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъ Ы Ь Ээ Юю Яя</p>
                     </div>
                 </div>
             </section>
-
             <section className="adaptive-yur-konsul">
                 <div className="adaptive-yur-konsul__img"></div>
                 <div className="adaptive-yur-konsul__info-container">
-                <h4 className="adaptive-yur-konsul__heading">АДАПТИВНЫЙ ДИЗАЙН</h4>
+                <h2 className="adaptive-yur-konsul__heading">АДАПТИВНЫЙ ДИЗАЙН</h2>
                     <p className="adaptive-yur-konsul__description">
                         Все наши сайты можно просматривать на самых разных устройствах, 
                         таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 
@@ -110,11 +105,9 @@ function YurKonsul () {
                     </p>
                 </div>
             </section>
-
             <section className="preview preview__yur-konsul">
                 <img className="preview__yur-konsul-img" src={previewImg} alt="Превью"/>
             </section>
-
         </section>
     );
 }

@@ -32,7 +32,7 @@ export default class PortfolioSlider extends Component {
                     alt="Иконка прокрутки"
                 />
             );
-        }
+        };
 
         function SampleNextArrow (props) {
             const { className, style, onClick } = props;
@@ -51,7 +51,7 @@ export default class PortfolioSlider extends Component {
                     alt="Иконка прокрутки"
                 />
             );
-        }
+        };
 
         const settings = {
             dots: false,

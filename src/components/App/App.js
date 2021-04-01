@@ -24,14 +24,12 @@ import SuccessPopup from '../SuccessPopup/SuccessPopup';
 import Header from '../Header/Header';
 
 function App () {
-
   const [isDropDownMenuOpen, setDropDownMenuOpen] = useState(false);
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [isSuccessPopupOpen, setSuccessPopupOpen] = useState(false);
   const [isMobileNavigationOpen, setMobileNavigationOpen] = useState(false);
   const [isItOpen, setItOpen] = useState(false);
   const [isWebOpen, setWebOpen] = useState(false);
-
   function handleItDropDownMunu () {
     if (!isItOpen) {
       setItOpen(true);
@@ -39,7 +37,6 @@ function App () {
       setItOpen(false);
     }
   }
-
   function handleWebDropDownMunu () {
     if (!isWebOpen) {
       setWebOpen(true);
@@ -47,7 +44,6 @@ function App () {
       setWebOpen(false);
     }
   }
-
   const handleDropDownMenu = (evt) => {
     if (!
       (
@@ -60,19 +56,15 @@ function App () {
       dropDownMenuClose();
     }
   }
-
   const memoizedOnClickDropDown = useCallback(handleDropDownMenu, []);
-
   function dropDownMenuOpen () {
     setDropDownMenuOpen(true);
     document.addEventListener('click', memoizedOnClickDropDown);
   }
-
   function dropDownMenuClose () {
     setDropDownMenuOpen(false);
     document.removeEventListener('click', memoizedOnClickDropDown);
   }
-
   const handleMobileNavigatinClose = (evt) => {
     if (!
       (
@@ -90,46 +82,36 @@ function App () {
       handleMobileNavigationClose();
     }
   }
-
   const memoizedOnCloseMobileNavigatin = useCallback(handleMobileNavigatinClose, []);
-
   function handleMobileNavigationOpen () {
     setItOpen(false);
     setWebOpen(false);
     setMobileNavigationOpen(true);
     document.addEventListener('click', memoizedOnCloseMobileNavigatin);
   }
-
   function handleMobileNavigationClose () {
     setMobileNavigationOpen(false);
     document.removeEventListener('click', memoizedOnCloseMobileNavigatin);
   }
-
   function handlePopupOpen () {
     setMobileNavigationOpen(false);
     setPopupOpen(true);
   }
-
   function handlePopupClose () {
     setPopupOpen(false);
   }
-
   function handleSuccessPopupOpen () {
     setSuccessPopupOpen(true);
   }
-
   function handleSuccessPopupClose () {
     setSuccessPopupOpen(false);
   }
-
   function feedbackFormSend (name, number, method) {
     console.log(name, number, method);
     handleSuccessPopupOpen();
   }
-
   return (
     <div className="app">
-
       <Header
         onOpenPopup={handlePopupOpen}
         onOpenDropDownMenu={dropDownMenuOpen}
@@ -143,121 +125,97 @@ function App () {
         isItOpen={isItOpen}
         isWebOpen={isWebOpen}
       />
-
       <Switch>
-
         <Route path='/ost-med-consult'>
           <OstMedConsult />
         </Route>
-
         <Route path='/la-mia-borsa'>
           <LaMiaBorsa />
         </Route>
-
         <Route path='/ar-bellos'>
           <ArBellos />
         </Route>
-
         <Route path='/telecom-service'>
           <TelecomService />
         </Route>
-        
         <Route path='/yur-konsul'>
           <YurKonsul />
         </Route>
-
         <Route path='/voleks'>
           <Voleks />
         </Route>
-
         <Route path='/stroj-snab'>
           <StrojSnab />
         </Route>
-
         <Route path='/contacts'>
           <Contacts />
         </Route>
-
         <Route path='/portfolio'>
           <Portfolio />
         </Route>
-
         <Route path='/seo'>
           <Seo
             onSendForm={feedbackFormSend}
             onOpenPopup={handlePopupOpen}
           />
         </Route>
-
         <Route path='/landing'>
           <Landing
             onOpenPopup={handlePopupOpen}
           />
         </Route>
-
         <Route path='/business-card'>
           <BusinessCard
             onOpenPopup={handlePopupOpen}
           />
         </Route>
-
         <Route path='/catalog'>
           <Catalog
             onSendForm={feedbackFormSend}
             onOpenPopup={handlePopupOpen}
           />
         </Route>
-
         <Route path='/multipage'>
           <Multipage
             onSendForm={feedbackFormSend}
             onOpenPopup={handlePopupOpen}
           />
         </Route>
-
         <Route path='/shop'>
           <Shop
             onOpenPopup={handlePopupOpen}
           />
         </Route>
-
         <Route path='/web'>
           <Web 
             onSendForm={feedbackFormSend}
             onOpenPopup={handlePopupOpen}
           />
         </Route>
-
         <Route path='/it'>
           <It
             onOpenPopup={handlePopupOpen}
           />
         </Route>
-
         <Route path='/'>
           <MainPage 
             isDropDownMenuOpen={isDropDownMenuOpen}
             onSendForm={feedbackFormSend}
           />
         </Route>
-
       </Switch>
-
       <Footer
         onSendForm={feedbackFormSend}
       />
-
       <Popup
         isOpen={isPopupOpen}
         onClosePopup={handlePopupClose}
         onSendForm={feedbackFormSend}
       />
-
       <SuccessPopup
         isOpen={isSuccessPopupOpen}
         onClose={handleSuccessPopupClose}
       />
-      
     </div>
   );
 }

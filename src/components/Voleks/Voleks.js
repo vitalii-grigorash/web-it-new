@@ -12,16 +12,16 @@ function Voleks () {
 
     return (
         <section className="voleks">
-            <div className="voleks__image">
+            <section className="voleks__image">
                 <div className="voleks__overlay-container">
                     <img src={voleksIcon} alt="Иконка Строй Снаб" className="voleks__icon" />
-                    <h3 className="voleks__heading">Волекс абразив</h3>
+                    <h1 className="voleks__heading">Волекс абразив</h1>
                     <p className="voleks__subheading">Продажа инстремуента и аббразинвных материалов</p>
                 </div>
-            </div>
+            </section>
 
             <section className="about">
-                <h3 className="about__heading">О ПРОЕКТЕ</h3>
+                <h2 className="about__heading">О ПРОЕКТЕ</h2>
                 <div className="about__container">
                     <img src={voleksAboutImg} alt="Фотография" className="about__img about__img_voleks" />
                     <div className="about__text-container">
@@ -41,12 +41,10 @@ function Voleks () {
                     </div>
                 </div>
             </section>
-
             <Stages />
-
             <section className="colors">
                 <div className="colors__main-container">
-                    <h3 className="colors__heading">ЦВЕТА И ИКОНКИ</h3>
+                    <h2 className="colors__heading">ЦВЕТА И ИКОНКИ</h2>
                     <div className="colors__content-container">
                         <div className="colors__container">
                             <div className="colors__square-container">
@@ -89,23 +87,21 @@ function Voleks () {
                     </div>
                 </div>
             </section>
-
             <section className="typography">
-                <h3 className="typography__header">ТИПОГРАФИКА</h3>
+                <h2 className="typography__header">ТИПОГРАФИКА</h2>
                 <div className="typography__container">
                     <p className="typography__letter-main">Aa</p>
                     <div className="typography__roboto-container">
-                        <h4 className="typography__roboto-heading">Roboto</h4>
+                        <h3 className="typography__roboto-heading">Roboto</h3>
                         <p className="typography__roboto-letters">Aa Bb Cc Dd Ee Ff Gg Hh Ii Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy and Zz</p>
                         <p className="typography__roboto-letters">Aa Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъ Ы Ь Ээ Юю Яя</p>
                     </div>
                 </div>
             </section>
-
             <section className="adaptive adaptive__voleks">
                 <div className="adaptive__laptop-img"></div>
                 <div className="adaptive__info-container adaptive__info-container_voleks">
-                    <h4 className="adaptive__heading adaptive__heading_voleks">АДАПТИВНЫЙ ДИЗАЙН</h4>
+                    <h2 className="adaptive__heading adaptive__heading_voleks">АДАПТИВНЫЙ ДИЗАЙН</h2>
                     <p className="adaptive__description adaptive__description_voleks">
                         Все наши сайты можно просматривать на самых разных устройствах, 
                         таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 
@@ -115,11 +111,9 @@ function Voleks () {
                     </p>
                 </div>
             </section>
-
             <section className="preview preview__voleks">
                 <img className="preview__voleks-img" src={voleksPreviewImg} alt="Изображение Волекс Сайт"/>
             </section>
-
         </section>
     );
 }

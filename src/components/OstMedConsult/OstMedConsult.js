@@ -14,16 +14,15 @@ function OstMedConsult () {
     return (
         <section className="ost-med-consult">
 
-            <div className="ost-med-consult__image">
+            <section className="ost-med-consult__image">
                 <div className="ost-med-consult__overlay-container">
                     <img src={ostMedConsultIcon} alt="Иконка Арбеллос" className="ost-med-consult__icon" />
-                    <h3 className="ost-med-consult__heading">Остмедконсалт</h3>
+                    <h1 className="ost-med-consult__heading">Остмедконсалт</h1>
                     <p className="ost-med-consult__subheading">Многопрофильная клиника: эстетическая медицина и пластическая хирургия</p>
                 </div>
-            </div>
-
+            </section>
             <section className="about-ost-med-consult">
-                <h3 className="about-ost-med-consult__heading">О ПРОЕКТЕ</h3>
+                <h2 className="about-ost-med-consult__heading">О ПРОЕКТЕ</h2>
                 <div className="about-ost-med-consult__container">
                     <img src={ostMediaConsultAbout} alt="Изображение Ост Медиа Консалт" className="about-ost-med-consult__img" />
                     <div className="about-ost-med-consult__text-container">
@@ -43,12 +42,10 @@ function OstMedConsult () {
                     </div>
                 </div>
             </section>
-
             <Stages />
-
             <section className="colors">
                 <div className="colors__main-container">
-                    <h3 className="colors__heading">ЦВЕТА И ИКОНКИ</h3>
+                    <h2 className="colors__heading">ЦВЕТА И ИКОНКИ</h2>
                     <div className="colors__content-container">
                         <div className="colors__container">
                             <div className="colors__square-container">
@@ -91,9 +88,8 @@ function OstMedConsult () {
                     </div>
                 </div>
             </section>
-
             <section className="typography">
-                <h3 className="typography__header">ТИПОГРАФИКА</h3>
+                <h2 className="typography__header">ТИПОГРАФИКА</h2>
                 <div className="typography__container">
                     <p className="typography__letter-main">Aa</p>
                     <div className="typography__roboto-container">
@@ -103,11 +99,10 @@ function OstMedConsult () {
                     </div>
                 </div>
             </section>
-
             <section className="adaptive-ost-med-consult">
                 <img className="adaptive-ost-med-consult__img" src={girlAdaptiveImg} alt="Изображение устройств"/>
                 <div className="adaptive-ost-med-consult__info-container">
-                    <h4 className="adaptive-ost-med-consult__heading">АДАПТИВНЫЙ ДИЗАЙН</h4>
+                    <h2 className="adaptive-ost-med-consult__heading">АДАПТИВНЫЙ ДИЗАЙН</h2>
                     <p className="adaptive-ost-med-consult__description">
                         Все наши сайты можно просматривать на самых разных устройствах, 
                         таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 
@@ -117,11 +112,9 @@ function OstMedConsult () {
                     </p>
                 </div>
             </section>
-
             <section className="preview-ost-med-consult">
                 <img className="preview-ost-med-consult__img" src={previewImg} alt="Изображение превью Ост мед консалт"/>
             </section>
-
         </section>
     );
 }

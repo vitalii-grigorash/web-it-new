@@ -32,7 +32,6 @@ function MainPage(props) {
                     </div>
                 </Link>
             </nav>
-
             <section className="about-us">
                 <div className="about-us__container">
                     <h3 className="about-us__heading">о нашей компании</h3>
@@ -54,11 +53,9 @@ function MainPage(props) {
                 </div>
                 <img className="about-us__img" src={illustrationOne} alt="Иллюстрация офиса" />
             </section>
-
             <PageForm
                 onSendForm={onSendForm}
             />
-
             <section className="history">
                 <img className="history__img" src={illustrationTwo} alt="Иллюстрация совещания" />
                 <div className="history__container">
@@ -83,9 +80,8 @@ function MainPage(props) {
                     <img className="history__line" src={lineOfHistory} alt="Линия истории" />
                 </div>
             </section>
-
             <section className="schedule">
-                <h4 className="schedule__heading">мы в цифрах</h4>
+                <h3 className="schedule__heading">мы в цифрах</h3>
                 <div className="schedule__container">
                     <div className="schedule__info-container">
                         <p className="schedule__number">97%</p>
@@ -105,7 +101,6 @@ function MainPage(props) {
                     </div>
                 </div>
             </section>
-
             <section className="team">
                 <div className="team__container">
                     <img className="team__img" src={teamOne} alt="Иллюстрация команды"/>
@@ -129,7 +124,6 @@ function MainPage(props) {
                     </p>
                 </div>
             </section>
-
         </section>
     );
 }

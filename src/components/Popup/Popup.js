@@ -43,7 +43,7 @@ function Popup(props) {
         <section className={`popup ${isOpen && 'popup_opened'}`} onMouseDown={handleOverlayClose}>
             <div className="popup__form-background">
                 <img src={popupCloseButton} alt="Кнопка закрытия попапа" className="popup__close-button" onClick={clearAllAndClose}/>
-                <h3 className="popup__heading">Получите бесплатную консультацию от наших специалистов</h3>
+                <p className="popup__heading">Получите бесплатную консультацию от наших специалистов</p>
                 <form className="popup__form" onSubmit={submitForm} >
                     <div className="popup__inputs-container">
                         <div className="popup__input-container">

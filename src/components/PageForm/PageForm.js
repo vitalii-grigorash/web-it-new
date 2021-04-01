@@ -15,7 +15,6 @@ function PageForm(props) {
     function onRadioСhange(evt) {
         setMethod(evt.target.value);
     };
-
     function submitForm(evt) {
         evt.preventDefault();
         onSendForm(name.value, number.value, method);
@@ -29,7 +28,7 @@ function PageForm(props) {
                 className="page-form__form"
                 onSubmit={submitForm}
             >
-                <h3 className="page-form__form-heading">Получите бесплатную консультацию от наших специалистов</h3>
+                <p className="page-form__form-heading">Получите бесплатную консультацию от наших специалистов</p>
                 <div className="page-form__form-container">
                     <div className="page-form__inputs-container">
                         <div className="page-form__input-container">

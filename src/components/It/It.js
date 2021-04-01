@@ -9,8 +9,8 @@ function It (props) {
 
     return (
         <section className="it">
-            <div className="it__image-container">
-                <h2 className="it__heading">IT СЕРВИС</h2>
+            <section className="it__image-container">
+                <h1 className="it__heading">IT СЕРВИС</h1>
                 <button className="it__button" type="button" onClick={onOpenPopup}>
                     Получить консультацию
                 </button>
@@ -18,7 +18,7 @@ function It (props) {
                     <img src={mouse} alt="Иконка мышки" className="it__mouse-icon" />
                     <p className="it__text">Прокрутите вниз</p>
                 </div>
-            </div>
+            </section>
         </section>
     );
 }

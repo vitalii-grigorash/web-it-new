@@ -13,21 +13,18 @@ function BusinessCard (props) {
         setSecondActive(false);
         setLastActive(false);
     }
-
     const [isSecondActive, setSecondActive] = useState(false);
     function handleSecondSectionActive () {
         setFirstActive(false);
         setLastActive(false);
         setSecondActive(true);
     }
-
     const [isLastActive, setLastActive] = useState(false);
     function handleLastSectionActive () {
         setFirstActive(false);
         setSecondActive(false);
         setLastActive(true);
     }
-
     return (
         <section className="business-card">
             <section className="business-card__image-container">
@@ -39,7 +36,6 @@ function BusinessCard (props) {
                     <p className="business-card__text">Прокрутите вниз</p>
                 </div>
             </section>
-
             <section className="info-business-card">
                 <div className="info-business-card__container">
                     <h2 className="info-business-card__heading">создание <nobr>сайта-визитки</nobr> под ключ</h2>
@@ -60,7 +56,6 @@ function BusinessCard (props) {
                     </p>
                 </div>
             </section>
-
             <section className="price-table">
                 <div className="price-table__container">
                     <div className="price-table__section">
@@ -147,7 +142,6 @@ function BusinessCard (props) {
                     </div>
                 </div>
             </section>
-
         </section>
     );
 }

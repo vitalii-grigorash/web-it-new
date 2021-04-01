@@ -15,17 +15,15 @@ function StrojSnab() {
 
     return (
         <section className="stroj-snab">
-
-            <div className="stroj-snab__image">
+            <section className="stroj-snab__image">
                 <div className="stroj-snab__overlay-container">
                     <img src={stroiSnabIcon} alt="Иконка Строй Снаб" className="stroj-snab__icon" />
-                    <h3 className="stroj-snab__heading">СтройСнаб</h3>
+                    <h1 className="stroj-snab__heading">СтройСнаб</h1>
                     <p className="stroj-snab__subheading">Компания осуществляет строительные работы</p>
                 </div>
-            </div>
-
+            </section>
             <section className="about">
-                <h3 className="about__heading">О ПРОЕКТЕ</h3>
+                <h2 className="about__heading">О ПРОЕКТЕ</h2>
                 <div className="about__container">
                     <img src={stroiSnabAboutImg} alt="Фотография" className="about__img" />
                     <div className="about__text-container">
@@ -45,12 +43,10 @@ function StrojSnab() {
                     </div>
                 </div>
             </section>
-
             <Stages />
-
             <section className="colors">
                 <div className="colors__main-container">
-                    <h3 className="colors__heading">ЦВЕТА И ИКОНКИ</h3>
+                    <h2 className="colors__heading">ЦВЕТА И ИКОНКИ</h2>
                     <div className="colors__content-container">
                         <div className="colors__container">
                             <div className="colors__square-container">
@@ -94,9 +90,8 @@ function StrojSnab() {
                     </div>
                 </div>
             </section>
-
             <section className="typography">
-                <h3 className="typography__header">ТИПОГРАФИКА</h3>
+                <h2 className="typography__header">ТИПОГРАФИКА</h2>
                 <div className="typography__container">
                     <p className="typography__letter-main">Aa</p>
                     <div className="typography__roboto-container">
@@ -106,10 +101,9 @@ function StrojSnab() {
                     </div>
                 </div>
             </section>
-
             <section className="adaptive">
                 <div className="adaptive__info-container">
-                    <h4 className="adaptive__heading">АДАПТИВНЫЙ ДИЗАЙН</h4>
+                    <h2 className="adaptive__heading">АДАПТИВНЫЙ ДИЗАЙН</h2>
                     <p className="adaptive__description">
                         Все наши сайты можно просматривать на самых разных устройствах, 
                         таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 
@@ -121,7 +115,6 @@ function StrojSnab() {
                 <div className="adaptive__shadow"></div>
                 <img className="adaptive__phones-img" src={phonesImg} alt="Картинка телефонов"/>
             </section>
-
             <section className="preview">
                 <div className="preview__container">
                     <img className="preview__img-one" src={stroySnabOneImg} alt="Изображение сайта"/>
@@ -129,7 +122,6 @@ function StrojSnab() {
                 </div>
                 <img className="preview__img-three" src={stroySnabThreeImg} alt="Изображение сайта"/>
             </section>
-
         </section>
     );
 }
