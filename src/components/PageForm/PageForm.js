@@ -45,7 +45,7 @@ function PageForm(props) {
                                 pattern="[A-Za-zа-яёА-ЯЁ -]{1,}"
                                 required
                             />
-                            <span id="name-input" className="page-form-form__input_error">{name.errorMessage}</span>
+                            <span id="name-input-error" className="page-form-form__input_error">{name.errorMessage}</span>
                         </div>
                         <div className="page-form__input-container">
                             <input
@@ -61,7 +61,7 @@ function PageForm(props) {
                                 pattern='^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$'
                                 required
                             />
-                            <span id="number-input" className="page-form-form__input_error">{number.errorMessage}</span>
+                            <span id="number-input-error" className="page-form-form__input_error">{number.errorMessage}</span>
                         </div>
                     </div>
                     <div className="page-form__radio-container">

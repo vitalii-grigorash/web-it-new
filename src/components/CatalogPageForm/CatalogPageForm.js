@@ -85,7 +85,7 @@ function CatalogPageForm (props) {
                                 <input
                                     type="text"
                                     className="catalog-page-form__input"
-                                    id="name-input"
+                                    id="catalog-name-input"
                                     name="name"
                                     value={name.value}
                                     onChange={name.onChange}
@@ -95,13 +95,13 @@ function CatalogPageForm (props) {
                                     pattern="[A-Za-zа-яёА-ЯЁ -]{1,}"
                                     required
                                 />
-                                <span id="name-input" className="catalog-page-form-form__input_error">{name.errorMessage}</span>
+                                <span id="catalog-name-input-error" className="catalog-page-form-form__input_error">{name.errorMessage}</span>
                             </div>
                             <div className="catalog-page-form__input-container">
                                 <input
                                     type="text"
                                     className="catalog-page-form__input"
-                                    id="number-input"
+                                    id="catalog-number-input"
                                     name="number"
                                     value={number.value}
                                     onChange={number.onChange}
@@ -111,7 +111,7 @@ function CatalogPageForm (props) {
                                     pattern='^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$'
                                     required
                                 />
-                                <span id="number-input" className="catalog-page-form-form__input_error">{number.errorMessage}</span>
+                                <span id="catalog-number-input-error" className="catalog-page-form-form__input_error">{number.errorMessage}</span>
                             </div>
                         </div>
                     </div>

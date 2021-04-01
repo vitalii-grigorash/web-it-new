@@ -50,7 +50,7 @@ function Popup(props) {
                             <input
                                 type="text"
                                 className="popup__input"
-                                id="name-input"
+                                id="popup-name-input"
                                 name="name"
                                 value={name.value}
                                 onChange={name.onChange}
@@ -60,13 +60,13 @@ function Popup(props) {
                                 pattern="[A-Za-zа-яёА-ЯЁ -]{1,}"
                                 required
                             />
-                            <span id="name-input" className="popup-form__input_error">{name.errorMessage}</span>
+                            <span id="popup-name-input-error" className="popup-form__input_error">{name.errorMessage}</span>
                         </div>
                         <div className="popup__input-container">
                             <input
                                 type="text"
                                 className="popup__input"
-                                id="number-input"
+                                id="popup-number-input"
                                 name="number"
                                 value={number.value}
                                 onChange={number.onChange}
@@ -76,7 +76,7 @@ function Popup(props) {
                                 pattern='^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$'
                                 required
                             />
-                            <span id="number-input" className="popup-form__input_error">{number.errorMessage}</span>
+                            <span id="popup-number-input-error" className="popup-form__input_error">{number.errorMessage}</span>
                         </div>
                     </div>
                     <p className="popup__question">Как удобнее связаться с Вами?</p>

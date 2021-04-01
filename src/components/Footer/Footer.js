@@ -53,7 +53,7 @@ function Footer(props) {
               <input
                 type="text"
                 className="footer__input"
-                id="name-input"
+                id="footer-name-input"
                 name="name"
                 value={name.value}
                 onChange={name.onChange}
@@ -63,13 +63,13 @@ function Footer(props) {
                 pattern="[A-Za-zа-яёА-ЯЁ -]{1,}"
                 required
               />
-              <span id="name-input" className="footer-form__input_error">{name.errorMessage}</span>
+              <span id="footer-name-input-error" className="footer-form__input_error">{name.errorMessage}</span>
             </div>
             <div className="footer__input-container">
               <input
                 type="text"
                 className="footer__input"
-                id="number-input"
+                id="footer-number-input"
                 name="number"
                 value={number.value}
                 onChange={number.onChange}
@@ -79,7 +79,7 @@ function Footer(props) {
                 pattern='^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$'
                 required
               />
-              <span id="number-input" className="footer-form__input_error">{number.errorMessage}</span>
+              <span id="footer-number-input-error" className="footer-form__input_error">{number.errorMessage}</span>
             </div>
           </div>
           <p className="footer__question">Как удобнее связаться с Вами?</p>
