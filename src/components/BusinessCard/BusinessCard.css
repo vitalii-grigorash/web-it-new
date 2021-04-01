@@ -116,6 +116,19 @@
     text-transform: uppercase;
     margin: 48px auto 0 0;
 }
+.price-table__heading-container-business {
+    display: flex;
+    height: 149px;
+    border-bottom: 3px solid #05D0DF;
+    border-right: 3px solid #05D0DF;
+    background: #E8E6E6;
+    cursor: pointer;
+}
+.price-table__heading-container-business_active {
+    border-bottom: 3px solid #FFFFFF;
+    background: #FFFFFF;
+    cursor: text;
+}
 @media screen and (max-width: 1680px) {
     .business-card__heading {
         margin: 300px auto 0 200px;
@@ -125,6 +138,11 @@
     }
     .business-card__button {
         margin: 64px auto auto 200px;
+    }
+}
+@media screen and (max-width: 1520px) {
+    .price-table__heading-container-business {
+        height: 120px;
     }
 }
 @media screen and (max-width: 1440px) {
@@ -153,6 +171,11 @@
     }
     .info-business-card__container {
         max-width: 900px;
+    }
+}
+@media screen and (max-width: 1230px) {
+    .price-table__heading-container-business {
+        height: 100px;
     }
 }
 @media screen and (max-width: 1095px) {
@@ -226,6 +249,17 @@
         line-height: 26px;
         max-width: 400px;
     }
+    .price-table__heading-container-business {
+        height: 154px;
+        border-right: none;
+        border-bottom: none;
+        background: #D2D2D2;
+    }
+    .price-table__heading-container-business_active {
+        border-bottom: 3px solid #FFFFFF;
+        background: #FFFFFF;
+        cursor: text;
+    }
 }
 @media screen and (max-width: 690px) {
     .business-card__image-container {
@@ -255,5 +289,8 @@
     .business-card__heading {
         margin: 144px auto 0 15px;
         max-width: 280px;
+    }
+    .price-table__heading-container-business {
+        height: 179px;
     }
 }

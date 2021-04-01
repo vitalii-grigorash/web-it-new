@@ -64,11 +64,11 @@ function BusinessCard (props) {
             <section className="price-table">
                 <div className="price-table__container">
                     <div className="price-table__section">
-                        <div className={`price-table__heading-container-first ${isFirstActive && 'price-table__heading-container-first_active'}`} onClick={handleFirstSectionActive}>
+                        <div className={`price-table__heading-container-business ${isFirstActive && 'price-table__heading-container-business_active'}`} onClick={handleFirstSectionActive}>
                             <h4 
                                 className={`price-table__heading ${isFirstActive && 'price-table__heading_active'}`}
                             >
-                                САЙТ ДЛЯ МАЛОГО БИЗНЕСА (21 ДЕНЬ)
+                                САЙТ ДЛЯ МАЛОГО БИЗНЕСА <nobr>(21 ДЕНЬ)</nobr>
                                 <span 
                                     className={`price-table__heading-span ${isFirstActive && 'price-table__heading-span_active'}`}
                                 > 50 000 руб.</span>
