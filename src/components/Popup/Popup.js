@@ -3,7 +3,7 @@ import popupCloseButton from '../../images/svg/popup-close-button.svg';
 import { Validation } from '../../utils/Validation';
 import check from '../../images/svg/check.svg';
 
-function Popup(props) {
+function Popup (props) {
 
     const {
         onClosePopup,

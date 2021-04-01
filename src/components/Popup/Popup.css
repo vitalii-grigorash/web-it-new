@@ -181,13 +181,25 @@
     color: #373737;
     margin: 0;
 }
+@media screen and (max-width: 1600px) {
+    .popup__heading {
+        margin: 10px 40px 0;
+        max-width: 520px;
+        text-align: center;
+    }
+    .popup__under-submit-button-container {
+        margin: 10px auto 55px;
+    }
+    .popup__inputs-container {
+        margin: 24px auto 0;
+    }
+}
 @media screen and (max-width: 930px) {
     .popup__heading {
         font-size: 16px;
         line-height: 20px;
         margin: 5px 15px 0;
-        max-width: 418px;
-        text-align: center;
+        max-width: 360px;
     }
     .popup__close-button {
         width: 15px;
@@ -257,8 +269,8 @@
     .popup__heading {
         font-size: 16px;
         line-height: 20px;
-        margin: 10px 5px 0;
-        max-width: 390px;
+        margin: 10px 15px 0;
+        max-width: 320px;
     }
     .popup__radio label {
         font-size: 12px;
