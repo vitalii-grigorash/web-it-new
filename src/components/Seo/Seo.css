@@ -20,6 +20,7 @@
     color: #FFFFFF;
     max-width: 660px;
     margin: 361px auto 0 258px;
+    text-transform: uppercase;
 }
 .seo__subheading {
     font-family: 'Verdana';
@@ -74,6 +75,79 @@
     margin: auto 0 auto 19px;
     max-width: 120px;
 }
+.info-seo {
+    display: flex;
+}
+.info-seo__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1140px;
+    margin: 96px auto 128px;
+}
+.info-seo__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #373737;
+    margin: 0 auto 0 0;
+    text-transform: uppercase;
+}
+.info-seo__description {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #373737;
+    margin: 24px auto 0 0;
+}
+.info-seo__description:first-of-type {
+    margin-top: 32px;
+}
+.info-seo__list {
+    padding: 0;
+    margin: 0;
+}
+.info-seo__list-item {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #373737;
+    margin: 0 auto 0 20px;
+}
+.seo-form__price {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 64px 100px 97px;
+    margin: 99px 0 228px auto;
+}
+.seo-page-form__price-heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 35px;
+    color: #373737;
+    max-width: 314px;
+    margin: 0 auto 0 0;
+}
+.seo-page-form__price-cost {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 33px auto 0 0;
+    max-width: 313px;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(89.41deg, #FF3528 -21.06%, #FF4E32 64.35%);
+}
 @media screen and (max-width: 1680px) {
     .seo__heading {
         margin: 300px auto 0 200px;
@@ -99,6 +173,15 @@
         margin: 64px auto auto 150px;
     }
 }
+@media screen and (max-width: 1300px) {
+    .seo-form__price {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        padding: 64px 50px 97px;
+        margin: 99px 0 228px auto;
+    }
+}
 @media screen and (max-width: 1245px) {
     .seo__image-container {
         min-height: 829px;
@@ -111,6 +194,9 @@
     }
     .seo__button {
         margin: 64px auto auto 100px;
+    }
+    .info-seo__container {
+        max-width: 900px;
     }
 }
 @media screen and (max-width: 1095px) {
@@ -147,6 +233,25 @@
         max-width: 300px;
     }
 }
+@media screen and (max-width: 940px) {
+    .seo-form__price {
+        padding: 32px 0 48px 40px;
+        margin: 99px auto 0;
+        width: 440px;
+    }
+    .seo-page-form__price-heading {
+        font-size: 20px;
+        line-height: 26px;
+        max-width: 282px;
+        margin: 0 auto 0 0;
+    }
+    .seo-page-form__price-cost {
+        font-size: 24px;
+        line-height: 29px;
+        margin: 16px auto 0 0;
+        max-width: 303px;
+    }
+}
 @media screen and (max-width: 930px) {
     .seo__image-container {
         min-height: 340px;
@@ -167,6 +272,42 @@
     .seo__bottom-container {
         display: none;
     }
+    .info-seo__container {
+        max-width: 538px;
+        margin: 64px auto 128px;
+    }
+    .info-seo__heading {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .info-seo__description {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .info-seo__list-item {
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+@media screen and (max-width: 560px) {
+    .info-seo__container {
+        max-width: 290px;
+    }
+}
+@media screen and (max-width: 515px) {
+    .seo-form__price {
+        padding: 32px 0 48px;
+        margin: 64px auto 0;
+        width: 290px;
+    }
+    .seo-page-form__price-heading {
+        max-width: 242px;
+        margin-left: 40px;
+    }
+    .seo-page-form__price-cost {
+        max-width: 200px;
+        margin-left: 40px;
+    }
 }
 @media screen and (max-width: 470px) {
     .seo__image-container {
@@ -175,5 +316,7 @@
     }
     .seo__heading {
         margin: 176px auto 0;
+        max-width: 300px;
+        text-align: center;
     }
 }

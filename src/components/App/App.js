@@ -184,6 +184,7 @@ function App () {
 
         <Route path='/seo'>
           <Seo
+            onSendForm={feedbackFormSend}
             onOpenPopup={handlePopupOpen}
           />
         </Route>

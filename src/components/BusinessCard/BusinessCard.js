@@ -105,7 +105,6 @@ function BusinessCard (props) {
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Уникальная форма обратной связи</li>
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Кроссбраузерная верстка (кроме Safari и IE ниже 11 версии)</li>
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Адаптивная (резиновая) верстка под планшеты и мобильные устройства</li>
-                            <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Слайдер с УТП (спец предложение)</li>
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Карта проезда</li>
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Наполнение сайта контентом</li>
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Почтовый ящик с доменным именем</li>

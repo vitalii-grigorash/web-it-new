@@ -128,7 +128,6 @@ function Landing(props) {
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Возможность использовать эффекты и анимацию в том числе</li>
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Почтовый ящик с доменным именем</li>
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Адаптивная (резиновая) верстка под планшеты и мобильные устройства</li>
-                            <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Почтовый ящик с доменным именем</li>
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Разработка логотипа</li>
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Установка Я.Метрики и G.Analytics</li>
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Оплата в 2 этапа (предоплата 50%)</li>
@@ -158,7 +157,6 @@ function Landing(props) {
                             <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Возможность использовать эффекты и анимацию в том числе</li>
                             <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Почтовый ящик с доменным именем</li>
                             <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Адаптивная (резиновая) верстка под планшеты и мобильные устройства</li>
-                            <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Почтовый ящик с доменным именем</li>
                             <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Разработка логотипа</li>
                             <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Установка Я.Метрики и G.Analytics</li>
                             <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Установка и настройка SSL-сертификата</li>
