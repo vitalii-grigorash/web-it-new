@@ -20,7 +20,7 @@ function Header (props) {
   } = props;
 
   return (
-    <section className="header">
+    <div className="header">
       <HeaderInfo
         onOpenPopup={onOpenPopup}
       />
@@ -39,7 +39,7 @@ function Header (props) {
         isItOpen={isItOpen}
         isWebOpen={isWebOpen}
       />
-    </section>
+    </div>
   );
 }
 

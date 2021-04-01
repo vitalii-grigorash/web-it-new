@@ -21,8 +21,8 @@ function Footer(props) {
     number.setValue('');
   }
   return (
-    <section className="footer">
-      <section className="footer__contacts-container">
+    <div className="footer">
+      <div className="footer__contacts-container">
         <div className="footer__links-container">
           <a href="tel:+78123728561" className="footer__phone-link">
             <p className="footer__phone-icon"></p>
@@ -41,13 +41,13 @@ function Footer(props) {
           <a href="https://www.instagram.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="footer__icon footer__icon_inst"></a>
           <a href="https://vk.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer" className="footer__icon footer__icon_vk"></a>
         </div>
-      </section>
+      </div>
       <section className="footer__form-container">
         <form
           className="footer__form"
           onSubmit={submitForm}
         >
-          <p className="footer__form-heading">Оставьте заявку и получите консультацию специалиста</p>
+          <h2 className="footer__form-heading">Оставьте заявку и получите консультацию специалиста</h2>
           <div className="footer__inputs-container">
             <div className="footer__input-container">
               <input
@@ -82,7 +82,7 @@ function Footer(props) {
               <span id="footer-number-input-error" className="footer-form__input_error">{number.errorMessage}</span>
             </div>
           </div>
-          <p className="footer__question">Как удобнее связаться с Вами?</p>
+          <h3 className="footer__question">Как удобнее связаться с Вами?</h3>
           <div className="footer__radio-container">
             <div className="footer__radio">
               <input
@@ -125,7 +125,7 @@ function Footer(props) {
           </div>
         </form>
       </section>
-    </section>
+    </div>
   );
 }
 

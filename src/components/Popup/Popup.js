@@ -43,7 +43,7 @@ function Popup(props) {
         <section className={`popup ${isOpen && 'popup_opened'}`} onMouseDown={handleOverlayClose}>
             <div className="popup__form-background">
                 <img src={popupCloseButton} alt="Кнопка закрытия попапа" className="popup__close-button" onClick={clearAllAndClose}/>
-                <p className="popup__heading">Получите бесплатную консультацию от наших специалистов</p>
+                <h3 className="popup__heading">Получите бесплатную консультацию от наших специалистов</h3>
                 <form className="popup__form" onSubmit={submitForm} >
                     <div className="popup__inputs-container">
                         <div className="popup__input-container">
@@ -79,7 +79,7 @@ function Popup(props) {
                             <span id="popup-number-input-error" className="popup-form__input_error">{number.errorMessage}</span>
                         </div>
                     </div>
-                    <p className="popup__question">Как удобнее связаться с Вами?</p>
+                    <h4 className="popup__question">Как удобнее связаться с Вами?</h4>
                     <div className="popup__radio-container">
                         <div className="popup__radio">
                             <input

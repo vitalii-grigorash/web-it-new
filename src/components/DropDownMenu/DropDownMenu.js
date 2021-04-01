@@ -9,7 +9,7 @@ function DropDownMenu (props) {
     } = props;
 
     return (
-        <section className={`drop-down-menu ${isOpen && 'drop-down-menu_opened'}`}>
+        <div className={`drop-down-menu ${isOpen && 'drop-down-menu_opened'}`}>
             <div className="drop-down-menu__background">
                 <img src={dropDownMenuCloseButtonIcon} alt="Иконка закрытия" className="drop-down-menu__close-button"/>
                 <nav className="drop-down-menu__container">
@@ -27,7 +27,7 @@ function DropDownMenu (props) {
                     <Link to={'/it'} className="drop-down-menu__links drop-down-menu__links_it">Разовые услуги IT</Link>
                 </nav>
             </div>        
-        </section>
+        </div>
     );
 }
 

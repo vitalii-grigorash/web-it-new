@@ -17,11 +17,11 @@ function MainPage(props) {
     } = props;
 
     return (
-        <section className="main-page">
+        <div className="main-page">
             <nav className="main-page__images-container">
                 <Link to={isDropDownMenuOpen ? `/` : `/it`} className="main-page__container main-page__container_it">
                     <div className="main-page__container-overlay">
-                        <h1 className="main-page__heading main-page__heading_it">it сервис</h1>
+                        <h2 className="main-page__heading main-page__heading_it">it сервис</h2>
                         <img src={mouse} alt="Иконка мышки" className="main-page__mouse-icon" />
                     </div>
                 </Link>
@@ -101,7 +101,7 @@ function MainPage(props) {
                     </div>
                 </div>
             </section>
-            <section className="team">
+            <div className="team">
                 <div className="team__container">
                     <img className="team__img" src={teamOne} alt="Иллюстрация команды"/>
                     <p className="team__text">
@@ -123,8 +123,8 @@ function MainPage(props) {
                         макета будущего сайта, заканчивая его SEO-настройкой.
                     </p>
                 </div>
-            </section>
-        </section>
+            </div>
+        </div>
     );
 }
 

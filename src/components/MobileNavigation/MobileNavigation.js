@@ -16,12 +16,12 @@ function MobileNavigation (props) {
     } = props;
 
   return (
-    <section className={`mobile-navigation ${isMobileNavigationOpen && 'mobile-navigation_opened'}`}>
+    <div className={`mobile-navigation ${isMobileNavigationOpen && 'mobile-navigation_opened'}`}>
         <nav className="mobile-navigation__nav-container">
-            <p className="mobile-navigation__links mobile-navigation__links_menu" onClick={handleItDropDownMunu}>
+            <h3 className="mobile-navigation__links mobile-navigation__links_menu" onClick={handleItDropDownMunu}>
                 IT сервис
                 <img src={isItOpen ? arrowClose : arrowOpen} alt="Стрелка" className="mobile-navigation__arrow"/>
-            </p>
+            </h3>
             {isItOpen && 
                 ( 
                     <>
@@ -30,10 +30,10 @@ function MobileNavigation (props) {
                     </>
                 )
             }
-            <p className="mobile-navigation__links mobile-navigation__links_menu" onClick={handleWebDropDownMunu}>
+            <h3 className="mobile-navigation__links mobile-navigation__links_menu" onClick={handleWebDropDownMunu}>
                 Web студия
                 <img src={isWebOpen ? arrowClose : arrowOpen} alt="Стрелка" className="mobile-navigation__arrow"/>
-            </p>
+            </h3>
             {isWebOpen && 
                 ( 
                     <>
@@ -66,7 +66,7 @@ function MobileNavigation (props) {
                 Получить консультацию
             </button>
         </nav>
-    </section>
+    </div>
   );
 }
 

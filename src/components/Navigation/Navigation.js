@@ -20,7 +20,7 @@ function Navigation(props) {
     }
 
     return (
-        <section className="navigation">
+        <div className="navigation">
             <nav className="navigation__container">
                 <Link to={'/'} className="navigation__logo"></Link>
                 <nav className="navigation__main-links-container">
@@ -40,7 +40,7 @@ function Navigation(props) {
                     />
                 </nav>
             </nav>
-        </section>
+        </div>
     );
 }
 

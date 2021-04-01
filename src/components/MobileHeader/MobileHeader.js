@@ -18,7 +18,7 @@ function MobileHeader (props) {
 } = props;
 
   return (
-    <section className="mobile-header">
+    <div className="mobile-header">
       <Link to={'/'} className="mobile-header__logo"></Link>
       <img 
         src={isMobileNavigationOpen ? MobileNavigationCloseButton : burgerMenuButton}
@@ -35,7 +35,7 @@ function MobileHeader (props) {
         isWebOpen={isWebOpen}
         onCloseMobileNavigation={onCloseMobileNavigation}
       />
-    </section>
+    </div>
   );
 }
 
