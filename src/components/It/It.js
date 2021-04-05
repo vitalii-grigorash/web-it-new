@@ -201,7 +201,7 @@ function It(props) {
                             <div className="it-table__right-column it-table__right-column_heading"></div>
                         </div>
                         <div className="it-table__row">
-                            <div className="it-table__left-column it-table__left-column_margin">
+                            <div className="it-table__left-column">
                                 <p className="it-table__text">
                                     Внедрение Сервера Windows под ключ: установка, настройка, настройка 
                                     трёх любых служб, настройка Active Directory (и добавление до 15 
@@ -273,7 +273,7 @@ function It(props) {
                             <div className="it-table__right-column it-table__right-column_heading"></div>
                         </div>
                         <div className="it-table__row">
-                            <div className="it-table__left-column it-table__left-column_margin">
+                            <div className="it-table__left-column">
                                 <p className="it-table__text">
                                     Развертывание офисной телефонии
                                 </p>
@@ -337,7 +337,7 @@ function It(props) {
                             <div className="it-table__right-column it-table__right-column_heading"></div>
                         </div>
                         <div className="it-table__row">
-                            <div className="it-table__left-column it-table__left-column_margin">
+                            <div className="it-table__left-column">
                                 <p className="it-table__text">
                                     Составление технического задания
                                 </p>
@@ -425,7 +425,7 @@ function It(props) {
                             </div>
                         </div>
                         <div className="it-table__row">
-                            <div className="it-table__left-column it-table__left-column_margin">
+                            <div className="it-table__left-column">
                                 <p className="it-table__text">
                                     Консультация специалиста по подготовке
                                 </p>
@@ -497,7 +497,7 @@ function It(props) {
                     </div>
                 </div>
             </section>
-            
+
         </section>
     );
 }
