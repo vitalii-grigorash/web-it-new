@@ -64,6 +64,171 @@
     margin: auto 0 auto 19px;
     max-width: 120px;
 }
+.about-it {
+    display: flex;
+}
+.about-it__img {
+    width: 531px;
+    height: 393px;
+    margin: auto 113px auto auto;
+}
+.about-it__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 560px;
+    margin: 96px auto 128px 0;
+}
+.about-it__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #373737;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+}
+.about-it__description {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #373737;
+    margin: 32px auto 0 0;
+}
+.service-it {
+    display: flex;
+    flex-direction: column;
+    background: #D2D2D2;
+}
+.service-it__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #121212;
+    text-transform: uppercase;
+    margin: 96px auto 0;
+}
+.service-it__container {
+    display: flex;
+    margin: 16px auto 128px;
+}
+.service-it__description-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 657px;
+    margin: 0 136px 0 0;
+}
+.service-it__description {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #121212;
+    margin: 48px auto 0 0;
+}
+.service-it__list {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #121212;
+    padding: 0;
+    margin: 32px auto 0 0;
+}
+.service-it__list-item {
+    margin-left: 20px;
+}
+.service-it__img {
+    width: 498px;
+    height: 420px;
+    margin: 0 auto auto 0;
+}
+.it-form__price {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 64px 91px 96px;
+    margin: 48px 0 70px auto;
+    max-width: 303px;
+}
+.price-table-it {
+    display: flex;
+}
+.price-table-it__container {
+    display: flex;
+    flex-direction: column;
+    margin: 128px auto 256px;
+}
+.price-table-it__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 140%;
+    color: #373737;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+}
+.it-table {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(86.98deg, #00133E 2%, #05D0DF 98%);
+    margin: 32px 0 0;
+}
+.it-table__row {
+    display: flex;
+    margin: 0 1px 1px;
+}
+.it-table__row:first-of-type {
+    margin-top: 1px;
+}
+.it-table__left-column {
+    display: flex;
+    width: 753px;
+    background: #FFFFFF;
+    padding: 25px 0;
+}
+.it-table__left-column_heading {
+    background: #EBEBEB;
+}
+.it-table__left-column_margin {
+    margin-bottom: 1px;
+}
+.it-table__text {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #373737;
+    margin: auto;
+    max-width: 680px;
+    text-align: center;
+}
+.it-table__text_main {
+    font-size: 22px;
+    line-height: 27px;
+}
+.it-table__right-column {
+    display: flex;
+    width: 387px;
+    background: #FFFFFF;
+    margin-left: 1px;
+}
+.it-table__right-column_heading {
+    background: #EBEBEB;
+    margin-left: 0;
+    width: 388px;
+}
+.it-table__right-column_heading-main {
+    background: #EBEBEB;
+}
 @media screen and (max-width: 1440px) {
     .it__heading {
         margin: 440px auto auto 200px;
@@ -93,6 +258,12 @@
         margin: 250px auto auto 80px;
     }
 }
+@media screen and (max-width: 940px) {
+    .it-form__price {
+        padding: 54px 81px 86px;
+        margin: 48px auto 0;
+    }
+}
 @media screen and (max-width: 930px) {
     .it__image-container {
         min-height: 340px;
@@ -109,6 +280,12 @@
         display: none;
     }
 }
+@media screen and (max-width: 568px) {
+    .it-form__price {
+        padding: 32px 40px 64px;
+        max-width: 260px;
+    }
+}
 @media screen and (max-width: 470px) {
     .it__image-container {
         min-height: 490px;
@@ -117,5 +294,11 @@
     }
     .it__heading {
         margin: 176px auto 0;
+    }
+}
+@media screen and (max-width: 425px) {
+    .it-form__price {
+        padding: 22px 50px 54px 10px;
+        max-width: 230px;
     }
 }

@@ -15,6 +15,7 @@ function PageForm(props) {
     function onRadioСhange(evt) {
         setMethod(evt.target.value);
     };
+
     function submitForm(evt) {
         evt.preventDefault();
         onSendForm(name.value, number.value, method);

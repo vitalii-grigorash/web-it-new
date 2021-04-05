@@ -9,7 +9,7 @@ import teamThree from '../../images/team-three.jpg'
 import PageForm from '../PageForm/PageForm';
 import { Link } from 'react-router-dom';
 
-function MainPage(props) {
+function MainPage (props) {
 
     const {
         onSendForm,

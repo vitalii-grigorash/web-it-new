@@ -194,6 +194,7 @@ function App () {
         </Route>
         <Route path='/it'>
           <It
+            onSendForm={feedbackFormSend}
             onOpenPopup={handlePopupOpen}
           />
         </Route>
