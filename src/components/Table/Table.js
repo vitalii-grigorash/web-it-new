@@ -26,13 +26,13 @@ function Table () {
         <section className="table">
             <section className="animation">
                 <img src={mainImg} alt="Статичное изображение" className={`animation__img ${isMain && 'animation__img_main'}`}/>
-                <img src={designImg} alt="Статичное изображение" className={`animation__img ${isDesign && 'animation__img_design'}`}/>
-                <img src={formImg} alt="Статичное изображение" className={`animation__img ${isForm && 'animation__img_form'}`}/>
-                <img src={sliderImg} alt="Статичное изображение" className={`animation__img ${isSlider && 'animation__img_slider'}`}/>
-                <img src={mapImg} alt="Статичное изображение" className={`animation__img ${isMap && 'animation__img_map'}`}/>
-                <img src={adaptiveImg} alt="Статичное изображение" className={`animation__img ${isAdaptive && 'animation__img_adaptive'}`}/>
-                <img src={mediaImg} alt="Статичное изображение" className={`animation__img ${isMedia && 'animation__img_media'}`}/>
-                <img src={advertisImg} alt="Статичное изображение" className={`animation__img ${isAdvertis && 'animation__img_advertis'}`}/>
+                <img src={designImg} alt="Изображение дизайна" className={`animation__img ${isDesign && 'animation__img_design'}`}/>
+                <img src={formImg} alt="Изображение формы" className={`animation__img ${isForm && 'animation__img_form'}`}/>
+                <img src={sliderImg} alt="Изображение слайдера" className={`animation__img ${isSlider && 'animation__img_slider'}`}/>
+                <img src={mapImg} alt="Изображение карты проезда" className={`animation__img ${isMap && 'animation__img_map'}`}/>
+                <img src={adaptiveImg} alt="Изображение адаптива" className={`animation__img ${isAdaptive && 'animation__img_adaptive'}`}/>
+                <img src={mediaImg} alt="Изображение медиагалереи" className={`animation__img ${isMedia && 'animation__img_media'}`}/>
+                <img src={advertisImg} alt="Изображение рекламного баннера" className={`animation__img ${isAdvertis && 'animation__img_advertis'}`}/>
                 <div className="animation__text-container">
                     <p className={textStyle}>{text}</p>
                 </div>

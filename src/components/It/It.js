@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PriceTableIt from '../PriceTableIt/PriceTableIt';
+import AnimationTableIt from '../AnimationTableIt/AnimationTableIt';
 import mouse from '../../images/svg/mouse.svg';
 import illustrationIt from '../../images/illustration-it.jpg';
 import illustrationService from '../../images/svg/illustration-service-it.svg';
@@ -30,7 +31,6 @@ function It (props) {
 
     return (
         <section className="it">
-
             <section className="it__image-container">
                 <h1 className="it__heading">IT СЕРВИС</h1>
                 <button className="it__button" type="button" onClick={onOpenPopup}>
@@ -41,7 +41,6 @@ function It (props) {
                     <p className="it__text">Прокрутите вниз</p>
                 </div>
             </section>
-
             <section className="about-it">
                 <img className="about-it__img" src={illustrationIt} alt="Иллюстрация об айти" />
                 <div className="about-it__container">
@@ -60,7 +59,6 @@ function It (props) {
                     </p>
                 </div>
             </section>
-
             <section className="service-it">
                 <h2 className="service-it__heading">абонентское обслуживание</h2>
                 <div className="service-it__container">
@@ -81,7 +79,7 @@ function It (props) {
                     <img className="service-it__img" src={illustrationService} alt="Иллюстрация абонентского обслуживания" />
                 </div>
             </section>
-
+            <AnimationTableIt />
             <section className="catalog-page-form">
                 <div className="it-form__price">
                     <p className="catalog-page-form__price-heading">Разовые IT-услуги</p>
@@ -182,9 +180,7 @@ function It (props) {
                     </div>
                 </form>
             </section>
-
             <PriceTableIt />
-
         </section>
     );
 }

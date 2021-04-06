@@ -1,0 +1,294 @@
+.animation-table-it {
+    display: flex;
+    flex-direction: column;
+}
+.animation-table-it__main-container {
+    display: flex;
+    position: relative;
+    margin: 96px auto 0;
+    width: 1140px;
+}
+.animation-table-it__main-container:last-of-type {
+    margin-bottom: 128px;
+}
+.animation-table-it__img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 168px;
+    right: 780px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s, opacity .3s linear;
+}
+.animation-table-it__img_desktop {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img_three {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img_ten {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img_seventeen {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img_twenty-four {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img_thirty-one {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img_forty {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img_default-administrate {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img_color-administrate {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img_default-user {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img_work-place {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img_install-server {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img_custom-server {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img_copy {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img-left-direction {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 180px;
+    left: 780px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s, opacity .3s linear;
+}
+.animation-table-it__img-left-direction_default-server {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img-left-direction_windows {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img-left-direction_linux {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img-left-direction_virtual {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img-left-direction_phone-default {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__img-left-direction_phone-color {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.animation-table-it__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 auto;
+}
+.animation-table-it__container_left-direction {
+    margin: 0 auto 0 0;
+}
+.animation-table-it__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 140%;
+    color: #373737;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+    max-width: 540px;
+}
+.animation-table {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0 0;
+    background: linear-gradient(86.98deg, #00133E 2%, #05D0DF 98%);
+}
+.animation-table__row {
+    display: flex;
+    margin: 0 1px 1px;
+}
+.animation-table__row:first-of-type {
+    margin-top: 1px;
+}
+.animation-table__column {
+    width: 280px;
+    background: #FFFFFF;
+    padding: 16px 0;
+    display: flex;
+    margin-right: 1px;
+}
+.animation-table__column:last-of-type {
+    margin-right: 0;
+}
+.animation-table__column_heading {
+    background: #EBEBEB;
+}
+.animation-table__text {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #373737;
+    margin: auto;
+    text-align: center;
+    max-width: 244px;
+}
+.animation-table__text_heading {
+    font-size: 22px;
+    line-height: 27px;
+}
+.animation-table__text_links {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.animation-table__text_links:hover {
+    color: #F9461F;
+}
+@media screen and (max-width: 1200px) {
+    .animation-table-it__main-container {
+        margin: 64px auto 0;
+        width: 900px;
+    }
+    .animation-table-it__main-container:last-of-type {
+        margin-bottom: 96px;
+    }
+    .animation-table-it__img {
+        right: 680px;
+    }
+    .animation-table-it__img-left-direction {
+        left: 680px;
+    }
+}
+@media screen and (max-width: 970px) {
+    .animation-table-it__main-container {
+        width: 820px;
+    }
+    .animation-table-it__img {
+        right: 610px;
+    }
+    .animation-table-it__img-left-direction {
+        left: 610px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .animation-table-it__main-container {
+        width: auto;
+        margin: 64px auto 0;
+    }
+    .animation-table-it__main-container:first-of-type {
+        margin-top: 96px;
+    }
+    .animation-table-it__main-container:last-of-type {
+        margin-bottom: 128px;
+    }
+    .animation-table-it__img {
+        display: none;
+    }
+    .animation-table-it__img-left-direction {
+        display: none;
+    }
+    .animation-table-it__container {
+        margin: 0;
+    }
+    .animation-table-it__container_left-direction {
+        margin: 0;
+    }
+    .animation-table-it__heading {
+        font-size: 20px;
+        line-height: 26px;
+        max-width: 538px;
+    }
+    .animation-table__column {
+        width: 270px;
+        padding: 14px 0;
+    }
+    .animation-table__text {
+        font-size: 16px;
+        line-height: 140%;
+        max-width: 234px;
+    }
+    .animation-table__text_heading {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .animation-table__text_links {
+        text-decoration: none;
+        cursor: text;
+    }
+    .animation-table__text_links:hover {
+        color: #373737;
+    }
+}
+@media screen and (max-width: 560px) {
+    .animation-table-it__heading {
+        max-width: 290px;
+    }
+    .animation-table__column {
+        width: 145px;
+        padding: 16px 0;
+    }
+    .animation-table__text {
+        font-size: 12px;
+        line-height: 130%;
+        max-width: 130px;
+    }
+    .animation-table__text_heading {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 127px;
+    }
+}

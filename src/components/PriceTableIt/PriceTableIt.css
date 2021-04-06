@@ -67,6 +67,85 @@
 .it-table__right-column_heading-main {
     background: #EBEBEB;
 }
-@media screen and (max-width: 1240px) {
-    
+@media screen and (max-width: 1200px) {
+    .price-table-it__container {
+        margin: 96px auto 128px;
+    }
+    .price-table-it__heading {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .it-table__left-column {
+        width: 653px;
+        padding: 20px 0;
+    }
+    .it-table__text {
+        font-size: 16px;
+        line-height: 140%;
+        max-width: 580px;
+    }
+    .it-table__text_main {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .it-table__right-column {
+        width: 287px;
+    }
+    .it-table__right-column_heading {
+        width: 288px;
+    }
+}
+@media screen and (max-width: 970px) {
+    .it-table__left-column {
+        width: 633px;
+        padding: 25px 0;
+    }
+    .it-table__right-column {
+        width: 267px;
+    }
+    .it-table__right-column_heading {
+        width: 268px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .it-table__left-column {
+        width: 357px;
+    }
+    .it-table__right-column {
+        width: 183px;
+    }
+    .it-table__right-column_heading {
+        width: 184px;
+    }
+    .it-table__text {
+        max-width: 322px;
+    }
+    .it-table__text_main {
+        max-width: 150px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .price-table-it__heading {
+        max-width: 220px;
+    }
+    .it-table__left-column {
+        width: 192px;
+        padding: 20px 0;
+    }
+    .it-table__right-column {
+        width: 98px;
+    }
+    .it-table__right-column_heading {
+        width: 99px;
+    }
+    .it-table__text {
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 173px;
+    }
+    .it-table__text_main {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 86px;
+    }
 }
