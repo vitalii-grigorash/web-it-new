@@ -15,6 +15,8 @@ function MobileHeader (props) {
     handleWebDropDownMunu,
     isItOpen,
     isWebOpen,
+    setAbonentScrollTrue,
+    setPriceScrollTrue,
 } = props;
 
   return (
@@ -34,6 +36,8 @@ function MobileHeader (props) {
         isItOpen={isItOpen}
         isWebOpen={isWebOpen}
         onCloseMobileNavigation={onCloseMobileNavigation}
+        setAbonentScrollTrue={setAbonentScrollTrue}
+        setPriceScrollTrue={setPriceScrollTrue}
       />
     </div>
   );

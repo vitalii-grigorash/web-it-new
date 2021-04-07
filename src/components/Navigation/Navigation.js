@@ -9,6 +9,8 @@ function Navigation(props) {
         onOpenDropDownMenu,
         onCloseDropDownMenu,
         isOpen,
+        setAbonentScrollTrue,
+        setPriceScrollTrue,
     } = props;
 
     function handleDropDownMunu() {
@@ -36,6 +38,8 @@ function Navigation(props) {
                     <Link to={'/portfolio'} className="navigation__links">Портфолио</Link>
                     <Link to={'/contacts'} className="navigation__links">Контакты</Link>
                     <DropDownMenu
+                        setAbonentScrollTrue={setAbonentScrollTrue}
+                        setPriceScrollTrue={setPriceScrollTrue}
                         isOpen={isOpen}
                     />
                 </nav>

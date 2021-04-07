@@ -13,7 +13,19 @@ function MobileNavigation (props) {
         handleWebDropDownMunu,
         isItOpen,
         isWebOpen,
+        setAbonentScrollTrue,
+        setPriceScrollTrue,
     } = props;
+
+    function onAbonentClick () {
+        setAbonentScrollTrue();
+        onCloseMobileNavigation();
+    }
+
+    function onPriceClick () {
+        setPriceScrollTrue();
+        onCloseMobileNavigation();
+    }
 
   return (
     <div className={`mobile-navigation ${isMobileNavigationOpen && 'mobile-navigation_opened'}`}>
@@ -25,8 +37,8 @@ function MobileNavigation (props) {
             {isItOpen && 
                 ( 
                     <>
-                        <Link to={'/it'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Абонентское обслуживание</Link>
-                        <Link to={'/it'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Разовые услуги IT</Link>
+                        <Link to={'/it'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onAbonentClick}>Абонентское обслуживание</Link>
+                        <Link to={'/it'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onPriceClick}>Разовые услуги IT</Link>
                     </>
                 )
             }

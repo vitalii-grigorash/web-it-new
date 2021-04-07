@@ -12,7 +12,31 @@ function It (props) {
     const {
         onOpenPopup,
         onSendForm,
+        isAbonent,
+        isPrice,
+        setAbonentFalse,
+        setPriceFalse,
     } = props;
+    
+    React.useEffect (()=> {
+        if (isAbonent) {
+            const elem = document.getElementById("#service".slice(1))
+            if (elem) {
+                elem.scrollIntoView({behavior: "smooth"})
+            }
+            setAbonentFalse();
+        } 
+    }, [isAbonent])
+
+    React.useEffect (()=> {
+        if (isPrice) {
+            const elem = document.getElementById("#price".slice(1))
+            if (elem) {
+                elem.scrollIntoView({behavior: "smooth"})
+            }
+            setPriceFalse();
+        } 
+    }, [isPrice])
 
     const name = Validation();
     const number = Validation();
@@ -59,7 +83,7 @@ function It (props) {
                     </p>
                 </div>
             </section>
-            <section className="service-it">
+            <section id="service" className="service-it">
                 <h2 className="service-it__heading">абонентское обслуживание</h2>
                 <div className="service-it__container">
                     <div className="service-it__description-container">
@@ -80,7 +104,7 @@ function It (props) {
                 </div>
             </section>
             <AnimationTableIt />
-            <section className="catalog-page-form">
+            <section id="price" className="catalog-page-form">
                 <div className="it-form__price">
                     <p className="catalog-page-form__price-heading">Разовые IT-услуги</p>
                     <ul className="catalog-page-form__price-list-container">
