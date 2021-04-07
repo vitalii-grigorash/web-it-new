@@ -35,5 +35,6 @@
 @import url(./components/Table/Table.css);
 @import url(./components/PriceTableIt/PriceTableIt.css);
 @import url(./components/AnimationTableIt/AnimationTableIt.css);
+@import url(./components/NotFound/NotFound.css);
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";

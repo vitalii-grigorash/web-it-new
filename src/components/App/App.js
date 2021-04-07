@@ -22,6 +22,7 @@ import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
 import Header from '../Header/Header';
+import NotFound from '../NotFound/NotFound';
 
 function App () {
 
@@ -166,72 +167,14 @@ function App () {
       />
 
       <Switch>
-        <Route path='/ost-med-consult'>
-          <OstMedConsult />
-        </Route>
-        <Route path='/la-mia-borsa'>
-          <LaMiaBorsa />
-        </Route>
-        <Route path='/ar-bellos'>
-          <ArBellos />
-        </Route>
-        <Route path='/telecom-service'>
-          <TelecomService />
-        </Route>
-        <Route path='/yur-konsul'>
-          <YurKonsul />
-        </Route>
-        <Route path='/voleks'>
-          <Voleks />
-        </Route>
-        <Route path='/stroj-snab'>
-          <StrojSnab />
-        </Route>
-        <Route path='/contacts'>
-          <Contacts />
-        </Route>
-        <Route path='/portfolio'>
-          <Portfolio />
-        </Route>
-        <Route path='/seo'>
-          <Seo
+
+        <Route path='/' exact>
+          <MainPage 
+            isDropDownMenuOpen={isDropDownMenuOpen}
             onSendForm={feedbackFormSend}
-            onOpenPopup={handlePopupOpen}
           />
         </Route>
-        <Route path='/landing'>
-          <Landing
-            onOpenPopup={handlePopupOpen}
-          />
-        </Route>
-        <Route path='/business-card'>
-          <BusinessCard
-            onOpenPopup={handlePopupOpen}
-          />
-        </Route>
-        <Route path='/catalog'>
-          <Catalog
-            onSendForm={feedbackFormSend}
-            onOpenPopup={handlePopupOpen}
-          />
-        </Route>
-        <Route path='/multipage'>
-          <Multipage
-            onSendForm={feedbackFormSend}
-            onOpenPopup={handlePopupOpen}
-          />
-        </Route>
-        <Route path='/shop'>
-          <Shop
-            onOpenPopup={handlePopupOpen}
-          />
-        </Route>
-        <Route path='/web'>
-          <Web 
-            onSendForm={feedbackFormSend}
-            onOpenPopup={handlePopupOpen}
-          />
-        </Route>
+
         <Route path='/it'>
           <It
             isAbonent={isAbonent}
@@ -242,12 +185,93 @@ function App () {
             onOpenPopup={handlePopupOpen}
           />
         </Route>
-        <Route path='/'>
-          <MainPage 
-            isDropDownMenuOpen={isDropDownMenuOpen}
+
+        <Route path='/web'>
+          <Web 
             onSendForm={feedbackFormSend}
+            onOpenPopup={handlePopupOpen}
           />
         </Route>
+
+        <Route path='/portfolio'>
+          <Portfolio />
+        </Route>
+
+        <Route path='/contacts'>
+          <Contacts />
+        </Route>
+
+        <Route path='/landing'>
+          <Landing
+            onOpenPopup={handlePopupOpen}
+          />
+        </Route>
+
+        <Route path='/business-card'>
+          <BusinessCard
+            onOpenPopup={handlePopupOpen}
+          />
+        </Route>
+
+        <Route path='/catalog'>
+          <Catalog
+            onSendForm={feedbackFormSend}
+            onOpenPopup={handlePopupOpen}
+          />
+        </Route>
+
+        <Route path='/multipage'>
+          <Multipage
+            onSendForm={feedbackFormSend}
+            onOpenPopup={handlePopupOpen}
+          />
+        </Route>
+
+        <Route path='/shop'>
+          <Shop
+            onOpenPopup={handlePopupOpen}
+          />
+        </Route>
+
+        <Route path='/seo'>
+          <Seo
+            onSendForm={feedbackFormSend}
+            onOpenPopup={handlePopupOpen}
+          />
+        </Route>
+
+        <Route path='/ost-med-consult'>
+          <OstMedConsult />
+        </Route>
+       
+        <Route path='/la-mia-borsa'>
+          <LaMiaBorsa />
+        </Route>
+
+        <Route path='/ar-bellos'>
+          <ArBellos />
+        </Route>
+
+        <Route path='/telecom-service'>
+          <TelecomService />
+        </Route>
+
+        <Route path='/yur-konsul'>
+          <YurKonsul />
+        </Route>
+
+        <Route path='/voleks'>
+          <Voleks />
+        </Route>
+
+        <Route path='/stroj-snab'>
+          <StrojSnab />
+        </Route>
+
+        <Route path='*' exact={false}>
+          <NotFound />
+        </Route>
+
       </Switch>
 
       <Footer

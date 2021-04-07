@@ -1,0 +1,18 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: red;
+}
+.not-found__heading {
+    margin: 400px auto 0;
+    font-size: 36px;
+    line-height: 150%;
+}
+.not-found__description {
+    font-size: 29px;
+    line-height: 140%;
+    margin: 50px auto 300px;
+}
