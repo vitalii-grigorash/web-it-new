@@ -55,11 +55,6 @@
     opacity: 1;
     transition: opacity .3s;
 }
-.grid-container__group:hover .grid-container__img_telecom-service-hover {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity .3s;
-}
 .grid-container__group:hover .grid-container__img_voleks-hover {
     visibility: visible;
     opacity: 1;
@@ -68,14 +63,6 @@
 .grid-container__img {
     width: 100%;
     height: 100%;
-}
-.grid-container__img_telecom-service-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility .3s, opacity .3s linear;
 }
 .grid-container__img_voleks-hover {
     position: absolute;
@@ -121,10 +108,6 @@
     width: 75px;
     height: 68px;
 }
-.overlay__icon_telecom-service {
-    width: 60px;
-    height: 60px;
-}
 .overlay__icon_la-mia-borsa {
     width: 249px;
     height: 35px;
@@ -154,9 +137,6 @@
 }
 .overlay__subheading_ur-konsul {
     max-width: 304px;
-}
-.overlay__subheading_telecom-service {
-    max-width: 279px;
 }
 @media screen and (max-width: 1440px) {
     .portfolio__heading {
@@ -207,10 +187,6 @@
         display: none;
     }
     .overlay {
-        visibility: visible;
-        opacity: 1;
-    }
-    .grid-container__img_telecom-service-hover {
         visibility: visible;
         opacity: 1;
     }

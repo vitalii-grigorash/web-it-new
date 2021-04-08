@@ -1,4 +1,4 @@
-import React, {useState, useCallback, lazy} from 'react';
+import React, {useState, useCallback} from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import MainPage from '../MainPage/MainPage';
 import It from '../It/It';
@@ -14,7 +14,6 @@ import Contacts from '../Contacts/Contacts';
 import StrojSnab from '../StrojSnab/StrojSnab';
 import Voleks from '../Voleks/Voleks';
 import YurKonsul from '../YurKonsul/YurKonsul';
-import TelecomService from '../TelecomService/TelecomService';
 import ArBellos from '../ArBellos/ArBellos';
 import LaMiaBorsa from '../LaMiaBorsa/LaMiaBorsa';
 import OstMedConsult from '../OstMedConsult/OstMedConsult';
@@ -282,10 +281,6 @@ function App () {
 
         <Route path='/ar-bellos'>
           <ArBellos />
-        </Route>
-
-        <Route path='/telecom-service'>
-          <TelecomService />
         </Route>
 
         <Route path='/yur-konsul'>

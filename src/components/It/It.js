@@ -69,7 +69,7 @@ function It (props) {
             <section className="about-it">
                 <img className="about-it__img" src={illustrationIt} alt="Иллюстрация об айти" />
                 <div className="about-it__container">
-                    <h2 className="about-it__heading">о it</h2>
+                    <h2 className="about-it__heading">про it-сервис</h2>
                     <p className="about-it__description">
                         Группа компании Vimpel оказывает услуги IT-аутсорсинга, это
                         комплексное обслуживание и управление IT-инфраструктуры
@@ -110,7 +110,7 @@ function It (props) {
                     <p className="catalog-page-form__price-heading">Разовые IT-услуги</p>
                     <ul className="catalog-page-form__price-list-container">
                         <li className="catalog-page-form__price-list">Внедрение систем хранения данных</li>
-                        <li className="catalog-page-form__price-list">Организация серверов удаленного рабочего стало</li>
+                        <li className="catalog-page-form__price-list">Организация серверов удаленного рабочего стола</li>
                         <li className="catalog-page-form__price-list">Установка гипервизора</li>
                         <li className="catalog-page-form__price-list">Развертывание одной роли на сервере</li>
                         <li className="catalog-page-form__price-list">и другие услуги</li>

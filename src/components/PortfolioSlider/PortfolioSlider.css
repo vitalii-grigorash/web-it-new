@@ -49,14 +49,6 @@
 .carousel__container_ost-med-consult {
     background-image: url('../../images/ost-meb-consalt-img.jpg');
 }
-.carousel__container_telecom-service {
-    background-image: url('../../images/telecom-service-img.jpg');
-    transition: all .3s linear;
-}
-.carousel__container_telecom-service:hover {
-    background-image: url('../../images/telecom-service-img-hover.jpg');
-    transition: all .3s linear;
-}
 .carousel__container_la-mia-borsa {
     background-image: url('../../images/la-mia-borsa-img.jpg');
 }
@@ -95,10 +87,6 @@
 .carousel-overlay__icon_ost-meb-consalt {
     width: 75px;
     height: 68px;
-}
-.carousel-overlay__icon_telecom-service {
-    width: 60px;
-    height: 60px;
 }
 .carousel-overlay__icon_la-mia-borsa {
     width: 249px;
@@ -157,9 +145,6 @@
     .carousel__container_voleks {
         background-image: url('../../images/voleks-img-hover.jpg');
     }
-    .carousel__container_telecom-service {
-        background-image: url('../../images/telecom-service-img-hover.jpg');
-    }
 }
 @media screen and (max-width: 580px) {
     .portfolio-slider__container {
@@ -207,11 +192,6 @@
     .carousel-overlay__icon_ost-meb-consalt {
         width: 57px;
         height: 50px;
-    }
-    .carousel-overlay__icon_telecom-service {
-        width: 42px;
-        height: 42px;
-        margin-bottom: 10px;
     }
     .carousel-overlay__icon_la-mia-borsa {
         width: 180px;

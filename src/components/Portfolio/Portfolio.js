@@ -6,15 +6,12 @@ import voleksHover from '../../images/voleks-img-hover.jpg';
 import arbellos from '../../images/arbellos-img.jpg';
 import urKonsul from '../../images/ur-konsul-img.jpg';
 import ostMebConsalt from '../../images/ost-meb-consalt-img.jpg';
-import telecomService from '../../images/telecom-service-img.jpg';
-import telecomServiceHover from '../../images/telecom-service-img-hover.jpg';
 import laMiaBorsa from '../../images/la-mia-borsa-img.jpg';
 import stroiSnabIcon from '../../images/svg/stroi-snab-icon.svg';
 import voleksIcon from '../../images/svg/voleks-icon.svg';
 import arbellosIcon from '../../images/svg/arbellos-icon.svg';
 import urKonsulIcon from '../../images/svg/ur-consul-icon.svg';
 import ostMebConsaltIcon from '../../images/svg/ost-med-consalt-icon.svg';
-import telecomServiceIcon from '../../images/svg/telecom-service-icon.svg';
 import laMiaBorsaIcon from '../../images/svg/la-mia-borsa-icon.svg';
 import { Link } from 'react-router-dom';
 
@@ -69,15 +66,6 @@ function Portfolio () {
                        <img src={ostMebConsaltIcon} alt="Иконка Ост Мед Консалт" className="overlay__icon overlay__icon_ost-meb-consalt"/>
                        <h3 className="overlay__heading">Остмедконсалт</h3>
                        <p className="overlay__subheading">Многопрофильная клиника: эстетическая медецины и пластическая хирургия</p>
-                    </div>
-                </Link>
-                <Link to={'/telecom-service'} className="grid-container__group">
-                    <img src={telecomService} alt="Фото Телеком Сервис" className="grid-container__img grid-container__img_telecom-service"/>
-                    <img src={telecomServiceHover} alt="Фото Телеком Сервис" className="grid-container__img grid-container__img_telecom-service-hover"/>
-                    <div className="overlay">
-                       <img src={telecomServiceIcon} alt="Иконка Телеком Сервис" className="overlay__icon overlay__icon_telecom-service"/>
-                       <h3 className="overlay__heading">ТелекомСервис</h3>
-                       <p className="overlay__subheading overlay__subheading_telecom-service">Телекоммуникации, благоустройство и асфалтировании</p>
                     </div>
                 </Link>
                 <Link to={'/la-mia-borsa'} className="grid-container__group">

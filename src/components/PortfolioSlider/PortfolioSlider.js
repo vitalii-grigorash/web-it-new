@@ -6,7 +6,6 @@ import voleksIcon from '../../images/svg/voleks-icon.svg';
 import arbellosIcon from '../../images/svg/arbellos-icon.svg';
 import urKonsulIcon from '../../images/svg/ur-consul-icon.svg';
 import ostMebConsaltIcon from '../../images/svg/ost-med-consalt-icon.svg';
-import telecomServiceIcon from '../../images/svg/telecom-service-icon.svg';
 import laMiaBorsaIcon from '../../images/svg/la-mia-borsa-icon.svg';
 import prevArrow from '../../images/svg/prev-arrow.svg';
 import nextArrow from '../../images/svg/next-arrow.svg';
@@ -247,13 +246,6 @@ export default class PortfolioSlider extends Component {
                                 <img src={ostMebConsaltIcon} alt="Иконка Ост Мед Консалт" className="carousel-overlay__icon carousel-overlay__icon_ost-meb-consalt" />
                                 <h3 className="carousel-overlay__heading">Остмедконсалт</h3>
                                 <p className="carousel-overlay__subheading">Многопрофильная клиника: эстетическая медецины и пластическая хирургия</p>
-                            </div>
-                        </Link>
-                        <Link to={'/telecom-service'} className="carousel__container carousel__container_telecom-service">
-                            <div className="carousel-overlay">
-                                <img src={telecomServiceIcon} alt="Иконка Телеком Сервис" className="carousel-overlay__icon carousel-overlay__icon_telecom-service" />
-                                <h3 className="carousel-overlay__heading">ТелекомСервис</h3>
-                                <p className="carousel-overlay__subheading">Телекоммуникации, благоустройство и асфалтировании</p>
                             </div>
                         </Link>
                         <Link to={'/la-mia-borsa'} className="carousel__container carousel__container_la-mia-borsa">
