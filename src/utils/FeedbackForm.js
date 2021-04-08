@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://localhost:3001';
+export const BASE_URL = 'https://api.178spb.com';
 
 export const sendForm = (name, number, method) => fetch(`${BASE_URL}/feedbackform`, {
   method: 'POST',
@@ -10,13 +10,13 @@ export const sendForm = (name, number, method) => fetch(`${BASE_URL}/feedbackfor
   .then((res) => {
     if (!res.ok) {
       return res.json()
-        .then((err) => {
-          if (err.error) {
-            throw new Error(err.error);
-          } else {
-            throw new Error(err.message);
-          }
-        });
+      .then((err) => {
+        if (err.error) {
+          throw new Error(err.error);
+        } else {
+          throw new Error(err.message);
+        }
+      });
     }
     return res.json();
   })
@@ -34,13 +34,13 @@ export const sendFormCatalog = (name, number, method) => fetch(`${BASE_URL}/feed
     .then((res) => {
       if (!res.ok) {
         return res.json()
-          .then((err) => {
-            if (err.error) {
-              throw new Error(err.error);
-            } else {
-              throw new Error(err.message);
-            }
-          });
+        .then((err) => {
+          if (err.error) {
+            throw new Error(err.error);
+          } else {
+            throw new Error(err.message);
+          }
+        });
       }
       return res.json();
     })
