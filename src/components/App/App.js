@@ -23,6 +23,7 @@ import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
 import Header from '../Header/Header';
 import NotFound from '../NotFound/NotFound';
+import * as FeedbackForm from '../../utils/FeedbackForm';
 
 function App () {
 
@@ -34,6 +35,7 @@ function App () {
   const [isWebOpen, setWebOpen] = useState(false);
   const [isAbonent, setAbonent] = useState(false);
   const [isPrice, setPrice] = useState(false);
+  const [submitButtonText, setSubmitButtonText] = useState('Оставить заявку')
 
   function handlePriceTrue () {
     setPrice(true);
@@ -142,8 +144,33 @@ function App () {
   }
 
   function feedbackFormSend (name, number, method) {
-    console.log(name, number, method);
-    handleSuccessPopupOpen();
+    setSubmitButtonText('Отправка...')
+    FeedbackForm.sendForm(name, number, method)
+    .then(() => {
+      handlePopupClose();
+      handleSuccessPopupOpen();
+    })
+    .catch((err) => {
+      console.log(err.message);
+    })
+    .finally(() => {
+      setSubmitButtonText('Получить консультацию');
+    });
+  }
+
+  function feedbackFormSendCatalog (name, number, method) {
+    setSubmitButtonText('Отправка...')
+    FeedbackForm.sendFormCatalog(name, number, method)
+    .then(() => {
+      handlePopupClose();
+      handleSuccessPopupOpen();
+    })
+    .catch((err) => {
+      console.log(err.message);
+    })
+    .finally(() => {
+      setSubmitButtonText('Получить консультацию');
+    });
   }
 
   return (
@@ -215,7 +242,7 @@ function App () {
 
         <Route path='/catalog'>
           <Catalog
-            onSendForm={feedbackFormSend}
+            onSendForm={feedbackFormSendCatalog}
             onOpenPopup={handlePopupOpen}
           />
         </Route>
