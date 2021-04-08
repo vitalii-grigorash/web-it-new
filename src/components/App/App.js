@@ -1,5 +1,5 @@
-import React, {useState, useCallback} from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React, {useState, useCallback, lazy} from 'react';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import MainPage from '../MainPage/MainPage';
 import It from '../It/It';
 import Web from '../Web/Web';
@@ -35,7 +35,7 @@ function App () {
   const [isWebOpen, setWebOpen] = useState(false);
   const [isAbonent, setAbonent] = useState(false);
   const [isPrice, setPrice] = useState(false);
-  const [submitButtonText, setSubmitButtonText] = useState('Получить консультацию')
+  const [submitButtonText, setSubmitButtonText] = useState('Получить консультацию');
 
   function handlePriceTrue () {
     setPrice(true);
@@ -300,9 +300,12 @@ function App () {
           <StrojSnab />
         </Route>
 
-        <Route path='*' exact={false}>
-          <NotFound />
-        </Route>
+        <Switch>
+
+          <Route exact path="/404" component={NotFound} />
+          <Redirect from='*' to='/404' />
+
+        </Switch>
 
       </Switch>
 

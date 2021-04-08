@@ -25,9 +25,9 @@ function HeaderInfo (props) {
                 <a href="https://yandex.ru/maps/2/saint-petersburg/house/prospekt_obukhovskoy_oborony_199/Z0kYcgFhS0IPQFtjfXR3dnVqZA" target="_blank" rel="nofollow noreferrer" className="header-info__location">
                     г. Санкт-Петербург, пр. Обуховской Обороны, д.199
                 </a>
-                <a href="tel:+79874323036" className="header-info__phone-number">
+                <a href="tel:+79119202950" className="header-info__phone-number">
                     <p className="header-info__phone-icon"></p>
-                    +7-987-432-30-36
+                    +7-911-920-29-50
                 </a>
                 <button className="header-info__button" type="button" onClick={onOpenPopup}>
                     Получить консультацию

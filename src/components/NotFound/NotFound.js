@@ -6,7 +6,7 @@ function NotFound () {
     return (
         <section className="not-found">
             <section className="not-found__image-container">
-                <h1 className="not-found__heading">404</h1>
+                <h3 className="not-found__heading">404</h3>
                 <p className="not-found__subheading">Ой... что-то пошло не так</p>
                 <p className="not-found__description">
                     К сожалению, страница не найдена, либо уже не 
