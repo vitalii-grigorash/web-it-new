@@ -14,6 +14,7 @@ function MainPage (props) {
     const {
         onSendForm,
         isDropDownMenuOpen,
+        submitButtonText,
     } = props;
 
     return (
@@ -54,6 +55,7 @@ function MainPage (props) {
                 <img className="about-us__img" src={illustrationOne} alt="Иллюстрация офиса" />
             </section>
             <PageForm
+                submitButtonText={submitButtonText}
                 onSendForm={onSendForm}
             />
             <section className="history">

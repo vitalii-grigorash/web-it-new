@@ -6,11 +6,12 @@ import mouse from '../../images/svg/mouse.svg';
 import illustrationWeb from '../../images/illustration-web.jpg';
 import lineOfHistory from '../../images/svg/line-of-history.svg';
 
-function Web(props) {
+function Web (props) {
 
     const {
         onSendForm,
         onOpenPopup,
+        submitButtonText
     } = props;
 
     return (
@@ -108,6 +109,7 @@ function Web(props) {
             </section>
             <PageForm
                 onSendForm={onSendForm}
+                submitButtonText={submitButtonText}
             />
             <PortfolioSlider />
         </section>

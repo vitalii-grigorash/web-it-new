@@ -1,18 +1,188 @@
 .not-found {
+
+}
+.not-found__image-container {
+    background-image: url('../../images/not-found-page-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 970px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: red;
 }
 .not-found__heading {
-    margin: 400px auto 0;
-    font-size: 36px;
-    line-height: 150%;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58px;
+    color: #FFFFFF;
+    max-width: 660px;
+    margin: 361px auto 0 258px;
+    text-transform: uppercase;
+}
+.not-found__subheading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin: 12px auto 0 258px;
+    max-width: 500px;
 }
 .not-found__description {
-    font-size: 29px;
-    line-height: 140%;
-    margin: 50px auto 300px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 32px auto 0 258px;
+    max-width: 565px;
+}
+.not-found__button {
+    width: 300px;
+    height: 54px;
+    background: linear-gradient(79.69deg, #FF3232 6.7%, #FF612F 97.83%);
+    box-shadow: -2px 18px 30px -12px rgba(64, 0, 0, 0.7);
+    border-radius: 30px;
+    border: none;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 64px auto auto 258px;
+}
+.not-found__button:hover {
+    background: linear-gradient(85.68deg, #FF0F00 15.58%, #FF9533 53.24%, #FF0000 104.41%);
+    cursor: pointer;
+}
+.not-found__button:focus {
+    outline: none;
+}
+.not-found__button:active {
+    box-shadow: inset 6px 7px 6px rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 1680px) {
+    .not-found__heading {
+        margin: 361px auto 0 150px;
+    }
+    .not-found__subheading {
+        margin: 12px auto 0 150px;
+    }
+    .not-found__description {
+        margin: 32px auto 0 150px;
+    }
+    .not-found__button {
+        margin: 64px auto auto 150px;
+    }
+}
+@media screen and (max-width: 1245px) {
+    .not-found__image-container {
+        min-height: 829px;
+    }
+    .not-found__heading {
+        margin: 250px auto 0 100px;
+    }
+    .not-found__subheading  {
+        margin: 12px auto 0 100px;
+    }
+    .not-found__description {
+        margin: 32px auto 0 100px;
+    }
+    .not-found__button {
+        margin: 64px auto auto 100px;
+    }
+}
+@media screen and (max-width: 1095px) {
+    .not-found__image-container {
+        min-height: 729px;
+    }
+    .not-found__heading {
+        margin: 230px auto 0 80px;
+        font-size: 35px;
+        line-height: 48px;
+        max-width: 550px;
+    }
+    .not-found__subheading {
+        font-size: 16px;
+        line-height: 130%;
+        margin: 22px auto 0 80px;
+    }
+    .not-found__description {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 32px auto 0 80px;
+        max-width: 450px;
+    }
+    .not-found__button {
+        margin: 40px auto auto 80px;
+        width: 256px;
+        height: 47px;
+        font-size: 16px;
+        line-height: 130%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .not-found__image-container {
+        min-height: 629px;
+    }
+    .not-found__heading {
+        margin: 200px auto 0 80px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .not-found__image-container {
+        min-height: 340px;
+    }
+    .not-found__heading {
+        font-size: 36px;
+        line-height: 140%;
+        margin: 128px auto 0 50px;
+    }
+    .not-found__subheading {
+        font-size: 20px;
+        line-height: 26px;
+        margin: 12px auto 0 50px;
+        max-width: 222px;
+    }
+    .not-found__description {
+        display: none;
+    }
+    .not-found__button {
+        margin: 24px auto 0 50px;
+        width: 211px;
+        height: 44px;
+        font-size: 14px;
+        line-height: 140%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .not-found__heading {
+        margin: 108px auto 0 15px;
+    }
+    .not-found__subheading {
+        margin: 12px auto 0 15px;
+    }
+    .not-found__button {
+        margin: 24px auto 0 15px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .not-found__image-container {
+        min-height: 490px;
+    }
+    .not-found__heading {
+        margin: 144px auto 0 20px;
+    }
+    .not-found__subheading {
+        margin: 12px auto 0 20px;
+    }
+    .not-found__button {
+        margin: 24px auto 0 20px;
+    }
 }

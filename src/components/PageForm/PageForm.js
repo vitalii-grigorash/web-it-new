@@ -6,6 +6,7 @@ function PageForm(props) {
 
     const {
         onSendForm,
+        submitButtonText,
     } = props;
 
     const name = Validation();
@@ -102,7 +103,7 @@ function PageForm(props) {
                         </div>
                     </div>
                     <div className="page-form__submit-container">
-                        <button type="submit" className="page-form__submit-button">Получить консультацию</button>
+                        <button type="submit" className="page-form__submit-button">{submitButtonText}</button>
                         <div className="page-form__under-submit-button-container">
                             <img src={check} alt="Иконка галочки" className="page-form__under-submit-button-check" />
                             <p className="page-form__under-submit-button-text">Принимаю пользовательское соглашение</p>

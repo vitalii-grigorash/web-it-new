@@ -8,6 +8,7 @@ function Multipage (props) {
     const {
         onSendForm,
         onOpenPopup,
+        submitButtonText,
     } = props;
 
     return (
@@ -47,6 +48,7 @@ function Multipage (props) {
             </section>
             <PageForm
                 onSendForm={onSendForm}
+                submitButtonText={submitButtonText}
             />
             <Table />
         </section>

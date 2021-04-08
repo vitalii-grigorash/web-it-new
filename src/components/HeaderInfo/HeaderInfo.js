@@ -26,6 +26,7 @@ function HeaderInfo (props) {
                     г. Санкт-Петербург, пр. Обуховской Обороны, д.199
                 </a>
                 <a href="tel:+79874323036" className="header-info__phone-number">
+                    <p className="header-info__phone-icon"></p>
                     +7-987-432-30-36
                 </a>
                 <button className="header-info__button" type="button" onClick={onOpenPopup}>

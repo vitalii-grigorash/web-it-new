@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import check from '../../images/svg/check.svg';
 import { Validation } from '../../utils/Validation';
 
-function Footer(props) {
+function Footer (props) {
 
   const {
     onSendForm,
+    submitButtonText,
   } = props;
 
   const name = Validation();
@@ -117,7 +118,7 @@ function Footer(props) {
             </div>
           </div>
           <div className="footer__submit-container">
-            <button type="submit" className="footer__submit-button">Получить консультацию</button>
+            <button type="submit" className="footer__submit-button">{submitButtonText}</button>
             <div className="footer__under-submit-button-container">
               <img src={check} alt="Иконка галочки" className="footer__under-submit-button-check" />
               <p className="footer__under-submit-button-text">Принимаю пользовательское соглашение</p>

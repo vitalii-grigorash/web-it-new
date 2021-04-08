@@ -35,7 +35,7 @@ function App () {
   const [isWebOpen, setWebOpen] = useState(false);
   const [isAbonent, setAbonent] = useState(false);
   const [isPrice, setPrice] = useState(false);
-  const [submitButtonText, setSubmitButtonText] = useState('Оставить заявку')
+  const [submitButtonText, setSubmitButtonText] = useState('Получить консультацию')
 
   function handlePriceTrue () {
     setPrice(true);
@@ -162,7 +162,6 @@ function App () {
     setSubmitButtonText('Отправка...')
     FeedbackForm.sendFormCatalog(name, number, method)
     .then(() => {
-      handlePopupClose();
       handleSuccessPopupOpen();
     })
     .catch((err) => {
@@ -199,6 +198,7 @@ function App () {
           <MainPage 
             isDropDownMenuOpen={isDropDownMenuOpen}
             onSendForm={feedbackFormSend}
+            submitButtonText={submitButtonText}
           />
         </Route>
 
@@ -210,6 +210,7 @@ function App () {
             setPriceFalse={handlePriceFalse}
             onSendForm={feedbackFormSend}
             onOpenPopup={handlePopupOpen}
+            submitButtonText={submitButtonText}
           />
         </Route>
 
@@ -217,6 +218,7 @@ function App () {
           <Web 
             onSendForm={feedbackFormSend}
             onOpenPopup={handlePopupOpen}
+            submitButtonText={submitButtonText}
           />
         </Route>
 
@@ -244,6 +246,7 @@ function App () {
           <Catalog
             onSendForm={feedbackFormSendCatalog}
             onOpenPopup={handlePopupOpen}
+            submitButtonText={submitButtonText}
           />
         </Route>
 
@@ -251,6 +254,7 @@ function App () {
           <Multipage
             onSendForm={feedbackFormSend}
             onOpenPopup={handlePopupOpen}
+            submitButtonText={submitButtonText}
           />
         </Route>
 
@@ -264,6 +268,7 @@ function App () {
           <Seo
             onSendForm={feedbackFormSend}
             onOpenPopup={handlePopupOpen}
+            submitButtonText={submitButtonText}
           />
         </Route>
 
@@ -303,12 +308,14 @@ function App () {
 
       <Footer
         onSendForm={feedbackFormSend}
+        submitButtonText={submitButtonText}
       />
 
       <Popup
         isOpen={isPopupOpen}
         onClosePopup={handlePopupClose}
         onSendForm={feedbackFormSend}
+        submitButtonText={submitButtonText}
       />
 
       <SuccessPopup

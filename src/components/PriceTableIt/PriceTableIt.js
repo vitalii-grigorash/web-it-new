@@ -252,7 +252,7 @@ function PriceTableIt () {
                                 </p>
                         </div>
                         <div className="it-table__right-column">
-                            <p className="it-table__text">уточняйте</p>
+                            <p className="it-table__text"></p>
                         </div>
                     </div>
                     <div className="it-table__row">
@@ -262,7 +262,7 @@ function PriceTableIt () {
                                 </p>
                         </div>
                         <div className="it-table__right-column">
-                            <p className="it-table__text">уточняйте</p>
+                            <p className="it-table__text"></p>
                         </div>
                     </div>
                     <div className="it-table__row">
@@ -272,7 +272,7 @@ function PriceTableIt () {
                                 </p>
                         </div>
                         <div className="it-table__right-column">
-                            <p className="it-table__text">уточняйте</p>
+                            <p className="it-table__text"></p>
                         </div>
                     </div>
                     <div className="it-table__row">
@@ -282,7 +282,7 @@ function PriceTableIt () {
                                 </p>
                         </div>
                         <div className="it-table__right-column">
-                            <p className="it-table__text">уточняйте</p>
+                            <p className="it-table__text"></p>
                         </div>
                     </div>
                     <div className="it-table__row">
@@ -292,7 +292,7 @@ function PriceTableIt () {
                                 </p>
                         </div>
                         <div className="it-table__right-column">
-                            <p className="it-table__text">уточняйте</p>
+                            <p className="it-table__text"></p>
                         </div>
                     </div>
                     <div className="it-table__row">
@@ -302,7 +302,7 @@ function PriceTableIt () {
                                 </p>
                         </div>
                         <div className="it-table__right-column">
-                            <p className="it-table__text">уточняйте</p>
+                            <p className="it-table__text"></p>
                         </div>
                     </div>
                     <div className="it-table__row">
@@ -312,7 +312,7 @@ function PriceTableIt () {
                                 </p>
                         </div>
                         <div className="it-table__right-column">
-                            <p className="it-table__text">уточняйте</p>
+                            <p className="it-table__text"></p>
                         </div>
                     </div>
                 </div>

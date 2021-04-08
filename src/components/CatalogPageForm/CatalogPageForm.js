@@ -6,6 +6,7 @@ function CatalogPageForm (props) {
 
     const {
         onSendForm,
+        submitButtonText,
     } = props;
 
     const name = Validation();
@@ -116,7 +117,7 @@ function CatalogPageForm (props) {
                         </div>
                     </div>
                     <div className="catalog-page-form__submit-container">
-                        <button type="submit" className="catalog-page-form__submit-button">Получить консультацию</button>
+                        <button type="submit" className="catalog-page-form__submit-button">{submitButtonText}</button>
                         <div className="catalog-page-form__under-submit-button-container">
                             <img src={check} alt="Иконка галочки" className="catalog-page-form__under-submit-button-check" />
                             <p className="catalog-page-form__under-submit-button-text">Принимаю пользовательское соглашение</p>

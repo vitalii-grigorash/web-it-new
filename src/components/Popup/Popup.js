@@ -9,6 +9,7 @@ function Popup (props) {
         onClosePopup,
         isOpen,
         onSendForm,
+        submitButtonText,
     } = props;
 
     const name = Validation();
@@ -114,7 +115,7 @@ function Popup (props) {
                         </div>
                     </div>
                     <div className="popup__submit-container">
-                        <button type="submit" className="popup__submit-button">Получить консультацию</button>
+                        <button type="submit" className="popup__submit-button">{submitButtonText}</button>
                         <div className="popup__under-submit-button-container">
                             <img src={check} alt="Иконка галочки" className="popup__under-submit-button-check" />
                             <p className="popup__under-submit-button-text">Принимаю пользовательское соглашение</p>

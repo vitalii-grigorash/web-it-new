@@ -11,6 +11,7 @@ function Catalog (props) {
     const {
         onSendForm,
         onOpenPopup,
+        submitButtonText,
     } = props;
 
     return (
@@ -51,6 +52,7 @@ function Catalog (props) {
             </section>
             <CatalogPageForm
                 onSendForm={onSendForm}
+                submitButtonText={submitButtonText}
             />
             <section className="days">
                 <div className="days__container">
