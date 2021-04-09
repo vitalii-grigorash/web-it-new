@@ -3,9 +3,9 @@ import mouse from '../../images/svg/mouse.svg';
 import illustrationOne from '../../images/illustration-one.jpg';
 import illustrationTwo from '../../images/illustration-two.jpg';
 import lineOfHistory from '../../images/svg/line-of-history.svg';
-import teamOne from '../../images/team-one.jpg'
-import teamTwo from '../../images/team-two.jpg'
-import teamThree from '../../images/team-three.jpg'
+import teamOne from '../../images/team-one.jpg';
+import teamTwo from '../../images/team-two.jpg';
+import teamThree from '../../images/team-three.jpg';
 import PageForm from '../PageForm/PageForm';
 import { Link } from 'react-router-dom';
 
