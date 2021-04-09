@@ -19,7 +19,7 @@ function It (props) {
         submitButtonText,
     } = props;
     
-    React.useEffect (()=> {
+    React.useEffect (() => {
         if (isAbonent) {
             const elem = document.getElementById("#service".slice(1))
             if (elem) {
@@ -29,7 +29,7 @@ function It (props) {
         } 
     }, [isAbonent])
 
-    React.useEffect (()=> {
+    React.useEffect (() => {
         if (isPrice) {
             const elem = document.getElementById("#price".slice(1))
             if (elem) {

@@ -8,23 +8,29 @@ function BusinessCard (props) {
     } = props;
 
     const [isFirstActive, setFirstActive] = useState(true);
+
     function handleFirstSectionActive () {
         setFirstActive(true);
         setSecondActive(false);
         setLastActive(false);
     }
+
     const [isSecondActive, setSecondActive] = useState(false);
+
     function handleSecondSectionActive () {
         setFirstActive(false);
         setLastActive(false);
         setSecondActive(true);
     }
+
     const [isLastActive, setLastActive] = useState(false);
+
     function handleLastSectionActive () {
         setFirstActive(false);
         setSecondActive(false);
         setLastActive(true);
     }
+    
     return (
         <section className="business-card">
             <section className="business-card__image-container">

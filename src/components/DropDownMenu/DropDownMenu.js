@@ -2,7 +2,7 @@ import React from 'react';
 import dropDownMenuCloseButtonIcon from '../../images/svg/drop-down-menu-close-button.svg';
 import { Link } from 'react-router-dom';
 
-function DropDownMenu(props) {
+function DropDownMenu (props) {
 
     const {
         isOpen,
