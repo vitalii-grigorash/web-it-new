@@ -1,10 +1,17 @@
 import React from 'react';
+import Helmet from "react-helmet";
 import { Link } from 'react-router-dom';
 
 function NotFound () {
 
     return (
         <section className="not-found">
+            <Helmet
+                title='Ошибка 404: Страница не найдена'
+                meta={[
+                    {"name": "description", "content": "Создание и продвижение сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Техническое обслуживание персональных компьютеров, печатных устройств и т.д.! Команда профессионалов!"}
+                ]}
+            />
             <section className="not-found__image-container">
                 <h3 className="not-found__heading">404</h3>
                 <p className="not-found__subheading">Ой... что-то пошло не так</p>
