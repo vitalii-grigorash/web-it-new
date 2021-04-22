@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from "react-helmet";
 import mouse from '../../images/svg/mouse.svg';
 import stroiSnab from '../../images/stroi-snab-img.jpg';
 import voleks from '../../images/voleks-img.jpg';
@@ -19,6 +20,12 @@ function Portfolio () {
 
     return (
         <section className="portfolio">
+            <Helmet
+                title='Портфолио ГК "Вымпел"'
+                meta={[
+                    {"name": "description", "content": "Создание и продвижение сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!"}
+                ]}
+            />
             <section className="portfolio__image-container">
                 <h1 className="portfolio__heading">ПОРТФОЛИО</h1>
                 <div className="portfolio__bottom-container">

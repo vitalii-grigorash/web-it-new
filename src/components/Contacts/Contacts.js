@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from "react-helmet";
 import mouse from '../../images/svg/mouse.svg';
 import pointOnMap from '../../images/svg/point-on-map.svg';
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
@@ -22,6 +23,12 @@ function Contacts () {
 
     return (
         <section className="contacts">
+            <Helmet
+                title='Контакты ГК "Вымпел"'
+                meta={[
+                    {"name": "description", "content": "Создание и продвижение сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Техническое обслуживание персональных компьютеров, печатных устройств и т.д.! Команда профессионалов!"}
+                ]}
+            />
             <section className="contacts__image-container">
                 <div className="contacts__main-container">
                     <a href="tel:+78123728561" className="contacts__main-phone">

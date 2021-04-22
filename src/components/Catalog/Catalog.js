@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from "react-helmet";
 import mouse from '../../images/svg/mouse.svg';
 import analysisIcon from '../../images/analysis-icon.jpg';
 import designIcon from '../../images/design-icon.jpg';
@@ -16,6 +17,12 @@ function Catalog (props) {
 
     return (
         <section className="catalog">
+            <Helmet
+                title='Создание Сайта-каталога под ключ в Санкт-Петербурге "Вымпел"'
+                meta={[
+                    {"name": "description", "content": "Проектирование и разработка сайта-каталога в Санкт-Петербурге! Создание и продвижение веб-сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!"}
+                ]}
+            />
             <section className="catalog__image-container">
                 <h1 className="catalog__heading">СОЗДАНИЕ <nobr>САЙТА-КАТАЛОГА</nobr> ПОД КЛЮЧ</h1>
                 <p className="catalog__subheading">Проектирование и разработка сайта-каталога в Санкт-Петербурге</p>

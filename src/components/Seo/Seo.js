@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Helmet from "react-helmet";
 import mouse from '../../images/svg/mouse.svg';
 import check from '../../images/svg/check.svg';
 import { Validation } from '../../utils/Validation';
@@ -49,6 +50,12 @@ function Seo (props) {
 
     return (
         <section className="seo">
+            <Helmet
+                title='Оказание SEO-услуг в Санкт-Петербурге "Вымпел"'
+                meta={[
+                    {"name": "description", "content": "SEO оптимизация для эффективного привлечения клиентов! Создание и продвижение сайтов! Современный дизайн! Команда профессионалов!"}
+                ]}
+            />
             <section className="seo__image-container">
                 <h1 className="seo__heading">seo-услуги под ключ</h1>
                 <p className="seo__subheading">Оказание качественных SEO-услуг под ключ в <nobr>Санкт-Петербурге</nobr></p>

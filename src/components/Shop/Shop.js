@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from "react-helmet";
 import mouse from '../../images/svg/mouse.svg';
 
 function Shop (props) {
@@ -9,6 +10,12 @@ function Shop (props) {
     
     return (
         <section className="shop">
+            <Helmet
+                title='Создание Интернет-магазина в Санкт-Петербурге "Вымпел"'
+                meta={[
+                    {"name": "description", "content": "Создание и продвижение сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!"}
+                ]}
+            />
             <section className="shop__image-container">
                 <h1 className="shop__heading">СОЗДАНИЕ ИНТЕРНЕТ-МАГАЗИНА ПОД КЛЮЧ</h1>
                 <p className="shop__subheading">Проектирование и разработка интернет-магазина в Санкт-Петербурге</p>

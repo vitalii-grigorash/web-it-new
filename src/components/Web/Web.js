@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from "react-helmet";
 import PageForm from '../PageForm/PageForm';
 import Stages from '../Stages/Stages';
 import PortfolioSlider from '../PortfolioSlider/PortfolioSlider';
@@ -16,6 +17,12 @@ function Web (props) {
 
     return (
         <section className="web">
+            <Helmet
+                title='WEB Студия "Вымпел"'
+                meta={[
+                    {"name": "description", "content": "Создание и продвижение сайтов! Современный дизайн! Команда профессионалов!"}
+                ]}
+            />
             <section className="web__image-container">
                 <h1 className="web__heading">WEB СТУДИЯ</h1>
                 <button className="web__button" type="button" onClick={onOpenPopup}>

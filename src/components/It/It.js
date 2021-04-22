@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Helmet from "react-helmet";
 import PriceTableIt from '../PriceTableIt/PriceTableIt';
 import AnimationTableIt from '../AnimationTableIt/AnimationTableIt';
 import mouse from '../../images/svg/mouse.svg';
@@ -56,6 +57,12 @@ function It (props) {
 
     return (
         <section className="it">
+            <Helmet
+                title='IT Сервис "Вымпел"'
+                meta={[
+                    {"name": "description", "content": "Техническое обслуживание персональных компьютеров, печатных устройств и т.д.! Команда профессионалов!"}
+                ]}
+            />
             <section className="it__image-container">
                 <h1 className="it__heading">IT СЕРВИС</h1>
                 <button className="it__button" type="button" onClick={onOpenPopup}>

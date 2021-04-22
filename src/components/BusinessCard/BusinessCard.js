@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Helmet from "react-helmet";
 import mouse from '../../images/svg/mouse.svg';
 
 function BusinessCard (props) {
@@ -33,6 +34,12 @@ function BusinessCard (props) {
     
     return (
         <section className="business-card">
+            <Helmet
+                title='Создание Сайта-визитки под ключ в Санкт-Петербурге "Вымпел"'
+                meta={[
+                    {"name": "description", "content": "Проектирование и разработка сайта-визитки в Санкт-Петербурге! Создание и продвижение веб-сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!"}
+                ]}
+            />
             <section className="business-card__image-container">
                 <h1 className="business-card__heading">создание <nobr>сайта-визитки</nobr> под ключ</h1>
                 <p className="business-card__subheading">Проектирование и разработка сайта-визитки в Санкт-Петербурге</p>

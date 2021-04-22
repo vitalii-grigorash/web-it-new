@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Helmet from "react-helmet";
 import mouse from '../../images/svg/mouse.svg';
 
 function Landing(props) {
@@ -27,6 +28,12 @@ function Landing(props) {
     }
     return (
         <section className="landing">
+            <Helmet
+                title='Создание Landing Page под ключ в Санкт-Петербурге "Вымпел"'
+                meta={[
+                    {"name": "description", "content": "Создание и продвижение сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!"}
+                ]}
+            />
             <section className="landing__image-container">
                 <h1 className="landing__heading">создание landing page под ключ</h1>
                 <p className="landing__subheading">Проектирование и разработка landing page в Санкт-Петербурге</p>

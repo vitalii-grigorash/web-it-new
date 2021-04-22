@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from "react-helmet";
 import mouse from '../../images/svg/mouse.svg';
 import PageForm from '../PageForm/PageForm';
 import Table from '../Table/Table';
@@ -13,6 +14,12 @@ function Multipage (props) {
 
     return (
         <section className="multipage">
+            <Helmet
+                title='Создание Многостраничного (корпоративного) сайта в Санкт-Петербурге "Вымпел"'
+                meta={[
+                    {"name": "description", "content": "Проектирование и разработка многостраничного сайта в Санкт-Петербурге! Создание и продвижение веб-сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!"}
+                ]}
+            />
             <section className="multipage__image-container">
                 <h1 className="multipage__heading">создание многостраничного (корпоративного) сайта "под ключ"</h1>
                 <p className="multipage__subheading">Проектирование и разработка многостраничного сайта в Санкт-Петербурге</p>
