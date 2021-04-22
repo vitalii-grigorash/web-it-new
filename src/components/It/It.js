@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Helmet from "react-helmet";
+import { Helmet } from 'react-helmet-async';
 import PriceTableIt from '../PriceTableIt/PriceTableIt';
 import AnimationTableIt from '../AnimationTableIt/AnimationTableIt';
 import mouse from '../../images/svg/mouse.svg';

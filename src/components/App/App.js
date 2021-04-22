@@ -1,6 +1,6 @@
 import React, {useState, useCallback} from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import Helmet from "react-helmet";
+import { Helmet } from 'react-helmet-async';
 import MainPage from '../MainPage/MainPage';
 import It from '../It/It';
 import Web from '../Web/Web';

@@ -4,12 +4,15 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './components/App/App';
 import ScrollToTop from './utils/ScrollToTop';
+import { HelmetProvider } from 'react-helmet-async';
 
 const APP = (
   <React.StrictMode>
     <BrowserRouter>
       <ScrollToTop />
-      <App />
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Helmet from "react-helmet";
+import { Helmet } from 'react-helmet-async';
 import mouse from '../../images/svg/mouse.svg';
 import check from '../../images/svg/check.svg';
 import { Validation } from '../../utils/Validation';

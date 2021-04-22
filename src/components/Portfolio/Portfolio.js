@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from "react-helmet";
+import { Helmet } from 'react-helmet-async';
 import mouse from '../../images/svg/mouse.svg';
 import stroiSnab from '../../images/stroi-snab-img.jpg';
 import voleks from '../../images/voleks-img.jpg';

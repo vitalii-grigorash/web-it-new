@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from "react-helmet";
+import { Helmet } from 'react-helmet-async';
 import mouse from '../../images/svg/mouse.svg';
 import analysisIcon from '../../images/analysis-icon.jpg';
 import designIcon from '../../images/design-icon.jpg';

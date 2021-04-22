@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from "react-helmet";
+import { Helmet } from 'react-helmet-async';
 import mouse from '../../images/svg/mouse.svg';
 import pointOnMap from '../../images/svg/point-on-map.svg';
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
