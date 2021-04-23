@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: Yandex
+Disallow: /error/
+Disallow: /author/vimpel/
+Disallow: /service/pc/
+Disallow: /service/
+Disallow: /internet-magazin/
+Disallow: /price/
+Disallow: /service/it-move/
+Disallow: /2019/
