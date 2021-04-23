@@ -17,8 +17,8 @@ function Header (props) {
     isItOpen,
     isWebOpen,
     onOpenPopup,
-    setAbonentScrollTrue,
-    setPriceScrollTrue,
+    handleAbonentScroll,
+    handlePriceScroll,
   } = props;
 
   return (
@@ -30,8 +30,8 @@ function Header (props) {
         onOpenDropDownMenu={onOpenDropDownMenu}
         onCloseDropDownMenu={onCloseDropDownMenu}
         isOpen={isOpen}
-        setAbonentScrollTrue={setAbonentScrollTrue}
-        setPriceScrollTrue={setPriceScrollTrue}
+        handleAbonentScroll={handleAbonentScroll}
+        handlePriceScroll={handlePriceScroll}
       />
       <MobileHeader
         isMobileNavigationOpen={isMobileNavigationOpen}
@@ -42,8 +42,8 @@ function Header (props) {
         handleWebDropDownMunu={handleWebDropDownMunu}
         isItOpen={isItOpen}
         isWebOpen={isWebOpen}
-        setAbonentScrollTrue={setAbonentScrollTrue}
-        setPriceScrollTrue={setPriceScrollTrue}
+        handleAbonentScroll={handleAbonentScroll}
+        handlePriceScroll={handlePriceScroll}
       />
     </div>
   );

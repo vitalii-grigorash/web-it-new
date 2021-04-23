@@ -6,8 +6,8 @@ function DropDownMenu (props) {
 
     const {
         isOpen,
-        setAbonentScrollTrue,
-        setPriceScrollTrue,
+        handleAbonentScroll,
+        handlePriceScroll,
     } = props;
 
     return (
@@ -25,8 +25,8 @@ function DropDownMenu (props) {
                 </nav>
                 <nav className="drop-down-menu__container drop-down-menu__container_it">
                     <Link to={'/it'} className="drop-down-menu__heading drop-down-menu__heading_it">IT Сервис</Link>
-                    <Link to={'/it'} className="drop-down-menu__links drop-down-menu__links_it" onClick={setAbonentScrollTrue}>Абонентское обслуживание</Link>
-                    <Link to={'/it'} className="drop-down-menu__links drop-down-menu__links_it" onClick={setPriceScrollTrue}>Разовые услуги IT</Link>
+                    <Link to={'/it'} className="drop-down-menu__links drop-down-menu__links_it" onClick={handleAbonentScroll}>Абонентское обслуживание</Link>
+                    <Link to={'/it'} className="drop-down-menu__links drop-down-menu__links_it" onClick={handlePriceScroll}>Разовые услуги IT</Link>
                 </nav>
             </div>
         </div>

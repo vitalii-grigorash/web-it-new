@@ -37,20 +37,20 @@ function App () {
   const [isPrice, setPrice] = useState(false);
   const [submitButtonText, setSubmitButtonText] = useState('Получить консультацию');
 
-  function handlePriceTrue () {
-    setPrice(true);
+  function handlePriceScroll () {
+    if (!isPrice) {
+      setPrice(true);
+    } else {
+      setPrice(false);
+    }
   }
 
-  function handlePriceFalse () {
-    setPrice(false);
-  }
-
-  function handleAbonentTrue () {
-    setAbonent(true);
-  }
-
-  function handleAbonentFalse () {
-    setAbonent(false);
+  function handleAbonentScroll () {
+    if (!isAbonent) {
+      setAbonent(true);
+    } else {
+      setAbonent(false);
+    }
   }
 
   function handleItDropDownMunu () {
@@ -195,8 +195,8 @@ function App () {
         handleWebDropDownMunu={handleWebDropDownMunu}
         isItOpen={isItOpen}
         isWebOpen={isWebOpen}
-        setPriceScrollTrue={handlePriceTrue}
-        setAbonentScrollTrue={handleAbonentTrue}
+        handlePriceScroll={handlePriceScroll}
+        handleAbonentScroll={handleAbonentScroll}
       />
 
       <Switch>
@@ -213,8 +213,8 @@ function App () {
           <It
             isAbonent={isAbonent}
             isPrice={isPrice}
-            setAbonentFalse={handleAbonentFalse}
-            setPriceFalse={handlePriceFalse}
+            handleAbonentScroll={handleAbonentScroll}
+            handlePriceScroll={handlePriceScroll}
             onSendForm={feedbackFormSend}
             onOpenPopup={handlePopupOpen}
             submitButtonText={submitButtonText}

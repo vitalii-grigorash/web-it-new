@@ -13,17 +13,17 @@ function MobileNavigation (props) {
         handleWebDropDownMunu,
         isItOpen,
         isWebOpen,
-        setAbonentScrollTrue,
-        setPriceScrollTrue,
+        handleAbonentScroll,
+        handlePriceScroll,
     } = props;
 
     function onAbonentClick () {
-        setAbonentScrollTrue();
+        handleAbonentScroll();
         onCloseMobileNavigation();
     }
 
     function onPriceClick () {
-        setPriceScrollTrue();
+        handlePriceScroll();
         onCloseMobileNavigation();
     }
 

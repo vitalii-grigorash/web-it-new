@@ -3,14 +3,14 @@ import arrow from '../../images/svg/arrow.svg';
 import DropDownMenu from '../DropDownMenu/DropDownMenu';
 import { Link } from 'react-router-dom';
 
-function Navigation(props) {
+function Navigation (props) {
 
     const { 
         onOpenDropDownMenu,
         onCloseDropDownMenu,
         isOpen,
-        setAbonentScrollTrue,
-        setPriceScrollTrue,
+        handleAbonentScroll,
+        handlePriceScroll,
     } = props;
 
     function handleDropDownMunu() {
@@ -38,8 +38,8 @@ function Navigation(props) {
                     <Link to={'/portfolio'} className="navigation__links">Портфолио</Link>
                     <Link to={'/contacts'} className="navigation__links">Контакты</Link>
                     <DropDownMenu
-                        setAbonentScrollTrue={setAbonentScrollTrue}
-                        setPriceScrollTrue={setPriceScrollTrue}
+                        handleAbonentScroll={handleAbonentScroll}
+                        handlePriceScroll={handlePriceScroll}
                         isOpen={isOpen}
                     />
                 </nav>

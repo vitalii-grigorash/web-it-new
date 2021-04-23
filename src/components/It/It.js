@@ -15,8 +15,8 @@ function It (props) {
         onSendForm,
         isAbonent,
         isPrice,
-        setAbonentFalse,
-        setPriceFalse,
+        handleAbonentScroll,
+        handlePriceScroll,
         submitButtonText,
     } = props;
     
@@ -26,7 +26,7 @@ function It (props) {
             if (elem) {
                 elem.scrollIntoView({behavior: "smooth"})
             }
-            setAbonentFalse();
+            handleAbonentScroll();
         } 
     }, [isAbonent])
 
@@ -36,7 +36,7 @@ function It (props) {
             if (elem) {
                 elem.scrollIntoView({behavior: "smooth"})
             }
-            setPriceFalse();
+            handlePriceScroll();
         } 
     }, [isPrice])
 
