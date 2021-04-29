@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import ostMedConsultIcon from '../../images/svg/ost-med-consalt-icon.svg';
 import ostMediaConsultAbout from '../../images/ost-med-consult-about-img.jpg';
 import terminalIcon from '../../images/svg/terminal-icon.svg';
@@ -13,7 +14,12 @@ function OstMedConsult () {
 
     return (
         <section className="ost-med-consult">
-
+            <Helmet
+                title='Портфолио: "Остмедконсалт". Cоздание и продвижение сайтов в СПб - Vimpel'
+                meta={[
+                    {"name": "description", "content": "ГК 'Вымпел'. Занимаемся проектированием и разработкой сайтов любой сложности под ключ, от дизайн-проекта до SEO оптимизации и продвижения!"}
+                ]}
+            />
             <section className="ost-med-consult__image">
                 <div className="ost-med-consult__overlay-container">
                     <img src={ostMedConsultIcon} alt="Иконка Арбеллос" className="ost-med-consult__icon" />

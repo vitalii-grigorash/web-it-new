@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import stroiSnabIcon from '../../images/svg/stroi-snab-icon.svg';
 import moneyIcon from '../../images/svg/money-icon.svg';
 import sunIcon from '../../images/svg/sun-icon.svg';
@@ -15,6 +16,12 @@ function StrojSnab() {
 
     return (
         <section className="stroj-snab">
+            <Helmet
+                title='Портфолио: "СтройСнаб". Cоздание и продвижение сайтов - ГК "Vimpel"'
+                meta={[
+                    {"name": "description", "content": "ГК 'Вымпел'. Разрабатываем сайты любой сложности под ключ, от дизайн-проекта до SEO оптимизации и продвижения! Команда профессионалов!"}
+                ]}
+            />
             <section className="stroj-snab__image">
                 <div className="stroj-snab__overlay-container">
                     <img src={stroiSnabIcon} alt="Иконка Строй Снаб" className="stroj-snab__icon" />

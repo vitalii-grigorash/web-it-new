@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import laMiaBorsaIcon from '../../images/svg/la-mia-borsa-icon.svg';
 import callCenterIcon from '../../images/call-center-icon.jpg';
 import firstBagIcon from '../../images/first-bag-icon.jpg';
@@ -12,6 +13,12 @@ function LaMiaBorsa () {
 
     return (
         <section className="la-mia-borsa">
+            <Helmet
+                title='Портфолио: "La mia Borsa". Cоздание и продвижение сайтов в СПб - Вымпел'
+                meta={[
+                    {"name": "description", "content": "ГК 'Вымпел'. Занимаемся проектированием и разработкой сайтов любой сложности под ключ, их продвижением и СЕО оптимизацией!"}
+                ]}
+            />
             <section className="la-mia-borsa__image">
                 <div className="la-mia-borsa__overlay-container">
                     <img src={laMiaBorsaIcon} alt="Иконка Арбеллос" className="la-mia-borsa__icon" />

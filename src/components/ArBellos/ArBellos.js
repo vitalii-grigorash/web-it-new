@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import arBellosIcon from '../../images/svg/arbellos-icon.svg';
 import arBellosAboutImg from '../../images/arbellos-about-img.jpg';
 import handsIcon from '../../images/svg/hands-icon-arbellos.svg';
@@ -12,6 +13,12 @@ import Stages from '../Stages/Stages';
 function ArBellos () {
     return (
         <section className="ar-bellos">
+            <Helmet
+                title='Портфолио: "ARbellos". Cоздание и продвижение сайтов - Вымпел'
+                meta={[
+                    {"name": "description", "content": "ГК 'Вымпел'. Занимаемся проектированием и созданием сайтов любой сложности под ключ, их продвижением и СЕО оптимизацией!"}
+                ]}
+            />
             <section className="ar-bellos__image">
                 <div className="ar-bellos__overlay-container">
                     <img src={arBellosIcon} alt="Иконка Арбеллос" className="ar-bellos__icon" />

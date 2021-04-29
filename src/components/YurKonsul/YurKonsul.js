@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import urKonsulIcon from '../../images/svg/ur-consul-icon.svg';
 import urKonsulAboutImg from '../../images/ur-konsul-about-img.jpg';
 import Stages from '../Stages/Stages';
@@ -12,6 +13,12 @@ function YurKonsul () {
 
     return (
         <section className="yur-konsul">
+            <Helmet
+                title='Портфолио: "ЮрКонсул". Создание и продвижение сайтов под ключ в Санкт-Петербурге - ГК "Вымпел"'
+                meta={[
+                    {"name": "description", "content": "ГК 'Вымпел'. Проектирование и разработка сайтов любой сложности под ключ в Санкт-Петербурге, от дизайн-проекта до SEO оптимизации и продвижения. Современный и продающий дизайн. Команда профессионалов! ГК 'Vimpel'"}
+                ]}
+            />
             <section className="yur-konsul__image">
                 <div className="yur-konsul__overlay-container">
                     <img src={urKonsulIcon} alt="Иконка Строй Снаб" className="yur-konsul__icon" />

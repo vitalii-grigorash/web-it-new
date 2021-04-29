@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import voleksIcon from '../../images/svg/voleks-icon.svg';
 import voleksAboutImg from '../../images/voleks-about-img.jpg';
 import voleksPreviewImg from '../../images/voleks-img-preview.jpg';
@@ -12,6 +13,12 @@ function Voleks () {
 
     return (
         <section className="voleks">
+            <Helmet
+                title='Портфолио: "Волекс абразив". Cоздание и продвижение сайтов - ГК "Вымпел"'
+                meta={[
+                    {"name": "description", "content": "ГК 'Вымпел'. Разработка и создание сайтов любой сложности под ключ, от дизайн-проекта до SEO оптимизации и продвижения. Современный и продающий дизайн. Команда профессионалов!"}
+                ]}
+            />
             <section className="voleks__image">
                 <div className="voleks__overlay-container">
                     <img src={voleksIcon} alt="Иконка Строй Снаб" className="voleks__icon" />
