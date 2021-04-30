@@ -9,7 +9,7 @@ function Shop (props) {
     } = props;
     
     return (
-        <section className="shop">
+        <div className="shop">
             <Helmet
                 title='Создание Интернет-магазина в Санкт-Петербурге "Вымпел"'
                 meta={[
@@ -17,7 +17,7 @@ function Shop (props) {
                 ]}
             />
             <section className="shop__image-container">
-                <h1 className="shop__heading">СОЗДАНИЕ ИНТЕРНЕТ-МАГАЗИНА ПОД КЛЮЧ</h1>
+                <h2 className="shop__heading">СОЗДАНИЕ ИНТЕРНЕТ-МАГАЗИНА ПОД КЛЮЧ</h2>
                 <p className="shop__subheading">Проектирование и разработка интернет-магазина в Санкт-Петербурге</p>
                 <button className="shop__button" type="button" onClick={onOpenPopup}>Заказать сайт</button>
                 <div className="shop__bottom-container">
@@ -27,7 +27,7 @@ function Shop (props) {
             </section>
             <section className="web-shop">
                 <div className="web-shop__info-container">
-                    <h2 className="web-shop__info-heading">интернет-магазин</h2>
+                    <h3 className="web-shop__info-heading">интернет-магазин</h3>
                     <p className="web-shop__info-description">
                         Прежде чем заказать готовый интернет-магазин под ключ, важно определиться, какой
                         функционал необходим для вашего сайта. От этого будут зависеть не только стоимость
@@ -44,7 +44,7 @@ function Shop (props) {
                     </p>
                 </div>
                 <div className="web-shop__price-container">
-                    <h3 className="web-shop__price-heading">стоимость создания интернет-магазина</h3>
+                    <h4 className="web-shop__price-heading">стоимость создания интернет-магазина</h4>
                     <p className="web-shop__price-description">
                         Вопрос, который волнует многих, кто прежде не сталкивался с созданием сайтов. Действительно, если
                         воспользоваться поиском, можно заметить огромный разброс цен на услугу по созданию
@@ -63,7 +63,7 @@ function Shop (props) {
                 <div className="price__main-container">
                     <div className="price__cards-container">
                         <div className="card">
-                            <h4 className="card__heading">до 100 позиций</h4>
+                            <h5 className="card__heading">до 100 позиций</h5>
                             <ul className="card__list">
                                 <li className="card__item">CMS WordPress</li>
                                 <li className="card__item">Базовое SEO</li>
@@ -77,7 +77,7 @@ function Shop (props) {
                             <p className="card__value">от 65 000 рублей</p>
                         </div>
                         <div className="card">
-                            <h4 className="card__heading">до 500 позиций</h4>
+                            <h5 className="card__heading">до 500 позиций</h5>
                             <ul className="card__list">
                                 <li className="card__item">CMS WordPress/Open Cart</li>
                                 <li className="card__item">Базовое SEO</li>
@@ -93,7 +93,7 @@ function Shop (props) {
                     </div>
                     <div className="price__cards-container">
                         <div className="card">
-                            <h4 className="card__heading">до 1000 позиций</h4>
+                            <h5 className="card__heading">до 1000 позиций</h5>
                             <ul className="card__list">
                                 <li className="card__item">CMS Битрикс/Open Cart</li>
                                 <li className="card__item">Базовое SEO</li>
@@ -107,7 +107,7 @@ function Shop (props) {
                             <p className="card__value">от 105 000 рублей</p>
                         </div>
                         <div className="card">
-                            <h4 className="card__heading">свыше 1000 позиций</h4>
+                            <h5 className="card__heading">свыше 1000 позиций</h5>
                             <ul className="card__list">
                                 <li className="card__item">CMS Битрикс</li>
                                 <li className="card__item">Базовое SEO</li>
@@ -123,7 +123,7 @@ function Shop (props) {
                     </div>
                 </div>
             </section>
-        </section>
+        </div>
     );
 }
 
