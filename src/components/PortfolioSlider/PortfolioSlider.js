@@ -252,7 +252,7 @@ export default class PortfolioSlider extends Component {
                             <div className="carousel-overlay">
                                 <img src={laMiaBorsaIcon} alt="Иконка Ля Миа Борса" className="carousel-overlay__icon carousel-overlay__icon_la-mia-borsa" />
                                 <h3 className="carousel-overlay__heading">La mia Borsa</h3>
-                                <p className="carousel-overlay__subheading">Итальянские сумки в <nobr>Санкт-Петербурге</nobr></p>
+                                <p className="carousel-overlay__subheading">Итальянские сумки в <br/> Санкт-Петербурге</p>
                             </div>
                         </Link>
                     </Slider>

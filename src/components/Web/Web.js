@@ -16,7 +16,7 @@ function Web (props) {
     } = props;
 
     return (
-        <section className="web">
+        <div className="web">
             <Helmet
                 title='WEB Студия "Вымпел"'
                 meta={[
@@ -24,7 +24,7 @@ function Web (props) {
                 ]}
             />
             <section className="web__image-container">
-                <h1 className="web__heading">WEB СТУДИЯ</h1>
+                <h2 className="web__heading">WEB СТУДИЯ</h2>
                 <button className="web__button" type="button" onClick={onOpenPopup}>
                     Получить консультацию
                 </button>
@@ -34,10 +34,10 @@ function Web (props) {
                 </div>
             </section>
             <section className="services">
-                <h2 className="services__heading">чем мы занимаемся</h2>
+                <h3 className="services__heading">чем мы занимаемся</h3>
                 <div className="grid">
                     <div className="grid__item">
-                        <h3 className="grid__heading">интернет магазин</h3>
+                        <h4 className="grid__heading">интернет магазин</h4>
                         <p className="grid__description">
                             Хороший интернет-магазин – это простая, понятная и удобная для
                             посетителя витрина товаров или услуг в интернете, которая позволяет
@@ -45,7 +45,7 @@ function Web (props) {
                         </p>
                     </div>
                     <div className="grid__item">
-                        <h3 className="grid__heading">landing page</h3>
+                        <h4 className="grid__heading">landing page</h4>
                         <p className="grid__description">
                             Если для запуска рекламной кампании, проведения акции или исследования
                             вашей компании требуется одностраничный сайт, мы рады помочь и изготовить
@@ -53,7 +53,7 @@ function Web (props) {
                         </p>
                     </div>
                     <div className="grid__item">
-                        <h3 className="grid__heading">сайт-визитка</h3>
+                        <h4 className="grid__heading">сайт-визитка</h4>
                         <p className="grid__description">
                             Создание сайта-визитки под ключ предполагает, что с помощью такого сайта
                             начинающий предприниматель или компания хотят заявить о себе, разместить в компактном
@@ -61,7 +61,7 @@ function Web (props) {
                         </p>
                     </div>
                     <div className="grid__item">
-                        <h3 className="grid__heading">корпоративный сайт</h3>
+                        <h4 className="grid__heading">корпоративный сайт</h4>
                         <p className="grid__description">
                             Хороший корпоративный сайт – это большой информационный портал с ярким
                             индивидуальным дизайном, подчеркивающим достоинства вашей компании и выгодные
@@ -69,7 +69,7 @@ function Web (props) {
                         </p>
                     </div>
                     <div className="grid__item">
-                        <h3 className="grid__heading">сайт-каталог</h3>
+                        <h4 className="grid__heading">сайт-каталог</h4>
                         <p className="grid__description">
                             Если компания предлагает широкий ассортимент товаров или услуг, тогда обязательно
                             встает вопрос о необходимости создания полноценного сайта-каталога, с возможностью
@@ -77,7 +77,7 @@ function Web (props) {
                         </p>
                     </div>
                     <div className="grid__item">
-                        <h3 className="grid__heading">seo</h3>
+                        <h4 className="grid__heading">seo</h4>
                         <p className="grid__description">
                             Многие клиенты недооценивают важность такого этапа, как SEO-оптимизация
                             сайта. И зря! Только представьте, что сайт может стабильно приводить вам клиентов
@@ -90,7 +90,7 @@ function Web (props) {
             <Stages />
             <section className="history-web">
                 <div className="history-web__container">
-                    <h2 className="history-web__heading">немного истории</h2>
+                    <h3 className="history-web__heading">немного истории</h3>
                     <img className="history-web__img history-web__img_mobile" src={illustrationWeb} alt="Иллюстрация совещания" />
                     <div className="history-web__text-container">
                         <p className="history-web__text">
@@ -119,7 +119,7 @@ function Web (props) {
                 submitButtonText={submitButtonText}
             />
             <PortfolioSlider />
-        </section>
+        </div>
     );
 }
 
