@@ -33,7 +33,7 @@ function BusinessCard (props) {
     }
     
     return (
-        <section className="business-card">
+        <div className="business-card">
             <Helmet
                 title='Создание Сайта-визитки под ключ в Санкт-Петербурге "Вымпел"'
                 meta={[
@@ -41,7 +41,7 @@ function BusinessCard (props) {
                 ]}
             />
             <section className="business-card__image-container">
-                <h1 className="business-card__heading">создание <nobr>сайта-визитки</nobr> под ключ</h1>
+                <h2 className="business-card__heading">создание сайта&#8209;визитки под ключ</h2>
                 <p className="business-card__subheading">Проектирование и разработка сайта-визитки в Санкт-Петербурге</p>
                 <button className="business-card__button" type="button" onClick={onOpenPopup}>Заказать сайт</button>
                 <div className="business-card__bottom-container">
@@ -51,7 +51,7 @@ function BusinessCard (props) {
             </section>
             <section className="info-business-card">
                 <div className="info-business-card__container">
-                    <h2 className="info-business-card__heading">создание <nobr>сайта-визитки</nobr> под ключ</h2>
+                    <h3 className="info-business-card__heading">создание сайта&#8209;визитки под ключ</h3>
                     <p className="info-business-card__description">
                         Небольшой сайт-визитка – это отличная альтернатива полноценному 
                         порталу, которую мы можем посоветовать для начинающих 
@@ -61,11 +61,11 @@ function BusinessCard (props) {
                         эффективно справляется с поставленными перед ним задачами – дает 
                         клиенту больше представления о вас и помогает наладить взаимовыгодное сотрудничество.
                     </p>
-                    <h3 className="info-business-card__subheading">как понять, что можно обойтись сайтом-визиткой</h3>
+                    <h4 className="info-business-card__subheading">как понять, что можно обойтись сайтом-визиткой</h4>
                     <p className="info-business-card__description">
                         Составьте примерный план того, какая информация должна быть отражена 
                         на вашем сайте. Обычно сайт-визитка занимает от 5 до 10 страниц: на сайте 
-                        есть главная страница, информация о компании, примеры работ, отзывы, <nobr>прайс-лист</nobr> и контактная информация.
+                        есть главная страница, информация о компании, примеры работ, отзывы, прайс&#8209;лист и контактная информация.
                     </p>
                 </div>
             </section>
@@ -73,14 +73,14 @@ function BusinessCard (props) {
                 <div className="price-table__container">
                     <div className="price-table__section">
                         <div className={`price-table__heading-container-business ${isFirstActive && 'price-table__heading-container-business_active'}`} onClick={handleFirstSectionActive}>
-                            <h4 
+                            <h5 
                                 className={`price-table__heading ${isFirstActive && 'price-table__heading_active'}`}
                             >
-                                САЙТ ДЛЯ МАЛОГО БИЗНЕСА <nobr>(21 ДЕНЬ)</nobr>
+                                САЙТ ДЛЯ МАЛОГО БИЗНЕСА (21&nbsp;ДЕНЬ)
                                 <span 
                                     className={`price-table__heading-span ${isFirstActive && 'price-table__heading-span_active'}`}
                                 > 50 000 руб.</span>
-                            </h4>
+                            </h5>
                         </div>
                         <ul className={`price-table__list ${isFirstActive && 'price-table__list_active'}`}>
                             <li className={`price-table__list-item ${isFirstActive && 'price-table__list-item_active'}`}>Уникальный дизайн "Главной страницы" и упрощенный для внутренних страниц (до 6 страниц)</li>
@@ -98,14 +98,14 @@ function BusinessCard (props) {
                     </div>
                     <div className="price-table__section">
                         <div className={`price-table__heading-container-second ${isSecondActive && 'price-table__heading-container-second_active'}`} onClick={handleSecondSectionActive}>
-                            <h4 
+                            <h5 
                                 className={`price-table__heading ${isSecondActive && 'price-table__heading_active'}`}
                             >
-                                САЙТ ДЛЯ МАЛОГО БИЗНЕСА <nobr>(28 ДНЕЙ)</nobr> 
+                                САЙТ ДЛЯ МАЛОГО БИЗНЕСА (28&nbsp;ДНЕЙ)
                                 <span 
                                     className={`price-table__heading-span ${isSecondActive && 'price-table__heading-span_active'}`}
                                 > 65 000 руб.</span>
-                            </h4>
+                            </h5>
                         </div>
                         <ul className={`price-table__list ${isSecondActive && 'price-table__list_active'}`}>
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Уникальный дизайн всех страниц (до 6 страниц)</li>
@@ -125,14 +125,14 @@ function BusinessCard (props) {
                     </div>
                     <div className="price-table__section">
                         <div className={`price-table__heading-container-last ${isLastActive && 'price-table__heading-container-last_active'}`} onClick={handleLastSectionActive}>
-                            <h4 
+                            <h5 
                                 className={`price-table__heading ${isLastActive && 'price-table__heading_active'}`}
                             >
-                                САЙТ ДЛЯ МАЛОГО БИЗНЕСА <nobr>(35 ДНЕЙ)</nobr> 
+                                САЙТ ДЛЯ МАЛОГО БИЗНЕСА (35&nbsp;ДНЕЙ) 
                                 <span 
                                     className={`price-table__heading-span ${isLastActive && 'price-table__heading-span_active'}`}
                                 > 80 000 руб.</span>
-                            </h4>
+                            </h5>
                         </div>
                         <ul className={`price-table__list ${isLastActive && 'price-table__list_active'}`}>
                             <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Уникальный дизайн всех страниц (до 6 страниц) по 2-3 эскиза</li>
@@ -155,7 +155,7 @@ function BusinessCard (props) {
                     </div>
                 </div>
             </section>
-        </section>
+        </div>
     );
 }
 
