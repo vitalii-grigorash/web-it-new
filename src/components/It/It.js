@@ -56,7 +56,7 @@ function It (props) {
     }
 
     return (
-        <section className="it">
+        <div className="it">
             <Helmet
                 title='IT Сервис "Вымпел"'
                 meta={[
@@ -64,7 +64,7 @@ function It (props) {
                 ]}
             />
             <section className="it__image-container">
-                <h1 className="it__heading">IT СЕРВИС</h1>
+                <h2 className="it__heading">IT СЕРВИС</h2>
                 <button className="it__button" type="button" onClick={onOpenPopup}>
                     Получить консультацию
                 </button>
@@ -76,7 +76,7 @@ function It (props) {
             <section className="about-it">
                 <img className="about-it__img" src={illustrationIt} alt="Иллюстрация об айти" />
                 <div className="about-it__container">
-                    <h2 className="about-it__heading">про it-сервис</h2>
+                    <h3 className="about-it__heading">про it-сервис</h3>
                     <p className="about-it__description">
                         Группа компании Vimpel оказывает услуги IT-аутсорсинга, это
                         комплексное обслуживание и управление IT-инфраструктуры
@@ -92,7 +92,7 @@ function It (props) {
                 </div>
             </section>
             <section id="service" className="service-it">
-                <h2 className="service-it__heading">абонентское обслуживание</h2>
+                <h3 className="service-it__heading">абонентское обслуживание</h3>
                 <div className="service-it__container">
                     <div className="service-it__description-container">
                         <p className="service-it__description">
@@ -114,7 +114,7 @@ function It (props) {
             <AnimationTableIt />
             <section id="price" className="catalog-page-form">
                 <div className="it-form__price">
-                    <p className="catalog-page-form__price-heading">Разовые IT-услуги</p>
+                    <h4 className="catalog-page-form__price-heading">Разовые IT-услуги</h4>
                     <ul className="catalog-page-form__price-list-container">
                         <li className="catalog-page-form__price-list">Внедрение систем хранения данных</li>
                         <li className="catalog-page-form__price-list">Организация серверов удаленного рабочего стола</li>
@@ -213,7 +213,7 @@ function It (props) {
                 </form>
             </section>
             <PriceTableIt />
-        </section>
+        </div>
     );
 }
 
