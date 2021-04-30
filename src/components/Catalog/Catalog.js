@@ -16,7 +16,7 @@ function Catalog (props) {
     } = props;
 
     return (
-        <section className="catalog">
+        <div className="catalog">
             <Helmet
                 title='Создание Сайта-каталога под ключ в Санкт-Петербурге "Вымпел"'
                 meta={[
@@ -24,7 +24,7 @@ function Catalog (props) {
                 ]}
             />
             <section className="catalog__image-container">
-                <h1 className="catalog__heading">СОЗДАНИЕ <nobr>САЙТА-КАТАЛОГА</nobr> ПОД КЛЮЧ</h1>
+                <h2 className="catalog__heading">СОЗДАНИЕ САЙТА&#8209;КАТАЛОГА ПОД КЛЮЧ</h2>
                 <p className="catalog__subheading">Проектирование и разработка сайта-каталога в Санкт-Петербурге</p>
                 <button className="catalog__button" type="button" onClick={onOpenPopup}>Заказать сайт</button>
                 <div className="catalog__bottom-container">
@@ -34,7 +34,7 @@ function Catalog (props) {
             </section>
             <section className="catalog-info">
                 <div className="catalog-info__container">
-                    <h2 className="catalog-info__heading">продающий <nobr>сайт-каталог</nobr> с трендовым дизайном в <nobr>санкт-петербурге</nobr></h2>
+                    <h3 className="catalog-info__heading">продающий сайт&#8209;каталог с трендовым дизайном в санкт&#8209;петербурге</h3>
                     <p className="catalog-info__description">
                         Наша компания занимается проектированием и разработкой сайтов-каталогов любого 
                         масштаба и сложности с 2017 года. За это время несколько сотен клиентов обзавелись 
@@ -63,7 +63,7 @@ function Catalog (props) {
             />
             <section className="days">
                 <div className="days__container">
-                    <h2 className="days__heading">дни разработки</h2>
+                    <h3 className="days__heading">дни разработки</h3>
                     <div className="days__items-container">
                         <div className="days__item-container">
                             <img className="days__img" src={analysisIcon} alt="Иконка анализа"/>
@@ -98,7 +98,7 @@ function Catalog (props) {
                     </div>
                 </div>
             </section>
-        </section>
+        </div>
     );
 }
 

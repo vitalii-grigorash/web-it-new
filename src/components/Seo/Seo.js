@@ -49,7 +49,7 @@ function Seo (props) {
     };
 
     return (
-        <section className="seo">
+        <div className="seo">
             <Helmet
                 title='Оказание SEO-услуг в Санкт-Петербурге "Вымпел"'
                 meta={[
@@ -57,8 +57,8 @@ function Seo (props) {
                 ]}
             />
             <section className="seo__image-container">
-                <h1 className="seo__heading">seo-услуги под ключ</h1>
-                <p className="seo__subheading">Оказание качественных SEO-услуг под ключ в <nobr>Санкт-Петербурге</nobr></p>
+                <h2 className="seo__heading">seo-услуги под ключ</h2>
+                <p className="seo__subheading">Оказание качественных SEO-услуг под ключ в Санкт&#8209;Петербурге</p>
                 <button className="seo__button" type="button" onClick={onOpenPopup}>Получить консультацию</button>
                 <div className="seo__bottom-container">
                     <img src={mouse} alt="Иконка мышки" className="seo__mouse-icon" />
@@ -67,7 +67,7 @@ function Seo (props) {
             </section>
             <section className="info-seo">
                 <div className="info-seo__container">
-                    <h2 className="info-seo__heading">качественные <nobr>seo-услуги</nobr> под ключ</h2>
+                    <h3 className="info-seo__heading">качественные seo&#8209;услуги под ключ</h3>
                     <p className="info-seo__description">
                         Следующий важный этап после разработки каждого сайта – это, конечно
                         же, продвижение страниц в результатах поиска по необходимым ключевым
@@ -92,7 +92,7 @@ function Seo (props) {
                     </ul>
                 </div>
             </section>
-            <section className="catalog-page-form">
+            <div className="catalog-page-form">
                 <div className="seo-form__price">
                     <p className="seo-page-form__price-heading">СЕО аудит сайта</p>
                     <p className="seo-page-form__price-cost">От 15 000 руб./мес.</p>
@@ -184,19 +184,19 @@ function Seo (props) {
                         </div>
                     </div>
                 </form>
-            </section>
+            </div>
             <section className="price-table">
                 <div className="price-table__container">
                     <div className="price-table__section">
                         <div className={`price-table__heading-container-first ${isFirstActive && 'price-table__heading-container-first_active'}`} onClick={handleFirstSectionActive}>
-                            <h4 
+                            <h5 
                                 className={`price-table__heading ${isFirstActive && 'price-table__heading_active'}`}
                             >
                                 ТАРИФ “БАЗОВЫЙ” 
                                 <span 
                                     className={`price-table__heading-span ${isFirstActive && 'price-table__heading-span_active'}`}
-                                > <nobr>от 25 000 руб./мес.</nobr></span>
-                            </h4>
+                                > от&nbsp;25&nbsp;000&nbsp;руб./мес.</span>
+                            </h5>
                         </div>
                         <ul className={`price-table__list ${isFirstActive && 'price-table__list_active'}`}>
                             <li className={`price-table__list-item ${isFirstActive && 'price-table__list-item_active'}`}>Техническая оптимизация</li>
@@ -212,14 +212,14 @@ function Seo (props) {
                     </div>
                     <div className="price-table__section">
                         <div className={`price-table__heading-container-second ${isSecondActive && 'price-table__heading-container-second_active'}`} onClick={handleSecondSectionActive}>
-                            <h4 
+                            <h5 
                                 className={`price-table__heading ${isSecondActive && 'price-table__heading_active'}`}
                             >
                                 ТАРИФ “ОПТИМАЛЬНЫЙ”
                                 <span 
                                     className={`price-table__heading-span ${isSecondActive && 'price-table__heading-span_active'}`}
-                                > <nobr>от 35 000 руб./мес.</nobr></span>
-                            </h4>
+                                > от&nbsp;35&nbsp;000&nbsp;руб./мес.</span>
+                            </h5>
                         </div>
                         <ul className={`price-table__list ${isSecondActive && 'price-table__list_active'}`}>
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Техническая оптимизация</li>
@@ -238,14 +238,14 @@ function Seo (props) {
                     </div>
                     <div className="price-table__section">
                         <div className={`price-table__heading-container-last ${isLastActive && 'price-table__heading-container-last_active'}`} onClick={handleLastSectionActive}>
-                            <h4 
+                            <h5 
                                 className={`price-table__heading ${isLastActive && 'price-table__heading_active'}`}
                             >
                                 ТАРИФ “МАКСИМАЛЬНЫЙ”
                                 <span 
                                     className={`price-table__heading-span ${isLastActive && 'price-table__heading-span_active'}`}
-                                > <nobr>от 70 000 руб./мес.</nobr></span>
-                            </h4>
+                                > от&nbsp;70&nbsp;000&nbsp;руб./мес.</span>
+                            </h5>
                         </div>
                         <ul className={`price-table__list ${isLastActive && 'price-table__list_active'}`}>
                             <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Техническая оптимизация</li>
@@ -265,7 +265,7 @@ function Seo (props) {
                     </div>
                 </div>
             </section>
-        </section>
+        </div>
     );
 }
 

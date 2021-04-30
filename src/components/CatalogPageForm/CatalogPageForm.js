@@ -25,8 +25,8 @@ function CatalogPageForm (props) {
     }
 
     return (
-        <section className="catalog-page-form">
-            <section className="catalog-page-form__price">
+        <div className="catalog-page-form">
+            <div className="catalog-page-form__price">
                 <p className="catalog-page-form__price-heading">Что входит в разработку</p>
                 <ul className="catalog-page-form__price-list-container">
                     <li className="catalog-page-form__price-list">CMS WordPress</li>
@@ -37,7 +37,7 @@ function CatalogPageForm (props) {
                     <li className="catalog-page-form__price-list">Наполнение до 20 позиций</li>
                 </ul>
                 <p className="catalog-page-form__price-cost">От 45 000 руб.</p>
-            </section>
+            </div>
             <form
                 className="catalog-page-form__form"
                 onSubmit={submitForm}
@@ -125,7 +125,7 @@ function CatalogPageForm (props) {
                     </div>
                 </div>
             </form>
-        </section>
+        </div>
     );
 }
 
