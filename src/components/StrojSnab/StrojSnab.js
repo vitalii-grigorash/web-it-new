@@ -15,7 +15,7 @@ import Stages from '../Stages/Stages';
 function StrojSnab() {
 
     return (
-        <section className="stroj-snab">
+        <div className="stroj-snab">
             <Helmet
                 title='Портфолио: "СтройСнаб". Cоздание и продвижение сайтов - ГК "Vimpel"'
                 meta={[
@@ -25,12 +25,12 @@ function StrojSnab() {
             <section className="stroj-snab__image">
                 <div className="stroj-snab__overlay-container">
                     <img src={stroiSnabIcon} alt="Иконка Строй Снаб" className="stroj-snab__icon" />
-                    <h1 className="stroj-snab__heading">СтройСнаб</h1>
+                    <h2 className="stroj-snab__heading">СтройСнаб</h2>
                     <p className="stroj-snab__subheading">Компания осуществляет строительные работы</p>
                 </div>
             </section>
             <section className="about">
-                <h2 className="about__heading">О ПРОЕКТЕ</h2>
+                <h3 className="about__heading">О ПРОЕКТЕ</h3>
                 <div className="about__container">
                     <img src={stroiSnabAboutImg} alt="Фотография" className="about__img" />
                     <div className="about__text-container">
@@ -53,7 +53,7 @@ function StrojSnab() {
             <Stages />
             <section className="colors">
                 <div className="colors__main-container">
-                    <h2 className="colors__heading">ЦВЕТА И ИКОНКИ</h2>
+                    <h3 className="colors__heading">ЦВЕТА И ИКОНКИ</h3>
                     <div className="colors__content-container">
                         <div className="colors__container">
                             <div className="colors__square-container">
@@ -98,11 +98,11 @@ function StrojSnab() {
                 </div>
             </section>
             <section className="typography">
-                <h2 className="typography__header">ТИПОГРАФИКА</h2>
+                <h3 className="typography__header">ТИПОГРАФИКА</h3>
                 <div className="typography__container">
                     <p className="typography__letter-main">Aa</p>
                     <div className="typography__roboto-container">
-                        <h4 className="typography__roboto-heading">Roboto</h4>
+                        <h5 className="typography__roboto-heading">Roboto</h5>
                         <p className="typography__roboto-letters">Aa Bb Cc Dd Ee Ff Gg Hh Ii Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy and Zz</p>
                         <p className="typography__roboto-letters">Aa Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъ Ы Ь Ээ Юю Яя</p>
                     </div>
@@ -110,7 +110,7 @@ function StrojSnab() {
             </section>
             <section className="adaptive">
                 <div className="adaptive__info-container">
-                    <h2 className="adaptive__heading">АДАПТИВНЫЙ ДИЗАЙН</h2>
+                    <h3 className="adaptive__heading">АДАПТИВНЫЙ ДИЗАЙН</h3>
                     <p className="adaptive__description">
                         Все наши сайты можно просматривать на самых разных устройствах, 
                         таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 
@@ -122,14 +122,14 @@ function StrojSnab() {
                 <div className="adaptive__shadow"></div>
                 <img className="adaptive__phones-img" src={phonesImg} alt="Картинка телефонов"/>
             </section>
-            <section className="preview">
+            <div className="preview">
                 <div className="preview__container">
                     <img className="preview__img-one" src={stroySnabOneImg} alt="Изображение сайта"/>
                     <img className="preview__img-two" src={stroySnabTwoImg} alt="Изображение сайта"/>
                 </div>
                 <img className="preview__img-three" src={stroySnabThreeImg} alt="Изображение сайта"/>
-            </section>
-        </section>
+            </div>
+        </div>
     );
 }
 

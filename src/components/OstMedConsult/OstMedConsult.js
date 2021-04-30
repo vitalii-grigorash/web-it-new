@@ -13,7 +13,7 @@ import Stages from '../Stages/Stages';
 function OstMedConsult () {
 
     return (
-        <section className="ost-med-consult">
+        <div className="ost-med-consult">
             <Helmet
                 title='Портфолио: "Остмедконсалт". Cоздание и продвижение сайтов в СПб - Vimpel'
                 meta={[
@@ -23,24 +23,24 @@ function OstMedConsult () {
             <section className="ost-med-consult__image">
                 <div className="ost-med-consult__overlay-container">
                     <img src={ostMedConsultIcon} alt="Иконка Арбеллос" className="ost-med-consult__icon" />
-                    <h1 className="ost-med-consult__heading">Остмедконсалт</h1>
+                    <h2 className="ost-med-consult__heading">Остмедконсалт</h2>
                     <p className="ost-med-consult__subheading">Многопрофильная клиника: эстетическая медицина и пластическая хирургия</p>
                 </div>
             </section>
             <section className="about-ost-med-consult">
-                <h2 className="about-ost-med-consult__heading">О ПРОЕКТЕ</h2>
+                <h3 className="about-ost-med-consult__heading">О ПРОЕКТЕ</h3>
                 <div className="about-ost-med-consult__container">
                     <img src={ostMediaConsultAbout} alt="Изображение Ост Медиа Консалт" className="about-ost-med-consult__img" />
                     <div className="about-ost-med-consult__text-container">
                         <p className="about-ost-med-consult__text">
                             Многопрофильная клиника ОстМедКонсалт работает в области эстетической 
-                            медицины с 1998 года. И первой в <nobr>Санкт-Петербурге</nobr> предложила революционную 
+                            медицины с 1998 года. И первой в Санкт&#8209;Петербурге предложила революционную 
                             методику золотого армирования, технику которой наши врачи осваивали в Испании.
                         </p>
                         <p className="about-ost-med-consult__text">
                             Успех, достигнутый в этой области, послужил толчком к дальнейшему 
                             развитию. С 2011 года «ОстМедКонсалт» включена в перечень медицинских 
-                            организаций, участвующих в реализации Территориальной программы ОМС <nobr>Санкт-Петербурга</nobr>. 13 
+                            организаций, участвующих в реализации Территориальной программы ОМС Санкт&#8209;Петербурга. 13 
                             тысяч детей за эти годы получили медицинскую помощь 
                             высочайшего уровня благодаря технологиям лазерной и близкофокусной рентген 
                             терапии, которые в нашем регионе выполняются только в «ОстМедКонсалт».
@@ -51,7 +51,7 @@ function OstMedConsult () {
             <Stages />
             <section className="colors">
                 <div className="colors__main-container">
-                    <h2 className="colors__heading">ЦВЕТА И ИКОНКИ</h2>
+                    <h3 className="colors__heading">ЦВЕТА И ИКОНКИ</h3>
                     <div className="colors__content-container">
                         <div className="colors__container">
                             <div className="colors__square-container">
@@ -95,11 +95,11 @@ function OstMedConsult () {
                 </div>
             </section>
             <section className="typography">
-                <h2 className="typography__header">ТИПОГРАФИКА</h2>
+                <h3 className="typography__header">ТИПОГРАФИКА</h3>
                 <div className="typography__container">
                     <p className="typography__letter-main">Aa</p>
                     <div className="typography__roboto-container">
-                        <h4 className="typography__roboto-heading typography__roboto-heading_open-sans">Open Sans</h4>
+                        <h5 className="typography__roboto-heading typography__roboto-heading_open-sans">Open Sans</h5>
                         <p className="typography__roboto-letters typography__roboto-letters_open-sans">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
                         <p className="typography__roboto-letters typography__roboto-letters_open-sans">Aa Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъ Ы Ь Ээ Юю Яя</p>
                     </div>
@@ -108,7 +108,7 @@ function OstMedConsult () {
             <section className="adaptive-ost-med-consult">
                 <img className="adaptive-ost-med-consult__img" src={girlAdaptiveImg} alt="Изображение устройств"/>
                 <div className="adaptive-ost-med-consult__info-container">
-                    <h2 className="adaptive-ost-med-consult__heading">АДАПТИВНЫЙ ДИЗАЙН</h2>
+                    <h3 className="adaptive-ost-med-consult__heading">АДАПТИВНЫЙ ДИЗАЙН</h3>
                     <p className="adaptive-ost-med-consult__description">
                         Все наши сайты можно просматривать на самых разных устройствах, 
                         таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 
@@ -118,10 +118,10 @@ function OstMedConsult () {
                     </p>
                 </div>
             </section>
-            <section className="preview-ost-med-consult">
+            <div className="preview-ost-med-consult">
                 <img className="preview-ost-med-consult__img" src={previewImg} alt="Изображение превью Ост мед консалт"/>
-            </section>
-        </section>
+            </div>
+        </div>
     );
 }
 

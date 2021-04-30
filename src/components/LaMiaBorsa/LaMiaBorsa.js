@@ -12,7 +12,7 @@ import Stages from '../Stages/Stages';
 function LaMiaBorsa () {
 
     return (
-        <section className="la-mia-borsa">
+        <div className="la-mia-borsa">
             <Helmet
                 title='Портфолио: "La mia Borsa". Cоздание и продвижение сайтов в СПб - Вымпел'
                 meta={[
@@ -22,19 +22,19 @@ function LaMiaBorsa () {
             <section className="la-mia-borsa__image">
                 <div className="la-mia-borsa__overlay-container">
                     <img src={laMiaBorsaIcon} alt="Иконка Арбеллос" className="la-mia-borsa__icon" />
-                    <h1 className="la-mia-borsa__heading">La mia Borsa</h1>
+                    <h2 className="la-mia-borsa__heading">La mia Borsa</h2>
                     <p className="la-mia-borsa__subheading">Итальянские сумки в Санкт-Петербурге</p>
                 </div>
             </section>
             <section className="about-la-mia-borsa">
-                <h2 className="about-la-mia-borsa__heading">О ПРОЕКТЕ</h2>
+                <h3 className="about-la-mia-borsa__heading">О ПРОЕКТЕ</h3>
                 <div className="about-la-mia-borsa__container">
                     <div className="about-la-mia-borsa__img"></div>
                     <div className="about-la-mia-borsa__text-container">
                         <p className="about-la-mia-borsa__text">
                             La mia BORSA - розничный магазин сумок и аксессуаров из натуральной кожи, 
                             а также интернет-магазин с возможностью доставки товара покупателю. В магазине 
-                            можно приобрести <nobr>по-настоящему</nobr> необычную сумку, а продавцы-консультанты 
+                            можно приобрести по&#8209;настоящему необычную сумку, а продавцы-консультанты 
                             помогут Вам разобраться в ассортименте.
                         </p>
                         <p className="about-la-mia-borsa__text">
@@ -51,7 +51,7 @@ function LaMiaBorsa () {
             <Stages />
             <section className="colors">
                 <div className="colors__main-container">
-                    <h2 className="colors__heading">ЦВЕТА И ИКОНКИ</h2>
+                    <h3 className="colors__heading">ЦВЕТА И ИКОНКИ</h3>
                     <div className="colors__content-container">
                         <div className="colors__container">
                             <div className="colors__square-container">
@@ -95,11 +95,11 @@ function LaMiaBorsa () {
                 </div>
             </section>
             <section className="typography">
-                <h2 className="typography__header">ТИПОГРАФИКА</h2>
+                <h3 className="typography__header">ТИПОГРАФИКА</h3>
                 <div className="typography__container">
                     <p className="typography__letter-main">Aa</p>
                     <div className="typography__roboto-container">
-                        <h4 className="typography__roboto-heading">Roboto</h4>
+                        <h5 className="typography__roboto-heading">Roboto</h5>
                         <p className="typography__roboto-letters">Aa Bb Cc Dd Ee Ff Gg Hh Ii Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy and Zz</p>
                         <p className="typography__roboto-letters">Aa Бб Вв Гг Дд Ее Ёё Жж Зз Ии Йй Кк Лл Мм Нн Оо Пп Рр Сс Тт Уу Фф Хх Цц Чч Шш Щщ Ъ Ы Ь Ээ Юю Яя</p>
                     </div>
@@ -108,7 +108,7 @@ function LaMiaBorsa () {
             <section className="adaptive-la-mia-borsa">
                 <img className="adaptive-la-mia-borsa__phones-img" src={iPhone} alt="Картинка телефонов"/>
                 <div className="adaptive-la-mia-borsa__info-container">
-                    <h2 className="adaptive-la-mia-borsa__heading">АДАПТИВНЫЙ ДИЗАЙН</h2>
+                    <h3 className="adaptive-la-mia-borsa__heading">АДАПТИВНЫЙ ДИЗАЙН</h3>
                     <p className="adaptive-la-mia-borsa__description">
                         Все наши сайты можно просматривать на самых разных устройствах, 
                         таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана. 
@@ -118,10 +118,10 @@ function LaMiaBorsa () {
                     </p>
                 </div>
             </section>
-            <section className="preview-la-mia-borsa">
+            <div className="preview-la-mia-borsa">
                 <img className="preview-la-mia-borsa__img" src={previewImg} alt="Превью Ля Миа Борса"/>
-            </section>
-        </section>
+            </div>
+        </div>
     );
 }
 
