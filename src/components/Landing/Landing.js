@@ -27,7 +27,7 @@ function Landing(props) {
         setLastActive(true);
     }
     return (
-        <section className="landing">
+        <div className="landing">
             <Helmet
                 title='Создание Landing Page под ключ в Санкт-Петербурге "Вымпел"'
                 meta={[
@@ -35,7 +35,7 @@ function Landing(props) {
                 ]}
             />
             <section className="landing__image-container">
-                <h1 className="landing__heading">создание landing page под ключ</h1>
+                <h2 className="landing__heading">создание landing page под ключ</h2>
                 <p className="landing__subheading">Проектирование и разработка landing page в Санкт-Петербурге</p>
                 <button className="landing__button" type="button" onClick={onOpenPopup}>Заказать сайт</button>
                 <div className="landing__bottom-container">
@@ -45,13 +45,13 @@ function Landing(props) {
             </section>
             <section className="landing-info">
                 <div className="landing-info__container">
-                    <h2 className="landing-info__heading">создание одностраничного сайта (лендинга) под ключ</h2>
+                    <h3 className="landing-info__heading">создание одностраничного сайта (лендинга) под ключ</h3>
                     <p className="landing-info__description">
                         Что отличает хороший Landing Page от плохого? Неопытный специалист чаще всего
                         во главу угла поставит красивый броский дизайн и окажется неправ. Безусловно, внешний
                         вид продающей страницы важен, но определяющую роль он не играет.
                     </p>
-                    <h3 className="landing-info__subheading">почему наши лендинги работают?</h3>
+                    <h4 className="landing-info__subheading">почему наши лендинги работают?</h4>
                     <p className="landing-info__subdescription">
                         Как мы уже заметили выше, красивой обертки мало. Профессиональный
                         Landing Page сочетает в себе сразу несколько важных факторов:
@@ -86,14 +86,14 @@ function Landing(props) {
                 <div className="price-table__container">
                     <div className="price-table__section">
                         <div className={`price-table__heading-container-first ${isFirstActive && 'price-table__heading-container-first_active'}`} onClick={handleFirstSectionActive}>
-                            <h4 
+                            <h5 
                                 className={`price-table__heading ${isFirstActive && 'price-table__heading_active'}`}
                             >
                                 LANDING PAGE "БАЗОВЫЙ" (14 дней) 
                                 <span 
                                     className={`price-table__heading-span ${isFirstActive && 'price-table__heading-span_active'}`}
                                 > 45 000 руб.</span>
-                            </h4>
+                            </h5>
                         </div>
                         <ul className={`price-table__list ${isFirstActive && 'price-table__list_active'}`}>
                             <li className={`price-table__list-item ${isFirstActive && 'price-table__list-item_active'}`}>Объём лендинга 5-7 блоков</li>
@@ -111,14 +111,14 @@ function Landing(props) {
                     </div>
                     <div className="price-table__section">
                         <div className={`price-table__heading-container-second ${isSecondActive && 'price-table__heading-container-second_active'}`} onClick={handleSecondSectionActive}>
-                            <h4 
+                            <h5 
                                 className={`price-table__heading ${isSecondActive && 'price-table__heading_active'}`}
                             >
-                                LANDING PAGE "РАСШИРЕННЫЙ" <nobr>(17 дней)</nobr> 
+                                LANDING PAGE "РАСШИРЕННЫЙ" (17&nbsp;дней)
                                 <span 
                                     className={`price-table__heading-span ${isSecondActive && 'price-table__heading-span_active'}`}
                                 > 60 000 руб.</span>
-                            </h4>
+                            </h5>
                         </div>
                         <ul className={`price-table__list ${isSecondActive && 'price-table__list_active'}`}>
                             <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Объём лендинга 7-9 блоков</li>
@@ -140,14 +140,14 @@ function Landing(props) {
                     </div>
                     <div className="price-table__section">
                         <div className={`price-table__heading-container-last ${isLastActive && 'price-table__heading-container-last_active'}`} onClick={handleLastSectionActive}>
-                            <h4 
+                            <h5 
                                 className={`price-table__heading ${isLastActive && 'price-table__heading_active'}`}
                             >
                                 LANDING PAGE "МАКСИМАЛЬНЫЙ" (28 дней) 
                                 <span 
                                     className={`price-table__heading-span ${isLastActive && 'price-table__heading-span_active'}`}
                                 > 75 000 руб.</span>
-                            </h4>
+                            </h5>
                         </div>
                         <ul className={`price-table__list ${isLastActive && 'price-table__list_active'}`}>
                             <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Объём лендинга 9-12 блоков</li>
@@ -170,7 +170,7 @@ function Landing(props) {
                     </div>
                 </div>
             </section>
-        </section>
+        </div>
     );
 }
 
