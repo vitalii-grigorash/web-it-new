@@ -22,14 +22,14 @@ function Contacts () {
     }
 
     return (
-        <section className="contacts">
+        <div className="contacts">
             <Helmet
                 title='Контакты ГК "Вымпел"'
                 meta={[
                     {"name": "description", "content": "Техническое обслуживание персональных компьютеров, печатных устройств и т.д.! Создание и продвижение сайтов в Санкт-Петербурге! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!"}
                 ]}
             />
-            <section className="contacts__image-container">
+            <div className="contacts__image-container">
                 <div className="contacts__main-container">
                     <a href="tel:+78123728561" className="contacts__main-phone">
                         +7 (812)-372-85-61
@@ -68,7 +68,7 @@ function Contacts () {
                     <img src={mouse} alt="Иконка мышки" className="contacts__mouse-icon" />
                     <p className="contacts__text">Прокрутите вниз</p>
                 </div>
-            </section>
+            </div>
             <YMaps>
                 <div className="contacts__yandex-maps">
                     <Map 
@@ -80,7 +80,7 @@ function Contacts () {
                     </Map>
                 </div>
             </YMaps>
-        </section>
+        </div>
     );
 }
 
