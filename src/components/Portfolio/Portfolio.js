@@ -19,7 +19,7 @@ import { Link } from 'react-router-dom';
 function Portfolio () {
 
     return (
-        <section className="portfolio">
+        <div className="portfolio">
             <Helmet
                 title='Портфолио ГК "Вымпел"'
                 meta={[
@@ -27,7 +27,7 @@ function Portfolio () {
                 ]}
             />
             <section className="portfolio__image-container">
-                <h1 className="portfolio__heading">ПОРТФОЛИО</h1>
+                <h2 className="portfolio__heading">ПОРТФОЛИО</h2>
                 <div className="portfolio__bottom-container">
                     <img src={mouse} alt="Иконка мышки" className="portfolio__mouse-icon" />
                     <p className="portfolio__text">Прокрутите вниз</p>
@@ -38,7 +38,7 @@ function Portfolio () {
                     <img src={stroiSnab} alt="Фото Строй Снаб" className="grid-container__img"/>
                     <div className="overlay">
                        <img src={stroiSnabIcon} alt="Иконка Строй Снаб" className="overlay__icon overlay__icon_stroi-snab"/>
-                       <h3 className="overlay__heading">СтройСнаб</h3>
+                       <h4 className="overlay__heading">СтройСнаб</h4>
                        <p className="overlay__subheading">Компания осуществляет строительные работы</p>
                     </div>
                 </Link>
@@ -47,7 +47,7 @@ function Portfolio () {
                     <img src={voleksHover} alt="Фото Волекс" className="grid-container__img grid-container__img_voleks-hover"/>
                     <div className="overlay">
                        <img src={voleksIcon} alt="Иконка Волекс" className="overlay__icon overlay__icon_voleks"/>
-                       <h3 className="overlay__heading">Волекс</h3>
+                       <h4 className="overlay__heading">Волекс</h4>
                        <p className="overlay__subheading overlay__subheading_voleks">Продажа промышленного инструмента абразивных материалов</p>
                     </div>
                 </Link>
@@ -55,7 +55,7 @@ function Portfolio () {
                     <img src={arbellos} alt="Фото Арбеллос" className="grid-container__img"/>
                     <div className="overlay">
                        <img src={arbellosIcon} alt="Иконка Арбеллос" className="overlay__icon overlay__icon_arbellos"/>
-                       <h3 className="overlay__heading">ARbellos</h3>
+                       <h4 className="overlay__heading">ARbellos</h4>
                        <p className="overlay__subheading">Инсталяция светопрозрачных решений</p>
                     </div>
                 </Link>
@@ -63,7 +63,7 @@ function Portfolio () {
                     <img src={urKonsul} alt="Фото Юр Консул" className="grid-container__img"/>
                     <div className="overlay">
                        <img src={urKonsulIcon} alt="Иконка Юр Консул" className="overlay__icon overlay__icon_ur-konsul"/>
-                       <h3 className="overlay__heading">ЮрКонсул</h3>
+                       <h4 className="overlay__heading">ЮрКонсул</h4>
                        <p className="overlay__subheading overlay__subheading_ur-konsul">Реализация деятельности ТСН(Ж), ЖСК и УК по управлению недвижимым имуществом</p>
                     </div>
                 </Link>
@@ -71,7 +71,7 @@ function Portfolio () {
                     <img src={ostMebConsalt} alt="Фото Ост Мед Консалт" className="grid-container__img"/>
                     <div className="overlay">
                        <img src={ostMebConsaltIcon} alt="Иконка Ост Мед Консалт" className="overlay__icon overlay__icon_ost-meb-consalt"/>
-                       <h3 className="overlay__heading">Остмедконсалт</h3>
+                       <h4 className="overlay__heading">Остмедконсалт</h4>
                        <p className="overlay__subheading">Многопрофильная клиника: эстетическая медецины и пластическая хирургия</p>
                     </div>
                 </Link>
@@ -79,12 +79,12 @@ function Portfolio () {
                     <img src={laMiaBorsa} alt="Фото Ля Миа Борса" className="grid-container__img"/>
                     <div className="overlay">
                        <img src={laMiaBorsaIcon} alt="Иконка Ля Миа Борса" className="overlay__icon overlay__icon_la-mia-borsa"/>
-                       <h3 className="overlay__heading">La mia Borsa</h3>
-                       <p className="overlay__subheading">Итальянские сумки в <nobr>Санкт-Петербурге</nobr></p>
+                       <h4 className="overlay__heading">La mia Borsa</h4>
+                       <p className="overlay__subheading">Итальянские сумки в <br/> Санкт-Петербурге</p>
                     </div>
                 </Link>
             </section>
-        </section>
+        </div>
     );
 }
 
