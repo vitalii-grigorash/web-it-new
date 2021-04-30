@@ -23,8 +23,8 @@ function Table () {
     const [isAdvertis, setAdvertis] = useState(false);
 
     return (
-        <section className="table">
-            <section className="animation">
+        <div className="table">
+            <div className="animation">
                 <img src={mainImg} alt="Статичное изображение" className={`animation__img ${isMain && 'animation__img_main'}`}/>
                 <img src={designImg} alt="Изображение дизайна" className={`animation__img ${isDesign && 'animation__img_design'}`}/>
                 <img src={formImg} alt="Изображение формы" className={`animation__img ${isForm && 'animation__img_form'}`}/>
@@ -36,8 +36,8 @@ function Table () {
                 <div className="animation__text-container">
                     <p className={textStyle}>{text}</p>
                 </div>
-            </section>
-            <section className="table__container">
+            </div>
+            <div className="table__container">
                 <table className="design">
                     <thead className="design__head">
                         <tr className="design__head-container">
@@ -296,8 +296,8 @@ function Table () {
                         </tr>
                     </tbody>
                 </table>
-            </section>
-        </section>
+            </div>
+        </div>
     );
 }
 

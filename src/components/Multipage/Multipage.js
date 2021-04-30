@@ -13,7 +13,7 @@ function Multipage (props) {
     } = props;
 
     return (
-        <section className="multipage">
+        <div className="multipage">
             <Helmet
                 title='Создание Многостраничного (корпоративного) сайта в Санкт-Петербурге "Вымпел"'
                 meta={[
@@ -21,7 +21,7 @@ function Multipage (props) {
                 ]}
             />
             <section className="multipage__image-container">
-                <h1 className="multipage__heading">создание многостраничного (корпоративного) сайта "под ключ"</h1>
+                <h2 className="multipage__heading">создание многостраничного (корпоративного) сайта "под ключ"</h2>
                 <p className="multipage__subheading">Проектирование и разработка многостраничного сайта в Санкт-Петербурге</p>
                 <button className="multipage__button" type="button" onClick={onOpenPopup}>Заказать сайт</button>
                 <div className="multipage__bottom-container">
@@ -31,7 +31,7 @@ function Multipage (props) {
             </section>
             <section className="multipage-info">
                 <div className="multipage-info__container">
-                    <h2 className="multipage-info__heading">создание многостраничного (корпоративного) сайта для стабильных организаций</h2>
+                    <h3 className="multipage-info__heading">создание многостраничного (корпоративного) сайта для стабильных организаций</h3>
                     <p className="multipage-info__description">
                         Наша команда рада предложить вам создание уникального, разработанного, персонально 
                         под вас и ваш бизнес, корпоративного сайта, который выгодно подчеркнет ваши отличия 
@@ -58,7 +58,7 @@ function Multipage (props) {
                 submitButtonText={submitButtonText}
             />
             <Table />
-        </section>
+        </div>
     );
 }
 
