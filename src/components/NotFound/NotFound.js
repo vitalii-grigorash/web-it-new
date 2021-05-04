@@ -11,6 +11,9 @@ function NotFound () {
                 meta={[
                     {"name": "description", "content": "Создание сайтов и их продвижение! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Техническое обслуживание персональных компьютеров, печатных устройств и т.д.! Команда профессионалов!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/404/"}
+                ]}
             />
             <section className="not-found__image-container">
                 <h3 className="not-found__heading">404</h3>
