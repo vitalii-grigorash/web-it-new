@@ -8,3 +8,5 @@ Disallow: /internet-magazin/
 Disallow: /price/
 Disallow: /service/it-move/
 Disallow: /2019/
+Sitemap: https://178spb.com/sitemap.xml
+Host: 178spb.com
