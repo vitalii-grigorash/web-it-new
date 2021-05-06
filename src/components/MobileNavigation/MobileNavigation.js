@@ -11,6 +11,10 @@ function MobileNavigation (props) {
         onOpenPopup,
         handleItDropDownMunu,
         handleWebDropDownMunu,
+        handlePortfolioDropDownMunu,
+        handlePriceDropDownMunu,
+        isPriceOpen,
+        isPortfolioOpen,
         isItOpen,
         isWebOpen,
         handleAbonentScroll,
@@ -59,7 +63,30 @@ function MobileNavigation (props) {
                 )
             }
             <Link to={'/'} className="mobile-navigation__links" onClick={onCloseMobileNavigation}>О Компании</Link>
-            <Link to={'/portfolio'} className="mobile-navigation__links" onClick={onCloseMobileNavigation}>Портфолио</Link>
+            <h3 className="mobile-navigation__links mobile-navigation__links_menu" onClick={handlePortfolioDropDownMunu}>
+                Портфолио
+                <img src={isPortfolioOpen ? arrowClose : arrowOpen} alt="Стрелка" className="mobile-navigation__arrow"/>
+            </h3>
+            {isPortfolioOpen && 
+                ( 
+                    <>
+                        <Link to={'/portfolio-web'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Web студия</Link>
+                        <Link to={'/it'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>IT сервис</Link>
+                    </>
+                )
+            }
+            <h3 className="mobile-navigation__links mobile-navigation__links_menu" onClick={handlePriceDropDownMunu}>
+                Цены на услуги
+                <img src={isPriceOpen ? arrowClose : arrowOpen} alt="Стрелка" className="mobile-navigation__arrow"/>
+            </h3>
+            {isPriceOpen && 
+                ( 
+                    <>
+                        <Link to={'/portfolio-web'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Web студия</Link>
+                        <Link to={'/it'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>IT сервис</Link>
+                    </>
+                )
+            }
             <Link to={'/contacts'} className="mobile-navigation__links" onClick={onCloseMobileNavigation}>Контакты</Link>
         </nav>
         <nav className="mobile-navigation__info-container">

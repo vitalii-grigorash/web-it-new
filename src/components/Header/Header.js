@@ -9,13 +9,23 @@ function Header (props) {
     onOpenDropDownMenu,
     onCloseDropDownMenu,
     isOpen,
+    onOpenPortfolioDropDownMenu,
+    onClosePortfolioDropDownMenu,
+    isOpenPortfolio,
+    onClosePriceDropDownMenu,
+    onOpenPriceDropDownMenu,
+    isOpenPrice,
     isMobileNavigationOpen,
     onOpenMobileNavigation,
     onCloseMobileNavigation,
     handleItDropDownMunu,
     handleWebDropDownMunu,
+    handlePortfolioDropDownMunu,
+    handlePriceDropDownMunu,
+    isPriceOpen,
     isItOpen,
     isWebOpen,
+    isPortfolioOpen,
     onOpenPopup,
     handleAbonentScroll,
     handlePriceScroll,
@@ -30,6 +40,12 @@ function Header (props) {
         onOpenDropDownMenu={onOpenDropDownMenu}
         onCloseDropDownMenu={onCloseDropDownMenu}
         isOpen={isOpen}
+        onOpenPortfolioDropDownMenu={onOpenPortfolioDropDownMenu}
+        onClosePortfolioDropDownMenu={onClosePortfolioDropDownMenu}
+        isOpenPortfolio={isOpenPortfolio}
+        onClosePriceDropDownMenu={onClosePriceDropDownMenu}
+        onOpenPriceDropDownMenu={onOpenPriceDropDownMenu}
+        isOpenPrice={isOpenPrice}
         handleAbonentScroll={handleAbonentScroll}
         handlePriceScroll={handlePriceScroll}
       />
@@ -40,8 +56,12 @@ function Header (props) {
         onOpenPopup={onOpenPopup}
         handleItDropDownMunu={handleItDropDownMunu}
         handleWebDropDownMunu={handleWebDropDownMunu}
+        handlePortfolioDropDownMunu={handlePortfolioDropDownMunu}
+        handlePriceDropDownMunu={handlePriceDropDownMunu}
+        isPriceOpen={isPriceOpen}
         isItOpen={isItOpen}
         isWebOpen={isWebOpen}
+        isPortfolioOpen={isPortfolioOpen}
         handleAbonentScroll={handleAbonentScroll}
         handlePriceScroll={handlePriceScroll}
       />

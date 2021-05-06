@@ -1,7 +1,7 @@
-.portfolio {
+.portfolio-web {
     
 }
-.portfolio__image-container {
+.portfolio-web__image-container {
     background-image: url('../../images/portfolio-page-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
 }
-.portfolio__heading {
+.portfolio-web__heading {
     font-family: 'IBM Plex Mono';
     font-style: normal;
     font-weight: 600;
@@ -20,16 +20,17 @@
     color: #FFFFFF;
     max-width: 660px;
     margin: 455px auto auto 330px;
+    text-transform: uppercase;
 }
-.portfolio__bottom-container {
+.portfolio-web__bottom-container {
     display: flex;
     margin: auto auto 32px;
 }
-.portfolio__mouse-icon {
+.portfolio-web__mouse-icon {
     max-height: 53px;
     max-width: 47px;
 }
-.portfolio__text {
+.portfolio-web__text {
     font-family: 'Verdana';
     font-style: normal;
     font-weight: normal;
@@ -138,17 +139,27 @@
 .overlay__subheading_ur-konsul {
     max-width: 304px;
 }
-@media screen and (max-width: 1440px) {
-    .portfolio__heading {
-        margin: 455px auto auto 230px;
+@media screen and (max-width: 1700px) {
+    .portfolio-web__heading {
+        margin: 455px auto auto 150px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .portfolio-web__heading {
+        margin: 455px auto auto 100px;
+    }
+}
+@media screen and (max-width: 1450px) {
+    .portfolio-web__heading {
+        max-width: 350px;
     }
 }
 @media screen and (max-width: 1245px) {
-    .portfolio__image-container {
+    .portfolio-web__image-container {
         min-height: 829px;
     }
-    .portfolio__heading {
-        margin: 355px auto auto 130px;
+    .portfolio-web__heading {
+        margin: 355px auto auto 100px;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -159,31 +170,31 @@
     }
 }
 @media screen and (max-width: 1095px) {
-    .portfolio__image-container {
+    .portfolio-web__image-container {
         min-height: 729px;
     }
-    .portfolio__heading {
+    .portfolio-web__heading {
         margin: 325px auto auto 100px;
         font-size: 35px;
         line-height: 48px;
-        max-width: 550px;
+        max-width: 260px;
     }
 }
 @media screen and (max-width: 950px) {
-    .portfolio__image-container {
+    .portfolio-web__image-container {
         min-height: 629px;
     }
 }
 @media screen and (max-width: 930px) {
-    .portfolio__image-container {
+    .portfolio-web__image-container {
         min-height: 340px;
     }
-    .portfolio__heading {
+    .portfolio-web__heading {
         font-size: 36px;
-        line-height: 50px;
+        line-height: 40px;
         margin: 128px auto auto 100px;
     }
-    .portfolio__bottom-container {
+    .portfolio-web__bottom-container {
         display: none;
     }
     .overlay {
@@ -205,19 +216,14 @@
     }
 }
 @media screen and (max-width: 690px) {
-    .portfolio__heading {
+    .portfolio-web__heading {
         margin: 128px auto auto 15px;
-        max-width: 450px;
+        max-width: 260px;
     }
 }
 @media screen and (max-width: 470px) {
-    .portfolio__image-container {
+    .portfolio-web__image-container {
         min-height: 490px;
         background-position-y: 50px;
-    }
-}
-@media screen and (max-width: 420px) {
-    .portfolio__heading {
-        max-width: 300px;
     }
 }

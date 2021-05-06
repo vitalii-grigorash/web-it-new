@@ -1,0 +1,104 @@
+.drop-down-menu-portfolio {
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s, opacity .3s linear;
+    left: 130px;
+    top: 60px;
+    max-width: 413px;
+    z-index: 1;
+}
+.drop-down-menu-portfolio_opened {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.drop-down-menu-portfolio__background {
+    display: flex;
+    position: relative;
+    background-color: #000000;
+    padding: 32px 30px 36px 30px;
+    box-shadow: -3px -2px 2px rgba(124, 247, 255, 0.36), 3px 3px 7px -1px rgba(0, 0, 0, 0.25), inset 0px 3px 2px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.drop-down-menu-portfolio__close-button {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 20px;
+}
+.drop-down-menu-portfolio__close-button:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+.drop-down-menu-portfolio__container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    min-width: 174px;
+}
+.drop-down-menu-portfolio__container:last-of-type {
+    margin-right: 0;
+}
+.drop-down-menu-portfolio__container_it {
+    min-width: 150px;
+}
+.drop-down-menu-portfolio__links {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 0 auto 0 0;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+.drop-down-menu-portfolio__links_web:hover {
+    border-image: linear-gradient(to right, #FF3541, #FF6D2F);
+    border-image-slice: 1;
+}
+.drop-down-menu-portfolio__links_it:hover {
+    border-image: linear-gradient(to right, #071D55, #00F0FF);
+    border-image-slice: 1;
+}
+@media screen and (max-width: 1180px) {
+    .drop-down-menu-portfolio {
+        left: 145px;
+        top: 55px;
+    }
+    .drop-down-menu-portfolio__background {
+        padding: 20px 20px;
+    }
+    .drop-down-menu-portfolio__close-button {
+        width: 15px;
+        height: 15px;
+        top: 10px;
+        right: 15px;
+    }
+    .drop-down-menu-portfolio__container {
+        margin-right: 15px;
+        min-width: 150px;
+    }
+    .drop-down-menu-portfolio__container_it {
+        min-width: 120px;
+    }
+    .drop-down-menu-portfolio__links {
+        font-size: 14px;
+        line-height: 130%;
+    }
+}
+@media screen and (max-width: 1095px) {
+    .drop-down-menu-portfolio {
+        left: 120px;
+        top: 55px;
+    }
+}
+@media screen and (max-width: 1012px) {
+    .drop-down-menu-portfolio {
+        left: 95px;
+        top: 50px;
+    }
+}

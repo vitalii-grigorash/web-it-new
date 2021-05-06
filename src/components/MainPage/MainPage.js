@@ -15,6 +15,8 @@ function MainPage (props) {
     const {
         onSendForm,
         isDropDownMenuOpen,
+        isDropDownMenuPortfolioOpen,
+        isDropDownMenuPriceOpen,
         submitButtonText,
     } = props;
 
@@ -30,13 +32,13 @@ function MainPage (props) {
         ]}
       />
             <nav className="main-page__images-container">
-                <Link to={isDropDownMenuOpen ? `/` : `/it`} className="main-page__container main-page__container_it">
+                <Link to={isDropDownMenuOpen || isDropDownMenuPortfolioOpen || isDropDownMenuPriceOpen ? `/` : `/it`} className="main-page__container main-page__container_it">
                     <div className="main-page__container-overlay">
                         <h2 className="main-page__heading main-page__heading_it">it сервис</h2>
                         <img src={mouse} alt="Иконка мышки" className="main-page__mouse-icon" />
                     </div>
                 </Link>
-                <Link to={isDropDownMenuOpen ? `/` : `/web`} className="main-page__container main-page__container_web">
+                <Link to={isDropDownMenuOpen || isDropDownMenuPortfolioOpen || isDropDownMenuPriceOpen ? `/` : `/web`} className="main-page__container main-page__container_web">
                     <div className="main-page__container-overlay">
                         <h2 className="main-page__heading main-page__heading_web">web студия</h2>
                         <p className="main-page__down-text">Прокрутите вниз</p>

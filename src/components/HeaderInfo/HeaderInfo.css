@@ -6,7 +6,10 @@
   height: 99px;
 }
 .header-info_background {
-    background: linear-gradient(90.33deg, #071D55 -5.84%, #00F0FF 101.87%);
+  background: linear-gradient(90.33deg, #071D55 -5.84%, #00F0FF 101.87%);
+}
+.header-info_landing {
+  background: linear-gradient(90.33deg, #00F0FF -5.87%, #071D55 90.84%);
 }
   .header-info__container {
     display: flex;

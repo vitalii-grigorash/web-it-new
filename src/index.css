@@ -9,6 +9,8 @@
 @import url(./components/MainPage/MainPage.css);
 @import url(./components/Footer/Footer.css);
 @import url(./components/DropDownMenu/DropDownMenu.css);
+@import url(./components/DropDownMenuPortfolio/DropDownMenuPortfolio.css);
+@import url(./components/DropDownMenuPrice/DropDownMenuPrice.css);
 @import url(./components/Popup/Popup.css);
 @import url(./components/PageForm/PageForm.css);
 @import url(./components/SuccessPopup/SuccessPopup.css);
@@ -21,7 +23,7 @@
 @import url(./components/BusinessCard/BusinessCard.css);
 @import url(./components/Landing/Landing.css);
 @import url(./components/Seo/Seo.css);
-@import url(./components/Portfolio/Portfolio.css);
+@import url(./components/PortfolioWeb/PortfolioWeb.css);
 @import url(./components/Contacts/Contacts.css);
 @import url(./components/StrojSnab/StrojSnab.css);
 @import url(./components/Voleks/Voleks.css);

@@ -1,6 +1,8 @@
 import React from 'react';
 import arrow from '../../images/svg/arrow.svg';
 import DropDownMenu from '../DropDownMenu/DropDownMenu';
+import DropDownMenuPortfolio from '../DropDownMenuPortfolio/DropDownMenuPortfolio';
+import DropDownMenuPrice from '../DropDownMenuPrice/DropDownMenuPrice';
 import { Link } from 'react-router-dom';
 
 function Navigation (props) {
@@ -9,6 +11,12 @@ function Navigation (props) {
         onOpenDropDownMenu,
         onCloseDropDownMenu,
         isOpen,
+        onOpenPortfolioDropDownMenu,
+        onClosePortfolioDropDownMenu,
+        isOpenPortfolio,
+        onOpenPriceDropDownMenu,
+        onClosePriceDropDownMenu,
+        isOpenPrice,
         handleAbonentScroll,
         handlePriceScroll,
     } = props;
@@ -18,6 +26,22 @@ function Navigation (props) {
             onOpenDropDownMenu();
         } else {
             onCloseDropDownMenu();
+        }
+    }
+
+    function handleDropDownMunuPortfolio() {
+        if (!isOpenPortfolio) {
+            onOpenPortfolioDropDownMenu();
+        } else {
+            onClosePortfolioDropDownMenu();
+        }
+    }
+
+    function handleDropDownMunuPrice() {
+        if (!isOpenPrice) {
+            onOpenPriceDropDownMenu();
+        } else {
+            onClosePriceDropDownMenu();
         }
     }
 
@@ -35,12 +59,25 @@ function Navigation (props) {
                         Услуги
                         <img src={arrow} alt="Стрелка" className="navigation__arrow"/>
                     </p>
-                    <Link to={'/portfolio'} className="navigation__links">Портфолио</Link>
+                    <p className="navigation__links navigation__links_portfolio" onClick={handleDropDownMunuPortfolio}>
+                        Портфолио
+                        <img src={arrow} alt="Стрелка" className="navigation__portfolio-arrow"/>
+                    </p>
+                    <p className="navigation__links navigation__links_price" onClick={handleDropDownMunuPrice}>
+                        Цены на услуги
+                        <img src={arrow} alt="Стрелка" className="navigation__price-arrow"/>
+                    </p>
                     <Link to={'/contacts'} className="navigation__links">Контакты</Link>
                     <DropDownMenu
                         handleAbonentScroll={handleAbonentScroll}
                         handlePriceScroll={handlePriceScroll}
                         isOpen={isOpen}
+                    />
+                    <DropDownMenuPortfolio
+                        isOpenPortfolio={isOpenPortfolio}
+                    />
+                    <DropDownMenuPrice
+                        isOpenPrice={isOpenPrice} 
                     />
                 </nav>
             </nav>

@@ -16,10 +16,10 @@ import ostMebConsaltIcon from '../../images/svg/ost-med-consalt-icon.svg';
 import laMiaBorsaIcon from '../../images/svg/la-mia-borsa-icon.svg';
 import { Link } from 'react-router-dom';
 
-function Portfolio () {
+function PortfolioWeb () {
 
     return (
-        <div className="portfolio">
+        <div className="portfolio-web">
             <Helmet
                 title='Портфолио ГК "Вымпел"'
                 meta={[
@@ -29,11 +29,11 @@ function Portfolio () {
                     {"rel": "canonical", "href": "https://178spb.com/portfolio/"}
                 ]}
             />
-            <section className="portfolio__image-container">
-                <h2 className="portfolio__heading">ПОРТФОЛИО</h2>
-                <div className="portfolio__bottom-container">
-                    <img src={mouse} alt="Иконка мышки" className="portfolio__mouse-icon" />
-                    <p className="portfolio__text">Прокрутите вниз</p>
+            <section className="portfolio-web__image-container">
+                <h2 className="portfolio-web__heading">портфолио web студии</h2>
+                <div className="portfolio-web__bottom-container">
+                    <img src={mouse} alt="Иконка мышки" className="portfolio-web__mouse-icon" />
+                    <p className="portfolio-web__text">Прокрутите вниз</p>
                 </div>
             </section>
             <section className="grid-container">
@@ -91,4 +91,4 @@ function Portfolio () {
     );
 }
 
-export default Portfolio;
+export default PortfolioWeb;

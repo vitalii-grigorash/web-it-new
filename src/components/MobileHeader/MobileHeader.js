@@ -13,8 +13,12 @@ function MobileHeader (props) {
     onOpenPopup,
     handleItDropDownMunu,
     handleWebDropDownMunu,
+    handlePortfolioDropDownMunu,
+    handlePriceDropDownMunu,
+    isPriceOpen,
     isItOpen,
     isWebOpen,
+    isPortfolioOpen,
     handleAbonentScroll,
     handlePriceScroll,
 } = props;
@@ -33,8 +37,12 @@ function MobileHeader (props) {
         onOpenPopup={onOpenPopup}
         handleItDropDownMunu={handleItDropDownMunu}
         handleWebDropDownMunu={handleWebDropDownMunu}
+        handlePortfolioDropDownMunu={handlePortfolioDropDownMunu}
+        handlePriceDropDownMunu={handlePriceDropDownMunu}
+        isPriceOpen={isPriceOpen}
         isItOpen={isItOpen}
         isWebOpen={isWebOpen}
+        isPortfolioOpen={isPortfolioOpen}
         onCloseMobileNavigation={onCloseMobileNavigation}
         handleAbonentScroll={handleAbonentScroll}
         handlePriceScroll={handlePriceScroll}

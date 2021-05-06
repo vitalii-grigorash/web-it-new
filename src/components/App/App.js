@@ -9,7 +9,7 @@ import Catalog from '../Catalog/Catalog';
 import BusinessCard from '../BusinessCard/BusinessCard';
 import Landing from '../Landing/Landing';
 import Seo from '../Seo/Seo';
-import Portfolio from '../Portfolio/Portfolio';
+import PortfolioWeb from '../PortfolioWeb/PortfolioWeb';
 import Contacts from '../Contacts/Contacts';
 import StrojSnab from '../StrojSnab/StrojSnab';
 import Voleks from '../Voleks/Voleks';
@@ -27,11 +27,15 @@ import * as FeedbackForm from '../../utils/FeedbackForm';
 function App () {
 
   const [isDropDownMenuOpen, setDropDownMenuOpen] = useState(false);
+  const [isDropDownMenuPortfolioOpen, setDropDownMenuPortfolioOpen] = useState(false);
+  const [isDropDownMenuPriceOpen, setDropDownMenuPriceOpen] = useState(false);
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [isSuccessPopupOpen, setSuccessPopupOpen] = useState(false);
   const [isMobileNavigationOpen, setMobileNavigationOpen] = useState(false);
   const [isItOpen, setItOpen] = useState(false);
   const [isWebOpen, setWebOpen] = useState(false);
+  const [isPortfolioOpen, setPortfolioOpen] = useState(false);
+  const [isPriceOpen, setPriceOpen] = useState(false);
   const [isAbonent, setAbonent] = useState(false);
   const [isPrice, setPrice] = useState(false);
   const [submitButtonText, setSubmitButtonText] = useState('Получить консультацию');
@@ -60,12 +64,78 @@ function App () {
     }
   }
 
+  function handlePriceDropDownMunu () {
+    if (!isPriceOpen) {
+      setPriceOpen(true);
+    } else {
+      setPriceOpen(false);
+    }
+  }
+
+  function handlePortfolioDropDownMunu () {
+    if (!isPortfolioOpen) {
+      setPortfolioOpen(true);
+    } else {
+      setPortfolioOpen(false);
+    }
+  }
+
   function handleWebDropDownMunu () {
     if (!isWebOpen) {
       setWebOpen(true);
     } else {
       setWebOpen(false);
     }
+  }
+
+  const handlePriceDropDownMenu = (evt) => {
+    if (!
+      (
+        (evt.target).classList.contains("drop-down-menu-price__background") ||
+        (evt.target).classList.contains("drop-down-menu-price__container") ||
+        (evt.target).classList.contains("navigation__links_price") ||
+        (evt.target).classList.contains("navigation__price-arrow")
+      )
+    ) {
+      dropDownPriceMenuClose();
+    }
+  }
+
+  const memoizedOnClickPriceDropDown = useCallback(handlePriceDropDownMenu, []);
+
+  function dropDownPriceMenuOpen () {
+    setDropDownMenuPriceOpen(true);
+    document.addEventListener('click', memoizedOnClickPriceDropDown);
+  }
+
+  function dropDownPriceMenuClose () {
+    setDropDownMenuPriceOpen(false);
+    document.removeEventListener('click', memoizedOnClickPriceDropDown);
+  }
+
+  const handlePortfolioDropDownMenu = (evt) => {
+    if (!
+      (
+        (evt.target).classList.contains("drop-down-menu-portfolio__background") ||
+        (evt.target).classList.contains("drop-down-menu-portfolio__container") ||
+        (evt.target).classList.contains("navigation__links_portfolio") ||
+        (evt.target).classList.contains("navigation__portfolio-arrow")
+      )
+    ) {
+      dropDownPortfolioMenuClose();
+    }
+  }
+
+  const memoizedOnClickPortfolioDropDown = useCallback(handlePortfolioDropDownMenu, []);
+
+  function dropDownPortfolioMenuOpen () {
+    setDropDownMenuPortfolioOpen(true);
+    document.addEventListener('click', memoizedOnClickPortfolioDropDown);
+  }
+
+  function dropDownPortfolioMenuClose () {
+    setDropDownMenuPortfolioOpen(false);
+    document.removeEventListener('click', memoizedOnClickPortfolioDropDown);
   }
 
   const handleDropDownMenu = (evt) => {
@@ -116,6 +186,8 @@ function App () {
   function handleMobileNavigationOpen () {
     setItOpen(false);
     setWebOpen(false);
+    setPortfolioOpen(false);
+    setPriceOpen(false);
     setMobileNavigationOpen(true);
     document.addEventListener('click', memoizedOnCloseMobileNavigatin);
   }
@@ -179,12 +251,22 @@ function App () {
         onOpenPopup={handlePopupOpen}
         onOpenDropDownMenu={dropDownMenuOpen}
         onCloseDropDownMenu={dropDownMenuClose}
+        onOpenPortfolioDropDownMenu={dropDownPortfolioMenuOpen}
+        onClosePortfolioDropDownMenu={dropDownPortfolioMenuClose}
+        onOpenPriceDropDownMenu={dropDownPriceMenuOpen}
+        onClosePriceDropDownMenu={dropDownPriceMenuClose}
         isOpen={isDropDownMenuOpen}
+        isOpenPortfolio={isDropDownMenuPortfolioOpen}
+        isOpenPrice={isDropDownMenuPriceOpen}
         isMobileNavigationOpen={isMobileNavigationOpen}
         onOpenMobileNavigation={handleMobileNavigationOpen}
         onCloseMobileNavigation={handleMobileNavigationClose}
         handleItDropDownMunu={handleItDropDownMunu}
         handleWebDropDownMunu={handleWebDropDownMunu}
+        handlePortfolioDropDownMunu={handlePortfolioDropDownMunu}
+        handlePriceDropDownMunu={handlePriceDropDownMunu}
+        isPriceOpen={isPriceOpen}
+        isPortfolioOpen={isPortfolioOpen}
         isItOpen={isItOpen}
         isWebOpen={isWebOpen}
         handlePriceScroll={handlePriceScroll}
@@ -196,6 +278,8 @@ function App () {
         <Route path='/' exact>
           <MainPage 
             isDropDownMenuOpen={isDropDownMenuOpen}
+            isDropDownMenuPortfolioOpen={isDropDownMenuPortfolioOpen}
+            isDropDownMenuPriceOpen={isDropDownMenuPriceOpen}
             onSendForm={feedbackFormSend}
             submitButtonText={submitButtonText}
           />
@@ -221,8 +305,8 @@ function App () {
           />
         </Route>
 
-        <Route path='/portfolio'>
-          <Portfolio />
+        <Route path='/portfolio-web'>
+          <PortfolioWeb />
         </Route>
 
         <Route path='/contacts'>

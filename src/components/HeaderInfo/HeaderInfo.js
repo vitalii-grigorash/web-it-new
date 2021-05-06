@@ -20,7 +20,7 @@ function HeaderInfo (props) {
     }`;
 
     return (
-        <div className={header}>
+        <div className={pathname === '/landing' ? `header-info header-info_landing` : header}>
             <nav className="header-info__container">
                 <a href="https://yandex.ru/maps/2/saint-petersburg/house/prospekt_obukhovskoy_oborony_199/Z0kYcgFhS0IPQFtjfXR3dnVqZA" target="_blank" rel="nofollow noreferrer" className="header-info__location">
                     г. Санкт-Петербург, пр. Обуховской Обороны, д.199
