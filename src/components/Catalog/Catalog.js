@@ -22,6 +22,9 @@ function Catalog (props) {
                 meta={[
                     {"name": "description", "content": "Проектирование и разработка сайта-каталога в Санкт-Петербурге! Создание и продвижение веб-сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/catalog/"}
+                ]}
             />
             <section className="catalog__image-container">
                 <h2 className="catalog__heading">СОЗДАНИЕ САЙТА&#8209;КАТАЛОГА ПОД КЛЮЧ</h2>

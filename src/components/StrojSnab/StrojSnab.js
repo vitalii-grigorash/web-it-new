@@ -21,6 +21,9 @@ function StrojSnab() {
                 meta={[
                     {"name": "description", "content": "ГК 'Вымпел'. Разрабатываем сайты любой сложности под ключ, от дизайн-проекта до SEO оптимизации и продвижения! Команда профессионалов!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/stroj-snab/"}
+                ]}
             />
             <section className="stroj-snab__image">
                 <div className="stroj-snab__overlay-container">

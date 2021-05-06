@@ -62,6 +62,9 @@ function It (props) {
                 meta={[
                     {"name": "description", "content": "Техническое обслуживание персональных компьютеров, печатных устройств и т.д.! Команда профессионалов!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/it/"}
+                ]}
             />
             <section className="it__image-container">
                 <h2 className="it__heading">IT СЕРВИС</h2>

@@ -19,6 +19,9 @@ function Multipage (props) {
                 meta={[
                     {"name": "description", "content": "Проектирование и разработка многостраничного сайта в Санкт-Петербурге! Создание и продвижение веб-сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/multipage/"}
+                ]}
             />
             <section className="multipage__image-container">
                 <h2 className="multipage__heading">создание многостраничного (корпоративного) сайта "под ключ"</h2>

@@ -55,6 +55,9 @@ function Seo (props) {
                 meta={[
                     {"name": "description", "content": "SEO оптимизация для эффективного привлечения клиентов! Создание и продвижение сайтов! Современный дизайн! Команда профессионалов!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/seo/"}
+                ]}
             />
             <section className="seo__image-container">
                 <h2 className="seo__heading">seo-услуги под ключ</h2>

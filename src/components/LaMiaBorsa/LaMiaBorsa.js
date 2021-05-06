@@ -18,6 +18,9 @@ function LaMiaBorsa () {
                 meta={[
                     {"name": "description", "content": "ГК 'Вымпел'. Занимаемся проектированием и разработкой сайтов любой сложности под ключ, их продвижением и СЕО оптимизацией!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/la-mia-borsa/"}
+                ]}
             />
             <section className="la-mia-borsa__image">
                 <div className="la-mia-borsa__overlay-container">

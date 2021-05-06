@@ -19,6 +19,9 @@ function OstMedConsult () {
                 meta={[
                     {"name": "description", "content": "ГК 'Вымпел'. Занимаемся проектированием и разработкой сайтов любой сложности под ключ, от дизайн-проекта до SEO оптимизации и продвижения!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/ost-med-consult/"}
+                ]}
             />
             <section className="ost-med-consult__image">
                 <div className="ost-med-consult__overlay-container">

@@ -28,6 +28,9 @@ function Contacts () {
                 meta={[
                     {"name": "description", "content": "Техническое обслуживание персональных компьютеров, печатных устройств и т.д.! Создание и продвижение сайтов в Санкт-Петербурге! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/contacts/"}
+                ]}
             />
             <div className="contacts__image-container">
                 <div className="contacts__main-container">

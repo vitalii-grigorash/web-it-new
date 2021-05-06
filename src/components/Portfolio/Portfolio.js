@@ -25,6 +25,9 @@ function Portfolio () {
                 meta={[
                     {"name": "description", "content": "Создание и продвижение веб-сайтов в СПб! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/portfolio/"}
+                ]}
             />
             <section className="portfolio__image-container">
                 <h2 className="portfolio__heading">ПОРТФОЛИО</h2>

@@ -18,6 +18,9 @@ function ArBellos () {
                 meta={[
                     {"name": "description", "content": "ГК 'Вымпел'. Занимаемся проектированием и созданием сайтов любой сложности под ключ, их продвижением и СЕО оптимизацией!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/ar-bellos/"}
+                ]}
             />
             <section className="ar-bellos__image">
                 <div className="ar-bellos__overlay-container">

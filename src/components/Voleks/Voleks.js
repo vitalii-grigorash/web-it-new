@@ -18,6 +18,9 @@ function Voleks () {
                 meta={[
                     {"name": "description", "content": "ГК 'Вымпел'. Разработка и создание сайтов любой сложности под ключ, от дизайн-проекта до SEO оптимизации и продвижения. Современный и продающий дизайн. Команда профессионалов!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/voleks/"}
+                ]}
             />
             <section className="voleks__image">
                 <div className="voleks__overlay-container">

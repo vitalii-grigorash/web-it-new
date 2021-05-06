@@ -18,6 +18,9 @@ function YurKonsul () {
                 meta={[
                     {"name": "description", "content": "ГК 'Вымпел'. Проектирование и разработка сайтов любой сложности под ключ в Санкт-Петербурге, от дизайн-проекта до SEO оптимизации и продвижения. Современный и продающий дизайн. Команда профессионалов! ГК 'Vimpel'"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/yur-konsul/"}
+                ]}
             />
             <section className="yur-konsul__image">
                 <div className="yur-konsul__overlay-container">

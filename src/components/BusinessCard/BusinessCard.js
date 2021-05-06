@@ -39,6 +39,9 @@ function BusinessCard (props) {
                 meta={[
                     {"name": "description", "content": "Проектирование и разработка сайта-визитки в Санкт-Петербурге! Создание и продвижение веб-сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/business-card/"}
+                ]}
             />
             <section className="business-card__image-container">
                 <h2 className="business-card__heading">создание сайта&#8209;визитки под ключ</h2>

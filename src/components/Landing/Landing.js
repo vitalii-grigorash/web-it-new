@@ -33,6 +33,9 @@ function Landing(props) {
                 meta={[
                     {"name": "description", "content": "Занимаемся созданием и продвижением качественных сайтов! Современный и продающий дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов! ГК 'Вымпел'"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/landing/"}
+                ]}
             />
             <section className="landing__image-container">
                 <h2 className="landing__heading">создание landing page под ключ</h2>

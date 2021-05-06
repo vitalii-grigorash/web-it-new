@@ -1,6 +1,5 @@
 import React, {useState, useCallback} from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import MainPage from '../MainPage/MainPage';
 import It from '../It/It';
 import Web from '../Web/Web';
@@ -175,13 +174,6 @@ function App () {
   return (
 
     <div className="app">
-
-      <Helmet
-        title='Создание сайтов в Санкт-Петербурге – "Вымпел"'
-        meta={[
-          {"name": "description", "content": "Создание и продвижение сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Техническое обслуживание персональных компьютеров, печатных устройств и т.д.! Команда профессионалов!"}
-        ]}
-      />
 
       <Header
         onOpenPopup={handlePopupOpen}

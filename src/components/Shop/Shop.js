@@ -15,6 +15,9 @@ function Shop (props) {
                 meta={[
                     {"name": "description", "content": "Создание и продвижение сайтов в Санкт-Петербурге! Современный дизайн. SEO оптимизация для эффективного привлечения клиентов. Продающий дизайн. Команда профессионалов!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/shop/"}
+                ]}
             />
             <section className="shop__image-container">
                 <h2 className="shop__heading">СОЗДАНИЕ ИНТЕРНЕТ-МАГАЗИНА ПОД КЛЮЧ</h2>

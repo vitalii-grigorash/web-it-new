@@ -22,6 +22,9 @@ function Web (props) {
                 meta={[
                     {"name": "description", "content": "Создание и продвижение сайтов! Современный дизайн! Команда профессионалов!"}
                 ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/web/"}
+                ]}
             />
             <section className="web__image-container">
                 <h2 className="web__heading">WEB СТУДИЯ</h2>
