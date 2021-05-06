@@ -27,7 +27,7 @@ function PriceTableIt () {
                                 Внедрение Сервера Windows под ключ: установка, настройка, настройка
                                 трёх любых служб, настройка Active Directory (и добавление до 15
                                 пользователей), настройка firewall (файрвола) и антивируса
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 6000</p>
@@ -39,7 +39,7 @@ function PriceTableIt () {
                                 Внедрение Сервера Linux под ключ: установка, настройка, настройка
                                 трёх любых служб, настройка Active Directory (и добавление до 15
                                 пользователей), настройка firewall (файрвола) и антивируса
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 6500</p>
@@ -49,7 +49,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Внедрение систем хранения данных (СХД)
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 1000</p>
@@ -65,7 +65,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Организация серверов удаленного рабочего стола
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 1000</p>
@@ -81,7 +81,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Настройка резервного копирования данных
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 1200</p>
@@ -97,7 +97,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Развертывание офисной телефонии
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 2000</p>
@@ -113,7 +113,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Техническое оснащение конференц-залов
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 12000</p>
@@ -129,7 +129,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Установка и развертывание рабочих мест
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 3000</p>
@@ -145,7 +145,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Внедрение систем корпоративной печати
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 1000</p>
@@ -161,7 +161,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Составление технического задания
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 11000</p>
@@ -171,7 +171,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Установка гипервизора
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 2000</p>
@@ -181,7 +181,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Виртуализация одной физической машины
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 6000</p>
@@ -191,7 +191,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Развертывание новой чистой виртуальной машины
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 5000</p>
@@ -201,7 +201,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Развертывание одной роли на сервере
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 1500</p>
@@ -211,7 +211,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Развертывание Exchange на 100 пользователей
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 120000</p>
@@ -221,7 +221,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Развертывание Zabbix с агентом и внедренеи preset’ов
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 60000</p>
@@ -231,7 +231,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Развертывание SQL на 100 пользователей
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text">от 60000</p>
@@ -249,7 +249,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Консультация специалиста по подготовке
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text"></p>
@@ -259,7 +259,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Сохранение всех критических данных
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text"></p>
@@ -269,7 +269,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Демонтаж офисного оборудования
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text"></p>
@@ -279,7 +279,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Правильная упаковка
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text"></p>
@@ -289,7 +289,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Контроль перевозки
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text"></p>
@@ -299,7 +299,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Сборка оборудования на новом месте
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text"></p>
@@ -309,7 +309,7 @@ function PriceTableIt () {
                         <div className="it-table__left-column">
                             <p className="it-table__text">
                                 Создание условий работы на новом месте
-                                </p>
+                            </p>
                         </div>
                         <div className="it-table__right-column">
                             <p className="it-table__text"></p>
