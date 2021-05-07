@@ -16,7 +16,7 @@ function DropDownMenuPrice (props) {
                     <Link to={'/portfolio-web'} className="drop-down-menu-price__links drop-down-menu-price__links_web">WEB Студия</Link>
                 </nav>
                 <nav className="drop-down-menu-price__container drop-down-menu-price__container_it">
-                    <Link to={'/it'} className="drop-down-menu-price__links drop-down-menu-price__links_it">IT Сервис</Link>
+                    <Link to={'/portfolio-it'} className="drop-down-menu-price__links drop-down-menu-price__links_it">IT Сервис</Link>
                 </nav>
             </div>
         </div>

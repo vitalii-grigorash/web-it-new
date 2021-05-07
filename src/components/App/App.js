@@ -10,6 +10,7 @@ import BusinessCard from '../BusinessCard/BusinessCard';
 import Landing from '../Landing/Landing';
 import Seo from '../Seo/Seo';
 import PortfolioWeb from '../PortfolioWeb/PortfolioWeb';
+import PortfolioIt from '../PortfolioIt/PortfolioIt';
 import Contacts from '../Contacts/Contacts';
 import StrojSnab from '../StrojSnab/StrojSnab';
 import Voleks from '../Voleks/Voleks';
@@ -307,6 +308,10 @@ function App () {
 
         <Route path='/portfolio-web'>
           <PortfolioWeb />
+        </Route>
+
+        <Route path='/portfolio-it'>
+          <PortfolioIt />
         </Route>
 
         <Route path='/contacts'>

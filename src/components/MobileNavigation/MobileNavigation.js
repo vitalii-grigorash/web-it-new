@@ -71,7 +71,7 @@ function MobileNavigation (props) {
                 ( 
                     <>
                         <Link to={'/portfolio-web'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Web студия</Link>
-                        <Link to={'/it'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>IT сервис</Link>
+                        <Link to={'/portfolio-it'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>IT сервис</Link>
                     </>
                 )
             }
@@ -83,7 +83,7 @@ function MobileNavigation (props) {
                 ( 
                     <>
                         <Link to={'/portfolio-web'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Web студия</Link>
-                        <Link to={'/it'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>IT сервис</Link>
+                        <Link to={'/portfolio-it'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>IT сервис</Link>
                     </>
                 )
             }

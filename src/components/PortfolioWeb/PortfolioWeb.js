@@ -21,12 +21,12 @@ function PortfolioWeb () {
     return (
         <div className="portfolio-web">
             <Helmet
-                title='Портфолио ГК "Вымпел"'
+                title='Портфолио WEB ГК "Вымпел"'
                 meta={[
                     {"name": "description", "content": "Создание и продвижение веб-сайтов в СПб! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!"}
                 ]}
                 link={[
-                    {"rel": "canonical", "href": "https://178spb.com/portfolio/"}
+                    {"rel": "canonical", "href": "https://178spb.com/portfolio-web/"}
                 ]}
             />
             <section className="portfolio-web__image-container">
