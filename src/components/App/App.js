@@ -23,6 +23,7 @@ import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
 import Header from '../Header/Header';
 import PriceIt from '../PriceIt/PriceIt';
+import PriceWeb from '../PriceWeb/PriceWeb';
 import NotFound from '../NotFound/NotFound';
 import * as FeedbackForm from '../../utils/FeedbackForm';
 
@@ -317,6 +318,12 @@ function App () {
 
         <Route path='/price-it'>
           <PriceIt
+            onOpenPopup={handlePopupOpen}
+          />
+        </Route>
+
+        <Route path='/price-web'>
+          <PriceWeb
             onOpenPopup={handlePopupOpen}
           />
         </Route>

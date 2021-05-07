@@ -1,0 +1,182 @@
+.price-web {
+    
+}
+.price-web__image-container {
+    background-image: url('../../images/web-page-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 970px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.price-web__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58px;
+    color: #FFFFFF;
+    max-width: 450px;
+    margin: 361px auto 0 258px;
+    text-transform: uppercase;
+}
+.price-web__subheading {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 32px auto 0 258px;
+    max-width: 500px;
+}
+.price-web__button {
+    width: 300px;
+    height: 54px;
+    background: linear-gradient(79.69deg, #FF3232 6.7%, #FF612F 97.83%);
+    box-shadow: -2px 18px 30px -12px rgba(64, 0, 0, 0.7);
+    border-radius: 30px;
+    border: none;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 64px auto auto 258px;
+}
+.price-web__button:hover {
+    background: linear-gradient(85.68deg, #FF0F00 15.58%, #FF9533 53.24%, #FF0000 104.41%);
+    cursor: pointer;
+}
+.price-web__button:focus {
+    outline: none;
+}
+.price-web__button:active {
+    box-shadow: inset 6px 7px 6px rgba(0, 0, 0, 0.4);
+}
+.price-web__bottom-container {
+    display: flex;
+    margin: auto auto 32px;
+}
+.price-web__mouse-icon {
+    max-height: 53px;
+    max-width: 47px;
+}
+.price-web__text {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: auto 0 auto 19px;
+    max-width: 120px;
+}
+@media screen and (max-width: 1680px) {
+    .price-web__heading {
+        margin: 300px auto 0 200px;
+    }
+    .price-web__subheading {
+        margin: 32px auto 0 200px;
+    }
+    .price-web__button {
+        margin: 64px auto auto 200px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .price-web__image-container {
+        background-position-x: -140px;
+    }
+    .price-web__heading {
+        margin: 300px auto 0 150px;
+    }
+    .price-web__subheading {
+        margin: 32px auto 0 150px;
+    }
+    .price-web__button {
+        margin: 64px auto auto 150px;
+    }
+}
+@media screen and (max-width: 1245px) {
+    .price-web__image-container {
+        min-height: 829px;
+    }
+    .price-web__heading {
+        margin: 250px auto 0 100px;
+    }
+    .price-web__subheading {
+        margin: 32px auto 0 100px;
+    }
+    .price-web__button {
+        margin: 64px auto auto 100px;
+    }
+}
+@media screen and (max-width: 1095px) {
+    .price-web__image-container {
+        min-height: 729px;
+    }
+    .price-web__heading {
+        margin: 260px auto 0 80px;
+        font-size: 28px;
+        line-height: 36px;
+        max-width: 250px;
+    }
+    .price-web__subheading {
+        font-size: 16px;
+        line-height: 130%;
+        margin: 22px auto 0 80px;
+        max-width: 300px;
+    }
+    .price-web__button {
+        margin: 40px auto auto 80px;
+        width: 256px;
+        height: 47px;
+        font-size: 16px;
+        line-height: 130%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .price-web__image-container {
+        min-height: 629px;
+    }
+    .price-web__heading {
+        margin: 250px auto 0 80px;
+    }
+    .price-web__subheading {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .price-web__image-container {
+        min-height: 340px;
+        background-position-x: 0;
+    }
+    .price-web__heading {
+        margin: 128px auto 0 50px;
+    }
+    .price-web__subheading {
+        display: none;
+    }
+    .price-web__button {
+        margin: 16px auto 0 50px;
+        line-height: 140%;
+    }
+    .price-web__bottom-container {
+        display: none;
+    }
+}
+@media screen and (max-width: 470px) {
+    .price-web__image-container {
+        min-height: 490px;
+        background-position-x: -240px;
+    }
+    .price-web__heading {
+        margin: 176px auto 0 20px;
+    }
+    .price-web__button {
+        margin: 18px auto 0 20px;
+    }
+}

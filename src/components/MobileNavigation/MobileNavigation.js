@@ -82,7 +82,7 @@ function MobileNavigation (props) {
             {isPriceOpen && 
                 ( 
                     <>
-                        <Link to={'/portfolio-web'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Web студия</Link>
+                        <Link to={'/price-web'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>Web студия</Link>
                         <Link to={'/price-it'} className="mobile-navigation__links mobile-navigation__links_drop-down" onClick={onCloseMobileNavigation}>IT сервис</Link>
                     </>
                 )

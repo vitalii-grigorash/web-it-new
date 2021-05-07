@@ -38,6 +38,7 @@
 @import url(./components/PriceTableIt/PriceTableIt.css);
 @import url(./components/AnimationTableIt/AnimationTableIt.css);
 @import url(./components/PriceIt/PriceIt.css);
+@import url(./components/PriceWeb/PriceWeb.css);
 @import url(./components/NotFound/NotFound.css);
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
