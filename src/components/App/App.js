@@ -22,6 +22,7 @@ import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
 import Header from '../Header/Header';
+import PriceIt from '../PriceIt/PriceIt';
 import NotFound from '../NotFound/NotFound';
 import * as FeedbackForm from '../../utils/FeedbackForm';
 
@@ -312,6 +313,12 @@ function App () {
 
         <Route path='/portfolio-it'>
           <PortfolioIt />
+        </Route>
+
+        <Route path='/price-it'>
+          <PriceIt
+            onOpenPopup={handlePopupOpen}
+          />
         </Route>
 
         <Route path='/contacts'>
