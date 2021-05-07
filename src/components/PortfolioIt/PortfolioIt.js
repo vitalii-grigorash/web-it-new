@@ -12,7 +12,7 @@ import expressDieselLogo from '../../images/company-logo-it/express-diesel-logo.
 import spbSchoolLogo from '../../images/company-logo-it/spb-school-logo.jpg';
 import tsnObyhovoLogo from '../../images/company-logo-it/tsn-obyhovo-logo.jpg';
 
-function PortfolioWeb () {
+function PortfolioIt () {
 
     return (
         <div className="portfolio-it">
@@ -89,4 +89,4 @@ function PortfolioWeb () {
     );
 }
 
-export default PortfolioWeb;
+export default PortfolioIt;
