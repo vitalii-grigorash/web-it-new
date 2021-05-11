@@ -44,7 +44,7 @@ function PriceTableLanding () {
                         <li className={`price-table__list-item ${isFirstActive && 'price-table__list-item_active'}`}>Анализ ниши</li>
                         <li className={`price-table__list-item ${isFirstActive && 'price-table__list-item_active'}`}>Составление технического задания</li>
                         <li className={`price-table__list-item ${isFirstActive && 'price-table__list-item_active'}`}>Разработка уникального дизайна</li>
-                        <li className={`price-table__list-item ${isFirstActive && 'price-table__list-item_active'}`}>До 3 форм обартной связи</li>
+                        <li className={`price-table__list-item ${isFirstActive && 'price-table__list-item_active'}`}>До 3 форм обратной связи</li>
                         <li className={`price-table__list-item ${isFirstActive && 'price-table__list-item_active'}`}>Наполнение сайта контентом</li>
                         <li className={`price-table__list-item ${isFirstActive && 'price-table__list-item_active'}`}>Кроссбраузерная верстка (кроме Safari и IE ниже 11 версии)</li>
                         <li className={`price-table__list-item ${isFirstActive && 'price-table__list-item_active'}`}>Адаптивная (резиновая) верстка под планшеты и мобильные устройства</li>
@@ -69,7 +69,7 @@ function PriceTableLanding () {
                         <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Анализ ниши</li>
                         <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Составление технического задания</li>
                         <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Разработка уникального дизайна</li>
-                        <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>До 5 форм обартной связи</li>
+                        <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>До 5 форм обратной связи</li>
                         <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Наполнение сайта контентом</li>
                         <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Кроссбраузерная верстка (кроме Safari и IE ниже 11 версии)</li>
                         <li className={`price-table__list-item ${isSecondActive && 'price-table__list-item_active'}`}>Личный руководитель проекта</li>
@@ -98,7 +98,7 @@ function PriceTableLanding () {
                         <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Анализ ниши</li>
                         <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Составление технического задания</li>
                         <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Разработка уникального дизайна</li>
-                        <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>До 10 форм обартной связи</li>
+                        <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>До 10 форм обратной связи</li>
                         <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Наполнение сайта контентом</li>
                         <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Кроссбраузерная верстка (кроме Safari и IE ниже 11 версии)</li>
                         <li className={`price-table__list-item ${isLastActive && 'price-table__list-item_active'}`}>Личный руководитель проекта</li>

@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import mouse from '../../images/svg/mouse.svg';
 import PriceTableLanding from '../PriceTableLanding/PriceTableLanding';
 import PriceTableBusinessCard from '../PriceTableBusinessCard/PriceTableBusinessCard';
+import PriceTableSeo from '../PriceTableSeo/PriceTableSeo';
 
 function PriceWeb (props) {
 
@@ -132,6 +133,8 @@ function PriceWeb (props) {
             <PriceTableBusinessCard />
             <h4 className="price-web__table-heading">LANDING PAGE</h4>
             <PriceTableLanding />
+            <h4 className="price-web__table-heading">SEO-УСЛУГИ</h4>
+            <PriceTableSeo />
         </div>
     );
 }
