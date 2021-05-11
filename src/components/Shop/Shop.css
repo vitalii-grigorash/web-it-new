@@ -163,6 +163,7 @@
     width: 322px;
     margin: 70px auto 0;
     padding: 0;
+    color: #373737;
 }
 .card__item {
     font-family: 'Verdana';
@@ -170,7 +171,6 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 150%;
-    color: #373737;
     margin-left: 20px;
 }
 .card__value {
