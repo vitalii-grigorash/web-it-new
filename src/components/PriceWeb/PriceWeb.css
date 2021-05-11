@@ -222,17 +222,19 @@
     .price-web__bottom-container {
         display: none;
     }
+    .price-web__table-heading {
+        font-size: 20px;
+        line-height: 26px;
+        margin: 48px auto 0;
+        max-width: 241px;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 850px) {
     .price-web__tables-heading {
         font-size: 28px;
         line-height: 36px;
         margin: 64px auto 0;
-    }
-    .price-web__table-heading {
-        font-size: 20px;
-        line-height: 26px;
-        margin: 48px auto 0;
     }
     .price__main-container_web {
         margin: 0 auto;

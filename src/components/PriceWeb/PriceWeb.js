@@ -4,6 +4,7 @@ import mouse from '../../images/svg/mouse.svg';
 import PriceTableLanding from '../PriceTableLanding/PriceTableLanding';
 import PriceTableBusinessCard from '../PriceTableBusinessCard/PriceTableBusinessCard';
 import PriceTableSeo from '../PriceTableSeo/PriceTableSeo';
+import PriceTableMultipage from '../PriceTableMultipage/PriceTableMultipage';
 
 function PriceWeb (props) {
 
@@ -135,6 +136,9 @@ function PriceWeb (props) {
             <PriceTableLanding />
             <h4 className="price-web__table-heading">SEO-УСЛУГИ</h4>
             <PriceTableSeo />
+            <h4 className="price-web__table-heading">МНОГОСТРАНИЧНЫЙ (КОРПОРАТИВНЫЙ) САЙТ</h4>
+            <PriceTableMultipage />
+            <h4 className="price-web__table-heading">САЙТ-КАТАЛОГ</h4>
         </div>
     );
 }
