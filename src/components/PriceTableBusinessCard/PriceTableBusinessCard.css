@@ -1,0 +1,41 @@
+.price-table__heading-container-business {
+    display: flex;
+    height: 149px;
+    border-bottom: 3px solid #05D0DF;
+    border-right: 3px solid #05D0DF;
+    background: #E8E6E6;
+    cursor: pointer;
+}
+.price-table__heading-container-business_active {
+    border-bottom: 3px solid #FFFFFF;
+    background: #FFFFFF;
+    cursor: text;
+}
+@media screen and (max-width: 1520px) {
+    .price-table__heading-container-business {
+        height: 120px;
+    }
+}
+@media screen and (max-width: 1230px) {
+    .price-table__heading-container-business {
+        height: 100px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .price-table__heading-container-business {
+        height: 154px;
+        border-right: none;
+        border-bottom: none;
+        background: #D2D2D2;
+    }
+    .price-table__heading-container-business_active {
+        border-bottom: 3px solid #FFFFFF;
+        background: #FFFFFF;
+        cursor: text;
+    }
+}
+@media screen and (max-width: 470px) {
+    .price-table__heading-container-business {
+        height: 179px;
+    }
+}

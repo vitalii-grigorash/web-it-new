@@ -100,6 +100,9 @@
     .price-table__container {
         margin: 96px auto 128px;
     }
+    .price-table__container_web {
+        margin: 48px auto 0;
+    }
     .price-table__section {
         width: 390px;
     }
@@ -160,6 +163,9 @@
         flex-direction: column;
         margin: 128px auto 128px;
         border: none;
+    }
+    .price-table__container_web {
+        margin: 32px auto 0;
     }
     .price-table__section {
         width: 408px;
@@ -241,9 +247,6 @@
         line-height: 140%;
         color: #F9461F;
         margin: 32px auto 64px 45px;
-    }
-    .price-table__container_web {
-        margin: 32px auto 0;
     }
 }
 @media screen and (max-width: 470px) {

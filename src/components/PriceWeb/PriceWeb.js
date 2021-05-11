@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Helmet } from 'react-helmet-async';
 import mouse from '../../images/svg/mouse.svg';
 import PriceTableLanding from '../PriceTableLanding/PriceTableLanding';
+import PriceTableBusinessCard from '../PriceTableBusinessCard/PriceTableBusinessCard';
 
 function PriceWeb (props) {
 
@@ -127,6 +128,8 @@ function PriceWeb (props) {
                     </div>
                 </div>
             </section>
+            <h4 className="price-web__table-heading">САЙТ-ВИЗИТКА</h4>
+            <PriceTableBusinessCard />
             <h4 className="price-web__table-heading">LANDING PAGE</h4>
             <PriceTableLanding />
         </div>
