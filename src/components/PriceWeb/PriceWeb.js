@@ -66,66 +66,66 @@ function PriceWeb (props) {
             </section>
             <h3 className="price-web__tables-heading">СТОИМОСТЬ УСЛУГ</h3>
             <h4 className="price-web__table-heading">ИНТЕРНЕТ-МАГАЗИН</h4>
-            <section className="price">
-                <div className="price__main-container price__main-container_web">
-                    <div className="price__cards-container">
-                        <div className={`${isFirstActive ? 'card' : 'card-disabled'}`} onClick={handleFirstSectionActive}>
-                            <h5 className={`${isFirstActive ? 'card__heading' : 'card__heading-disabled'}`}>до 100 позиций</h5>
-                            <ul className={`${isFirstActive ? 'card__list' : 'card__list-disabled'}`}>
-                                <li className="card__item">CMS WordPress</li>
-                                <li className="card__item">Базовое SEO</li>
-                                <li className="card__item">Оптимизация под мобильные устройства</li>
-                                <li className="card__item">Весь необходимый функционал</li>
-                                <li className="card__item">Возможность расширения до 500 позиций</li>
-                                <li className="card__item">Оплата on-line</li>
-                                <li className="card__item">Разработка до 45 рабочих дней</li>
-                                <li className="card__item">Дополнительно интеграция с 1с</li>
+            <section className="price-table-shop">
+                <div className="price-table-shop__main-container">
+                    <div className="price-table-shop__cards-container">
+                        <div className={`${isFirstActive ? 'card-shop' : 'card-shop card-shop_disabled'}`} onClick={handleFirstSectionActive}>
+                            <h5 className={`${isFirstActive ? 'card-shop__heading' : 'card-shop__heading card-shop__heading_disabled'}`}>до 100 позиций</h5>
+                            <ul className={`${isFirstActive ? 'card-shop__list' : 'card-shop__list card-shop__list_disabled'}`}>
+                                <li className="card-shop__item">CMS WordPress</li>
+                                <li className="card-shop__item">Базовое SEO</li>
+                                <li className="card-shop__item">Оптимизация под мобильные устройства</li>
+                                <li className="card-shop__item">Весь необходимый функционал</li>
+                                <li className="card-shop__item">Возможность расширения до 500 позиций</li>
+                                <li className="card-shop__item">Оплата on-line</li>
+                                <li className="card-shop__item">Разработка до 45 рабочих дней</li>
+                                <li className="card-shop__item">Дополнительно интеграция с 1с</li>
                             </ul>
-                            <p className={`${isFirstActive ? 'card__value' : 'card__value-disabled'}`}>от 65 000 рублей</p>
+                            <p className={`${isFirstActive ? 'card-shop__value' : 'card-shop__value card-shop__value_disabled'}`}>от 65 000 рублей</p>
                         </div>
-                        <div className={`${isSecondActive ? 'card' : 'card-disabled'}`} onClick={handleSecondSectionActive}>
-                            <h5 className={`${isSecondActive ? 'card__heading' : 'card__heading-disabled'}`}>до 500 позиций</h5>
-                            <ul className={`${isSecondActive ? 'card__list' : 'card__list-disabled'}`}>
-                                <li className="card__item">CMS WordPress/Open Cart</li>
-                                <li className="card__item">Базовое SEO</li>
-                                <li className="card__item">Оптимизация под мобильные устройства</li>
-                                <li className="card__item">Весь необходимый функционал</li>
-                                <li className="card__item">Возможность расширения до 1000 позиций</li>
-                                <li className="card__item">Оплата on-line</li>
-                                <li className="card__item">Разработка до 60 рабочих дней</li>
-                                <li className="card__item">Дополнительно интеграция с 1с</li>
+                        <div className={`${isSecondActive ? 'card-shop' : 'card-shop card-shop_disabled'}`} onClick={handleSecondSectionActive}>
+                            <h5 className={`${isSecondActive ? 'card-shop__heading' : 'card-shop__heading card-shop__heading_disabled'}`}>до 500 позиций</h5>
+                            <ul className={`${isSecondActive ? 'card-shop__list' : 'card-shop__list card-shop__list_disabled'}`}>
+                                <li className="card-shop__item">CMS WordPress/Open Cart</li>
+                                <li className="card-shop__item">Базовое SEO</li>
+                                <li className="card-shop__item">Оптимизация под мобильные устройства</li>
+                                <li className="card-shop__item">Весь необходимый функционал</li>
+                                <li className="card-shop__item">Возможность расширения до 1000 позиций</li>
+                                <li className="card-shop__item">Оплата on-line</li>
+                                <li className="card-shop__item">Разработка до 60 рабочих дней</li>
+                                <li className="card-shop__item">Дополнительно интеграция с 1с</li>
                             </ul>
-                            <p className={`${isSecondActive ? 'card__value' : 'card__value-disabled'}`}>от 75 000 рублей</p>
+                            <p className={`${isSecondActive ? 'card-shop__value' : 'card-shop__value card-shop__value_disabled'}`}>от 75 000 рублей</p>
                         </div>
                     </div>
-                    <div className="price__cards-container">
-                        <div className={`${isThirdActive ? 'card' : 'card-disabled'}`} onClick={handleThirdSectionActive}>
-                            <h5 className={`${isThirdActive ? 'card__heading' : 'card__heading-disabled'}`}>до 1000 позиций</h5>
-                            <ul className={`${isThirdActive ? 'card__list' : 'card__list-disabled'}`}>
-                                <li className="card__item">CMS Битрикс/Open Cart</li>
-                                <li className="card__item">Базовое SEO</li>
-                                <li className="card__item">Оптимизация под мобильные устройства</li>
-                                <li className="card__item">Весь необходимый функционал</li>
-                                <li className="card__item">Возможность расширения до 5000 позиций</li>
-                                <li className="card__item">Оплата on-line</li>
-                                <li className="card__item">Разработка от 60 рабочих дней</li>
-                                <li className="card__item">Интеграция с 1с</li>
+                    <div className="price-table-shop__cards-container">
+                        <div className={`${isThirdActive ? 'card-shop' : 'card-shop card-shop_disabled'}`} onClick={handleThirdSectionActive}>
+                            <h5 className={`${isThirdActive ? 'card-shop__heading' : 'card-shop__heading card-shop__heading_disabled'}`}>до 1000 позиций</h5>
+                            <ul className={`${isThirdActive ? 'card-shop__list' : 'card-shop__list card-shop__list_disabled'}`}>
+                                <li className="card-shop__item">CMS Битрикс/Open Cart</li>
+                                <li className="card-shop__item">Базовое SEO</li>
+                                <li className="card-shop__item">Оптимизация под мобильные устройства</li>
+                                <li className="card-shop__item">Весь необходимый функционал</li>
+                                <li className="card-shop__item">Возможность расширения до 5000 позиций</li>
+                                <li className="card-shop__item">Оплата on-line</li>
+                                <li className="card-shop__item">Разработка от 60 рабочих дней</li>
+                                <li className="card-shop__item">Интеграция с 1с</li>
                             </ul>
-                            <p className={`${isThirdActive ? 'card__value' : 'card__value-disabled'}`}>от 105 000 рублей</p>
+                            <p className={`${isThirdActive ? 'card-shop__value' : 'card-shop__value card-shop__value_disabled'}`}>от 105 000 рублей</p>
                         </div>
-                        <div className={`${isFourthActive ? 'card' : 'card-disabled'}`} onClick={handleFourthSectionActive}>
-                            <h5 className={`${isFourthActive ? 'card__heading' : 'card__heading-disabled'}`}>свыше 1000 позиций</h5>
-                            <ul className={`${isFourthActive ? 'card__list' : 'card__list-disabled'}`}>
-                                <li className="card__item">CMS Битрикс</li>
-                                <li className="card__item">Базовое SEO</li>
-                                <li className="card__item">Оптимизация под мобильные устройства</li>
-                                <li className="card__item">Весь необходимый функционал</li>
-                                <li className="card__item">Возможность расширения более 5000 позиций</li>
-                                <li className="card__item">Оплата on-line</li>
-                                <li className="card__item">Разработка от 60 рабочих дней</li>
-                                <li className="card__item">Интеграция с 1с</li>
+                        <div className={`${isFourthActive ? 'card-shop' : 'card-shop card-shop_disabled'}`} onClick={handleFourthSectionActive}>
+                            <h5 className={`${isFourthActive ? 'card-shop__heading' : 'card-shop__heading card-shop__heading_disabled'}`}>свыше 1000 позиций</h5>
+                            <ul className={`${isFourthActive ? 'card-shop__list' : 'card-shop__list card-shop__list_disabled'}`}>
+                                <li className="card-shop__item">CMS Битрикс</li>
+                                <li className="card-shop__item">Базовое SEO</li>
+                                <li className="card-shop__item">Оптимизация под мобильные устройства</li>
+                                <li className="card-shop__item">Весь необходимый функционал</li>
+                                <li className="card-shop__item">Возможность расширения более 5000 позиций</li>
+                                <li className="card-shop__item">Оплата on-line</li>
+                                <li className="card-shop__item">Разработка от 60 рабочих дней</li>
+                                <li className="card-shop__item">Интеграция с 1с</li>
                             </ul>
-                            <p className={`${isFourthActive ? 'card__value' : 'card__value-disabled'}`}>от 135 000 рублей</p>
+                            <p className={`${isFourthActive ? 'card-shop__value' : 'card-shop__value card-shop__value_disabled'}`}>от 135 000 рублей</p>
                         </div>
                     </div>
                 </div>
