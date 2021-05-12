@@ -139,6 +139,29 @@ function PriceWeb (props) {
             <h4 className="price-web__table-heading">МНОГОСТРАНИЧНЫЙ (КОРПОРАТИВНЫЙ) САЙТ</h4>
             <PriceTableMultipage />
             <h4 className="price-web__table-heading">САЙТ-КАТАЛОГ</h4>
+            <section className="price-table-catalog">
+                <div className="price-table-catalog__container">
+                    <div className="price-table-catalog__container-first">
+                        <h5 className="price-table-catalog__heading">
+                            САЙТ-КАТАЛОГ 
+                            <span className="price-table-catalog__cost"> 45&nbsp;000&nbsp;руб.</span>
+                        </h5>
+                    </div>
+                    <div className="price-table-catalog__container-second">
+                        <ul className="price-table-catalog__list">
+                            <li className="price-table-catalog__list-item">CMS WordPress</li>
+                            <li className="price-table-catalog__list-item">Дизайн</li>
+                            <li className="price-table-catalog__list-item">Адаптивная верстка</li>
+                        </ul>
+                        <ul className="price-table-catalog__list">
+                            <li className="price-table-catalog__list-item">Базовое SEO</li>
+                            <li className="price-table-catalog__list-item">Наполнение до 10 страниц</li>
+                            <li className="price-table-catalog__list-item">Наполнение до 20 позиций</li>
+                        </ul>
+                    </div>
+                    <p className="price-table-catalog__cost-mobile">45 000 руб.</p>
+                </div>
+            </section>
         </div>
     );
 }

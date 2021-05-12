@@ -130,6 +130,64 @@
     margin: 26px auto 100px 41px;
     color: #D2D2D2;
 }
+.price-table-catalog {
+    display: flex;
+}
+.price-table-catalog__container {
+    display: flex;
+    border: 3px solid #05D0DF;
+    margin: 48px auto 256px;
+}
+.price-table-catalog__container-first {
+    display: flex;
+    width: 488px;
+    height: 149px;
+    border-right: 3px solid #05D0DF;
+    margin: 0;
+}
+.price-table-catalog__heading {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    max-width: 307px;
+    color: #121212;
+    margin: auto auto auto 69px;
+}
+.price-table-catalog__cost {
+    color: #F9461F;
+}
+.price-table-catalog__container-second {
+    display: flex;
+    width: 976px;
+    margin: 0;
+}
+.price-table-catalog__list {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #8D8D8D;
+    margin: auto;
+}
+.price-table-catalog__list-item {
+    margin: 8px 0 0;
+}
+.price-table-catalog__list-item:first-of-type {
+    margin-top: 0;
+}
+.price-table-catalog__cost-mobile {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #F9461F;
+    margin: 32px auto 64px 68px;
+    display: none;
+}
 @media screen and (max-width: 1680px) {
     .price-web__heading {
         margin: 300px auto 0 200px;
@@ -139,6 +197,31 @@
     }
     .price-web__button {
         margin: 64px auto auto 200px;
+    }
+}
+@media screen and (max-width: 1520px) {
+    .price-table-catalog__container {
+        margin: 48px auto 128px;
+    }
+    .price-table-catalog__container-first {
+        width: 390px;
+        height: 120px;
+    }
+    .price-table-catalog__heading {
+        font-size: 18px;
+        line-height: 25px;
+        max-width: 240px;
+        margin: auto auto auto 53px;
+    }
+    .price-table-catalog__container-second {
+        width: 780px;
+    }
+    .price-table-catalog__list {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .price-table-catalog__list-item {
+        margin: 6px 0 0;
     }
 }
 @media screen and (max-width: 1440px) {
@@ -167,6 +250,28 @@
     }
     .price-web__button {
         margin: 64px auto auto 100px;
+    }
+}
+@media screen and (max-width: 1230px) {
+    .price-table-catalog__container-first {
+        width: 290px;
+        height: 100px;
+    }
+    .price-table-catalog__heading {
+        font-size: 16px;
+        line-height: 23px;
+        max-width: 220px;
+        margin: auto auto auto 18px;
+    }
+    .price-table-catalog__container-second {
+        width: 580px;
+    }
+    .price-table-catalog__list {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .price-table-catalog__list-item {
+        margin: 2px 0 0;
     }
 }
 @media screen and (max-width: 1095px) {
@@ -228,6 +333,49 @@
         margin: 48px auto 0;
         max-width: 241px;
         text-align: center;
+    }
+    .price-table-catalog__container {
+        flex-direction: column;
+        margin: 32px auto 128px;
+    }
+    .price-table-catalog__container-first {
+        width: 408px;
+        height: auto;
+        border-right: none;
+    }
+    .price-table-catalog__heading {
+        font-size: 18px;
+        line-height: 25px;
+        max-width: 216px;
+        margin: 48px auto 20px;
+    }
+    .price-table-catalog__cost {
+        display: none;
+    }
+    .price-table-catalog__container-second {
+        flex-direction: column;
+        width: auto;
+    }
+    .price-table-catalog__list {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 auto 0 50px;
+    }
+    .price-table-catalog__list-item {
+        margin: 12px 0 0;
+    }
+    .price-table-catalog__list-item:first-of-type {
+        margin-top: 12px;
+    }
+    .price-table-catalog__cost-mobile {
+        font-family: 'Verdana';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #F9461F;
+        margin: 32px auto 64px 70px;
+        display: block;
     }
 }
 @media screen and (max-width: 850px) {
@@ -292,5 +440,17 @@
     }
     .price-web__button {
         margin: 18px auto 0 20px;
+    }
+    .price-table-catalog__container-first {
+        width: 290px;
+    }
+    .price-table-catalog__list {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 auto 0 25px;
+        max-width: 222px;
+    }
+    .price-table-catalog__cost-mobile {
+        margin: 16px auto 64px 45px;
     }
 }
