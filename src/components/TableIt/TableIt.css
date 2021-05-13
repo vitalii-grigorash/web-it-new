@@ -112,7 +112,7 @@
     border-right: 1px solid #07BDE4;
 }
 .one-time-services__left-column_heading {
-    border-right: none;
+    border-right: 1px solid #EBEBEB;
     background: #EBEBEB;
 }
 .one-time-services__left-column_main-heading {
