@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import mouse from '../../images/svg/mouse.svg';
+import TableIt from '../TableIt/TableIt';
 
 function PriceIt (props) {
 
@@ -28,6 +29,7 @@ function PriceIt (props) {
                     <p className="price-it__text">Прокрутите вниз</p>
                 </div>
             </section>
+            <TableIt />
         </div>
     );
 }

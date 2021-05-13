@@ -1,0 +1,304 @@
+.table-it-component {
+    display: flex;
+    flex-direction: column;
+}
+.table-it-component__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #8D8D8D;
+    margin: 96px auto 0;
+}
+.table-it {
+    display: flex;
+    flex-direction: column;
+    width: 1193px;
+    margin: 64px auto 0;
+}
+.table-it__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 140%;
+    color: #8D8D8D;
+    margin: 0 auto 0 0;
+}
+.table-it__container {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0 0;
+    border: 1px solid #07BDE4;
+}
+.table-it__row-container {
+    display: flex;
+    border-bottom: 1px solid #07BDE4;
+}
+.table-it__row-container:last-of-type {
+    border-bottom: none;
+}
+.table-it__column-heading-container {
+    background: #EBEBEB;
+    display: flex;
+    height: 136px;
+    width: 100%;
+    border-right: 1px solid #07BDE4;
+}
+.table-it__column-heading-container:last-of-type {
+    border-right: none;
+}
+.table-it__column-heading {
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    color: #8D8D8D;
+    margin: auto;
+    max-width: 496px;
+    text-align: center;
+}
+.table-it__column-value-container {
+    display: flex;
+    height: 75px;
+    width: 100%;
+    border-right: 1px solid #07BDE4;
+}
+.table-it__column-value-container:last-of-type {
+    border-right: none;
+}
+.table-it__column-value {
+    font-family: Verdana;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #8D8D8D;
+    margin: auto;
+    text-align: center;
+}
+.one-time-services {
+    display: flex;
+    flex-direction: column;
+    margin: 64px auto 256px;
+}
+.one-time-services__heading {
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 140%;
+    color: #8D8D8D;
+    margin: 0 auto 0 0;
+}
+.one-time-services__container {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0 0;
+    border: 1px solid #07BDE4;
+}
+.one-time-services__row-container {
+    display: flex;
+    border-bottom: 1px solid #07BDE4;
+}
+.one-time-services__row-container:last-of-type {
+    border-bottom: none;
+}
+.one-time-services__left-column {
+    display: flex;
+    width: 760px;
+    border-right: 1px solid #07BDE4;
+}
+.one-time-services__left-column_heading {
+    border-right: none;
+    background: #EBEBEB;
+}
+.one-time-services__left-column_main-heading {
+    background: #EBEBEB;
+}
+.one-time-services__left-column_heading-border {
+    border-right: 1px solid #07BDE4;
+    background: #EBEBEB;
+}
+.one-time-services__right-column {
+    display: flex;
+    width: 433px;
+}
+.one-time-services__right-column_heading {
+    background: #EBEBEB;
+}
+.one-time-services__right-column_main-heading {
+    background: #EBEBEB;
+}
+.one-time-services__column-value {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #8D8D8D;
+    margin: 28px auto;
+    max-width: 680px;
+}
+.one-time-services__column-value_main-heading {
+    margin: 36px auto;
+    font-size: 22px;
+    line-height: 27px;
+}
+.one-time-services__column-value_cost-heading {
+    font-size: 22px;
+    line-height: 27px;
+    margin: auto;
+}
+.one-time-services__column-value_cost {
+    margin: auto;
+}
+@media screen and (max-width: 1250px) {
+    .table-it {
+        width: 900px;
+    }
+    .table-it__column-heading {
+        max-width: 400px;
+    }
+    .table-it__column-value_administrate {
+        font-size: 16px;
+    }
+    .one-time-services {
+        margin: 64px auto 128px;
+    }
+    .one-time-services__left-column {
+        width: 600px;
+    }
+    .one-time-services__right-column {
+        width: 300px;
+    }
+    .one-time-services__column-value {
+        max-width: 540px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .table-it-component__heading {
+        font-size: 28px;
+        line-height: 36px;
+        margin: 65px auto 0;
+    }
+    .table-it {
+        width: 538px;
+    }
+    .table-it__heading {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .table-it__container {
+        margin: 32px 0 0;
+    }
+    .table-it__column-heading-container {
+        height: 157px;
+    }
+    .table-it__column-heading {
+        font-size: 18px;
+        line-height: 25px;
+        max-width: 234px;
+    }
+    .table-it__column-value-container {
+        height: 60px;
+    }
+    .table-it__column-value {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .table-it__column-value_administrate {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .one-time-services__heading {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .one-time-services__left-column {
+        width: 338px;
+    }
+    .one-time-services__right-column {
+        width: 200px;
+    }
+    .one-time-services__column-value {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 18px auto;
+        max-width: 322px;
+    }
+    .one-time-services__column-value_cost {
+        margin: auto;
+    }
+    .one-time-services__column-value_main-heading {
+        font-size: 18px;
+        line-height: 25px;
+        margin: auto;
+    }
+    .one-time-services__column-value_cost-heading {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+@media screen and (max-width: 555px) {
+    .table-it-component__heading {
+        margin: 64px auto 0;
+        max-width: 191px;
+        text-align: center;
+    }
+    .table-it {
+        width: 290px;
+        margin: 48px auto 0;
+    }
+    .table-it__column-heading-container {
+        height: 216px;
+    }
+    .table-it__column-heading {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 128px;
+    }
+    .table-it__column-value-container {
+        height: 79px;
+    }
+    .table-it__column-value_administrate {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .one-time-services {
+        margin: 48px auto 128px;
+    }
+    .one-time-services__heading {
+        max-width: 250px;
+    }
+    .one-time-services__left-column {
+        width: 192px;
+    }
+    .one-time-services__right-column {
+        width: 98px;
+    }
+    .one-time-services__column-value {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 12px auto;
+        max-width: 172px;
+    }
+    .one-time-services__column-value_cost {
+        margin: auto;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .one-time-services__column-value_main-heading {
+        font-size: 16px;
+        line-height: 22px;
+        margin: auto;
+        max-width: 62px;
+    }
+    .one-time-services__column-value_cost-heading {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}

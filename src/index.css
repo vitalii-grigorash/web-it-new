@@ -43,6 +43,7 @@
 @import url(./components/PriceTableBusinessCard/PriceTableBusinessCard.css);
 @import url(./components/PriceTableSeo/PriceTableSeo.css);
 @import url(./components/PriceTableMultipage/PriceTableMultipage.css);
+@import url(./components/TableIt/TableIt.css);
 @import url(./components/NotFound/NotFound.css);
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
