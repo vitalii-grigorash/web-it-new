@@ -23,14 +23,14 @@ function MainPage (props) {
     return (
         <div className="main-page">
             <Helmet
-        title='Создание сайтов в Санкт-Петербурге – "Вымпел"'
-        meta={[
-            {"name": "description", "content": "Создание и продвижение сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Техническое обслуживание персональных компьютеров, печатных устройств и т.д.! Команда профессионалов!"}
-        ]}
-        link={[
-            {"rel": "canonical", "href": "https://178spb.com/"}
-        ]}
-      />
+                title='Создание сайтов в Санкт-Петербурге – "Вымпел"'
+                meta={[
+                    {"name": "description", "content": "Создание и продвижение сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Техническое обслуживание персональных компьютеров, печатных устройств и т.д.! Команда профессионалов!"}
+                ]}
+                link={[
+                    {"rel": "canonical", "href": "https://178spb.com/"}
+                ]}
+            />
             <nav className="main-page__images-container">
                 <Link to={isDropDownMenuOpen || isDropDownMenuPortfolioOpen || isDropDownMenuPriceOpen ? `/` : `/it`} className="main-page__container main-page__container_it">
                     <div className="main-page__container-overlay">
