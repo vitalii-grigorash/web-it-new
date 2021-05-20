@@ -68,7 +68,6 @@ function Shop (props) {
                         <div className="card">
                             <h5 className="card__heading">до 100 позиций</h5>
                             <ul className="card__list">
-                                <li className="card__item">CMS WordPress</li>
                                 <li className="card__item">Базовое SEO</li>
                                 <li className="card__item">Оптимизация под мобильные устройства</li>
                                 <li className="card__item">Весь необходимый функционал</li>
@@ -82,7 +81,6 @@ function Shop (props) {
                         <div className="card">
                             <h5 className="card__heading">до 500 позиций</h5>
                             <ul className="card__list">
-                                <li className="card__item">CMS WordPress/Open Cart</li>
                                 <li className="card__item">Базовое SEO</li>
                                 <li className="card__item">Оптимизация под мобильные устройства</li>
                                 <li className="card__item">Весь необходимый функционал</li>
@@ -98,7 +96,6 @@ function Shop (props) {
                         <div className="card">
                             <h5 className="card__heading">до 1000 позиций</h5>
                             <ul className="card__list">
-                                <li className="card__item">CMS Битрикс/Open Cart</li>
                                 <li className="card__item">Базовое SEO</li>
                                 <li className="card__item">Оптимизация под мобильные устройства</li>
                                 <li className="card__item">Весь необходимый функционал</li>
@@ -112,7 +109,6 @@ function Shop (props) {
                         <div className="card">
                             <h5 className="card__heading">свыше 1000 позиций</h5>
                             <ul className="card__list">
-                                <li className="card__item">CMS Битрикс</li>
                                 <li className="card__item">Базовое SEO</li>
                                 <li className="card__item">Оптимизация под мобильные устройства</li>
                                 <li className="card__item">Весь необходимый функционал</li>

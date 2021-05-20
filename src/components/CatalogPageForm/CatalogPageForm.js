@@ -29,7 +29,6 @@ function CatalogPageForm (props) {
             <div className="catalog-page-form__price">
                 <p className="catalog-page-form__price-heading">Что входит в разработку</p>
                 <ul className="catalog-page-form__price-list-container">
-                    <li className="catalog-page-form__price-list">CMS WordPress</li>
                     <li className="catalog-page-form__price-list">Дизайн</li>
                     <li className="catalog-page-form__price-list">Адаптивная верстка</li>
                     <li className="catalog-page-form__price-list">Базовое SEO</li>

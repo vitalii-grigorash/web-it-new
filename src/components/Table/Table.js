@@ -11,7 +11,7 @@ import advertisImg from '../../images/animation-advertis.jpg';
 
 function Table () {
 
-    const [text, setText] = useState('Система управления сайтом (например, CMS WordPress)')
+    const [text, setText] = useState('Система управления сайтом')
     const [textStyle, setTextStyle] = useState('animation__text');
     const [isMain, setMain] = useState(true);
     const [isDesign, setDesign] = useState(false);
@@ -147,10 +147,10 @@ function Table () {
                         <tr className="design__body-container">
                             <td 
                                 className="design__body-text"
-                                onMouseEnter={() => setText('Система управления сайтом (например, CMS WordPress)')} 
-                                onMouseLeave={() => setText('Система управления сайтом (например, CMS WordPress)')} 
+                                onMouseEnter={() => setText('Система управления сайтом')} 
+                                onMouseLeave={() => setText('Система управления сайтом')} 
                             >
-                                Система управления сайтом (например, CMS WordPress)
+                                Система управления сайтом
                             </td>
                             <td className="design__body-img"><img src={vector} alt="Иконка галочки" /></td>
                             <td className="design__body-img"><img src={vector} alt="Иконка галочки" /></td>
@@ -160,7 +160,7 @@ function Table () {
                             <td 
                                 className="design__body-text"
                                 onMouseEnter={() => {setText('Почтовый ящик с доменным именем'); setTextStyle('animation__text animation__text_hover')}} 
-                                onMouseLeave={() => {setText('Система управления сайтом (например, CMS WordPress)'); setTextStyle('animation__text')}} 
+                                onMouseLeave={() => {setText('Система управления сайтом'); setTextStyle('animation__text')}} 
                             >
                                 Почтовый ящик с доменным именем
                             </td>
@@ -172,7 +172,7 @@ function Table () {
                             <td 
                                 className="design__body-text"
                                 onMouseEnter={() => setText('Составление семантического ядра')} 
-                                onMouseLeave={() => setText('Система управления сайтом (например, CMS WordPress)')} 
+                                onMouseLeave={() => setText('Система управления сайтом')} 
                             >
                                 Составление семантического ядра
                             </td>
@@ -184,7 +184,7 @@ function Table () {
                             <td 
                                 className="design__body-text"
                                 onMouseEnter={() => {setText('Кроссбраузерная верстка (кроме Safari и IE ниже 11 версии)'); setTextStyle('animation__text animation__text_hover')}} 
-                                onMouseLeave={() => {setText('Система управления сайтом (например, CMS WordPress)'); setTextStyle('animation__text')}} 
+                                onMouseLeave={() => {setText('Система управления сайтом'); setTextStyle('animation__text')}} 
                             >
                                 Кроссбраузерная верстка (кроме Safari и IE ниже 11 версии)
                             </td>
@@ -196,7 +196,7 @@ function Table () {
                             <td 
                                 className="design__body-text"
                                 onMouseEnter={() => setText('Интеграция с соцсетями')} 
-                                onMouseLeave={() => setText('Система управления сайтом (например, CMS WordPress)')} 
+                                onMouseLeave={() => setText('Система управления сайтом')} 
                             >
                                 Интеграция с соцсетями
                             </td>
@@ -208,7 +208,7 @@ function Table () {
                             <td 
                                 className="design__body-text"
                                 onMouseEnter={() => {setText('Онлайн консультант (JivoSite)'); setTextStyle('animation__text animation__text_hover')}} 
-                                onMouseLeave={() => {setText('Система управления сайтом (например, CMS WordPress)'); setTextStyle('animation__text')}} 
+                                onMouseLeave={() => {setText('Система управления сайтом'); setTextStyle('animation__text')}} 
                             >
                                 Онлайн консультант (JivoSite)
                             </td>
@@ -220,7 +220,7 @@ function Table () {
                             <td 
                                 className="design__body-text"
                                 onMouseEnter={() => setText('Уникальные программируемые динамические блоки')} 
-                                onMouseLeave={() => setText('Система управления сайтом (например, CMS WordPress)')} 
+                                onMouseLeave={() => setText('Система управления сайтом')} 
                             >
                                 Уникальные программируемые динамические блоки
                             </td>
@@ -232,7 +232,7 @@ function Table () {
                             <td 
                                 className="design__body-text"
                                 onMouseEnter={() => {setText('Реализация кода страниц любой сложности'); setTextStyle('animation__text animation__text_hover')}} 
-                                onMouseLeave={() => {setText('Система управления сайтом (например, CMS WordPress)'); setTextStyle('animation__text')}} 
+                                onMouseLeave={() => {setText('Система управления сайтом'); setTextStyle('animation__text')}} 
                             >
                                 Реализация кода страниц любой сложности
                             </td>
@@ -244,7 +244,7 @@ function Table () {
                             <td 
                                 className="design__body-text"
                                 onMouseEnter={() => setText('Подключение CRM системы')} 
-                                onMouseLeave={() => setText('Система управления сайтом (например, CMS WordPress)')} 
+                                onMouseLeave={() => setText('Система управления сайтом')} 
                             >
                                 Подключение CRM системы
                             </td>
@@ -256,7 +256,7 @@ function Table () {
                             <td 
                                 className="design__body-text"
                                 onMouseEnter={() => {setText('Установка и настройка Я.Метрики и G.Analitics'); setTextStyle('animation__text animation__text_hover')}} 
-                                onMouseLeave={() => {setText('Система управления сайтом (например, CMS WordPress)'); setTextStyle('animation__text')}} 
+                                onMouseLeave={() => {setText('Система управления сайтом'); setTextStyle('animation__text')}} 
                             >
                                 Установка и настройка Я.Метрики и G.Analitics
                             </td>
@@ -268,7 +268,7 @@ function Table () {
                             <td 
                                 className="design__body-text"
                                 onMouseEnter={() => setText('Наполнение сайта контентом')} 
-                                onMouseLeave={() => setText('Система управления сайтом (например, CMS WordPress)')} 
+                                onMouseLeave={() => setText('Система управления сайтом')} 
                             >
                                 Наполнение сайта контентом
                             </td>

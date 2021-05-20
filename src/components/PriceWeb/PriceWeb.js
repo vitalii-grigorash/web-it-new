@@ -72,7 +72,6 @@ function PriceWeb (props) {
                         <div className={`${isFirstActive ? 'card-shop' : 'card-shop card-shop_disabled'}`} onClick={handleFirstSectionActive}>
                             <h5 className={`${isFirstActive ? 'card-shop__heading' : 'card-shop__heading card-shop__heading_disabled'}`}>до 100 позиций</h5>
                             <ul className={`${isFirstActive ? 'card-shop__list' : 'card-shop__list card-shop__list_disabled'}`}>
-                                <li className="card-shop__item">CMS WordPress</li>
                                 <li className="card-shop__item">Базовое SEO</li>
                                 <li className="card-shop__item">Оптимизация под мобильные устройства</li>
                                 <li className="card-shop__item">Весь необходимый функционал</li>
@@ -86,7 +85,6 @@ function PriceWeb (props) {
                         <div className={`${isSecondActive ? 'card-shop' : 'card-shop card-shop_disabled'}`} onClick={handleSecondSectionActive}>
                             <h5 className={`${isSecondActive ? 'card-shop__heading' : 'card-shop__heading card-shop__heading_disabled'}`}>до 500 позиций</h5>
                             <ul className={`${isSecondActive ? 'card-shop__list' : 'card-shop__list card-shop__list_disabled'}`}>
-                                <li className="card-shop__item">CMS WordPress/Open Cart</li>
                                 <li className="card-shop__item">Базовое SEO</li>
                                 <li className="card-shop__item">Оптимизация под мобильные устройства</li>
                                 <li className="card-shop__item">Весь необходимый функционал</li>
@@ -102,7 +100,6 @@ function PriceWeb (props) {
                         <div className={`${isThirdActive ? 'card-shop' : 'card-shop card-shop_disabled'}`} onClick={handleThirdSectionActive}>
                             <h5 className={`${isThirdActive ? 'card-shop__heading' : 'card-shop__heading card-shop__heading_disabled'}`}>до 1000 позиций</h5>
                             <ul className={`${isThirdActive ? 'card-shop__list' : 'card-shop__list card-shop__list_disabled'}`}>
-                                <li className="card-shop__item">CMS Битрикс/Open Cart</li>
                                 <li className="card-shop__item">Базовое SEO</li>
                                 <li className="card-shop__item">Оптимизация под мобильные устройства</li>
                                 <li className="card-shop__item">Весь необходимый функционал</li>
@@ -116,7 +113,6 @@ function PriceWeb (props) {
                         <div className={`${isFourthActive ? 'card-shop' : 'card-shop card-shop_disabled'}`} onClick={handleFourthSectionActive}>
                             <h5 className={`${isFourthActive ? 'card-shop__heading' : 'card-shop__heading card-shop__heading_disabled'}`}>свыше 1000 позиций</h5>
                             <ul className={`${isFourthActive ? 'card-shop__list' : 'card-shop__list card-shop__list_disabled'}`}>
-                                <li className="card-shop__item">CMS Битрикс</li>
                                 <li className="card-shop__item">Базовое SEO</li>
                                 <li className="card-shop__item">Оптимизация под мобильные устройства</li>
                                 <li className="card-shop__item">Весь необходимый функционал</li>
@@ -149,12 +145,11 @@ function PriceWeb (props) {
                     </div>
                     <div className="price-table-catalog__container-second">
                         <ul className="price-table-catalog__list">
-                            <li className="price-table-catalog__list-item">CMS WordPress</li>
+                            <li className="price-table-catalog__list-item">Базовое SEO</li>
                             <li className="price-table-catalog__list-item">Дизайн</li>
                             <li className="price-table-catalog__list-item">Адаптивная верстка</li>
                         </ul>
                         <ul className="price-table-catalog__list">
-                            <li className="price-table-catalog__list-item">Базовое SEO</li>
                             <li className="price-table-catalog__list-item">Наполнение до 10 страниц</li>
                             <li className="price-table-catalog__list-item">Наполнение до 20 позиций</li>
                         </ul>
