@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import check from '../../images/svg/check.svg';
 import { Validation } from '../../utils/Validation';
 
-function PageForm(props) {
+function PageForm (props) {
 
     const {
         onSendForm,

@@ -21,7 +21,7 @@ function MobileHeader (props) {
     isPortfolioOpen,
     handleAbonentScroll,
     handlePriceScroll,
-} = props;
+  } = props;
 
   return (
     <div className="mobile-header">
