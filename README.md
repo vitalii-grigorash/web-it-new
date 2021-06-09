@@ -1,4 +1,4 @@
-# SPA Vimpel разработанное на React.js
+# SPA Vimpel разработанное на React.js.
 ---
 ## Описание
 
