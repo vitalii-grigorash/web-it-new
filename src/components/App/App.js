@@ -41,7 +41,7 @@ function App () {
   const [isPriceOpen, setPriceOpen] = useState(false);
   const [isAbonent, setAbonent] = useState(false);
   const [isPrice, setPrice] = useState(false);
-  const [submitButtonText, setSubmitButtonText] = useState('Получить консультацию');
+  const [submitButtonText, setSubmitButtonText] = useState('Получить консультацию')
 
   function handlePriceScroll () {
     if (!isPrice) {
