@@ -10,7 +10,7 @@ import teamThree from '../../images/team-three.jpg';
 import PageForm from '../PageForm/PageForm';
 import { Link } from 'react-router-dom';
 
-function MainPage (props) {
+function MainPage(props) {
 
     const {
         onSendForm,
@@ -25,10 +25,10 @@ function MainPage (props) {
             <Helmet
                 title='Создание сайтов в Санкт-Петербурге – "Вымпел"'
                 meta={[
-                    {"name": "description", "content": "Создание и продвижение сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Техническое обслуживание персональных компьютеров, печатных устройств и т.д.! Команда профессионалов!"}
+                    { "name": "description", "content": "Создание и продвижение сайтов! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Техническое обслуживание персональных компьютеров, печатных устройств и т.д.! Команда профессионалов!" }
                 ]}
                 link={[
-                    {"rel": "canonical", "href": "https://178spb.com/"}
+                    { "rel": "canonical", "href": "https://178spb.com/" }
                 ]}
             />
             <nav className="main-page__images-container">
@@ -117,23 +117,23 @@ function MainPage (props) {
             </section>
             <div className="team">
                 <div className="team__container">
-                    <img className="team__img" src={teamOne} alt="Иллюстрация команды"/>
+                    <img className="team__img" src={teamOne} alt="Иллюстрация команды" />
                     <p className="team__text">
-                        Наши специалисты до того, как присоединиться к нам, занимались созданием 
+                        Наши специалисты до того, как присоединиться к нам, занимались созданием
                         и продвижением сайтов по меньшей мере 3-5 лет, а стаж некоторых более 10 лет.
                     </p>
                 </div>
                 <div className="team__container">
-                    <img className="team__img team__img_center" src={teamTwo} alt="Иллюстрация команды"/>
+                    <img className="team__img team__img_center" src={teamTwo} alt="Иллюстрация команды" />
                     <p className="team__text team__text_center">
-                        Мы всегда на связи с заказчиком, готовы ответить на любые вопросы быстро 
+                        Мы всегда на связи с заказчиком, готовы ответить на любые вопросы быстро
                         и оперативно, поэтому вы будете в курсе каждого этапа работы.
                     </p>
                 </div>
                 <div className="team__container">
-                    <img className="team__img team__img_bottom" src={teamThree} alt="Иллюстрация команды"/>
+                    <img className="team__img team__img_bottom" src={teamThree} alt="Иллюстрация команды" />
                     <p className="team__text">
-                        Наши специалисты оказывают полный комплекс услуг, начиная от разработки 
+                        Наши специалисты оказывают полный комплекс услуг, начиная от разработки
                         макета будущего сайта, заканчивая его SEO-настройкой.
                     </p>
                 </div>
