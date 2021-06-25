@@ -3,7 +3,7 @@
 }
 .voleks__image {
     position: relative;
-    background-image: url('../../images/voleks-img-main.jpg');
+    background-image: url('../../images/screen_16.webp');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 791px;
@@ -85,7 +85,7 @@
     background: #EC555F;
 }
 .adaptive__voleks {
-    background-image: url('../../images/laptop-img.jpg');
+    background-image: url('../../images/laptop-img.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
@@ -290,7 +290,7 @@
         max-width: 382px;
     }
     .adaptive__laptop-img {
-        background-image: url('../../images/laptop-img.jpg');
+        background-image: url('../../images/laptop-img.webp');
         display: block;
         background-repeat: no-repeat;
         background-size: cover;

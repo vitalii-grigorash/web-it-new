@@ -6,7 +6,7 @@ import terminalIcon from '../../images/svg/terminal-icon.svg';
 import cresIcon from '../../images/svg/cres-icon.svg';
 import doctorIcon from '../../images/svg/doctor-icon.svg';
 import certIcon from '../../images/svg/cert-icon.svg';
-import girlAdaptiveImg from '../../images/girl-adaptive-img.jpg';
+import girlAdaptiveImg from '../../images/girl-adaptive-img.webp';
 import previewImg from '../../images/ost-med-consult-img-preview.jpg';
 import Stages from '../Stages/Stages';
 

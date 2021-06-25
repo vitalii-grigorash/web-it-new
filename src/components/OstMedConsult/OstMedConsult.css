@@ -3,7 +3,7 @@
 }
 .ost-med-consult__image {
     position: relative;
-    background-image: url('../../images/ost-med-consalt-main-img.jpg');
+    background-image: url('../../images/screen_20.webp');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 791px;
@@ -111,7 +111,7 @@
     display: flex;
     width: 100%;
     height: 760px;
-    background-image: url('../../images/girl-adaptive-img.jpg');
+    background-image: url('../../images/girl-adaptive-img.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;

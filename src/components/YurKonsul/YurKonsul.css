@@ -3,7 +3,7 @@
 }
 .yur-konsul__image {
     position: relative;
-    background-image: url('../../images/ur-konsul-main.jpg');
+    background-image: url('../../images/screen_17.webp');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 791px;
@@ -77,7 +77,7 @@
 }
 .adaptive-yur-konsul {
     display: flex;
-    background-image: url('../../images/desktop-img.jpg');
+    background-image: url('../../images/desktop-img.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
@@ -322,7 +322,7 @@
         max-width: 382px;
     }
     .adaptive-yur-konsul__img {
-        background-image: url('../../images/desktop-img.jpg');
+        background-image: url('../../images/desktop-img.webp');
         background-repeat: no-repeat;
         background-size: cover;
         background-position-x: right;

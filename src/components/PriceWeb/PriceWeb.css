@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 .price-web__image-container {
-    background-image: url('../../images/web-page-img.jpg');
+    background-image: url('../../images/web-page-img.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;

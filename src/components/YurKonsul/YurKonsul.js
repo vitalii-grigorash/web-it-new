@@ -7,7 +7,7 @@ import shieldIcon from '../../images/svg/shield-icon.svg';
 import markIcon from '../../images/svg/mark-icon.svg';
 import peopleIcon from '../../images/svg/people-icon.svg';
 import likeIcon from '../../images/svg/like-icon.svg';
-import previewImg from '../../images/yur-konsul-img-preview.jpg'
+import previewImg from '../../images/yur-konsul-img-preview.webp';
 
 function YurKonsul () {
 
