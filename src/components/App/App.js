@@ -1,4 +1,4 @@
-import React, {useState, useCallback} from 'react';
+import React, { useState, useCallback } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import MainPage from '../MainPage/MainPage';
 import It from '../It/It';
@@ -18,16 +18,16 @@ import YurKonsul from '../YurKonsul/YurKonsul';
 import ArBellos from '../ArBellos/ArBellos';
 import LaMiaBorsa from '../LaMiaBorsa/LaMiaBorsa';
 import OstMedConsult from '../OstMedConsult/OstMedConsult';
+import PriceIt from '../PriceIt/PriceIt';
+import PriceWeb from '../PriceWeb/PriceWeb';
+import NotFound from '../NotFound/NotFound';
 import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
 import Header from '../Header/Header';
-import PriceIt from '../PriceIt/PriceIt';
-import PriceWeb from '../PriceWeb/PriceWeb';
-import NotFound from '../NotFound/NotFound';
 import * as FeedbackForm from '../../utils/FeedbackForm';
 
-function App () {
+function App() {
 
   const [isDropDownMenuOpen, setDropDownMenuOpen] = useState(false);
   const [isDropDownMenuPortfolioOpen, setDropDownMenuPortfolioOpen] = useState(false);
@@ -43,7 +43,7 @@ function App () {
   const [isPrice, setPrice] = useState(false);
   const [submitButtonText, setSubmitButtonText] = useState('Получить консультацию');
 
-  function handlePriceScroll () {
+  function handlePriceScroll() {
     if (!isPrice) {
       setPrice(true);
     } else {
@@ -51,7 +51,7 @@ function App () {
     }
   }
 
-  function handleAbonentScroll () {
+  function handleAbonentScroll() {
     if (!isAbonent) {
       setAbonent(true);
     } else {
@@ -59,7 +59,7 @@ function App () {
     }
   }
 
-  function handleItDropDownMunu () {
+  function handleItDropDownMunu() {
     if (!isItOpen) {
       setItOpen(true);
     } else {
@@ -67,7 +67,7 @@ function App () {
     }
   }
 
-  function handlePriceDropDownMunu () {
+  function handlePriceDropDownMunu() {
     if (!isPriceOpen) {
       setPriceOpen(true);
     } else {
@@ -75,7 +75,7 @@ function App () {
     }
   }
 
-  function handlePortfolioDropDownMunu () {
+  function handlePortfolioDropDownMunu() {
     if (!isPortfolioOpen) {
       setPortfolioOpen(true);
     } else {
@@ -83,7 +83,7 @@ function App () {
     }
   }
 
-  function handleWebDropDownMunu () {
+  function handleWebDropDownMunu() {
     if (!isWebOpen) {
       setWebOpen(true);
     } else {
@@ -106,12 +106,12 @@ function App () {
 
   const memoizedOnClickPriceDropDown = useCallback(handlePriceDropDownMenu, []);
 
-  function dropDownPriceMenuOpen () {
+  function dropDownPriceMenuOpen() {
     setDropDownMenuPriceOpen(true);
     document.addEventListener('click', memoizedOnClickPriceDropDown);
   }
 
-  function dropDownPriceMenuClose () {
+  function dropDownPriceMenuClose() {
     setDropDownMenuPriceOpen(false);
     document.removeEventListener('click', memoizedOnClickPriceDropDown);
   }
@@ -131,12 +131,12 @@ function App () {
 
   const memoizedOnClickPortfolioDropDown = useCallback(handlePortfolioDropDownMenu, []);
 
-  function dropDownPortfolioMenuOpen () {
+  function dropDownPortfolioMenuOpen() {
     setDropDownMenuPortfolioOpen(true);
     document.addEventListener('click', memoizedOnClickPortfolioDropDown);
   }
 
-  function dropDownPortfolioMenuClose () {
+  function dropDownPortfolioMenuClose() {
     setDropDownMenuPortfolioOpen(false);
     document.removeEventListener('click', memoizedOnClickPortfolioDropDown);
   }
@@ -146,7 +146,7 @@ function App () {
       (
         (evt.target).classList.contains("drop-down-menu__background") ||
         (evt.target).classList.contains("drop-down-menu__container") ||
-        (evt.target).classList.contains("navigation__links_services") || 
+        (evt.target).classList.contains("navigation__links_services") ||
         (evt.target).classList.contains("navigation__arrow")
       )
     ) {
@@ -156,12 +156,12 @@ function App () {
 
   const memoizedOnClickDropDown = useCallback(handleDropDownMenu, []);
 
-  function dropDownMenuOpen () {
+  function dropDownMenuOpen() {
     setDropDownMenuOpen(true);
     document.addEventListener('click', memoizedOnClickDropDown);
   }
 
-  function dropDownMenuClose () {
+  function dropDownMenuClose() {
     setDropDownMenuOpen(false);
     document.removeEventListener('click', memoizedOnClickDropDown);
   }
@@ -186,7 +186,7 @@ function App () {
 
   const memoizedOnCloseMobileNavigatin = useCallback(handleMobileNavigatinClose, []);
 
-  function handleMobileNavigationOpen () {
+  function handleMobileNavigationOpen() {
     setItOpen(false);
     setWebOpen(false);
     setPortfolioOpen(false);
@@ -195,55 +195,55 @@ function App () {
     document.addEventListener('click', memoizedOnCloseMobileNavigatin);
   }
 
-  function handleMobileNavigationClose () {
+  function handleMobileNavigationClose() {
     setMobileNavigationOpen(false);
     document.removeEventListener('click', memoizedOnCloseMobileNavigatin);
   }
 
-  function handlePopupOpen () {
+  function handlePopupOpen() {
     setMobileNavigationOpen(false);
     setPopupOpen(true);
   }
 
-  function handlePopupClose () {
+  function handlePopupClose() {
     setPopupOpen(false);
   }
 
-  function handleSuccessPopupOpen () {
+  function handleSuccessPopupOpen() {
     setSuccessPopupOpen(true);
   }
 
-  function handleSuccessPopupClose () {
+  function handleSuccessPopupClose() {
     setSuccessPopupOpen(false);
   }
 
-  function feedbackFormSend (name, number, method) {
+  function feedbackFormSend(name, number, method) {
     setSubmitButtonText('Отправка...')
     FeedbackForm.sendForm(name, number, method)
-    .then(() => {
-      handlePopupClose();
-      handleSuccessPopupOpen();
-    })
-    .catch((err) => {
-      console.log(err.message);
-    })
-    .finally(() => {
-      setSubmitButtonText('Получить консультацию');
-    });
+      .then(() => {
+        handlePopupClose();
+        handleSuccessPopupOpen();
+      })
+      .catch((err) => {
+        console.log(err.message);
+      })
+      .finally(() => {
+        setSubmitButtonText('Получить консультацию');
+      });
   }
 
-  function feedbackFormSendCatalog (name, number, method) {
+  function feedbackFormSendCatalog(name, number, method) {
     setSubmitButtonText('Отправка...')
     FeedbackForm.sendFormCatalog(name, number, method)
-    .then(() => {
-      handleSuccessPopupOpen();
-    })
-    .catch((err) => {
-      console.log(err.message);
-    })
-    .finally(() => {
-      setSubmitButtonText('Получить консультацию');
-    });
+      .then(() => {
+        handleSuccessPopupOpen();
+      })
+      .catch((err) => {
+        console.log(err.message);
+      })
+      .finally(() => {
+        setSubmitButtonText('Получить консультацию');
+      });
   }
 
   return (
@@ -279,7 +279,7 @@ function App () {
       <Switch>
 
         <Route path='/' exact>
-          <MainPage 
+          <MainPage
             isDropDownMenuOpen={isDropDownMenuOpen}
             isDropDownMenuPortfolioOpen={isDropDownMenuPortfolioOpen}
             isDropDownMenuPriceOpen={isDropDownMenuPriceOpen}
@@ -301,7 +301,7 @@ function App () {
         </Route>
 
         <Route path='/web'>
-          <Web 
+          <Web
             onSendForm={feedbackFormSend}
             onOpenPopup={handlePopupOpen}
             submitButtonText={submitButtonText}
@@ -377,7 +377,7 @@ function App () {
         <Route path='/ost-med-consult'>
           <OstMedConsult />
         </Route>
-       
+
         <Route path='/la-mia-borsa'>
           <LaMiaBorsa />
         </Route>
@@ -399,10 +399,8 @@ function App () {
         </Route>
 
         <Switch>
-
           <Route exact path="/404" component={NotFound} />
           <Redirect from='*' to='/404' />
-
         </Switch>
 
       </Switch>
