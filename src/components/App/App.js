@@ -21,10 +21,10 @@ import OstMedConsult from '../OstMedConsult/OstMedConsult';
 import PriceIt from '../PriceIt/PriceIt';
 import PriceWeb from '../PriceWeb/PriceWeb';
 import NotFound from '../NotFound/NotFound';
-import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
-import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import * as FeedbackForm from '../../utils/FeedbackForm';
 
 function App() {
