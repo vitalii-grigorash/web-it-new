@@ -1,16 +1,17 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import mouse from '../../images/svg/mouse.svg';
-import aopfLogo from '../../images/company-logo-it/aopf-logo.jpg';
-import voleksLogo from '../../images/company-logo-it/voleks-logo.jpg';
-import kapriLogo from '../../images/company-logo-it/kapri-logo.jpg';
-import tdVelikiyKorolLogo from '../../images/company-logo-it/td-velikiy-korol-logo.jpg';
-import olimpTkLogo from '../../images/company-logo-it/olimp-tk-logo.jpg';
-import legionStroiLogo from '../../images/company-logo-it/legion-stroi-logo.jpg';
-import tkPromresursLogo from '../../images/company-logo-it/tk-promresurs-logo.jpg';
-import expressDieselLogo from '../../images/company-logo-it/express-diesel-logo.jpg';
-import spbSchoolLogo from '../../images/company-logo-it/spb-school-logo.jpg';
-import tsnObyhovoLogo from '../../images/company-logo-it/tsn-obyhovo-logo.jpg';
+
+import aopfLogo from '../../images/company-logo-it/aopf-logo.webp';
+import voleksLogo from '../../images/company-logo-it/voleks-logo.webp';
+import kapriLogo from '../../images/company-logo-it/kapri-logo.webp';
+import tdVelikiyKorolLogo from '../../images/company-logo-it/td-velikiy-korol-logo.webp';
+import olimpTkLogo from '../../images/company-logo-it/olimp-tk-logo.webp';
+import legionStroiLogo from '../../images/company-logo-it/legion-stroi-logo.webp';
+import tkPromresursLogo from '../../images/company-logo-it/tk-promresurs-logo.webp';
+import expressDieselLogo from '../../images/company-logo-it/express-diesel-logo.webp';
+import spbSchoolLogo from '../../images/company-logo-it/spb-school-logo.webp';
+import tsnObyhovoLogo from '../../images/company-logo-it/tsn-obyhovo-logo.webp';
 
 function PortfolioIt () {
 
