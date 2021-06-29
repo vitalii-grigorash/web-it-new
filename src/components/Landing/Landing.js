@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import mouse from '../../images/svg/mouse.svg';
 import PriceTableLanding from '../PriceTableLanding/PriceTableLanding';
 
-function Landing (props) {
+function Landing(props) {
 
     const {
         onOpenPopup,
@@ -14,10 +14,10 @@ function Landing (props) {
             <Helmet
                 title='Создание Landing Page под ключ в Санкт-Петербурге "Вымпел"'
                 meta={[
-                    {"name": "description", "content": "Занимаемся созданием и продвижением качественных сайтов! Современный и продающий дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов! ГК 'Вымпел'"}
+                    { "name": "description", "content": "Занимаемся созданием и продвижением качественных сайтов! Современный и продающий дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов! ГК 'Вымпел'" }
                 ]}
                 link={[
-                    {"rel": "canonical", "href": "https://178spb.com/landing/"}
+                    { "rel": "canonical", "href": "https://178spb.com/landing/" }
                 ]}
             />
             <section className="landing__image-container">

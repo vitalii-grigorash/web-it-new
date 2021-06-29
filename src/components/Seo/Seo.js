@@ -5,7 +5,7 @@ import check from '../../images/svg/check.svg';
 import PriceTableSeo from '../PriceTableSeo/PriceTableSeo';
 import { Validation } from '../../utils/Validation';
 
-function Seo (props) {
+function Seo(props) {
 
     const {
         onOpenPopup,
@@ -33,10 +33,10 @@ function Seo (props) {
             <Helmet
                 title='Оказание SEO-услуг в Санкт-Петербурге "Вымпел"'
                 meta={[
-                    {"name": "description", "content": "SEO оптимизация для эффективного привлечения клиентов! Создание и продвижение сайтов! Современный дизайн! Команда профессионалов!"}
+                    { "name": "description", "content": "SEO оптимизация для эффективного привлечения клиентов! Создание и продвижение сайтов! Современный дизайн! Команда профессионалов!" }
                 ]}
                 link={[
-                    {"rel": "canonical", "href": "https://178spb.com/seo/"}
+                    { "rel": "canonical", "href": "https://178spb.com/seo/" }
                 ]}
             />
             <section className="seo__image-container">

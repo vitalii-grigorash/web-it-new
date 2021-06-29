@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import mouse from '../../images/svg/mouse.svg';
 import PriceTableLanding from '../PriceTableLanding/PriceTableLanding';
@@ -6,14 +6,14 @@ import PriceTableBusinessCard from '../PriceTableBusinessCard/PriceTableBusiness
 import PriceTableSeo from '../PriceTableSeo/PriceTableSeo';
 import PriceTableMultipage from '../PriceTableMultipage/PriceTableMultipage';
 
-function PriceWeb (props) {
+function PriceWeb(props) {
 
     const {
         onOpenPopup,
     } = props;
 
     const [isFirstActive, setFirstActive] = useState(true);
-    function handleFirstSectionActive () {
+    function handleFirstSectionActive() {
         setSecondActive(false);
         setThirdActive(false);
         setFourthActive(false);
@@ -21,7 +21,7 @@ function PriceWeb (props) {
     };
 
     const [isSecondActive, setSecondActive] = useState(false);
-    function handleSecondSectionActive () {
+    function handleSecondSectionActive() {
         setFirstActive(false);
         setThirdActive(false);
         setFourthActive(false);
@@ -29,7 +29,7 @@ function PriceWeb (props) {
     };
 
     const [isThirdActive, setThirdActive] = useState(false);
-    function handleThirdSectionActive () {
+    function handleThirdSectionActive() {
         setFirstActive(false);
         setSecondActive(false);
         setFourthActive(false);
@@ -37,7 +37,7 @@ function PriceWeb (props) {
     };
 
     const [isFourthActive, setFourthActive] = useState(false);
-    function handleFourthSectionActive () {
+    function handleFourthSectionActive() {
         setFirstActive(false);
         setSecondActive(false);
         setThirdActive(false);
@@ -49,10 +49,10 @@ function PriceWeb (props) {
             <Helmet
                 title='Цены на услуги WEB студии ГК "Вымпел"'
                 meta={[
-                    {"name": "description", "content": "ГК 'Вымпел' - Создаем и продвигаем сайты в СПб! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!"}
+                    { "name": "description", "content": "ГК 'Вымпел' - Создаем и продвигаем сайты в СПб! Современный дизайн! SEO оптимизация для эффективного привлечения клиентов! Команда профессионалов!" }
                 ]}
                 link={[
-                    {"rel": "canonical", "href": "https://178spb.com/price-web/"}
+                    { "rel": "canonical", "href": "https://178spb.com/price-web/" }
                 ]}
             />
             <section className="price-web__image-container">
@@ -127,19 +127,19 @@ function PriceWeb (props) {
                 </div>
             </section>
             <h4 className="price-web__table-heading">САЙТ-ВИЗИТКА</h4>
-            <PriceTableBusinessCard />
+                <PriceTableBusinessCard />
             <h4 className="price-web__table-heading">LANDING PAGE</h4>
-            <PriceTableLanding />
+                <PriceTableLanding />
             <h4 className="price-web__table-heading">SEO-УСЛУГИ</h4>
-            <PriceTableSeo />
+                <PriceTableSeo />
             <h4 className="price-web__table-heading">МНОГОСТРАНИЧНЫЙ (КОРПОРАТИВНЫЙ) САЙТ</h4>
-            <PriceTableMultipage />
+                <PriceTableMultipage />
             <h4 className="price-web__table-heading">САЙТ-КАТАЛОГ</h4>
             <section className="price-table-catalog">
                 <div className="price-table-catalog__container">
                     <div className="price-table-catalog__container-first">
                         <h5 className="price-table-catalog__heading">
-                            САЙТ-КАТАЛОГ 
+                            САЙТ-КАТАЛОГ
                             <span className="price-table-catalog__cost"> 45&nbsp;000&nbsp;руб.</span>
                         </h5>
                     </div>

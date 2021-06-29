@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import mouse from '../../images/svg/mouse.svg';
 import TableIt from '../TableIt/TableIt';
 
-function PriceIt (props) {
+function PriceIt(props) {
 
     const {
         onOpenPopup,
@@ -14,10 +14,10 @@ function PriceIt (props) {
             <Helmet
                 title='Цены на услуги IT сервиса ГК "Вымпел"'
                 meta={[
-                    {"name": "description", "content": "ГК 'Вымпел' - занимаемся техническим обслуживанием персональных компьютеров, печатных устройств и т.д.! Команда профессионалов!"}
+                    { "name": "description", "content": "ГК 'Вымпел' - занимаемся техническим обслуживанием персональных компьютеров, печатных устройств и т.д.! Команда профессионалов!" }
                 ]}
                 link={[
-                    {"rel": "canonical", "href": "https://178spb.com/price-it/"}
+                    { "rel": "canonical", "href": "https://178spb.com/price-it/" }
                 ]}
             />
             <section className="price-it__image-container">

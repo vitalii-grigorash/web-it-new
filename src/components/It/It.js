@@ -8,7 +8,7 @@ import illustrationService from '../../images/svg/illustration-service-it.svg';
 import check from '../../images/svg/check.svg';
 import { Validation } from '../../utils/Validation';
 
-function It (props) {
+function It(props) {
 
     const {
         onOpenPopup,
@@ -19,25 +19,25 @@ function It (props) {
         handlePriceScroll,
         submitButtonText,
     } = props;
-    
-    React.useEffect (() => {
+
+    React.useEffect(() => {
         if (isAbonent) {
             const elem = document.getElementById("#service".slice(1))
             if (elem) {
-                elem.scrollIntoView({behavior: "smooth"})
+                elem.scrollIntoView({ behavior: "smooth" })
             }
             handleAbonentScroll();
-        } 
+        }
     }, [isAbonent])
 
-    React.useEffect (() => {
+    React.useEffect(() => {
         if (isPrice) {
             const elem = document.getElementById("#price".slice(1))
             if (elem) {
-                elem.scrollIntoView({behavior: "smooth"})
+                elem.scrollIntoView({ behavior: "smooth" })
             }
             handlePriceScroll();
-        } 
+        }
     }, [isPrice])
 
     const name = Validation();
@@ -60,10 +60,10 @@ function It (props) {
             <Helmet
                 title='IT Сервис "Вымпел"'
                 meta={[
-                    {"name": "description", "content": "Техническое обслуживание персональных компьютеров, печатных устройств и т.д.! Команда профессионалов!"}
+                    { "name": "description", "content": "Техническое обслуживание персональных компьютеров, печатных устройств и т.д.! Команда профессионалов!" }
                 ]}
                 link={[
-                    {"rel": "canonical", "href": "https://178spb.com/it/"}
+                    { "rel": "canonical", "href": "https://178spb.com/it/" }
                 ]}
             />
             <section className="it__image-container">
@@ -81,15 +81,15 @@ function It (props) {
                 <div className="about-it__container">
                     <h3 className="about-it__heading">про it-сервис</h3>
                     <p className="about-it__description">
-                        Группа компании Vimpel оказывает услуги IT-аутсорсинга - это 
-                        комплексное обслуживание и управление IT-инфраструктурой 
-                        компании. Нашим ключевым направлением является абонентское обслуживание 
+                        Группа компании Vimpel оказывает услуги IT-аутсорсинга - это
+                        комплексное обслуживание и управление IT-инфраструктурой
+                        компании. Нашим ключевым направлением является абонентское обслуживание
                         компьютерной техники и информационных сервисов Вашего бизнеса.
                     </p>
                     <p className="about-it__description">
-                        Предоставляя, помимо разработки и продвижения сайтов, комплексные услуги по 
-                        обслуживанию компьютеров, мы значительно увеличили число наших клиентов и сформировали 
-                        базу постоянных заказчиков, с которыми мы сотрудничаем уже не первый год. Будем 
+                        Предоставляя, помимо разработки и продвижения сайтов, комплексные услуги по
+                        обслуживанию компьютеров, мы значительно увеличили число наших клиентов и сформировали
+                        базу постоянных заказчиков, с которыми мы сотрудничаем уже не первый год. Будем
                         рады новым долгосрочным взаимовыгодным партнерствам!
                     </p>
                 </div>
