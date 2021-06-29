@@ -25,7 +25,7 @@ import Header from '../Header/Header';
 import Popup from '../Popup/Popup';
 import SuccessPopup from '../SuccessPopup/SuccessPopup';
 import Footer from '../Footer/Footer';
-import * as FeedbackForm from '../../utils/FeedbackForm';
+import * as FeedbackForm from '../../utils/FeedbackForm'
 
 function App() {
 
